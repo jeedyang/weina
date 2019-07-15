@@ -39,6 +39,9 @@
     <ClCompile Include="debugwidget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="setupwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="mainwindow.h">
@@ -47,12 +50,18 @@
     <QtMoc Include="debugwidget.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="setupwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="mainwindow.ui">
       <Filter>Form Files</Filter>
     </QtUic>
     <QtUic Include="debugwidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="setupwidget.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>

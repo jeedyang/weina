@@ -79,6 +79,7 @@ public:
 
         widget_menu = new QWidget(widget_frame);
         widget_menu->setObjectName(QString::fromUtf8("widget_menu"));
+        widget_menu->setMinimumSize(QSize(120, 0));
         widget_menu->setMaximumSize(QSize(120, 16777215));
         widget_menu->setStyleSheet(QString::fromUtf8(""));
         verticalLayout_2 = new QVBoxLayout(widget_menu);

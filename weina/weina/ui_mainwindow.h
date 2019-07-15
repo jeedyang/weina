@@ -1,13 +1,13 @@
 /********************************************************************************
-** Form generated from reading UI file 'mainwindowHyxeDm.ui'
+** Form generated from reading UI file 'mainwindowCvLrhC.ui'
 **
 ** Created by: Qt User Interface Compiler version 5.12.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef MAINWINDOWHYXEDM_H
-#define MAINWINDOWHYXEDM_H
+#ifndef MAINWINDOWCVLRHC_H
+#define MAINWINDOWCVLRHC_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -140,4 +140,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // MAINWINDOWHYXEDM_H
+#endif // MAINWINDOWCVLRHC_H
