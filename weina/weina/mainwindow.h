@@ -24,8 +24,8 @@ private slots:
 private:
 	Ui::MainWindowClass ui;
 	QButtonGroup m_btnGroup;
-	DebugWidget *m_debug_widget=new DebugWidget(ui.widget_main);
-	SetupWidget *m_setup_widget=new SetupWidget(ui.widget_main);
+	//DebugWidget *m_debug_widget=new DebugWidget(ui.widget_main);
+	//SetupWidget *m_setup_widget=new SetupWidget(ui.widget_main);
 	QVBoxLayout *m_hLayout=new QVBoxLayout();
 	CtrlPanelBase* m_panel_widget;
 };

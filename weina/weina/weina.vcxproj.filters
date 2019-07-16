@@ -42,6 +42,9 @@
     <ClCompile Include="setupwidget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="homewidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="mainwindow.h">
@@ -53,6 +56,9 @@
     <QtMoc Include="setupwidget.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="homewidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="mainwindow.ui">
@@ -62,6 +68,9 @@
       <Filter>Form Files</Filter>
     </QtUic>
     <QtUic Include="setupwidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="homewidget.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>

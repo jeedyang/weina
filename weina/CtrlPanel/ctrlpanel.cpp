@@ -87,6 +87,8 @@ void CtrlPanel::setHotButtonEnabled(bool en)
 
 void CtrlPanel::initForm()
 {
+	//setWindowFlags(Qt::CustomizeWindowHint | Qt::FramelessWindowHint);
+	//hide();
 	for (int i = 0; i < 24; i++)
 	{
 		Panel* p = new Panel(i,this);

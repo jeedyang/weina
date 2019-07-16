@@ -6,6 +6,7 @@ Panel::Panel(int ID, QWidget* parent)
 {
 	ui.setupUi(this);
 	initForm();
+
 }
 
 Panel::~Panel()
@@ -66,6 +67,7 @@ void Panel::initForm()
 	ui.labelResValue->setText(_tr("------"));
 	ui.labelHotResValue->setText(_tr("------"));
 	ui.labelHotVolValue->setText(_tr("------"));
+
 }
 
 void Panel::onButtonClicked(bool checked)

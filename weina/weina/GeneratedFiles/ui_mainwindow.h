@@ -15,8 +15,12 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
+#include <homewidget.h>
+#include "debugwidget.h"
+#include "setupwidget.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -28,7 +32,12 @@ public:
     QWidget *widget_title;
     QWidget *widget_frame;
     QHBoxLayout *horizontalLayout;
-    QWidget *widget_main;
+    QStackedWidget *stackedWidget_main;
+    HomeWidget *main_widget;
+    SetupWidget *setup_widget;
+    DebugWidget *debug_widget;
+    QWidget *page_3;
+    QWidget *page_4;
     QWidget *widget_menu;
     QVBoxLayout *verticalLayout_2;
     QPushButton *pushButton_main;
@@ -71,11 +80,26 @@ public:
         horizontalLayout->setContentsMargins(11, 11, 11, 11);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        widget_main = new QWidget(widget_frame);
-        widget_main->setObjectName(QString::fromUtf8("widget_main"));
-        widget_main->setStyleSheet(QString::fromUtf8(""));
+        stackedWidget_main = new QStackedWidget(widget_frame);
+        stackedWidget_main->setObjectName(QString::fromUtf8("stackedWidget_main"));
+        stackedWidget_main->setStyleSheet(QString::fromUtf8(""));
+        main_widget = new HomeWidget();
+        main_widget->setObjectName(QString::fromUtf8("main_widget"));
+        stackedWidget_main->addWidget(main_widget);
+        setup_widget = new SetupWidget();
+        setup_widget->setObjectName(QString::fromUtf8("setup_widget"));
+        stackedWidget_main->addWidget(setup_widget);
+        debug_widget = new DebugWidget();
+        debug_widget->setObjectName(QString::fromUtf8("debug_widget"));
+        stackedWidget_main->addWidget(debug_widget);
+        page_3 = new QWidget();
+        page_3->setObjectName(QString::fromUtf8("page_3"));
+        stackedWidget_main->addWidget(page_3);
+        page_4 = new QWidget();
+        page_4->setObjectName(QString::fromUtf8("page_4"));
+        stackedWidget_main->addWidget(page_4);
 
-        horizontalLayout->addWidget(widget_main);
+        horizontalLayout->addWidget(stackedWidget_main);
 
         widget_menu = new QWidget(widget_frame);
         widget_menu->setObjectName(QString::fromUtf8("widget_menu"));

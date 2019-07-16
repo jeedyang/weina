@@ -82,10 +82,15 @@
         <number>0</number>
        </property>
        <item>
-        <widget class="QWidget" name="widget_main" native="true">
+        <widget class="QStackedWidget" name="stackedWidget_main">
          <property name="styleSheet">
           <string notr="true"/>
          </property>
+         <widget class="HomeWidget" name="main_widget"/>
+         <widget class="SetupWidget" name="setup_widget"/>
+         <widget class="DebugWidget" name="debug_widget"/>
+         <widget class="QWidget" name="page_3"/>
+         <widget class="QWidget" name="page_4"/>
         </widget>
        </item>
        <item>
@@ -192,6 +197,26 @@
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>SetupWidget</class>
+   <extends>QWidget</extends>
+   <header>setupwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DebugWidget</class>
+   <extends>QWidget</extends>
+   <header>debugwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>HomeWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">homewidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="resource.qrc"/>
  </resources>

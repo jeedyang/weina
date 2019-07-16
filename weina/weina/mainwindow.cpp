@@ -20,16 +20,17 @@ void MainWindow::on_btnGroupToggled(QAbstractButton* button, bool checked)
 		}	
 	}
 	int id = m_btnGroup.id(button);
+	ui.stackedWidget_main->setCurrentIndex(id);
 	switch (id)
 	{
 	case 0:
-		showWidget(ui.widget_main, m_panel_widget);
+		//showWidget(ui.widget_main, m_panel_widget);
 		break;
 	case 1:
-		showWidget(ui.widget_main, m_setup_widget);
+		//showWidget(ui.widget_main, m_setup_widget);
 		break;
 	case 2:
-		showWidget(ui.widget_main, m_debug_widget);
+		//showWidget(ui.widget_main, m_debug_widget);
 		break;
 	default:
 		break;
@@ -42,45 +43,28 @@ void MainWindow::initForm()
 	m_btnGroup.addButton(ui.pushButton_setup, 1);
 	m_btnGroup.addButton(ui.pushButton_debug, 2);
 
-	QLibrary lib("CtrlPanel.dll");
-	typedef CtrlPanelBase* (*pFunc)(int, QWidget*);
-	pFunc func = (pFunc)lib.resolve("createInstance");
-	if (!func) {
-		qDebug() << "error";
-	}
-	else
-	{
-		m_panel_widget = func(1, this);
-		QObject::connect(m_panel_widget, SIGNAL(hotButtonClicked(int, bool)), this, SLOT(onHotButtonCilcked(int, bool)));
-		int resArry[24] = {};
-		for (int i = 0; i < 24; i++)
-		{
-			resArry[i] = i * 1000000;
-		}
-		m_panel_widget->setParent(ui.widget_main);
-		m_panel_widget->setRes(resArry);
-		m_panel_widget->setHotResDipEnabled(false);
-	}
-	showWidget(ui.widget_main, m_panel_widget);
+
+
+	//showWidget(ui.stackedWidget_main->widget(0), m_panel_widget);
 }
 
 void MainWindow::showWidget(QWidget* parent, QWidget* children)
 {
-	QObjectList widgetList = ui.widget_main->children();
-	QLayoutItem* child;
-	while ((child = m_hLayout->takeAt(0)) != 0)
-	{
-		//setParent为NULL，防止删除之后界面不消失
-		if (child->widget())
-		{
-			child->widget()->setParent(NULL);
-			child->widget()->hide();
-		}
+	//QObjectList widgetList = ui.widget_main->children();
+	//QLayoutItem* child;
+	//while ((child = m_hLayout->takeAt(0)) != 0)
+	//{
+	//	if (child->widget())
+	//	{
+	//		child->widget()->setParent(NULL);
+	//		child->widget()->hide();
+	//	}
 
-		delete child;
-	}
-	m_hLayout->addWidget(children, 0);
-	children->setParent(parent);
-	children->show();
-	ui.widget_main->setLayout(m_hLayout);
+	//	delete child;
+	//}
+	//m_hLayout->addWidget(children, 0);
+	//children->setParent(parent);
+	//children->move(10,10);
+	//children->show();
+	//ui.widget_main->setLayout(m_hLayout);
 }
