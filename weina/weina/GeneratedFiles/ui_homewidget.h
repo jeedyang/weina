@@ -23,7 +23,7 @@ public:
     {
         if (HomeWidget->objectName().isEmpty())
             HomeWidget->setObjectName(QString::fromUtf8("HomeWidget"));
-        HomeWidget->resize(400, 300);
+        HomeWidget->resize(968, 637);
 
         retranslateUi(HomeWidget);
 
