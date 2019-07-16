@@ -5,6 +5,8 @@
 #include "ui_mainwindow.h"
 #include "debugwidget.h"
 #include "setupwidget.h"
+#include "classbase.h"
+#include <QLibrary>
 
 class MainWindow : public QMainWindow
 {
@@ -25,4 +27,5 @@ private:
 	DebugWidget *m_debug_widget=new DebugWidget(ui.widget_main);
 	SetupWidget *m_setup_widget=new SetupWidget(ui.widget_main);
 	QVBoxLayout *m_hLayout=new QVBoxLayout();
+	CtrlPanelBase* m_panel_widget;
 };

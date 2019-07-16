@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Panel</class>
+ <widget class="QWidget" name="Panel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>177</width>
+    <height>101</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Panel</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#Panel
+{
+	border-style:solid;
+	border-radius:5px;
+	border-color:#00BB9E;
+	border-width:2px 2px 2px 2px;
+	background-color: rgb(246, 255, 221);
+}
+
+QLabel#labelRes,#labelResValue,#label_1
+{
+	font: 14pt &quot;微软雅黑&quot;;
+}
+
+QLabel#labelHotRes,#labelHotResValue,#label_2
+{
+	font: 9pt &quot;微软雅黑&quot;;
+}
+
+QLabel#labelHotVol,#labelHotVolValue,#label_3
+{
+	
+	font: 9pt &quot;微软雅黑&quot;;
+}
+
+
+QPushButton
+{
+	border-radius:4px;
+	margin:1px 1px 2px 1px;
+	font: 12pt &quot;微软雅黑&quot;;
+	background-color: rgb(85, 170, 255);
+}
+
+QPushButton:hover
+{
+	
+	background-color: rgb(0, 170, 255);
+
+}
+QPushButton:checked
+{
+	
+	background-color: rgb(255, 85, 0);
+}
+QPushButton::pressed
+{
+	
+	background-color: rgb(255, 85, 0);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>2</number>
+   </property>
+   <property name="leftMargin">
+    <number>3</number>
+   </property>
+   <property name="topMargin">
+    <number>3</number>
+   </property>
+   <property name="rightMargin">
+    <number>3</number>
+   </property>
+   <property name="bottomMargin">
+    <number>3</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <property name="horizontalSpacing">
+       <number>6</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>3</number>
+      </property>
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_1">
+        <property name="text">
+         <string>Ω</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="labelResValue">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="labelRes">
+        <property name="text">
+         <string>电阻:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="labelHotVolValue">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>V</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="labelHotVol">
+        <property name="text">
+         <string>加热电压:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Ω</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="labelHotRes">
+        <property name="text">
+         <string>加热电阻:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="labelHotResValue">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>加热关</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
