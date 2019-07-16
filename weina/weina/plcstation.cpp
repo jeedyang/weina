@@ -1,6 +1,6 @@
 #include "plcstation.h"
 
-
+USING_NAMESPACE(PLC);
 
 PlcStation::PlcStation(QObject *parent)
 	: QObject(parent)
@@ -41,7 +41,7 @@ PlcStation::~PlcStation()
 
 int PlcStation::connect()
 {
-	return m_s7client.ConnectTo("127.0.0.1",0,0);;
+	return m_s7client.ConnectTo("127.0.0.1",0,0);
 }
 
 int PlcStation::disConnect()

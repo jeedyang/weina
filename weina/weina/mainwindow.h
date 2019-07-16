@@ -7,6 +7,7 @@
 #include "setupwidget.h"
 #include "classbase.h"
 #include <QLibrary>
+#include "plcstation.h"
 
 class MainWindow : public QMainWindow
 {
@@ -24,6 +25,7 @@ private slots:
 private:
 	Ui::MainWindowClass ui;
 	QButtonGroup m_btnGroup;
+	PLC::PlcStation* plc;
 	//DebugWidget *m_debug_widget=new DebugWidget(ui.widget_main);
 	//SetupWidget *m_setup_widget=new SetupWidget(ui.widget_main);
 	QVBoxLayout *m_hLayout=new QVBoxLayout();

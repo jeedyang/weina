@@ -7,6 +7,9 @@ MainWindow::MainWindow(QWidget *parent)
 	ui.setupUi(this);
 	initForm();
 	QObject::connect(&m_btnGroup,SIGNAL(buttonToggled(QAbstractButton * , bool )),this,SLOT(on_btnGroupToggled(QAbstractButton*, bool)));
+
+	plc = PLC::createPlcInstance();
+	qDebug()<< plc->connect();
 }
 
 void MainWindow::on_btnGroupToggled(QAbstractButton* button, bool checked)

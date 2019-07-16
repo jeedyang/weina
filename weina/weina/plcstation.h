@@ -4,6 +4,11 @@
 #include <QVariant>
 #include "snap7/snap7.h"
 
+#define NAMESPACE_START(a) namespace a{
+#define NAMESPACE_END }
+#define USING_NAMESPACE(b) using namespace b
+
+NAMESPACE_START(PLC)
 
 typedef struct _PlcDataBuffer
 {
@@ -50,7 +55,9 @@ public:
 	int disConnect();
 	int pollingStart();
 	int pollingStop();
-
+	const TS7Client* getS7Client(){
+		return &m_s7client;
+	}
 private:
 	TS7Client m_s7client;
 	TS7DataItem m_s7dataItem_I;
@@ -60,3 +67,16 @@ private:
 	PlcDataBuffer m_plcBuffer;
 
 };
+
+static PlcStation* plcStation=nullptr;
+
+static PlcStation* createPlcInstance()
+{
+	if (plcStation == nullptr)
+	{
+		plcStation = new PlcStation(nullptr);
+	}
+	return plcStation;
+}
+
+NAMESPACE_END
