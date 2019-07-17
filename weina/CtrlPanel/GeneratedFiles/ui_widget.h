@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'widget.ui'
 **
-** Created by: Qt User Interface Compiler version 5.13.0
+** Created by: Qt User Interface Compiler version 5.12.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -27,7 +27,7 @@ public:
     {
         if (Form->objectName().isEmpty())
             Form->setObjectName(QString::fromUtf8("Form"));
-        Form->resize(729, 472);
+        Form->resize(630, 522);
         Form->setStyleSheet(QString::fromUtf8("QWidget#widget,#widgetTitle\n"
 "{\n"
 "	border-style:solid;\n"
@@ -56,7 +56,7 @@ public:
 
     void retranslateUi(QWidget *Form)
     {
-        Form->setWindowTitle(QCoreApplication::translate("Form", "Form", nullptr));
+        Form->setWindowTitle(QApplication::translate("Form", "Form", nullptr));
     } // retranslateUi
 
 };

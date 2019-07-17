@@ -2,6 +2,7 @@
 
 #include <QWidget>
 #include "ui_debugwidget.h"
+#include <QTimer>
 
 class DebugWidget : public QWidget
 {
@@ -12,9 +13,14 @@ public:
 	~DebugWidget();
 
 private:
+	void refreshServoWidget();
+	void refreshCylinderWidget();
+	void refreshIOmapWidget();
 	Ui::DebugWidget ui;
-	uchar on[4] = { 0xff,0xff,0xff,0xff };
+	QTimer timer;
 public slots:
 	void showDialog();
 	void on_servoButtonClicked(bool checked);
+	void on_servoDspEditingFinished();
+	void on_timout();
 };

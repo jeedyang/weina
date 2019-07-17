@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'setupwidget.ui'
 **
-** Created by: Qt User Interface Compiler version 5.13.0
+** Created by: Qt User Interface Compiler version 5.12.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -37,8 +37,8 @@ public:
 
     void retranslateUi(QWidget *SetupWidget)
     {
-        SetupWidget->setWindowTitle(QCoreApplication::translate("SetupWidget", "SetupWidget", nullptr));
-        label->setText(QCoreApplication::translate("SetupWidget", "\350\256\276\347\275\256\347\225\214\351\235\242", nullptr));
+        SetupWidget->setWindowTitle(QApplication::translate("SetupWidget", "SetupWidget", nullptr));
+        label->setText(QApplication::translate("SetupWidget", "\350\256\276\347\275\256\347\225\214\351\235\242", nullptr));
     } // retranslateUi
 
 };

@@ -48,9 +48,6 @@
     <ClCompile Include="plcstation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="snap7\snap7.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="mainwindow.h">
@@ -90,9 +87,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="classbase.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="snap7\snap7.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

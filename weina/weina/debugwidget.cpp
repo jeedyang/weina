@@ -10,8 +10,11 @@ DebugWidget::DebugWidget(QWidget *parent)
 	ui.setupUi(this);
 	setWindowFlags(Qt::CustomizeWindowHint | Qt::FramelessWindowHint);
 	hide();
+	QObject::connect(&timer, SIGNAL(timeout()), this, SLOT(on_timout()));
 	QList<QPushButton*> btnList;
+	QList<QDoubleSpinBox*> dspboxList;
 	btnList =ui.tabWidget->widget(0)->findChildren<QPushButton*>();
+	dspboxList = ui.tabWidget->widget(0)->findChildren<QDoubleSpinBox*>();
 	for (int i = 0; i < btnList.size(); i++)
 	{
 		QString name = btnList[i]->objectName();
@@ -19,9 +22,27 @@ DebugWidget::DebugWidget(QWidget *parent)
 		if (btn)
 			QObject::connect(btn,SIGNAL(clicked(bool)),this,SLOT(on_servoButtonClicked(bool)));
 	}
+	for (int i = 0; i < dspboxList.size(); i++)
+	{
+		QString name = dspboxList[i]->objectName();
+		QObject::connect(dspboxList[i], SIGNAL(editingFinished()), this, SLOT(on_servoDspEditingFinished()));
+	}
 }
 
 DebugWidget::~DebugWidget()
+{
+}
+
+void DebugWidget::refreshServoWidget()
+{
+
+}
+
+void DebugWidget::refreshCylinderWidget()
+{
+}
+
+void DebugWidget::refreshIOmapWidget()
 {
 }
 
@@ -29,6 +50,7 @@ void DebugWidget::showDialog()
 {
 	//this->setModal(true);
 	this->show();
+	timer.start(100);
 }
 
 void DebugWidget::on_servoButtonClicked(bool checked)
@@ -36,34 +58,96 @@ void DebugWidget::on_servoButtonClicked(bool checked)
 	auto plc = PLC::getPlcInstance();
 	QPushButton* btn = (QPushButton*)sender();
 	if (btn)
-	{
-		
-		int addr = 0;
+	{		
+		int byteNum = 0;
+		int bitNum = 0;
 		QString objname = btn->objectName();
-		if (objname == _tr("pushButton_xJog_l"))			// M 10.4	X轴点动左移
-			addr = 10 * 8 + 4;
-		else if (objname == _tr("pushButton_xJog_r"))		// M 10.5	X轴点动右移
-			addr = 10 * 8 + 5;
-		else if (objname == _tr("pushButton_yJog_up"))		// M 10.6	Y轴点动上移
-			addr = 10 * 8 + 6;
-		else if (objname == _tr("pushButton_yJog_done"))	// M 10.7	Y轴点动下移
-			addr = 10 * 8 + 7;
-		else if (objname == _tr("pushButton_xGoto"))		// M 11.0	X轴绝对定位开始
-			addr = 11 * 8 + 0;
-		else if (objname == _tr("pushButton_yGoto"))		// M 11.1	Y轴绝对定位开始
-			addr = 11 * 8 + 1;
-		else if (objname == _tr("pushButton_xHome"))		// M 10.0	X轴回原点
-			addr = 10 * 8 + 0;
-		else if (objname == _tr("pushButton_yHome"))		// M 10.1	Y轴回原点
-			addr = 10 * 8 + 1;
-		else if (objname == _tr("pushButton_xRest"))		// M 10.2	X轴复位
-			addr = 10 * 8 + 2;
-		else if (objname == _tr("pushButton_yRest"))		// M 10.3	Y轴复位
-			addr = 10 * 8 + 3;
+		if (objname == _tr("pushButton_xJog_l")) {
+			byteNum = 10;
+			bitNum = 4;
+		}			// M 10.4	X轴点动左移
+		else if (objname == _tr("pushButton_xJog_r")) {
+			byteNum = 10;
+			bitNum = 5;
+		}		// M 10.5	X轴点动右移
+		else if (objname == _tr("pushButton_yJog_up")) {
+			byteNum = 10;
+			bitNum = 6;
+		}		// M 10.6	Y轴点动上移
+		else if (objname == _tr("pushButton_yJog_done")) {
+			byteNum = 10;
+			bitNum = 7;
+		}	// M 10.7	Y轴点动下移
+		else if (objname == _tr("pushButton_xGoto")) {
+			byteNum = 11;
+			bitNum = 0;
+		}		// M 11.0	X轴绝对定位开始
+		else if (objname == _tr("pushButton_yGoto")) {
+			byteNum = 11;
+			bitNum = 1;
+		}		// M 11.1	Y轴绝对定位开始
+		else if (objname == _tr("pushButton_xHome")) {
+			byteNum = 10;
+			bitNum = 0;
+		}		// M 10.0	X轴回原点
+		else if (objname == _tr("pushButton_yHome")) {
+			byteNum = 10;
+			bitNum = 1;
+		}		// M 10.1	Y轴回原点
+		else if (objname == _tr("pushButton_xRest")) {
+			byteNum = 10;
+			bitNum = 2;
+		}		// M 10.2	X轴复位
+		else if (objname == _tr("pushButton_yRest")) {
+			byteNum = 10;
+			bitNum = 3;
+		}		// M 10.3	Y轴复位
 		else
 			return;
 		
-		int a=plc->WriteArea(S7AreaMK, 0,addr,1 ,S7WLByte, on);
+		int a = plc->writeBool(AreaM,1,byteNum,bitNum,true);
 		qDebug() << objname << " Clicked ! PLC return:" << a;
 	}
 }
+
+void DebugWidget::on_servoDspEditingFinished()
+{
+	auto plc = PLC::getPlcInstance();
+	QDoubleSpinBox* dspBox = (QDoubleSpinBox*)sender();
+	QString objname = dspBox->objectName();
+	int byteNum = 0;
+	if (objname == _tr("doubleSpinBox_xJog_speed")) {		// 
+		byteNum = 0;
+	}
+	else if (objname == _tr("doubleSpinBox_xJog_speed")) {
+		byteNum = 0;
+	}
+	else if (objname == _tr("doubleSpinBox_yJog_speed")) {
+		byteNum = 0;
+	}
+	else if (objname == _tr("doubleSpinBox_xPos_set")) {
+		byteNum = 0;
+	}
+	else if (objname == _tr("doubleSpinBox_yPos_set")) {
+		byteNum = 0;
+	}
+	else
+		return;
+	int a=plc->writeFloat(AreaDB,1, byteNum,dspBox->value());
+	qDebug() << objname << " EditingFinished ! PLC return:" << a;
+}
+
+void DebugWidget::on_timout()
+{
+	int index= ui.tabWidget->currentIndex();
+	if (index==0){
+		
+	}
+	else if(index == 1){
+		 
+	}
+	else if (index == 2) {
+
+	}
+}
+

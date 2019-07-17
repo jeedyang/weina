@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'panel.ui'
 **
-** Created by: Qt User Interface Compiler version 5.13.0
+** Created by: Qt User Interface Compiler version 5.12.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -168,17 +168,17 @@ public:
 
     void retranslateUi(QWidget *Panel)
     {
-        Panel->setWindowTitle(QCoreApplication::translate("Panel", "Panel", nullptr));
-        label_1->setText(QCoreApplication::translate("Panel", "\316\251", nullptr));
-        labelResValue->setText(QCoreApplication::translate("Panel", "TextLabel", nullptr));
-        labelRes->setText(QCoreApplication::translate("Panel", "\347\224\265\351\230\273:", nullptr));
-        labelHotVolValue->setText(QCoreApplication::translate("Panel", "TextLabel", nullptr));
-        label_3->setText(QCoreApplication::translate("Panel", "V", nullptr));
-        labelHotVol->setText(QCoreApplication::translate("Panel", "\345\212\240\347\203\255\347\224\265\345\216\213:", nullptr));
-        label_2->setText(QCoreApplication::translate("Panel", "\316\251", nullptr));
-        labelHotRes->setText(QCoreApplication::translate("Panel", "\345\212\240\347\203\255\347\224\265\351\230\273:", nullptr));
-        labelHotResValue->setText(QCoreApplication::translate("Panel", "TextLabel", nullptr));
-        pushButton->setText(QCoreApplication::translate("Panel", "\345\212\240\347\203\255\345\205\263", nullptr));
+        Panel->setWindowTitle(QApplication::translate("Panel", "Panel", nullptr));
+        label_1->setText(QApplication::translate("Panel", "\316\251", nullptr));
+        labelResValue->setText(QApplication::translate("Panel", "TextLabel", nullptr));
+        labelRes->setText(QApplication::translate("Panel", "\347\224\265\351\230\273:", nullptr));
+        labelHotVolValue->setText(QApplication::translate("Panel", "TextLabel", nullptr));
+        label_3->setText(QApplication::translate("Panel", "V", nullptr));
+        labelHotVol->setText(QApplication::translate("Panel", "\345\212\240\347\203\255\347\224\265\345\216\213:", nullptr));
+        label_2->setText(QApplication::translate("Panel", "\316\251", nullptr));
+        labelHotRes->setText(QApplication::translate("Panel", "\345\212\240\347\203\255\347\224\265\351\230\273:", nullptr));
+        labelHotResValue->setText(QApplication::translate("Panel", "TextLabel", nullptr));
+        pushButton->setText(QApplication::translate("Panel", "\345\212\240\347\203\255\345\205\263", nullptr));
     } // retranslateUi
 
 };
