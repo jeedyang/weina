@@ -13,6 +13,8 @@ public:
 
 private:
 	Ui::DebugWidget ui;
+	uchar on[4] = { 0xff,0xff,0xff,0xff };
 public slots:
 	void showDialog();
+	void on_servoButtonClicked(bool checked);
 };

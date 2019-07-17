@@ -15,4 +15,5 @@ public:
 private:
 	Ui::HomeWidget ui;
 	CtrlPanelBase* m_panel_widget;
+	QGridLayout m_panelLaylot;
 };

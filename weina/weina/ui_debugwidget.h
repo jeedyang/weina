@@ -1,13 +1,13 @@
 /********************************************************************************
-** Form generated from reading UI file 'debugwidgetNRnNCy.ui'
+** Form generated from reading UI file 'debugwidgetKuPfCP.ui'
 **
 ** Created by: Qt User Interface Compiler version 5.13.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef DEBUGWIDGETNRNNCY_H
-#define DEBUGWIDGETNRNNCY_H
+#ifndef DEBUGWIDGETKUPFCP_H
+#define DEBUGWIDGETKUPFCP_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -30,6 +30,8 @@ class Ui_DebugWidget
 public:
     QGridLayout *gridLayout;
     QSpacerItem *verticalSpacer_2;
+    QSpacerItem *horizontalSpacer_2;
+    QSpacerItem *horizontalSpacer;
     QTabWidget *tabWidget;
     QWidget *tab;
     QGridLayout *gridLayout_2;
@@ -122,70 +124,74 @@ public:
     QGridLayout *gridLayout_7;
     QGroupBox *groupBox_5;
     QGridLayout *gridLayout_8;
-    QLabel *label_49;
-    QLabel *i1_7;
-    QLabel *label_72;
-    QLabel *i0_0;
-    QLabel *i2_1;
-    QLabel *i2_4;
-    QLabel *i2_7;
-    QLabel *label_69;
-    QLabel *label_70;
-    QLabel *i2_6;
-    QLabel *label_46;
-    QLabel *label_68;
-    QLabel *label_45;
-    QLabel *label_52;
-    QLabel *i1_4;
-    QLabel *label_53;
-    QLabel *i0_4;
-    QLabel *label_55;
-    QLabel *i0_5;
-    QLabel *label_71;
-    QLabel *i1_5;
-    QLabel *label_48;
-    QLabel *label_51;
-    QLabel *i1_6;
-    QLabel *i0_3;
-    QLabel *label_76;
-    QLabel *i1_0;
-    QLabel *label_54;
-    QLabel *label_67;
-    QLabel *label_74;
-    QLabel *i2_3;
-    QLabel *label_75;
-    QLabel *i2_5;
     QLabel *label_57;
-    QLabel *i0_6;
-    QLabel *label_66;
-    QLabel *label_73;
-    QLabel *label_50;
-    QLabel *i2_2;
-    QLabel *i0_2;
-    QLabel *label_56;
-    QLabel *label_44;
-    QLabel *i1_1;
-    QLabel *label_47;
-    QLabel *i0_7;
-    QLabel *i0_1;
-    QLabel *i1_2;
-    QLabel *i2_0;
-    QLabel *i1_3;
-    QLabel *i2_8;
-    QLabel *label_77;
-    QLabel *label_78;
+    QLabel *label_52;
     QLabel *label_79;
-    QLabel *label_80;
+    QLabel *label_53;
     QLabel *label_81;
-    QLabel *label_82;
+    QLabel *label_50;
+    QLabel *label_48;
+    QLabel *label_55;
+    QLabel *label_78;
+    QLabel *label_49;
     QLabel *label_83;
-    QLabel *i2_9;
     QLabel *i2_10;
-    QLabel *i2_11;
+    QLabel *i0_6;
+    QLabel *i2_7;
+    QLabel *i1_4;
+    QLabel *label_72;
     QLabel *i2_12;
-    QLabel *i2_13;
-    QLabel *i2_14;
+    QLabel *i1_1;
+    QLabel *label_73;
+    QLabel *label_82;
+    QLabel *i2_2;
+    QLabel *label_51;
+    QLabel *i0_5;
+    QLabel *i2_4;
+    QLabel *i0_7;
+    QLabel *i1_7;
     QLabel *i2_15;
+    QLabel *i2_9;
+    QLabel *label_56;
+    QLabel *i2_11;
+    QLabel *i0_3;
+    QLabel *label_66;
+    QLabel *i1_0;
+    QLabel *i1_5;
+    QLabel *label_69;
+    QLabel *i1_3;
+    QLabel *i0_0;
+    QLabel *label_47;
+    QLabel *i2_13;
+    QLabel *label_67;
+    QLabel *i0_2;
+    QLabel *i1_6;
+    QLabel *label_68;
+    QLabel *label_71;
+    QLabel *i0_1;
+    QLabel *i2_0;
+    QLabel *label_44;
+    QLabel *label_76;
+    QLabel *label_54;
+    QLabel *label_70;
+    QLabel *i2_1;
+    QLabel *i2_8;
+    QLabel *i2_14;
+    QLabel *label_74;
+    QLabel *i2_5;
+    QLabel *label_46;
+    QLabel *label_45;
+    QLabel *i1_2;
+    QLabel *label_80;
+    QLabel *label_75;
+    QLabel *i2_6;
+    QLabel *i0_4;
+    QLabel *label_77;
+    QLabel *i2_3;
+    QLabel *label_60;
+    QLabel *label_61;
+    QLabel *label_62;
+    QLabel *label_63;
     QGroupBox *groupBox_6;
     QGridLayout *gridLayout_10;
     QPushButton *q1_0;
@@ -220,20 +226,49 @@ public:
     QPushButton *q2_13;
     QPushButton *q2_14;
     QPushButton *q2_15;
-    QSpacerItem *horizontalSpacer;
+    QSpacerItem *verticalSpacer_3;
 
     void setupUi(QWidget *DebugWidget)
     {
         if (DebugWidget->objectName().isEmpty())
             DebugWidget->setObjectName(QString::fromUtf8("DebugWidget"));
-        DebugWidget->resize(1144, 593);
+        DebugWidget->resize(1165, 645);
+        DebugWidget->setStyleSheet(QString::fromUtf8("QTabWidget:pane {\n"
+"    border-width: 0;\n"
+"    background: #ffffff;\n"
+"}\n"
+"\n"
+"QTabBar:tab {\n"
+"    border-image: url(:/tab-normal.png);\n"
+"    width: 90px;\n"
+"    height: 35px;\n"
+"    color: #999999;\n"
+"    font: 16px \"Microsoft Yahei\";\n"
+"}\n"
+"\n"
+"QTabBar:tab:selected {\n"
+"    border-image: url(:/tab-selected.png);\n"
+"    color: #333333;\n"
+"}\n"
+"\n"
+"QTabBar:tab:hover {\n"
+"    color: #333333;\n"
+"}"));
         gridLayout = new QGridLayout(DebugWidget);
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-        gridLayout->addItem(verticalSpacer_2, 1, 0, 1, 1);
+        gridLayout->addItem(verticalSpacer_2, 2, 1, 1, 1);
+
+        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer_2, 1, 0, 1, 1);
+
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer, 1, 2, 1, 1);
 
         tabWidget = new QTabWidget(DebugWidget);
         tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
@@ -241,8 +276,7 @@ public:
         font.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
         font.setPointSize(14);
         tabWidget->setFont(font);
-        tabWidget->setTabPosition(QTabWidget::West);
-        tabWidget->setTabShape(QTabWidget::Triangular);
+        tabWidget->setStyleSheet(QString::fromUtf8(""));
         tabWidget->setUsesScrollButtons(true);
         tabWidget->setTabBarAutoHide(true);
         tab = new QWidget();
@@ -1438,121 +1472,19 @@ public:
         groupBox_5 = new QGroupBox(widget_4);
         groupBox_5->setObjectName(QString::fromUtf8("groupBox_5"));
         gridLayout_8 = new QGridLayout(groupBox_5);
-        gridLayout_8->setSpacing(6);
+        gridLayout_8->setSpacing(20);
         gridLayout_8->setContentsMargins(11, 11, 11, 11);
         gridLayout_8->setObjectName(QString::fromUtf8("gridLayout_8"));
-        label_49 = new QLabel(groupBox_5);
-        label_49->setObjectName(QString::fromUtf8("label_49"));
-        label_49->setMaximumSize(QSize(90, 16777215));
+        label_57 = new QLabel(groupBox_5);
+        label_57->setObjectName(QString::fromUtf8("label_57"));
+        label_57->setMaximumSize(QSize(90, 16777215));
         QFont font6;
         font6.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
         font6.setPointSize(9);
-        label_49->setFont(font6);
-        label_49->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        label_57->setFont(font6);
+        label_57->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
-        gridLayout_8->addWidget(label_49, 5, 0, 1, 1);
-
-        i1_7 = new QLabel(groupBox_5);
-        i1_7->setObjectName(QString::fromUtf8("i1_7"));
-        i1_7->setMinimumSize(QSize(40, 38));
-        i1_7->setMaximumSize(QSize(40, 38));
-        i1_7->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i1_7->setScaledContents(true);
-
-        gridLayout_8->addWidget(i1_7, 7, 3, 1, 1);
-
-        label_72 = new QLabel(groupBox_5);
-        label_72->setObjectName(QString::fromUtf8("label_72"));
-        label_72->setMaximumSize(QSize(90, 16777215));
-        label_72->setFont(font6);
-        label_72->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_8->addWidget(label_72, 4, 4, 1, 1);
-
-        i0_0 = new QLabel(groupBox_5);
-        i0_0->setObjectName(QString::fromUtf8("i0_0"));
-        i0_0->setMinimumSize(QSize(40, 38));
-        i0_0->setMaximumSize(QSize(40, 38));
-        i0_0->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i0_0->setScaledContents(true);
-
-        gridLayout_8->addWidget(i0_0, 0, 1, 1, 1);
-
-        i2_1 = new QLabel(groupBox_5);
-        i2_1->setObjectName(QString::fromUtf8("i2_1"));
-        i2_1->setMinimumSize(QSize(40, 38));
-        i2_1->setMaximumSize(QSize(40, 38));
-        i2_1->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_1->setScaledContents(true);
-
-        gridLayout_8->addWidget(i2_1, 1, 5, 1, 1);
-
-        i2_4 = new QLabel(groupBox_5);
-        i2_4->setObjectName(QString::fromUtf8("i2_4"));
-        i2_4->setMinimumSize(QSize(40, 38));
-        i2_4->setMaximumSize(QSize(40, 38));
-        i2_4->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_4->setScaledContents(true);
-
-        gridLayout_8->addWidget(i2_4, 4, 5, 1, 1);
-
-        i2_7 = new QLabel(groupBox_5);
-        i2_7->setObjectName(QString::fromUtf8("i2_7"));
-        i2_7->setMinimumSize(QSize(40, 38));
-        i2_7->setMaximumSize(QSize(40, 38));
-        i2_7->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_7->setScaledContents(true);
-
-        gridLayout_8->addWidget(i2_7, 7, 5, 1, 1);
-
-        label_69 = new QLabel(groupBox_5);
-        label_69->setObjectName(QString::fromUtf8("label_69"));
-        label_69->setMaximumSize(QSize(90, 16777215));
-        label_69->setFont(font6);
-        label_69->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_8->addWidget(label_69, 0, 4, 1, 1);
-
-        label_70 = new QLabel(groupBox_5);
-        label_70->setObjectName(QString::fromUtf8("label_70"));
-        label_70->setMaximumSize(QSize(90, 16777215));
-        label_70->setFont(font6);
-        label_70->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_8->addWidget(label_70, 2, 4, 1, 1);
-
-        i2_6 = new QLabel(groupBox_5);
-        i2_6->setObjectName(QString::fromUtf8("i2_6"));
-        i2_6->setMinimumSize(QSize(40, 38));
-        i2_6->setMaximumSize(QSize(40, 38));
-        i2_6->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_6->setScaledContents(true);
-
-        gridLayout_8->addWidget(i2_6, 6, 5, 1, 1);
-
-        label_46 = new QLabel(groupBox_5);
-        label_46->setObjectName(QString::fromUtf8("label_46"));
-        label_46->setMaximumSize(QSize(90, 16777215));
-        label_46->setFont(font6);
-        label_46->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_8->addWidget(label_46, 1, 0, 1, 1);
-
-        label_68 = new QLabel(groupBox_5);
-        label_68->setObjectName(QString::fromUtf8("label_68"));
-        label_68->setMaximumSize(QSize(90, 16777215));
-        label_68->setFont(font6);
-        label_68->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_8->addWidget(label_68, 7, 2, 1, 1);
-
-        label_45 = new QLabel(groupBox_5);
-        label_45->setObjectName(QString::fromUtf8("label_45"));
-        label_45->setMaximumSize(QSize(90, 16777215));
-        label_45->setFont(font6);
-        label_45->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_8->addWidget(label_45, 0, 0, 1, 1);
+        gridLayout_8->addWidget(label_57, 5, 2, 1, 1);
 
         label_52 = new QLabel(groupBox_5);
         label_52->setObjectName(QString::fromUtf8("label_52"));
@@ -1560,330 +1492,7 @@ public:
         label_52->setFont(font6);
         label_52->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
-        gridLayout_8->addWidget(label_52, 1, 2, 1, 1);
-
-        i1_4 = new QLabel(groupBox_5);
-        i1_4->setObjectName(QString::fromUtf8("i1_4"));
-        i1_4->setMinimumSize(QSize(40, 38));
-        i1_4->setMaximumSize(QSize(40, 38));
-        i1_4->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i1_4->setScaledContents(true);
-
-        gridLayout_8->addWidget(i1_4, 4, 3, 1, 1);
-
-        label_53 = new QLabel(groupBox_5);
-        label_53->setObjectName(QString::fromUtf8("label_53"));
-        label_53->setMaximumSize(QSize(90, 16777215));
-        label_53->setFont(font6);
-        label_53->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_8->addWidget(label_53, 1, 4, 1, 1);
-
-        i0_4 = new QLabel(groupBox_5);
-        i0_4->setObjectName(QString::fromUtf8("i0_4"));
-        i0_4->setMinimumSize(QSize(40, 38));
-        i0_4->setMaximumSize(QSize(40, 38));
-        i0_4->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i0_4->setScaledContents(true);
-
-        gridLayout_8->addWidget(i0_4, 4, 1, 1, 1);
-
-        label_55 = new QLabel(groupBox_5);
-        label_55->setObjectName(QString::fromUtf8("label_55"));
-        label_55->setMaximumSize(QSize(90, 16777215));
-        label_55->setFont(font6);
-        label_55->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_8->addWidget(label_55, 2, 2, 1, 1);
-
-        i0_5 = new QLabel(groupBox_5);
-        i0_5->setObjectName(QString::fromUtf8("i0_5"));
-        i0_5->setMinimumSize(QSize(40, 38));
-        i0_5->setMaximumSize(QSize(40, 38));
-        i0_5->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i0_5->setScaledContents(true);
-
-        gridLayout_8->addWidget(i0_5, 5, 1, 1, 1);
-
-        label_71 = new QLabel(groupBox_5);
-        label_71->setObjectName(QString::fromUtf8("label_71"));
-        label_71->setMaximumSize(QSize(90, 16777215));
-        label_71->setFont(font6);
-        label_71->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_8->addWidget(label_71, 3, 4, 1, 1);
-
-        i1_5 = new QLabel(groupBox_5);
-        i1_5->setObjectName(QString::fromUtf8("i1_5"));
-        i1_5->setMinimumSize(QSize(40, 38));
-        i1_5->setMaximumSize(QSize(40, 38));
-        i1_5->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i1_5->setScaledContents(true);
-
-        gridLayout_8->addWidget(i1_5, 5, 3, 1, 1);
-
-        label_48 = new QLabel(groupBox_5);
-        label_48->setObjectName(QString::fromUtf8("label_48"));
-        label_48->setMaximumSize(QSize(90, 16777215));
-        label_48->setFont(font6);
-        label_48->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_8->addWidget(label_48, 4, 0, 1, 1);
-
-        label_51 = new QLabel(groupBox_5);
-        label_51->setObjectName(QString::fromUtf8("label_51"));
-        label_51->setMaximumSize(QSize(90, 16777215));
-        label_51->setFont(font6);
-        label_51->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_8->addWidget(label_51, 7, 0, 1, 1);
-
-        i1_6 = new QLabel(groupBox_5);
-        i1_6->setObjectName(QString::fromUtf8("i1_6"));
-        i1_6->setMinimumSize(QSize(40, 38));
-        i1_6->setMaximumSize(QSize(40, 38));
-        i1_6->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i1_6->setScaledContents(true);
-
-        gridLayout_8->addWidget(i1_6, 6, 3, 1, 1);
-
-        i0_3 = new QLabel(groupBox_5);
-        i0_3->setObjectName(QString::fromUtf8("i0_3"));
-        i0_3->setMinimumSize(QSize(40, 38));
-        i0_3->setMaximumSize(QSize(40, 38));
-        i0_3->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i0_3->setScaledContents(true);
-
-        gridLayout_8->addWidget(i0_3, 3, 1, 1, 1);
-
-        label_76 = new QLabel(groupBox_5);
-        label_76->setObjectName(QString::fromUtf8("label_76"));
-        label_76->setMaximumSize(QSize(90, 16777215));
-        label_76->setFont(font6);
-        label_76->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_8->addWidget(label_76, 0, 6, 1, 1);
-
-        i1_0 = new QLabel(groupBox_5);
-        i1_0->setObjectName(QString::fromUtf8("i1_0"));
-        i1_0->setMinimumSize(QSize(40, 38));
-        i1_0->setMaximumSize(QSize(40, 38));
-        i1_0->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i1_0->setScaledContents(true);
-
-        gridLayout_8->addWidget(i1_0, 0, 3, 1, 1);
-
-        label_54 = new QLabel(groupBox_5);
-        label_54->setObjectName(QString::fromUtf8("label_54"));
-        label_54->setMaximumSize(QSize(90, 16777215));
-        label_54->setFont(font6);
-        label_54->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_8->addWidget(label_54, 0, 2, 1, 1);
-
-        label_67 = new QLabel(groupBox_5);
-        label_67->setObjectName(QString::fromUtf8("label_67"));
-        label_67->setMaximumSize(QSize(90, 16777215));
-        label_67->setFont(font6);
-        label_67->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_8->addWidget(label_67, 6, 2, 1, 1);
-
-        label_74 = new QLabel(groupBox_5);
-        label_74->setObjectName(QString::fromUtf8("label_74"));
-        label_74->setMaximumSize(QSize(90, 16777215));
-        label_74->setFont(font6);
-        label_74->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_8->addWidget(label_74, 6, 4, 1, 1);
-
-        i2_3 = new QLabel(groupBox_5);
-        i2_3->setObjectName(QString::fromUtf8("i2_3"));
-        i2_3->setMinimumSize(QSize(40, 38));
-        i2_3->setMaximumSize(QSize(40, 38));
-        i2_3->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_3->setScaledContents(true);
-
-        gridLayout_8->addWidget(i2_3, 3, 5, 1, 1);
-
-        label_75 = new QLabel(groupBox_5);
-        label_75->setObjectName(QString::fromUtf8("label_75"));
-        label_75->setMaximumSize(QSize(90, 16777215));
-        label_75->setFont(font6);
-        label_75->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_8->addWidget(label_75, 7, 4, 1, 1);
-
-        i2_5 = new QLabel(groupBox_5);
-        i2_5->setObjectName(QString::fromUtf8("i2_5"));
-        i2_5->setMinimumSize(QSize(40, 38));
-        i2_5->setMaximumSize(QSize(40, 38));
-        i2_5->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_5->setScaledContents(true);
-
-        gridLayout_8->addWidget(i2_5, 5, 5, 1, 1);
-
-        label_57 = new QLabel(groupBox_5);
-        label_57->setObjectName(QString::fromUtf8("label_57"));
-        label_57->setMaximumSize(QSize(90, 16777215));
-        label_57->setFont(font6);
-        label_57->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_8->addWidget(label_57, 4, 2, 1, 1);
-
-        i0_6 = new QLabel(groupBox_5);
-        i0_6->setObjectName(QString::fromUtf8("i0_6"));
-        i0_6->setMinimumSize(QSize(40, 38));
-        i0_6->setMaximumSize(QSize(40, 38));
-        i0_6->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i0_6->setScaledContents(true);
-
-        gridLayout_8->addWidget(i0_6, 6, 1, 1, 1);
-
-        label_66 = new QLabel(groupBox_5);
-        label_66->setObjectName(QString::fromUtf8("label_66"));
-        label_66->setMaximumSize(QSize(90, 16777215));
-        label_66->setFont(font6);
-        label_66->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_8->addWidget(label_66, 5, 2, 1, 1);
-
-        label_73 = new QLabel(groupBox_5);
-        label_73->setObjectName(QString::fromUtf8("label_73"));
-        label_73->setMaximumSize(QSize(90, 16777215));
-        label_73->setFont(font6);
-        label_73->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_8->addWidget(label_73, 5, 4, 1, 1);
-
-        label_50 = new QLabel(groupBox_5);
-        label_50->setObjectName(QString::fromUtf8("label_50"));
-        label_50->setMaximumSize(QSize(90, 16777215));
-        label_50->setFont(font6);
-        label_50->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_8->addWidget(label_50, 6, 0, 1, 1);
-
-        i2_2 = new QLabel(groupBox_5);
-        i2_2->setObjectName(QString::fromUtf8("i2_2"));
-        i2_2->setMinimumSize(QSize(40, 38));
-        i2_2->setMaximumSize(QSize(40, 38));
-        i2_2->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_2->setScaledContents(true);
-
-        gridLayout_8->addWidget(i2_2, 2, 5, 1, 1);
-
-        i0_2 = new QLabel(groupBox_5);
-        i0_2->setObjectName(QString::fromUtf8("i0_2"));
-        i0_2->setMinimumSize(QSize(40, 38));
-        i0_2->setMaximumSize(QSize(40, 38));
-        i0_2->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i0_2->setScaledContents(true);
-
-        gridLayout_8->addWidget(i0_2, 2, 1, 1, 1);
-
-        label_56 = new QLabel(groupBox_5);
-        label_56->setObjectName(QString::fromUtf8("label_56"));
-        label_56->setMaximumSize(QSize(90, 16777215));
-        label_56->setFont(font6);
-        label_56->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_8->addWidget(label_56, 3, 2, 1, 1);
-
-        label_44 = new QLabel(groupBox_5);
-        label_44->setObjectName(QString::fromUtf8("label_44"));
-        label_44->setMaximumSize(QSize(90, 16777215));
-        label_44->setFont(font6);
-        label_44->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_8->addWidget(label_44, 2, 0, 1, 1);
-
-        i1_1 = new QLabel(groupBox_5);
-        i1_1->setObjectName(QString::fromUtf8("i1_1"));
-        i1_1->setMinimumSize(QSize(40, 38));
-        i1_1->setMaximumSize(QSize(40, 38));
-        i1_1->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i1_1->setScaledContents(true);
-
-        gridLayout_8->addWidget(i1_1, 1, 3, 1, 1);
-
-        label_47 = new QLabel(groupBox_5);
-        label_47->setObjectName(QString::fromUtf8("label_47"));
-        label_47->setMaximumSize(QSize(90, 16777215));
-        label_47->setFont(font6);
-        label_47->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_8->addWidget(label_47, 3, 0, 1, 1);
-
-        i0_7 = new QLabel(groupBox_5);
-        i0_7->setObjectName(QString::fromUtf8("i0_7"));
-        i0_7->setMinimumSize(QSize(40, 38));
-        i0_7->setMaximumSize(QSize(40, 38));
-        i0_7->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i0_7->setScaledContents(true);
-
-        gridLayout_8->addWidget(i0_7, 7, 1, 1, 1);
-
-        i0_1 = new QLabel(groupBox_5);
-        i0_1->setObjectName(QString::fromUtf8("i0_1"));
-        i0_1->setMinimumSize(QSize(40, 38));
-        i0_1->setMaximumSize(QSize(40, 38));
-        i0_1->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i0_1->setScaledContents(true);
-
-        gridLayout_8->addWidget(i0_1, 1, 1, 1, 1);
-
-        i1_2 = new QLabel(groupBox_5);
-        i1_2->setObjectName(QString::fromUtf8("i1_2"));
-        i1_2->setMinimumSize(QSize(40, 38));
-        i1_2->setMaximumSize(QSize(40, 38));
-        i1_2->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i1_2->setScaledContents(true);
-
-        gridLayout_8->addWidget(i1_2, 2, 3, 1, 1);
-
-        i2_0 = new QLabel(groupBox_5);
-        i2_0->setObjectName(QString::fromUtf8("i2_0"));
-        i2_0->setMinimumSize(QSize(40, 38));
-        i2_0->setMaximumSize(QSize(40, 38));
-        i2_0->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_0->setScaledContents(true);
-
-        gridLayout_8->addWidget(i2_0, 0, 5, 1, 1);
-
-        i1_3 = new QLabel(groupBox_5);
-        i1_3->setObjectName(QString::fromUtf8("i1_3"));
-        i1_3->setMinimumSize(QSize(40, 38));
-        i1_3->setMaximumSize(QSize(40, 38));
-        i1_3->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i1_3->setScaledContents(true);
-
-        gridLayout_8->addWidget(i1_3, 3, 3, 1, 1);
-
-        i2_8 = new QLabel(groupBox_5);
-        i2_8->setObjectName(QString::fromUtf8("i2_8"));
-        i2_8->setMinimumSize(QSize(40, 38));
-        i2_8->setMaximumSize(QSize(40, 38));
-        i2_8->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_8->setScaledContents(true);
-
-        gridLayout_8->addWidget(i2_8, 0, 7, 1, 1);
-
-        label_77 = new QLabel(groupBox_5);
-        label_77->setObjectName(QString::fromUtf8("label_77"));
-        label_77->setMaximumSize(QSize(90, 16777215));
-        label_77->setFont(font6);
-        label_77->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_8->addWidget(label_77, 1, 6, 1, 1);
-
-        label_78 = new QLabel(groupBox_5);
-        label_78->setObjectName(QString::fromUtf8("label_78"));
-        label_78->setMaximumSize(QSize(90, 16777215));
-        label_78->setFont(font6);
-        label_78->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_8->addWidget(label_78, 2, 6, 1, 1);
+        gridLayout_8->addWidget(label_52, 2, 2, 1, 1);
 
         label_79 = new QLabel(groupBox_5);
         label_79->setObjectName(QString::fromUtf8("label_79"));
@@ -1891,15 +1500,15 @@ public:
         label_79->setFont(font6);
         label_79->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
-        gridLayout_8->addWidget(label_79, 3, 6, 1, 1);
+        gridLayout_8->addWidget(label_79, 4, 6, 1, 1);
 
-        label_80 = new QLabel(groupBox_5);
-        label_80->setObjectName(QString::fromUtf8("label_80"));
-        label_80->setMaximumSize(QSize(90, 16777215));
-        label_80->setFont(font6);
-        label_80->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        label_53 = new QLabel(groupBox_5);
+        label_53->setObjectName(QString::fromUtf8("label_53"));
+        label_53->setMaximumSize(QSize(90, 16777215));
+        label_53->setFont(font6);
+        label_53->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
-        gridLayout_8->addWidget(label_80, 4, 6, 1, 1);
+        gridLayout_8->addWidget(label_53, 2, 4, 1, 1);
 
         label_81 = new QLabel(groupBox_5);
         label_81->setObjectName(QString::fromUtf8("label_81"));
@@ -1907,15 +1516,47 @@ public:
         label_81->setFont(font6);
         label_81->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
-        gridLayout_8->addWidget(label_81, 5, 6, 1, 1);
+        gridLayout_8->addWidget(label_81, 6, 6, 1, 1);
 
-        label_82 = new QLabel(groupBox_5);
-        label_82->setObjectName(QString::fromUtf8("label_82"));
-        label_82->setMaximumSize(QSize(90, 16777215));
-        label_82->setFont(font6);
-        label_82->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        label_50 = new QLabel(groupBox_5);
+        label_50->setObjectName(QString::fromUtf8("label_50"));
+        label_50->setMaximumSize(QSize(90, 16777215));
+        label_50->setFont(font6);
+        label_50->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
-        gridLayout_8->addWidget(label_82, 6, 6, 1, 1);
+        gridLayout_8->addWidget(label_50, 7, 0, 1, 1);
+
+        label_48 = new QLabel(groupBox_5);
+        label_48->setObjectName(QString::fromUtf8("label_48"));
+        label_48->setMaximumSize(QSize(90, 16777215));
+        label_48->setFont(font6);
+        label_48->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_48, 5, 0, 1, 1);
+
+        label_55 = new QLabel(groupBox_5);
+        label_55->setObjectName(QString::fromUtf8("label_55"));
+        label_55->setMaximumSize(QSize(90, 16777215));
+        label_55->setFont(font6);
+        label_55->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_55, 3, 2, 1, 1);
+
+        label_78 = new QLabel(groupBox_5);
+        label_78->setObjectName(QString::fromUtf8("label_78"));
+        label_78->setMaximumSize(QSize(90, 16777215));
+        label_78->setFont(font6);
+        label_78->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_78, 3, 6, 1, 1);
+
+        label_49 = new QLabel(groupBox_5);
+        label_49->setObjectName(QString::fromUtf8("label_49"));
+        label_49->setMaximumSize(QSize(90, 16777215));
+        label_49->setFont(font6);
+        label_49->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_49, 6, 0, 1, 1);
 
         label_83 = new QLabel(groupBox_5);
         label_83->setObjectName(QString::fromUtf8("label_83"));
@@ -1923,16 +1564,7 @@ public:
         label_83->setFont(font6);
         label_83->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
-        gridLayout_8->addWidget(label_83, 7, 6, 1, 1);
-
-        i2_9 = new QLabel(groupBox_5);
-        i2_9->setObjectName(QString::fromUtf8("i2_9"));
-        i2_9->setMinimumSize(QSize(40, 38));
-        i2_9->setMaximumSize(QSize(40, 38));
-        i2_9->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_9->setScaledContents(true);
-
-        gridLayout_8->addWidget(i2_9, 1, 7, 1, 1);
+        gridLayout_8->addWidget(label_83, 8, 6, 1, 1);
 
         i2_10 = new QLabel(groupBox_5);
         i2_10->setObjectName(QString::fromUtf8("i2_10"));
@@ -1941,16 +1573,42 @@ public:
         i2_10->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
         i2_10->setScaledContents(true);
 
-        gridLayout_8->addWidget(i2_10, 2, 7, 1, 1);
+        gridLayout_8->addWidget(i2_10, 3, 7, 1, 1);
 
-        i2_11 = new QLabel(groupBox_5);
-        i2_11->setObjectName(QString::fromUtf8("i2_11"));
-        i2_11->setMinimumSize(QSize(40, 38));
-        i2_11->setMaximumSize(QSize(40, 38));
-        i2_11->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_11->setScaledContents(true);
+        i0_6 = new QLabel(groupBox_5);
+        i0_6->setObjectName(QString::fromUtf8("i0_6"));
+        i0_6->setMinimumSize(QSize(40, 38));
+        i0_6->setMaximumSize(QSize(40, 38));
+        i0_6->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i0_6->setScaledContents(true);
 
-        gridLayout_8->addWidget(i2_11, 3, 7, 1, 1);
+        gridLayout_8->addWidget(i0_6, 7, 1, 1, 1);
+
+        i2_7 = new QLabel(groupBox_5);
+        i2_7->setObjectName(QString::fromUtf8("i2_7"));
+        i2_7->setMinimumSize(QSize(40, 38));
+        i2_7->setMaximumSize(QSize(40, 38));
+        i2_7->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i2_7->setScaledContents(true);
+
+        gridLayout_8->addWidget(i2_7, 8, 5, 1, 1);
+
+        i1_4 = new QLabel(groupBox_5);
+        i1_4->setObjectName(QString::fromUtf8("i1_4"));
+        i1_4->setMinimumSize(QSize(40, 38));
+        i1_4->setMaximumSize(QSize(40, 38));
+        i1_4->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i1_4->setScaledContents(true);
+
+        gridLayout_8->addWidget(i1_4, 5, 3, 1, 1);
+
+        label_72 = new QLabel(groupBox_5);
+        label_72->setObjectName(QString::fromUtf8("label_72"));
+        label_72->setMaximumSize(QSize(90, 16777215));
+        label_72->setFont(font6);
+        label_72->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_72, 5, 4, 1, 1);
 
         i2_12 = new QLabel(groupBox_5);
         i2_12->setObjectName(QString::fromUtf8("i2_12"));
@@ -1959,25 +1617,85 @@ public:
         i2_12->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
         i2_12->setScaledContents(true);
 
-        gridLayout_8->addWidget(i2_12, 4, 7, 1, 1);
+        gridLayout_8->addWidget(i2_12, 5, 7, 1, 1);
 
-        i2_13 = new QLabel(groupBox_5);
-        i2_13->setObjectName(QString::fromUtf8("i2_13"));
-        i2_13->setMinimumSize(QSize(40, 38));
-        i2_13->setMaximumSize(QSize(40, 38));
-        i2_13->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_13->setScaledContents(true);
+        i1_1 = new QLabel(groupBox_5);
+        i1_1->setObjectName(QString::fromUtf8("i1_1"));
+        i1_1->setMinimumSize(QSize(40, 38));
+        i1_1->setMaximumSize(QSize(40, 38));
+        i1_1->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i1_1->setScaledContents(true);
 
-        gridLayout_8->addWidget(i2_13, 5, 7, 1, 1);
+        gridLayout_8->addWidget(i1_1, 2, 3, 1, 1);
 
-        i2_14 = new QLabel(groupBox_5);
-        i2_14->setObjectName(QString::fromUtf8("i2_14"));
-        i2_14->setMinimumSize(QSize(40, 38));
-        i2_14->setMaximumSize(QSize(40, 38));
-        i2_14->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_14->setScaledContents(true);
+        label_73 = new QLabel(groupBox_5);
+        label_73->setObjectName(QString::fromUtf8("label_73"));
+        label_73->setMaximumSize(QSize(90, 16777215));
+        label_73->setFont(font6);
+        label_73->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
-        gridLayout_8->addWidget(i2_14, 6, 7, 1, 1);
+        gridLayout_8->addWidget(label_73, 6, 4, 1, 1);
+
+        label_82 = new QLabel(groupBox_5);
+        label_82->setObjectName(QString::fromUtf8("label_82"));
+        label_82->setMaximumSize(QSize(90, 16777215));
+        label_82->setFont(font6);
+        label_82->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_82, 7, 6, 1, 1);
+
+        i2_2 = new QLabel(groupBox_5);
+        i2_2->setObjectName(QString::fromUtf8("i2_2"));
+        i2_2->setMinimumSize(QSize(40, 38));
+        i2_2->setMaximumSize(QSize(40, 38));
+        i2_2->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i2_2->setScaledContents(true);
+
+        gridLayout_8->addWidget(i2_2, 3, 5, 1, 1);
+
+        label_51 = new QLabel(groupBox_5);
+        label_51->setObjectName(QString::fromUtf8("label_51"));
+        label_51->setMaximumSize(QSize(90, 16777215));
+        label_51->setFont(font6);
+        label_51->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_51, 8, 0, 1, 1);
+
+        i0_5 = new QLabel(groupBox_5);
+        i0_5->setObjectName(QString::fromUtf8("i0_5"));
+        i0_5->setMinimumSize(QSize(40, 38));
+        i0_5->setMaximumSize(QSize(40, 38));
+        i0_5->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i0_5->setScaledContents(true);
+
+        gridLayout_8->addWidget(i0_5, 6, 1, 1, 1);
+
+        i2_4 = new QLabel(groupBox_5);
+        i2_4->setObjectName(QString::fromUtf8("i2_4"));
+        i2_4->setMinimumSize(QSize(40, 38));
+        i2_4->setMaximumSize(QSize(40, 38));
+        i2_4->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i2_4->setScaledContents(true);
+
+        gridLayout_8->addWidget(i2_4, 5, 5, 1, 1);
+
+        i0_7 = new QLabel(groupBox_5);
+        i0_7->setObjectName(QString::fromUtf8("i0_7"));
+        i0_7->setMinimumSize(QSize(40, 38));
+        i0_7->setMaximumSize(QSize(40, 38));
+        i0_7->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i0_7->setScaledContents(true);
+
+        gridLayout_8->addWidget(i0_7, 8, 1, 1, 1);
+
+        i1_7 = new QLabel(groupBox_5);
+        i1_7->setObjectName(QString::fromUtf8("i1_7"));
+        i1_7->setMinimumSize(QSize(40, 38));
+        i1_7->setMaximumSize(QSize(40, 38));
+        i1_7->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i1_7->setScaledContents(true);
+
+        gridLayout_8->addWidget(i1_7, 8, 3, 1, 1);
 
         i2_15 = new QLabel(groupBox_5);
         i2_15->setObjectName(QString::fromUtf8("i2_15"));
@@ -1986,7 +1704,350 @@ public:
         i2_15->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
         i2_15->setScaledContents(true);
 
-        gridLayout_8->addWidget(i2_15, 7, 7, 1, 1);
+        gridLayout_8->addWidget(i2_15, 8, 7, 1, 1);
+
+        i2_9 = new QLabel(groupBox_5);
+        i2_9->setObjectName(QString::fromUtf8("i2_9"));
+        i2_9->setMinimumSize(QSize(40, 38));
+        i2_9->setMaximumSize(QSize(40, 38));
+        i2_9->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i2_9->setScaledContents(true);
+
+        gridLayout_8->addWidget(i2_9, 2, 7, 1, 1);
+
+        label_56 = new QLabel(groupBox_5);
+        label_56->setObjectName(QString::fromUtf8("label_56"));
+        label_56->setMaximumSize(QSize(90, 16777215));
+        label_56->setFont(font6);
+        label_56->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_56, 4, 2, 1, 1);
+
+        i2_11 = new QLabel(groupBox_5);
+        i2_11->setObjectName(QString::fromUtf8("i2_11"));
+        i2_11->setMinimumSize(QSize(40, 38));
+        i2_11->setMaximumSize(QSize(40, 38));
+        i2_11->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i2_11->setScaledContents(true);
+
+        gridLayout_8->addWidget(i2_11, 4, 7, 1, 1);
+
+        i0_3 = new QLabel(groupBox_5);
+        i0_3->setObjectName(QString::fromUtf8("i0_3"));
+        i0_3->setMinimumSize(QSize(40, 38));
+        i0_3->setMaximumSize(QSize(40, 38));
+        i0_3->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i0_3->setScaledContents(true);
+
+        gridLayout_8->addWidget(i0_3, 4, 1, 1, 1);
+
+        label_66 = new QLabel(groupBox_5);
+        label_66->setObjectName(QString::fromUtf8("label_66"));
+        label_66->setMaximumSize(QSize(90, 16777215));
+        label_66->setFont(font6);
+        label_66->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_66, 6, 2, 1, 1);
+
+        i1_0 = new QLabel(groupBox_5);
+        i1_0->setObjectName(QString::fromUtf8("i1_0"));
+        i1_0->setMinimumSize(QSize(40, 38));
+        i1_0->setMaximumSize(QSize(40, 38));
+        i1_0->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i1_0->setScaledContents(true);
+
+        gridLayout_8->addWidget(i1_0, 1, 3, 1, 1);
+
+        i1_5 = new QLabel(groupBox_5);
+        i1_5->setObjectName(QString::fromUtf8("i1_5"));
+        i1_5->setMinimumSize(QSize(40, 38));
+        i1_5->setMaximumSize(QSize(40, 38));
+        i1_5->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i1_5->setScaledContents(true);
+
+        gridLayout_8->addWidget(i1_5, 6, 3, 1, 1);
+
+        label_69 = new QLabel(groupBox_5);
+        label_69->setObjectName(QString::fromUtf8("label_69"));
+        label_69->setMaximumSize(QSize(90, 16777215));
+        label_69->setFont(font6);
+        label_69->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_69, 1, 4, 1, 1);
+
+        i1_3 = new QLabel(groupBox_5);
+        i1_3->setObjectName(QString::fromUtf8("i1_3"));
+        i1_3->setMinimumSize(QSize(40, 38));
+        i1_3->setMaximumSize(QSize(40, 38));
+        i1_3->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i1_3->setScaledContents(true);
+
+        gridLayout_8->addWidget(i1_3, 4, 3, 1, 1);
+
+        i0_0 = new QLabel(groupBox_5);
+        i0_0->setObjectName(QString::fromUtf8("i0_0"));
+        i0_0->setMinimumSize(QSize(40, 38));
+        i0_0->setMaximumSize(QSize(40, 38));
+        i0_0->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i0_0->setScaledContents(true);
+
+        gridLayout_8->addWidget(i0_0, 1, 1, 1, 1);
+
+        label_47 = new QLabel(groupBox_5);
+        label_47->setObjectName(QString::fromUtf8("label_47"));
+        label_47->setMaximumSize(QSize(90, 16777215));
+        label_47->setFont(font6);
+        label_47->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_47, 4, 0, 1, 1);
+
+        i2_13 = new QLabel(groupBox_5);
+        i2_13->setObjectName(QString::fromUtf8("i2_13"));
+        i2_13->setMinimumSize(QSize(40, 38));
+        i2_13->setMaximumSize(QSize(40, 38));
+        i2_13->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i2_13->setScaledContents(true);
+
+        gridLayout_8->addWidget(i2_13, 6, 7, 1, 1);
+
+        label_67 = new QLabel(groupBox_5);
+        label_67->setObjectName(QString::fromUtf8("label_67"));
+        label_67->setMaximumSize(QSize(90, 16777215));
+        label_67->setFont(font6);
+        label_67->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_67, 7, 2, 1, 1);
+
+        i0_2 = new QLabel(groupBox_5);
+        i0_2->setObjectName(QString::fromUtf8("i0_2"));
+        i0_2->setMinimumSize(QSize(40, 38));
+        i0_2->setMaximumSize(QSize(40, 38));
+        i0_2->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i0_2->setScaledContents(true);
+
+        gridLayout_8->addWidget(i0_2, 3, 1, 1, 1);
+
+        i1_6 = new QLabel(groupBox_5);
+        i1_6->setObjectName(QString::fromUtf8("i1_6"));
+        i1_6->setMinimumSize(QSize(40, 38));
+        i1_6->setMaximumSize(QSize(40, 38));
+        i1_6->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i1_6->setScaledContents(true);
+
+        gridLayout_8->addWidget(i1_6, 7, 3, 1, 1);
+
+        label_68 = new QLabel(groupBox_5);
+        label_68->setObjectName(QString::fromUtf8("label_68"));
+        label_68->setMaximumSize(QSize(90, 16777215));
+        label_68->setFont(font6);
+        label_68->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_68, 8, 2, 1, 1);
+
+        label_71 = new QLabel(groupBox_5);
+        label_71->setObjectName(QString::fromUtf8("label_71"));
+        label_71->setMaximumSize(QSize(90, 16777215));
+        label_71->setFont(font6);
+        label_71->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_71, 4, 4, 1, 1);
+
+        i0_1 = new QLabel(groupBox_5);
+        i0_1->setObjectName(QString::fromUtf8("i0_1"));
+        i0_1->setMinimumSize(QSize(40, 38));
+        i0_1->setMaximumSize(QSize(40, 38));
+        i0_1->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i0_1->setScaledContents(true);
+
+        gridLayout_8->addWidget(i0_1, 2, 1, 1, 1);
+
+        i2_0 = new QLabel(groupBox_5);
+        i2_0->setObjectName(QString::fromUtf8("i2_0"));
+        i2_0->setMinimumSize(QSize(40, 38));
+        i2_0->setMaximumSize(QSize(40, 38));
+        i2_0->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i2_0->setScaledContents(true);
+
+        gridLayout_8->addWidget(i2_0, 1, 5, 1, 1);
+
+        label_44 = new QLabel(groupBox_5);
+        label_44->setObjectName(QString::fromUtf8("label_44"));
+        label_44->setMaximumSize(QSize(90, 16777215));
+        label_44->setFont(font6);
+        label_44->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_44, 3, 0, 1, 1);
+
+        label_76 = new QLabel(groupBox_5);
+        label_76->setObjectName(QString::fromUtf8("label_76"));
+        label_76->setMaximumSize(QSize(90, 16777215));
+        label_76->setFont(font6);
+        label_76->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_76, 1, 6, 1, 1);
+
+        label_54 = new QLabel(groupBox_5);
+        label_54->setObjectName(QString::fromUtf8("label_54"));
+        label_54->setMaximumSize(QSize(90, 16777215));
+        label_54->setFont(font6);
+        label_54->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_54, 1, 2, 1, 1);
+
+        label_70 = new QLabel(groupBox_5);
+        label_70->setObjectName(QString::fromUtf8("label_70"));
+        label_70->setMaximumSize(QSize(90, 16777215));
+        label_70->setFont(font6);
+        label_70->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_70, 3, 4, 1, 1);
+
+        i2_1 = new QLabel(groupBox_5);
+        i2_1->setObjectName(QString::fromUtf8("i2_1"));
+        i2_1->setMinimumSize(QSize(40, 38));
+        i2_1->setMaximumSize(QSize(40, 38));
+        i2_1->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i2_1->setScaledContents(true);
+
+        gridLayout_8->addWidget(i2_1, 2, 5, 1, 1);
+
+        i2_8 = new QLabel(groupBox_5);
+        i2_8->setObjectName(QString::fromUtf8("i2_8"));
+        i2_8->setMinimumSize(QSize(40, 38));
+        i2_8->setMaximumSize(QSize(40, 38));
+        i2_8->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i2_8->setScaledContents(true);
+
+        gridLayout_8->addWidget(i2_8, 1, 7, 1, 1);
+
+        i2_14 = new QLabel(groupBox_5);
+        i2_14->setObjectName(QString::fromUtf8("i2_14"));
+        i2_14->setMinimumSize(QSize(40, 38));
+        i2_14->setMaximumSize(QSize(40, 38));
+        i2_14->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i2_14->setScaledContents(true);
+
+        gridLayout_8->addWidget(i2_14, 7, 7, 1, 1);
+
+        label_74 = new QLabel(groupBox_5);
+        label_74->setObjectName(QString::fromUtf8("label_74"));
+        label_74->setMaximumSize(QSize(90, 16777215));
+        label_74->setFont(font6);
+        label_74->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_74, 7, 4, 1, 1);
+
+        i2_5 = new QLabel(groupBox_5);
+        i2_5->setObjectName(QString::fromUtf8("i2_5"));
+        i2_5->setMinimumSize(QSize(40, 38));
+        i2_5->setMaximumSize(QSize(40, 38));
+        i2_5->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i2_5->setScaledContents(true);
+
+        gridLayout_8->addWidget(i2_5, 6, 5, 1, 1);
+
+        label_46 = new QLabel(groupBox_5);
+        label_46->setObjectName(QString::fromUtf8("label_46"));
+        label_46->setMaximumSize(QSize(200, 16777215));
+        label_46->setFont(font6);
+        label_46->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_46, 2, 0, 1, 1);
+
+        label_45 = new QLabel(groupBox_5);
+        label_45->setObjectName(QString::fromUtf8("label_45"));
+        label_45->setFont(font6);
+        label_45->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_45, 1, 0, 1, 1);
+
+        i1_2 = new QLabel(groupBox_5);
+        i1_2->setObjectName(QString::fromUtf8("i1_2"));
+        i1_2->setMinimumSize(QSize(40, 38));
+        i1_2->setMaximumSize(QSize(40, 38));
+        i1_2->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i1_2->setScaledContents(true);
+
+        gridLayout_8->addWidget(i1_2, 3, 3, 1, 1);
+
+        label_80 = new QLabel(groupBox_5);
+        label_80->setObjectName(QString::fromUtf8("label_80"));
+        label_80->setMaximumSize(QSize(90, 16777215));
+        label_80->setFont(font6);
+        label_80->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_80, 5, 6, 1, 1);
+
+        label_75 = new QLabel(groupBox_5);
+        label_75->setObjectName(QString::fromUtf8("label_75"));
+        label_75->setMaximumSize(QSize(90, 16777215));
+        label_75->setFont(font6);
+        label_75->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_75, 8, 4, 1, 1);
+
+        i2_6 = new QLabel(groupBox_5);
+        i2_6->setObjectName(QString::fromUtf8("i2_6"));
+        i2_6->setMinimumSize(QSize(40, 38));
+        i2_6->setMaximumSize(QSize(40, 38));
+        i2_6->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i2_6->setScaledContents(true);
+
+        gridLayout_8->addWidget(i2_6, 7, 5, 1, 1);
+
+        i0_4 = new QLabel(groupBox_5);
+        i0_4->setObjectName(QString::fromUtf8("i0_4"));
+        i0_4->setMinimumSize(QSize(40, 38));
+        i0_4->setMaximumSize(QSize(40, 38));
+        i0_4->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i0_4->setScaledContents(true);
+
+        gridLayout_8->addWidget(i0_4, 5, 1, 1, 1);
+
+        label_77 = new QLabel(groupBox_5);
+        label_77->setObjectName(QString::fromUtf8("label_77"));
+        label_77->setMaximumSize(QSize(90, 16777215));
+        label_77->setFont(font6);
+        label_77->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_77, 2, 6, 1, 1);
+
+        i2_3 = new QLabel(groupBox_5);
+        i2_3->setObjectName(QString::fromUtf8("i2_3"));
+        i2_3->setMinimumSize(QSize(40, 38));
+        i2_3->setMaximumSize(QSize(40, 38));
+        i2_3->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i2_3->setScaledContents(true);
+
+        gridLayout_8->addWidget(i2_3, 4, 5, 1, 1);
+
+        label_60 = new QLabel(groupBox_5);
+        label_60->setObjectName(QString::fromUtf8("label_60"));
+        label_60->setFont(font6);
+        label_60->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_60, 0, 1, 1, 1);
+
+        label_61 = new QLabel(groupBox_5);
+        label_61->setObjectName(QString::fromUtf8("label_61"));
+        label_61->setFont(font6);
+        label_61->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_61, 0, 3, 1, 1);
+
+        label_62 = new QLabel(groupBox_5);
+        label_62->setObjectName(QString::fromUtf8("label_62"));
+        label_62->setFont(font6);
+        label_62->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_62, 0, 5, 1, 1);
+
+        label_63 = new QLabel(groupBox_5);
+        label_63->setObjectName(QString::fromUtf8("label_63"));
+        label_63->setFont(font6);
+        label_63->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+
+        gridLayout_8->addWidget(label_63, 0, 7, 1, 1);
 
 
         gridLayout_7->addWidget(groupBox_5, 0, 0, 1, 1);
@@ -1994,7 +2055,7 @@ public:
         groupBox_6 = new QGroupBox(widget_4);
         groupBox_6->setObjectName(QString::fromUtf8("groupBox_6"));
         gridLayout_10 = new QGridLayout(groupBox_6);
-        gridLayout_10->setSpacing(6);
+        gridLayout_10->setSpacing(20);
         gridLayout_10->setContentsMargins(11, 11, 11, 11);
         gridLayout_10->setObjectName(QString::fromUtf8("gridLayout_10"));
         q1_0 = new QPushButton(groupBox_6);
@@ -2933,11 +2994,11 @@ public:
 
         tabWidget->addTab(tab_2, QString());
 
-        gridLayout->addWidget(tabWidget, 0, 0, 1, 1);
+        gridLayout->addWidget(tabWidget, 1, 1, 1, 1);
 
-        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+        verticalSpacer_3 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-        gridLayout->addItem(horizontalSpacer, 0, 1, 1, 1);
+        gridLayout->addItem(verticalSpacer_3, 0, 1, 1, 1);
 
 
         retranslateUi(DebugWidget);
@@ -3010,70 +3071,74 @@ public:
         btnXaxisGoto_25->setText(QCoreApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\213", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QCoreApplication::translate("DebugWidget", "\346\260\224\347\274\270\346\216\247\345\210\266", nullptr));
         groupBox_5->setTitle(QCoreApplication::translate("DebugWidget", "\350\276\223\345\205\245", nullptr));
-        label_49->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i1_7->setText(QString());
-        label_72->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i0_0->setText(QString());
-        i2_1->setText(QString());
-        i2_4->setText(QString());
-        i2_7->setText(QString());
-        label_69->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_70->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i2_6->setText(QString());
-        label_46->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_68->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_45->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_52->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i1_4->setText(QString());
-        label_53->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i0_4->setText(QString());
-        label_55->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i0_5->setText(QString());
-        label_71->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i1_5->setText(QString());
-        label_48->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_51->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i1_6->setText(QString());
-        i0_3->setText(QString());
-        label_76->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i1_0->setText(QString());
-        label_54->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_67->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_74->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i2_3->setText(QString());
-        label_75->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i2_5->setText(QString());
         label_57->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i0_6->setText(QString());
-        label_66->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_73->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_50->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i2_2->setText(QString());
-        i0_2->setText(QString());
-        label_56->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_44->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i1_1->setText(QString());
-        label_47->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i0_7->setText(QString());
-        i0_1->setText(QString());
-        i1_2->setText(QString());
-        i2_0->setText(QString());
-        i1_3->setText(QString());
-        i2_8->setText(QString());
-        label_77->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_78->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_52->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
         label_79->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_80->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_53->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
         label_81->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_82->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_50->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_48->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_55->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_78->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_49->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
         label_83->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i2_9->setText(QString());
         i2_10->setText(QString());
-        i2_11->setText(QString());
+        i0_6->setText(QString());
+        i2_7->setText(QString());
+        i1_4->setText(QString());
+        label_72->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
         i2_12->setText(QString());
-        i2_13->setText(QString());
-        i2_14->setText(QString());
+        i1_1->setText(QString());
+        label_73->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_82->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
+        i2_2->setText(QString());
+        label_51->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
+        i0_5->setText(QString());
+        i2_4->setText(QString());
+        i0_7->setText(QString());
+        i1_7->setText(QString());
         i2_15->setText(QString());
+        i2_9->setText(QString());
+        label_56->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
+        i2_11->setText(QString());
+        i0_3->setText(QString());
+        label_66->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
+        i1_0->setText(QString());
+        i1_5->setText(QString());
+        label_69->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
+        i1_3->setText(QString());
+        i0_0->setText(QString());
+        label_47->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
+        i2_13->setText(QString());
+        label_67->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
+        i0_2->setText(QString());
+        i1_6->setText(QString());
+        label_68->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_71->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
+        i0_1->setText(QString());
+        i2_0->setText(QString());
+        label_44->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_76->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_54->setText(QCoreApplication::translate("DebugWidget", "\345\230\273\345\230\273\345\230\273\345\230\273\345\230\273\345\230\273", nullptr));
+        label_70->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
+        i2_1->setText(QString());
+        i2_8->setText(QString());
+        i2_14->setText(QString());
+        label_74->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
+        i2_5->setText(QString());
+        label_46->setText(QCoreApplication::translate("DebugWidget", "Y\350\275\264\345\216\237\347\202\271\345\205\211\347\224\265:", nullptr));
+        label_45->setText(QCoreApplication::translate("DebugWidget", "X\350\275\264\345\216\237\347\202\271\345\205\211\347\224\265:", nullptr));
+        i1_2->setText(QString());
+        label_80->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_75->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
+        i2_6->setText(QString());
+        i0_4->setText(QString());
+        label_77->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
+        i2_3->setText(QString());
+        label_60->setText(QCoreApplication::translate("DebugWidget", "IB0", nullptr));
+        label_61->setText(QCoreApplication::translate("DebugWidget", "IB1", nullptr));
+        label_62->setText(QCoreApplication::translate("DebugWidget", "IB2", nullptr));
+        label_63->setText(QCoreApplication::translate("DebugWidget", "IB3", nullptr));
         groupBox_6->setTitle(QCoreApplication::translate("DebugWidget", "\350\276\223\345\207\272", nullptr));
         q1_0->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
         q1_7->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
@@ -3118,4 +3183,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // DEBUGWIDGETNRNNCY_H
+#endif // DEBUGWIDGETKUPFCP_H

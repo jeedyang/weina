@@ -1,13 +1,13 @@
 /********************************************************************************
-** Form generated from reading UI file 'mainwindowshecWl.ui'
+** Form generated from reading UI file 'mainwindowovBxih.ui'
 **
 ** Created by: Qt User Interface Compiler version 5.13.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef MAINWINDOWSHECWL_H
-#define MAINWINDOWSHECWL_H
+#ifndef MAINWINDOWOVBXIH_H
+#define MAINWINDOWOVBXIH_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -40,7 +40,7 @@ public:
     QWidget *page_4;
     QWidget *widget_menu;
     QVBoxLayout *verticalLayout_2;
-    QPushButton *pushButton_main;
+    QPushButton *pushButton_home;
     QPushButton *pushButton_setup;
     QPushButton *pushButton_debug;
     QSpacerItem *verticalSpacer;
@@ -53,12 +53,23 @@ public:
         MainWindowClass->setStyleSheet(QString::fromUtf8(""));
         centralWidget = new QWidget(MainWindowClass);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
-        centralWidget->setStyleSheet(QString::fromUtf8("QWidget #widget_title, #widget_main, #widget_menu\n"
+        centralWidget->setStyleSheet(QString::fromUtf8("QWidget #widget_title, #stackedWidget_main, #widget_menu\n"
 "{\n"
-"	border: 1px solid #555\n"
+"	border-style:solid;\n"
+"	border-radius:2px;\n"
+"	border-color:#00BB9E;\n"
+"	border-width:2px 2px 2px 2px;\n"
+"	background-color: rgb(246, 255, 221);\n"
 "}\n"
 "\n"
-""));
+"QPushButton #pushButton_home\n"
+"{\n"
+"	border-style:solid;\n"
+"	border-radius:5px;\n"
+"	border-color:#00BB9E;\n"
+"	border-width:2px 2px 2px 2px;\n"
+"	background-color: rgb(246, 255, 221);\n"
+"}"));
         verticalLayout = new QVBoxLayout(centralWidget);
         verticalLayout->setSpacing(4);
         verticalLayout->setContentsMargins(11, 11, 11, 11);
@@ -110,17 +121,19 @@ public:
         verticalLayout_2->setSpacing(4);
         verticalLayout_2->setContentsMargins(11, 11, 11, 11);
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
-        verticalLayout_2->setContentsMargins(1, 30, 1, 12);
-        pushButton_main = new QPushButton(widget_menu);
-        pushButton_main->setObjectName(QString::fromUtf8("pushButton_main"));
-        pushButton_main->setMinimumSize(QSize(0, 60));
-        pushButton_main->setCheckable(true);
+        verticalLayout_2->setContentsMargins(3, 30, 3, 12);
+        pushButton_home = new QPushButton(widget_menu);
+        pushButton_home->setObjectName(QString::fromUtf8("pushButton_home"));
+        pushButton_home->setMinimumSize(QSize(0, 60));
+        pushButton_home->setStyleSheet(QString::fromUtf8(""));
+        pushButton_home->setCheckable(true);
 
-        verticalLayout_2->addWidget(pushButton_main);
+        verticalLayout_2->addWidget(pushButton_home);
 
         pushButton_setup = new QPushButton(widget_menu);
         pushButton_setup->setObjectName(QString::fromUtf8("pushButton_setup"));
         pushButton_setup->setMinimumSize(QSize(0, 60));
+        pushButton_setup->setStyleSheet(QString::fromUtf8(""));
         pushButton_setup->setCheckable(true);
 
         verticalLayout_2->addWidget(pushButton_setup);
@@ -128,6 +141,7 @@ public:
         pushButton_debug = new QPushButton(widget_menu);
         pushButton_debug->setObjectName(QString::fromUtf8("pushButton_debug"));
         pushButton_debug->setMinimumSize(QSize(0, 60));
+        pushButton_debug->setStyleSheet(QString::fromUtf8(""));
         pushButton_debug->setCheckable(true);
 
         verticalLayout_2->addWidget(pushButton_debug);
@@ -152,7 +166,7 @@ public:
     void retranslateUi(QMainWindow *MainWindowClass)
     {
         MainWindowClass->setWindowTitle(QCoreApplication::translate("MainWindowClass", "MainWindow", nullptr));
-        pushButton_main->setText(QCoreApplication::translate("MainWindowClass", "\344\270\273\347\225\214\351\235\242", nullptr));
+        pushButton_home->setText(QCoreApplication::translate("MainWindowClass", "\344\270\273\347\225\214\351\235\242", nullptr));
         pushButton_setup->setText(QCoreApplication::translate("MainWindowClass", "\350\256\276\347\275\256", nullptr));
         pushButton_debug->setText(QCoreApplication::translate("MainWindowClass", "\350\260\203\350\257\225", nullptr));
     } // retranslateUi
@@ -165,4 +179,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // MAINWINDOWSHECWL_H
+#endif // MAINWINDOWOVBXIH_H

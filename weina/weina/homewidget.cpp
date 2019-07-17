@@ -15,17 +15,18 @@ HomeWidget::HomeWidget(QWidget *parent)
 	}
 	else
 	{
-		m_panel_widget = func(1, this);
+		m_panel_widget = func(1, ui.widget_panel);
 		QObject::connect(m_panel_widget, SIGNAL(hotButtonClicked(int, bool)), this, SLOT(onHotButtonCilcked(int, bool)));
 		int resArry[24] = {};
 		for (int i = 0; i < 24; i++)
 		{
 			resArry[i] = i * 1000000;
 		}
-		m_panel_widget->setParent(this);
 		m_panel_widget->setRes(resArry);
 		m_panel_widget->setHotResDipEnabled(false);
 		m_panel_widget->showMaximized();
+		m_panelLaylot.addWidget(m_panel_widget);
+		ui.widget_panel->setLayout(&m_panelLaylot);
 	}
 
 }

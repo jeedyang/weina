@@ -14,7 +14,7 @@ typedef struct _PlcDataBuffer
 {
 	bool buffer_I[40];
 	bool buffer_Q[40];
-	uchar buffer_M[40];
+	bool buffer_M[40];
 	uchar buffer_DB[40];
 }PlcDataBuffer;
 
@@ -44,7 +44,7 @@ typedef struct _PlcData
 	};
 }PlcData;
 
-class PlcStation : public QObject
+class PlcStation : public QObject ,public TS7Client
 {
 	Q_OBJECT
 
@@ -52,25 +52,19 @@ public:
 	PlcStation(QObject *parent);
 	~PlcStation();
 	int connect();
-	int disConnect();
+	int disconnect();
 	int pollingStart();
 	int pollingStop();
-	const TS7Client* getS7Client(){
-		return &m_s7client;
-	}
 private:
-	TS7Client m_s7client;
-	TS7DataItem m_s7dataItem_I;
-	TS7DataItem m_s7dataItem_Q;
-	TS7DataItem m_s7dataItem_M;
-	TS7DataItem m_s7dataItem_DB;
-	PlcDataBuffer m_plcBuffer;
-
+	static void threadPolling(PlcStation *plc,TS7DataItem* items, PlcData* plcdata);
+	PlcDataBuffer m_plcDataBuffer;
+	TS7DataItem m_s7Dataitems[4];
 };
+static PlcData plcData;
 
 static PlcStation* plcStation=nullptr;
 
-static PlcStation* createPlcInstance()
+static PlcStation* getPlcInstance()
 {
 	if (plcStation == nullptr)
 	{
