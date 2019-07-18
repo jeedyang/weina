@@ -36,18 +36,18 @@ NAMESPACE_START(PLC)
 
 typedef struct _PlcDataBuffer
 {
-	std::array<uchar, 5> buffer_I;
-	std::array<uchar, 5> buffer_Q;
-	std::array<uchar, 5> buffer_M;
-	std::array<uchar, 49> buffer_DB;
+	std::array<uchar, 5> I;
+	std::array<uchar, 5> Q;
+	std::array<uchar, 20> M;
+	std::array<uchar, 49> DB;
 
 }PlcDataBuffer;
 
 typedef struct _PlcData
 {
-	bool I[128];
-	bool Q[128];
-	bool M[128];
+	std::array<bool, 40> I;
+	std::array<bool, 40> Q;
+	std::array<bool, 160> M;
 	struct _ServoPam
 	{
 		float runSpeed_X;			//X轴运行速度
@@ -101,8 +101,10 @@ public:
 	void pollingStart();
 	void pollingStop();
 	void waitThreadExit();
+	bool isConnect();
 	PlcData plcData;
 private:
+	bool isconnect=false;
 	void run();
 	int threadExitCode = 0;
 	PlcDataBuffer m_plcDataBuffer;

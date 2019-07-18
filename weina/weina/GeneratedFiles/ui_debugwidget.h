@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'debugwidget.ui'
 **
-** Created by: Qt User Interface Compiler version 5.13.0
+** Created by: Qt User Interface Compiler version 5.12.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -82,42 +82,54 @@ public:
     QLabel *label_9;
     QWidget *tab_3;
     QGridLayout *gridLayout_9;
-    QWidget *widget_3;
-    QPushButton *btnXaxisGoto_2;
-    QPushButton *btnXaxisGoto_3;
-    QWidget *widget_5;
-    QPushButton *btnXaxisGoto_4;
-    QPushButton *btnXaxisGoto_5;
-    QWidget *widget_6;
-    QPushButton *btnXaxisGoto_6;
-    QPushButton *btnXaxisGoto_7;
-    QWidget *widget_10;
-    QPushButton *btnXaxisGoto_14;
-    QPushButton *btnXaxisGoto_15;
-    QWidget *widget_7;
-    QPushButton *btnXaxisGoto_8;
-    QPushButton *btnXaxisGoto_9;
-    QWidget *widget_8;
-    QPushButton *btnXaxisGoto_10;
-    QPushButton *btnXaxisGoto_11;
-    QWidget *widget_9;
-    QPushButton *btnXaxisGoto_12;
-    QPushButton *btnXaxisGoto_13;
-    QWidget *widget_11;
-    QPushButton *btnXaxisGoto_16;
-    QPushButton *btnXaxisGoto_17;
-    QWidget *widget_12;
-    QPushButton *btnXaxisGoto_18;
-    QPushButton *btnXaxisGoto_19;
     QWidget *widget_13;
-    QPushButton *btnXaxisGoto_20;
-    QPushButton *btnXaxisGoto_21;
+    QVBoxLayout *verticalLayout_9;
+    QPushButton *m14_2;
+    QPushButton *m14_3;
+    QWidget *widget_7;
+    QVBoxLayout *verticalLayout_6;
+    QPushButton *m13_0;
+    QPushButton *m13_1;
     QWidget *widget_14;
-    QPushButton *btnXaxisGoto_22;
-    QPushButton *btnXaxisGoto_23;
+    QVBoxLayout *verticalLayout_11;
+    QPushButton *m14_4;
+    QPushButton *m14_5;
+    QWidget *widget_3;
+    QVBoxLayout *verticalLayout_2;
+    QPushButton *m12_0;
+    QPushButton *m12_1;
+    QWidget *widget_6;
+    QVBoxLayout *verticalLayout_4;
+    QPushButton *m12_4;
+    QPushButton *m12_5;
+    QWidget *widget_10;
+    QVBoxLayout *verticalLayout_5;
+    QPushButton *m12_6;
+    QPushButton *m12_7;
+    QWidget *widget_9;
+    QVBoxLayout *verticalLayout_10;
+    QPushButton *m13_4;
+    QPushButton *m13_5;
+    QWidget *widget_11;
+    QVBoxLayout *verticalLayout_12;
+    QPushButton *m13_6;
+    QPushButton *m13_7;
+    QWidget *widget_8;
+    QVBoxLayout *verticalLayout_7;
+    QPushButton *m13_2;
+    QPushButton *m13_3;
+    QWidget *widget_5;
+    QVBoxLayout *verticalLayout_3;
+    QPushButton *m12_2;
+    QPushButton *m12_3;
     QWidget *widget_15;
-    QPushButton *btnXaxisGoto_24;
-    QPushButton *btnXaxisGoto_25;
+    QVBoxLayout *verticalLayout_13;
+    QPushButton *m14_6;
+    QPushButton *m14_7;
+    QWidget *widget_12;
+    QVBoxLayout *verticalLayout_8;
+    QPushButton *m14_0;
+    QPushButton *m14_1;
     QWidget *tab_2;
     QHBoxLayout *horizontalLayout_2;
     QWidget *widget_4;
@@ -135,97 +147,101 @@ public:
     QLabel *label_78;
     QLabel *label_49;
     QLabel *label_83;
-    QLabel *i2_10;
-    QLabel *i0_6;
-    QLabel *i2_7;
-    QLabel *i1_4;
+    QLabel *i26;
+    QLabel *i6;
+    QLabel *i23;
+    QLabel *i12;
     QLabel *label_72;
     QLabel *i2_12;
-    QLabel *i1_1;
+    QLabel *i9;
     QLabel *label_73;
     QLabel *label_82;
-    QLabel *i2_2;
+    QLabel *i18;
     QLabel *label_51;
-    QLabel *i0_5;
-    QLabel *i2_4;
-    QLabel *i0_7;
-    QLabel *i1_7;
-    QLabel *i2_15;
-    QLabel *i2_9;
+    QLabel *i5;
+    QLabel *i20;
+    QLabel *i7;
+    QLabel *i15;
+    QLabel *i31;
+    QLabel *i25;
     QLabel *label_56;
-    QLabel *i2_11;
-    QLabel *i0_3;
+    QLabel *i27;
+    QLabel *i3;
     QLabel *label_66;
-    QLabel *i1_0;
-    QLabel *i1_5;
+    QLabel *i8;
+    QLabel *i13;
     QLabel *label_69;
-    QLabel *i1_3;
-    QLabel *i0_0;
+    QLabel *i11;
+    QLabel *i0;
     QLabel *label_47;
-    QLabel *i2_13;
+    QLabel *i29;
     QLabel *label_67;
-    QLabel *i0_2;
-    QLabel *i1_6;
+    QLabel *i2;
+    QLabel *i14;
     QLabel *label_68;
     QLabel *label_71;
-    QLabel *i0_1;
-    QLabel *i2_0;
+    QLabel *i1;
+    QLabel *i16;
     QLabel *label_44;
     QLabel *label_76;
     QLabel *label_54;
     QLabel *label_70;
-    QLabel *i2_1;
-    QLabel *i2_8;
-    QLabel *i2_14;
+    QLabel *i17;
+    QLabel *i24;
+    QLabel *i30;
     QLabel *label_74;
-    QLabel *i2_5;
+    QLabel *i21;
     QLabel *label_46;
     QLabel *label_45;
-    QLabel *i1_2;
+    QLabel *i10;
     QLabel *label_80;
     QLabel *label_75;
-    QLabel *i2_6;
-    QLabel *i0_4;
+    QLabel *i22;
+    QLabel *i4;
     QLabel *label_77;
-    QLabel *i2_3;
+    QLabel *i19;
     QLabel *label_60;
     QLabel *label_61;
     QLabel *label_62;
     QLabel *label_63;
     QGroupBox *groupBox_6;
     QGridLayout *gridLayout_10;
-    QPushButton *q1_0;
-    QPushButton *q1_7;
-    QPushButton *q0_2;
-    QPushButton *q0_6;
-    QPushButton *q0_5;
-    QPushButton *q1_1;
-    QPushButton *q0_1;
-    QPushButton *q2_0;
-    QPushButton *q2_1;
-    QPushButton *q2_5;
-    QPushButton *q0_0;
-    QPushButton *q2_2;
-    QPushButton *q1_6;
-    QPushButton *q2_7;
-    QPushButton *q2_6;
-    QPushButton *q0_3;
-    QPushButton *q1_4;
-    QPushButton *q0_4;
-    QPushButton *q1_2;
-    QPushButton *q1_5;
-    QPushButton *q2_3;
-    QPushButton *q1_3;
-    QPushButton *q2_4;
-    QPushButton *q0_7;
-    QPushButton *q2_8;
-    QPushButton *q2_9;
-    QPushButton *q2_10;
-    QPushButton *q2_11;
-    QPushButton *q2_12;
-    QPushButton *q2_13;
-    QPushButton *q2_14;
-    QPushButton *q2_15;
+    QPushButton *q2;
+    QPushButton *q23;
+    QPushButton *q11;
+    QPushButton *q7;
+    QPushButton *q27;
+    QPushButton *q19;
+    QPushButton *q22;
+    QPushButton *q8;
+    QPushButton *q18;
+    QPushButton *q12;
+    QPushButton *q17;
+    QPushButton *q31;
+    QPushButton *q6;
+    QPushButton *q24;
+    QPushButton *q20;
+    QPushButton *q25;
+    QPushButton *q29;
+    QPushButton *q3;
+    QPushButton *q26;
+    QPushButton *q13;
+    QPushButton *q1;
+    QPushButton *q21;
+    QPushButton *q4;
+    QPushButton *q30;
+    QPushButton *q0;
+    QPushButton *q5;
+    QPushButton *q14;
+    QPushButton *q28;
+    QPushButton *q15;
+    QPushButton *q16;
+    QPushButton *q9;
+    QPushButton *q10;
+    QLabel *label_64;
+    QLabel *label_65;
+    QLabel *label_84;
+    QLabel *label_85;
     QSpacerItem *verticalSpacer_3;
 
     void setupUi(QWidget *DebugWidget)
@@ -772,15 +788,213 @@ public:
         gridLayout_9->setSpacing(6);
         gridLayout_9->setContentsMargins(11, 11, 11, 11);
         gridLayout_9->setObjectName(QString::fromUtf8("gridLayout_9"));
+        widget_13 = new QWidget(tab_3);
+        widget_13->setObjectName(QString::fromUtf8("widget_13"));
+        verticalLayout_9 = new QVBoxLayout(widget_13);
+        verticalLayout_9->setSpacing(6);
+        verticalLayout_9->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_9->setObjectName(QString::fromUtf8("verticalLayout_9"));
+        m14_2 = new QPushButton(widget_13);
+        m14_2->setObjectName(QString::fromUtf8("m14_2"));
+        m14_2->setMinimumSize(QSize(120, 40));
+        m14_2->setMaximumSize(QSize(120, 40));
+        m14_2->setFont(font2);
+        m14_2->setStyleSheet(QString::fromUtf8("QPushButton\n"
+"{\n"
+"	\n"
+"	background-color: rgb(108, 191, 230);\n"
+"    border-radius: 11px 11px ;\n"
+"}\n"
+"QPushButton::hover\n"
+"{\n"
+"    background-color: rgb(56, 135, 188);\n"
+"}\n"
+"QPushButton::pressed\n"
+"{\n"
+"    background-color: rgb(144, 48, 0)\n"
+"}\n"
+"QPushButton::checked \n"
+"{\n"
+"    \n"
+"	\n"
+"	background-color: rgb(204, 0, 20);\n"
+"}"));
+
+        verticalLayout_9->addWidget(m14_2);
+
+        m14_3 = new QPushButton(widget_13);
+        m14_3->setObjectName(QString::fromUtf8("m14_3"));
+        m14_3->setMinimumSize(QSize(120, 40));
+        m14_3->setMaximumSize(QSize(120, 40));
+        m14_3->setFont(font2);
+        m14_3->setStyleSheet(QString::fromUtf8("QPushButton\n"
+"{\n"
+"	\n"
+"	background-color: rgb(108, 191, 230);\n"
+"    border-radius: 11px 11px ;\n"
+"}\n"
+"QPushButton::hover\n"
+"{\n"
+"    background-color: rgb(56, 135, 188);\n"
+"}\n"
+"QPushButton::pressed\n"
+"{\n"
+"    background-color: rgb(144, 48, 0)\n"
+"}\n"
+"QPushButton::checked \n"
+"{\n"
+"    \n"
+"	\n"
+"	background-color: rgb(204, 0, 20);\n"
+"}"));
+
+        verticalLayout_9->addWidget(m14_3);
+
+
+        gridLayout_9->addWidget(widget_13, 2, 1, 1, 1);
+
+        widget_7 = new QWidget(tab_3);
+        widget_7->setObjectName(QString::fromUtf8("widget_7"));
+        verticalLayout_6 = new QVBoxLayout(widget_7);
+        verticalLayout_6->setSpacing(6);
+        verticalLayout_6->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_6->setObjectName(QString::fromUtf8("verticalLayout_6"));
+        m13_0 = new QPushButton(widget_7);
+        m13_0->setObjectName(QString::fromUtf8("m13_0"));
+        m13_0->setMinimumSize(QSize(120, 40));
+        m13_0->setMaximumSize(QSize(120, 40));
+        m13_0->setFont(font2);
+        m13_0->setStyleSheet(QString::fromUtf8("QPushButton\n"
+"{\n"
+"	\n"
+"	background-color: rgb(108, 191, 230);\n"
+"    border-radius: 11px 11px ;\n"
+"}\n"
+"QPushButton::hover\n"
+"{\n"
+"    background-color: rgb(56, 135, 188);\n"
+"}\n"
+"QPushButton::pressed\n"
+"{\n"
+"    background-color: rgb(144, 48, 0)\n"
+"}\n"
+"QPushButton::checked \n"
+"{\n"
+"    \n"
+"	\n"
+"	background-color: rgb(204, 0, 20);\n"
+"}"));
+
+        verticalLayout_6->addWidget(m13_0);
+
+        m13_1 = new QPushButton(widget_7);
+        m13_1->setObjectName(QString::fromUtf8("m13_1"));
+        m13_1->setMinimumSize(QSize(120, 40));
+        m13_1->setMaximumSize(QSize(120, 40));
+        m13_1->setFont(font2);
+        m13_1->setStyleSheet(QString::fromUtf8("QPushButton\n"
+"{\n"
+"	\n"
+"	background-color: rgb(108, 191, 230);\n"
+"    border-radius: 11px 11px ;\n"
+"}\n"
+"QPushButton::hover\n"
+"{\n"
+"    background-color: rgb(56, 135, 188);\n"
+"}\n"
+"QPushButton::pressed\n"
+"{\n"
+"    background-color: rgb(144, 48, 0)\n"
+"}\n"
+"QPushButton::checked \n"
+"{\n"
+"    \n"
+"	\n"
+"	background-color: rgb(204, 0, 20);\n"
+"}"));
+
+        verticalLayout_6->addWidget(m13_1);
+
+
+        gridLayout_9->addWidget(widget_7, 1, 0, 1, 1);
+
+        widget_14 = new QWidget(tab_3);
+        widget_14->setObjectName(QString::fromUtf8("widget_14"));
+        verticalLayout_11 = new QVBoxLayout(widget_14);
+        verticalLayout_11->setSpacing(6);
+        verticalLayout_11->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_11->setObjectName(QString::fromUtf8("verticalLayout_11"));
+        m14_4 = new QPushButton(widget_14);
+        m14_4->setObjectName(QString::fromUtf8("m14_4"));
+        m14_4->setMinimumSize(QSize(120, 40));
+        m14_4->setMaximumSize(QSize(120, 40));
+        m14_4->setFont(font2);
+        m14_4->setStyleSheet(QString::fromUtf8("QPushButton\n"
+"{\n"
+"	\n"
+"	background-color: rgb(108, 191, 230);\n"
+"    border-radius: 11px 11px ;\n"
+"}\n"
+"QPushButton::hover\n"
+"{\n"
+"    background-color: rgb(56, 135, 188);\n"
+"}\n"
+"QPushButton::pressed\n"
+"{\n"
+"    background-color: rgb(144, 48, 0)\n"
+"}\n"
+"QPushButton::checked \n"
+"{\n"
+"    \n"
+"	\n"
+"	background-color: rgb(204, 0, 20);\n"
+"}"));
+
+        verticalLayout_11->addWidget(m14_4);
+
+        m14_5 = new QPushButton(widget_14);
+        m14_5->setObjectName(QString::fromUtf8("m14_5"));
+        m14_5->setMinimumSize(QSize(120, 40));
+        m14_5->setMaximumSize(QSize(120, 40));
+        m14_5->setFont(font2);
+        m14_5->setStyleSheet(QString::fromUtf8("QPushButton\n"
+"{\n"
+"	\n"
+"	background-color: rgb(108, 191, 230);\n"
+"    border-radius: 11px 11px ;\n"
+"}\n"
+"QPushButton::hover\n"
+"{\n"
+"    background-color: rgb(56, 135, 188);\n"
+"}\n"
+"QPushButton::pressed\n"
+"{\n"
+"    background-color: rgb(144, 48, 0)\n"
+"}\n"
+"QPushButton::checked \n"
+"{\n"
+"    \n"
+"	\n"
+"	background-color: rgb(204, 0, 20);\n"
+"}"));
+
+        verticalLayout_11->addWidget(m14_5);
+
+
+        gridLayout_9->addWidget(widget_14, 2, 2, 1, 1);
+
         widget_3 = new QWidget(tab_3);
         widget_3->setObjectName(QString::fromUtf8("widget_3"));
-        btnXaxisGoto_2 = new QPushButton(widget_3);
-        btnXaxisGoto_2->setObjectName(QString::fromUtf8("btnXaxisGoto_2"));
-        btnXaxisGoto_2->setGeometry(QRect(20, 20, 120, 40));
-        btnXaxisGoto_2->setMinimumSize(QSize(120, 40));
-        btnXaxisGoto_2->setMaximumSize(QSize(120, 40));
-        btnXaxisGoto_2->setFont(font2);
-        btnXaxisGoto_2->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        verticalLayout_2 = new QVBoxLayout(widget_3);
+        verticalLayout_2->setSpacing(6);
+        verticalLayout_2->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        m12_0 = new QPushButton(widget_3);
+        m12_0->setObjectName(QString::fromUtf8("m12_0"));
+        m12_0->setMinimumSize(QSize(120, 40));
+        m12_0->setMaximumSize(QSize(120, 40));
+        m12_0->setFont(font2);
+        m12_0->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -800,13 +1014,15 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        btnXaxisGoto_3 = new QPushButton(widget_3);
-        btnXaxisGoto_3->setObjectName(QString::fromUtf8("btnXaxisGoto_3"));
-        btnXaxisGoto_3->setGeometry(QRect(20, 80, 120, 40));
-        btnXaxisGoto_3->setMinimumSize(QSize(120, 40));
-        btnXaxisGoto_3->setMaximumSize(QSize(120, 40));
-        btnXaxisGoto_3->setFont(font2);
-        btnXaxisGoto_3->setStyleSheet(QString::fromUtf8("QPushButton\n"
+
+        verticalLayout_2->addWidget(m12_0);
+
+        m12_1 = new QPushButton(widget_3);
+        m12_1->setObjectName(QString::fromUtf8("m12_1"));
+        m12_1->setMinimumSize(QSize(120, 40));
+        m12_1->setMaximumSize(QSize(120, 40));
+        m12_1->setFont(font2);
+        m12_1->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -826,75 +1042,24 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
+
+        verticalLayout_2->addWidget(m12_1);
+
 
         gridLayout_9->addWidget(widget_3, 0, 0, 1, 1);
 
-        widget_5 = new QWidget(tab_3);
-        widget_5->setObjectName(QString::fromUtf8("widget_5"));
-        btnXaxisGoto_4 = new QPushButton(widget_5);
-        btnXaxisGoto_4->setObjectName(QString::fromUtf8("btnXaxisGoto_4"));
-        btnXaxisGoto_4->setGeometry(QRect(20, 20, 120, 40));
-        btnXaxisGoto_4->setMinimumSize(QSize(120, 40));
-        btnXaxisGoto_4->setMaximumSize(QSize(120, 40));
-        btnXaxisGoto_4->setFont(font2);
-        btnXaxisGoto_4->setStyleSheet(QString::fromUtf8("QPushButton\n"
-"{\n"
-"	\n"
-"	background-color: rgb(108, 191, 230);\n"
-"    border-radius: 11px 11px ;\n"
-"}\n"
-"QPushButton::hover\n"
-"{\n"
-"    background-color: rgb(56, 135, 188);\n"
-"}\n"
-"QPushButton::pressed\n"
-"{\n"
-"    background-color: rgb(144, 48, 0)\n"
-"}\n"
-"QPushButton::checked \n"
-"{\n"
-"    \n"
-"	\n"
-"	background-color: rgb(204, 0, 20);\n"
-"}"));
-        btnXaxisGoto_5 = new QPushButton(widget_5);
-        btnXaxisGoto_5->setObjectName(QString::fromUtf8("btnXaxisGoto_5"));
-        btnXaxisGoto_5->setGeometry(QRect(20, 80, 120, 40));
-        btnXaxisGoto_5->setMinimumSize(QSize(120, 40));
-        btnXaxisGoto_5->setMaximumSize(QSize(120, 40));
-        btnXaxisGoto_5->setFont(font2);
-        btnXaxisGoto_5->setStyleSheet(QString::fromUtf8("QPushButton\n"
-"{\n"
-"	\n"
-"	background-color: rgb(108, 191, 230);\n"
-"    border-radius: 11px 11px ;\n"
-"}\n"
-"QPushButton::hover\n"
-"{\n"
-"    background-color: rgb(56, 135, 188);\n"
-"}\n"
-"QPushButton::pressed\n"
-"{\n"
-"    background-color: rgb(144, 48, 0)\n"
-"}\n"
-"QPushButton::checked \n"
-"{\n"
-"    \n"
-"	\n"
-"	background-color: rgb(204, 0, 20);\n"
-"}"));
-
-        gridLayout_9->addWidget(widget_5, 0, 1, 1, 1);
-
         widget_6 = new QWidget(tab_3);
         widget_6->setObjectName(QString::fromUtf8("widget_6"));
-        btnXaxisGoto_6 = new QPushButton(widget_6);
-        btnXaxisGoto_6->setObjectName(QString::fromUtf8("btnXaxisGoto_6"));
-        btnXaxisGoto_6->setGeometry(QRect(20, 20, 120, 40));
-        btnXaxisGoto_6->setMinimumSize(QSize(120, 40));
-        btnXaxisGoto_6->setMaximumSize(QSize(120, 40));
-        btnXaxisGoto_6->setFont(font2);
-        btnXaxisGoto_6->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        verticalLayout_4 = new QVBoxLayout(widget_6);
+        verticalLayout_4->setSpacing(6);
+        verticalLayout_4->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
+        m12_4 = new QPushButton(widget_6);
+        m12_4->setObjectName(QString::fromUtf8("m12_4"));
+        m12_4->setMinimumSize(QSize(120, 40));
+        m12_4->setMaximumSize(QSize(120, 40));
+        m12_4->setFont(font2);
+        m12_4->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -914,13 +1079,15 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        btnXaxisGoto_7 = new QPushButton(widget_6);
-        btnXaxisGoto_7->setObjectName(QString::fromUtf8("btnXaxisGoto_7"));
-        btnXaxisGoto_7->setGeometry(QRect(20, 80, 120, 40));
-        btnXaxisGoto_7->setMinimumSize(QSize(120, 40));
-        btnXaxisGoto_7->setMaximumSize(QSize(120, 40));
-        btnXaxisGoto_7->setFont(font2);
-        btnXaxisGoto_7->setStyleSheet(QString::fromUtf8("QPushButton\n"
+
+        verticalLayout_4->addWidget(m12_4);
+
+        m12_5 = new QPushButton(widget_6);
+        m12_5->setObjectName(QString::fromUtf8("m12_5"));
+        m12_5->setMinimumSize(QSize(120, 40));
+        m12_5->setMaximumSize(QSize(120, 40));
+        m12_5->setFont(font2);
+        m12_5->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -940,18 +1107,24 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
+
+        verticalLayout_4->addWidget(m12_5);
+
 
         gridLayout_9->addWidget(widget_6, 0, 2, 1, 1);
 
         widget_10 = new QWidget(tab_3);
         widget_10->setObjectName(QString::fromUtf8("widget_10"));
-        btnXaxisGoto_14 = new QPushButton(widget_10);
-        btnXaxisGoto_14->setObjectName(QString::fromUtf8("btnXaxisGoto_14"));
-        btnXaxisGoto_14->setGeometry(QRect(20, 20, 120, 40));
-        btnXaxisGoto_14->setMinimumSize(QSize(120, 40));
-        btnXaxisGoto_14->setMaximumSize(QSize(120, 40));
-        btnXaxisGoto_14->setFont(font2);
-        btnXaxisGoto_14->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        verticalLayout_5 = new QVBoxLayout(widget_10);
+        verticalLayout_5->setSpacing(6);
+        verticalLayout_5->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
+        m12_6 = new QPushButton(widget_10);
+        m12_6->setObjectName(QString::fromUtf8("m12_6"));
+        m12_6->setMinimumSize(QSize(120, 40));
+        m12_6->setMaximumSize(QSize(120, 40));
+        m12_6->setFont(font2);
+        m12_6->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -971,13 +1144,15 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        btnXaxisGoto_15 = new QPushButton(widget_10);
-        btnXaxisGoto_15->setObjectName(QString::fromUtf8("btnXaxisGoto_15"));
-        btnXaxisGoto_15->setGeometry(QRect(20, 80, 120, 40));
-        btnXaxisGoto_15->setMinimumSize(QSize(120, 40));
-        btnXaxisGoto_15->setMaximumSize(QSize(120, 40));
-        btnXaxisGoto_15->setFont(font2);
-        btnXaxisGoto_15->setStyleSheet(QString::fromUtf8("QPushButton\n"
+
+        verticalLayout_5->addWidget(m12_6);
+
+        m12_7 = new QPushButton(widget_10);
+        m12_7->setObjectName(QString::fromUtf8("m12_7"));
+        m12_7->setMinimumSize(QSize(120, 40));
+        m12_7->setMaximumSize(QSize(120, 40));
+        m12_7->setFont(font2);
+        m12_7->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -997,132 +1172,24 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
+
+        verticalLayout_5->addWidget(m12_7);
+
 
         gridLayout_9->addWidget(widget_10, 0, 3, 1, 1);
 
-        widget_7 = new QWidget(tab_3);
-        widget_7->setObjectName(QString::fromUtf8("widget_7"));
-        btnXaxisGoto_8 = new QPushButton(widget_7);
-        btnXaxisGoto_8->setObjectName(QString::fromUtf8("btnXaxisGoto_8"));
-        btnXaxisGoto_8->setGeometry(QRect(20, 20, 120, 40));
-        btnXaxisGoto_8->setMinimumSize(QSize(120, 40));
-        btnXaxisGoto_8->setMaximumSize(QSize(120, 40));
-        btnXaxisGoto_8->setFont(font2);
-        btnXaxisGoto_8->setStyleSheet(QString::fromUtf8("QPushButton\n"
-"{\n"
-"	\n"
-"	background-color: rgb(108, 191, 230);\n"
-"    border-radius: 11px 11px ;\n"
-"}\n"
-"QPushButton::hover\n"
-"{\n"
-"    background-color: rgb(56, 135, 188);\n"
-"}\n"
-"QPushButton::pressed\n"
-"{\n"
-"    background-color: rgb(144, 48, 0)\n"
-"}\n"
-"QPushButton::checked \n"
-"{\n"
-"    \n"
-"	\n"
-"	background-color: rgb(204, 0, 20);\n"
-"}"));
-        btnXaxisGoto_9 = new QPushButton(widget_7);
-        btnXaxisGoto_9->setObjectName(QString::fromUtf8("btnXaxisGoto_9"));
-        btnXaxisGoto_9->setGeometry(QRect(20, 80, 120, 40));
-        btnXaxisGoto_9->setMinimumSize(QSize(120, 40));
-        btnXaxisGoto_9->setMaximumSize(QSize(120, 40));
-        btnXaxisGoto_9->setFont(font2);
-        btnXaxisGoto_9->setStyleSheet(QString::fromUtf8("QPushButton\n"
-"{\n"
-"	\n"
-"	background-color: rgb(108, 191, 230);\n"
-"    border-radius: 11px 11px ;\n"
-"}\n"
-"QPushButton::hover\n"
-"{\n"
-"    background-color: rgb(56, 135, 188);\n"
-"}\n"
-"QPushButton::pressed\n"
-"{\n"
-"    background-color: rgb(144, 48, 0)\n"
-"}\n"
-"QPushButton::checked \n"
-"{\n"
-"    \n"
-"	\n"
-"	background-color: rgb(204, 0, 20);\n"
-"}"));
-
-        gridLayout_9->addWidget(widget_7, 1, 0, 1, 1);
-
-        widget_8 = new QWidget(tab_3);
-        widget_8->setObjectName(QString::fromUtf8("widget_8"));
-        btnXaxisGoto_10 = new QPushButton(widget_8);
-        btnXaxisGoto_10->setObjectName(QString::fromUtf8("btnXaxisGoto_10"));
-        btnXaxisGoto_10->setGeometry(QRect(20, 20, 120, 40));
-        btnXaxisGoto_10->setMinimumSize(QSize(120, 40));
-        btnXaxisGoto_10->setMaximumSize(QSize(120, 40));
-        btnXaxisGoto_10->setFont(font2);
-        btnXaxisGoto_10->setStyleSheet(QString::fromUtf8("QPushButton\n"
-"{\n"
-"	\n"
-"	background-color: rgb(108, 191, 230);\n"
-"    border-radius: 11px 11px ;\n"
-"}\n"
-"QPushButton::hover\n"
-"{\n"
-"    background-color: rgb(56, 135, 188);\n"
-"}\n"
-"QPushButton::pressed\n"
-"{\n"
-"    background-color: rgb(144, 48, 0)\n"
-"}\n"
-"QPushButton::checked \n"
-"{\n"
-"    \n"
-"	\n"
-"	background-color: rgb(204, 0, 20);\n"
-"}"));
-        btnXaxisGoto_11 = new QPushButton(widget_8);
-        btnXaxisGoto_11->setObjectName(QString::fromUtf8("btnXaxisGoto_11"));
-        btnXaxisGoto_11->setGeometry(QRect(20, 80, 120, 40));
-        btnXaxisGoto_11->setMinimumSize(QSize(120, 40));
-        btnXaxisGoto_11->setMaximumSize(QSize(120, 40));
-        btnXaxisGoto_11->setFont(font2);
-        btnXaxisGoto_11->setStyleSheet(QString::fromUtf8("QPushButton\n"
-"{\n"
-"	\n"
-"	background-color: rgb(108, 191, 230);\n"
-"    border-radius: 11px 11px ;\n"
-"}\n"
-"QPushButton::hover\n"
-"{\n"
-"    background-color: rgb(56, 135, 188);\n"
-"}\n"
-"QPushButton::pressed\n"
-"{\n"
-"    background-color: rgb(144, 48, 0)\n"
-"}\n"
-"QPushButton::checked \n"
-"{\n"
-"    \n"
-"	\n"
-"	background-color: rgb(204, 0, 20);\n"
-"}"));
-
-        gridLayout_9->addWidget(widget_8, 1, 1, 1, 1);
-
         widget_9 = new QWidget(tab_3);
         widget_9->setObjectName(QString::fromUtf8("widget_9"));
-        btnXaxisGoto_12 = new QPushButton(widget_9);
-        btnXaxisGoto_12->setObjectName(QString::fromUtf8("btnXaxisGoto_12"));
-        btnXaxisGoto_12->setGeometry(QRect(20, 20, 120, 40));
-        btnXaxisGoto_12->setMinimumSize(QSize(120, 40));
-        btnXaxisGoto_12->setMaximumSize(QSize(120, 40));
-        btnXaxisGoto_12->setFont(font2);
-        btnXaxisGoto_12->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        verticalLayout_10 = new QVBoxLayout(widget_9);
+        verticalLayout_10->setSpacing(6);
+        verticalLayout_10->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_10->setObjectName(QString::fromUtf8("verticalLayout_10"));
+        m13_4 = new QPushButton(widget_9);
+        m13_4->setObjectName(QString::fromUtf8("m13_4"));
+        m13_4->setMinimumSize(QSize(120, 40));
+        m13_4->setMaximumSize(QSize(120, 40));
+        m13_4->setFont(font2);
+        m13_4->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -1142,13 +1209,15 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        btnXaxisGoto_13 = new QPushButton(widget_9);
-        btnXaxisGoto_13->setObjectName(QString::fromUtf8("btnXaxisGoto_13"));
-        btnXaxisGoto_13->setGeometry(QRect(20, 80, 120, 40));
-        btnXaxisGoto_13->setMinimumSize(QSize(120, 40));
-        btnXaxisGoto_13->setMaximumSize(QSize(120, 40));
-        btnXaxisGoto_13->setFont(font2);
-        btnXaxisGoto_13->setStyleSheet(QString::fromUtf8("QPushButton\n"
+
+        verticalLayout_10->addWidget(m13_4);
+
+        m13_5 = new QPushButton(widget_9);
+        m13_5->setObjectName(QString::fromUtf8("m13_5"));
+        m13_5->setMinimumSize(QSize(120, 40));
+        m13_5->setMaximumSize(QSize(120, 40));
+        m13_5->setFont(font2);
+        m13_5->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -1168,18 +1237,24 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
+
+        verticalLayout_10->addWidget(m13_5);
+
 
         gridLayout_9->addWidget(widget_9, 1, 2, 1, 1);
 
         widget_11 = new QWidget(tab_3);
         widget_11->setObjectName(QString::fromUtf8("widget_11"));
-        btnXaxisGoto_16 = new QPushButton(widget_11);
-        btnXaxisGoto_16->setObjectName(QString::fromUtf8("btnXaxisGoto_16"));
-        btnXaxisGoto_16->setGeometry(QRect(20, 20, 120, 40));
-        btnXaxisGoto_16->setMinimumSize(QSize(120, 40));
-        btnXaxisGoto_16->setMaximumSize(QSize(120, 40));
-        btnXaxisGoto_16->setFont(font2);
-        btnXaxisGoto_16->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        verticalLayout_12 = new QVBoxLayout(widget_11);
+        verticalLayout_12->setSpacing(6);
+        verticalLayout_12->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_12->setObjectName(QString::fromUtf8("verticalLayout_12"));
+        m13_6 = new QPushButton(widget_11);
+        m13_6->setObjectName(QString::fromUtf8("m13_6"));
+        m13_6->setMinimumSize(QSize(120, 40));
+        m13_6->setMaximumSize(QSize(120, 40));
+        m13_6->setFont(font2);
+        m13_6->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -1199,13 +1274,15 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        btnXaxisGoto_17 = new QPushButton(widget_11);
-        btnXaxisGoto_17->setObjectName(QString::fromUtf8("btnXaxisGoto_17"));
-        btnXaxisGoto_17->setGeometry(QRect(20, 80, 120, 40));
-        btnXaxisGoto_17->setMinimumSize(QSize(120, 40));
-        btnXaxisGoto_17->setMaximumSize(QSize(120, 40));
-        btnXaxisGoto_17->setFont(font2);
-        btnXaxisGoto_17->setStyleSheet(QString::fromUtf8("QPushButton\n"
+
+        verticalLayout_12->addWidget(m13_6);
+
+        m13_7 = new QPushButton(widget_11);
+        m13_7->setObjectName(QString::fromUtf8("m13_7"));
+        m13_7->setMinimumSize(QSize(120, 40));
+        m13_7->setMaximumSize(QSize(120, 40));
+        m13_7->setFont(font2);
+        m13_7->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -1225,44 +1302,24 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
+
+        verticalLayout_12->addWidget(m13_7);
+
 
         gridLayout_9->addWidget(widget_11, 1, 3, 1, 1);
 
-        widget_12 = new QWidget(tab_3);
-        widget_12->setObjectName(QString::fromUtf8("widget_12"));
-        btnXaxisGoto_18 = new QPushButton(widget_12);
-        btnXaxisGoto_18->setObjectName(QString::fromUtf8("btnXaxisGoto_18"));
-        btnXaxisGoto_18->setGeometry(QRect(20, 20, 120, 40));
-        btnXaxisGoto_18->setMinimumSize(QSize(120, 40));
-        btnXaxisGoto_18->setMaximumSize(QSize(120, 40));
-        btnXaxisGoto_18->setFont(font2);
-        btnXaxisGoto_18->setStyleSheet(QString::fromUtf8("QPushButton\n"
-"{\n"
-"	\n"
-"	background-color: rgb(108, 191, 230);\n"
-"    border-radius: 11px 11px ;\n"
-"}\n"
-"QPushButton::hover\n"
-"{\n"
-"    background-color: rgb(56, 135, 188);\n"
-"}\n"
-"QPushButton::pressed\n"
-"{\n"
-"    background-color: rgb(144, 48, 0)\n"
-"}\n"
-"QPushButton::checked \n"
-"{\n"
-"    \n"
-"	\n"
-"	background-color: rgb(204, 0, 20);\n"
-"}"));
-        btnXaxisGoto_19 = new QPushButton(widget_12);
-        btnXaxisGoto_19->setObjectName(QString::fromUtf8("btnXaxisGoto_19"));
-        btnXaxisGoto_19->setGeometry(QRect(20, 80, 120, 40));
-        btnXaxisGoto_19->setMinimumSize(QSize(120, 40));
-        btnXaxisGoto_19->setMaximumSize(QSize(120, 40));
-        btnXaxisGoto_19->setFont(font2);
-        btnXaxisGoto_19->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        widget_8 = new QWidget(tab_3);
+        widget_8->setObjectName(QString::fromUtf8("widget_8"));
+        verticalLayout_7 = new QVBoxLayout(widget_8);
+        verticalLayout_7->setSpacing(6);
+        verticalLayout_7->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_7->setObjectName(QString::fromUtf8("verticalLayout_7"));
+        m13_2 = new QPushButton(widget_8);
+        m13_2->setObjectName(QString::fromUtf8("m13_2"));
+        m13_2->setMinimumSize(QSize(120, 40));
+        m13_2->setMaximumSize(QSize(120, 40));
+        m13_2->setFont(font2);
+        m13_2->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -1283,43 +1340,14 @@ public:
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
 
-        gridLayout_9->addWidget(widget_12, 2, 0, 1, 1);
+        verticalLayout_7->addWidget(m13_2);
 
-        widget_13 = new QWidget(tab_3);
-        widget_13->setObjectName(QString::fromUtf8("widget_13"));
-        btnXaxisGoto_20 = new QPushButton(widget_13);
-        btnXaxisGoto_20->setObjectName(QString::fromUtf8("btnXaxisGoto_20"));
-        btnXaxisGoto_20->setGeometry(QRect(20, 20, 120, 40));
-        btnXaxisGoto_20->setMinimumSize(QSize(120, 40));
-        btnXaxisGoto_20->setMaximumSize(QSize(120, 40));
-        btnXaxisGoto_20->setFont(font2);
-        btnXaxisGoto_20->setStyleSheet(QString::fromUtf8("QPushButton\n"
-"{\n"
-"	\n"
-"	background-color: rgb(108, 191, 230);\n"
-"    border-radius: 11px 11px ;\n"
-"}\n"
-"QPushButton::hover\n"
-"{\n"
-"    background-color: rgb(56, 135, 188);\n"
-"}\n"
-"QPushButton::pressed\n"
-"{\n"
-"    background-color: rgb(144, 48, 0)\n"
-"}\n"
-"QPushButton::checked \n"
-"{\n"
-"    \n"
-"	\n"
-"	background-color: rgb(204, 0, 20);\n"
-"}"));
-        btnXaxisGoto_21 = new QPushButton(widget_13);
-        btnXaxisGoto_21->setObjectName(QString::fromUtf8("btnXaxisGoto_21"));
-        btnXaxisGoto_21->setGeometry(QRect(20, 80, 120, 40));
-        btnXaxisGoto_21->setMinimumSize(QSize(120, 40));
-        btnXaxisGoto_21->setMaximumSize(QSize(120, 40));
-        btnXaxisGoto_21->setFont(font2);
-        btnXaxisGoto_21->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        m13_3 = new QPushButton(widget_8);
+        m13_3->setObjectName(QString::fromUtf8("m13_3"));
+        m13_3->setMinimumSize(QSize(120, 40));
+        m13_3->setMaximumSize(QSize(120, 40));
+        m13_3->setFont(font2);
+        m13_3->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -1340,43 +1368,23 @@ public:
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
 
-        gridLayout_9->addWidget(widget_13, 2, 1, 1, 1);
+        verticalLayout_7->addWidget(m13_3);
 
-        widget_14 = new QWidget(tab_3);
-        widget_14->setObjectName(QString::fromUtf8("widget_14"));
-        btnXaxisGoto_22 = new QPushButton(widget_14);
-        btnXaxisGoto_22->setObjectName(QString::fromUtf8("btnXaxisGoto_22"));
-        btnXaxisGoto_22->setGeometry(QRect(20, 20, 120, 40));
-        btnXaxisGoto_22->setMinimumSize(QSize(120, 40));
-        btnXaxisGoto_22->setMaximumSize(QSize(120, 40));
-        btnXaxisGoto_22->setFont(font2);
-        btnXaxisGoto_22->setStyleSheet(QString::fromUtf8("QPushButton\n"
-"{\n"
-"	\n"
-"	background-color: rgb(108, 191, 230);\n"
-"    border-radius: 11px 11px ;\n"
-"}\n"
-"QPushButton::hover\n"
-"{\n"
-"    background-color: rgb(56, 135, 188);\n"
-"}\n"
-"QPushButton::pressed\n"
-"{\n"
-"    background-color: rgb(144, 48, 0)\n"
-"}\n"
-"QPushButton::checked \n"
-"{\n"
-"    \n"
-"	\n"
-"	background-color: rgb(204, 0, 20);\n"
-"}"));
-        btnXaxisGoto_23 = new QPushButton(widget_14);
-        btnXaxisGoto_23->setObjectName(QString::fromUtf8("btnXaxisGoto_23"));
-        btnXaxisGoto_23->setGeometry(QRect(20, 80, 120, 40));
-        btnXaxisGoto_23->setMinimumSize(QSize(120, 40));
-        btnXaxisGoto_23->setMaximumSize(QSize(120, 40));
-        btnXaxisGoto_23->setFont(font2);
-        btnXaxisGoto_23->setStyleSheet(QString::fromUtf8("QPushButton\n"
+
+        gridLayout_9->addWidget(widget_8, 1, 1, 1, 1);
+
+        widget_5 = new QWidget(tab_3);
+        widget_5->setObjectName(QString::fromUtf8("widget_5"));
+        verticalLayout_3 = new QVBoxLayout(widget_5);
+        verticalLayout_3->setSpacing(6);
+        verticalLayout_3->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
+        m12_2 = new QPushButton(widget_5);
+        m12_2->setObjectName(QString::fromUtf8("m12_2"));
+        m12_2->setMinimumSize(QSize(120, 40));
+        m12_2->setMaximumSize(QSize(120, 40));
+        m12_2->setFont(font2);
+        m12_2->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -1397,43 +1405,51 @@ public:
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
 
-        gridLayout_9->addWidget(widget_14, 2, 2, 1, 1);
+        verticalLayout_3->addWidget(m12_2);
+
+        m12_3 = new QPushButton(widget_5);
+        m12_3->setObjectName(QString::fromUtf8("m12_3"));
+        m12_3->setMinimumSize(QSize(120, 40));
+        m12_3->setMaximumSize(QSize(120, 40));
+        m12_3->setFont(font2);
+        m12_3->setStyleSheet(QString::fromUtf8("QPushButton\n"
+"{\n"
+"	\n"
+"	background-color: rgb(108, 191, 230);\n"
+"    border-radius: 11px 11px ;\n"
+"}\n"
+"QPushButton::hover\n"
+"{\n"
+"    background-color: rgb(56, 135, 188);\n"
+"}\n"
+"QPushButton::pressed\n"
+"{\n"
+"    background-color: rgb(144, 48, 0)\n"
+"}\n"
+"QPushButton::checked \n"
+"{\n"
+"    \n"
+"	\n"
+"	background-color: rgb(204, 0, 20);\n"
+"}"));
+
+        verticalLayout_3->addWidget(m12_3);
+
+
+        gridLayout_9->addWidget(widget_5, 0, 1, 1, 1);
 
         widget_15 = new QWidget(tab_3);
         widget_15->setObjectName(QString::fromUtf8("widget_15"));
-        btnXaxisGoto_24 = new QPushButton(widget_15);
-        btnXaxisGoto_24->setObjectName(QString::fromUtf8("btnXaxisGoto_24"));
-        btnXaxisGoto_24->setGeometry(QRect(20, 20, 120, 40));
-        btnXaxisGoto_24->setMinimumSize(QSize(120, 40));
-        btnXaxisGoto_24->setMaximumSize(QSize(120, 40));
-        btnXaxisGoto_24->setFont(font2);
-        btnXaxisGoto_24->setStyleSheet(QString::fromUtf8("QPushButton\n"
-"{\n"
-"	\n"
-"	background-color: rgb(108, 191, 230);\n"
-"    border-radius: 11px 11px ;\n"
-"}\n"
-"QPushButton::hover\n"
-"{\n"
-"    background-color: rgb(56, 135, 188);\n"
-"}\n"
-"QPushButton::pressed\n"
-"{\n"
-"    background-color: rgb(144, 48, 0)\n"
-"}\n"
-"QPushButton::checked \n"
-"{\n"
-"    \n"
-"	\n"
-"	background-color: rgb(204, 0, 20);\n"
-"}"));
-        btnXaxisGoto_25 = new QPushButton(widget_15);
-        btnXaxisGoto_25->setObjectName(QString::fromUtf8("btnXaxisGoto_25"));
-        btnXaxisGoto_25->setGeometry(QRect(20, 80, 120, 40));
-        btnXaxisGoto_25->setMinimumSize(QSize(120, 40));
-        btnXaxisGoto_25->setMaximumSize(QSize(120, 40));
-        btnXaxisGoto_25->setFont(font2);
-        btnXaxisGoto_25->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        verticalLayout_13 = new QVBoxLayout(widget_15);
+        verticalLayout_13->setSpacing(6);
+        verticalLayout_13->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_13->setObjectName(QString::fromUtf8("verticalLayout_13"));
+        m14_6 = new QPushButton(widget_15);
+        m14_6->setObjectName(QString::fromUtf8("m14_6"));
+        m14_6->setMinimumSize(QSize(120, 40));
+        m14_6->setMaximumSize(QSize(120, 40));
+        m14_6->setFont(font2);
+        m14_6->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -1454,7 +1470,103 @@ public:
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
 
+        verticalLayout_13->addWidget(m14_6);
+
+        m14_7 = new QPushButton(widget_15);
+        m14_7->setObjectName(QString::fromUtf8("m14_7"));
+        m14_7->setMinimumSize(QSize(120, 40));
+        m14_7->setMaximumSize(QSize(120, 40));
+        m14_7->setFont(font2);
+        m14_7->setStyleSheet(QString::fromUtf8("QPushButton\n"
+"{\n"
+"	\n"
+"	background-color: rgb(108, 191, 230);\n"
+"    border-radius: 11px 11px ;\n"
+"}\n"
+"QPushButton::hover\n"
+"{\n"
+"    background-color: rgb(56, 135, 188);\n"
+"}\n"
+"QPushButton::pressed\n"
+"{\n"
+"    background-color: rgb(144, 48, 0)\n"
+"}\n"
+"QPushButton::checked \n"
+"{\n"
+"    \n"
+"	\n"
+"	background-color: rgb(204, 0, 20);\n"
+"}"));
+
+        verticalLayout_13->addWidget(m14_7);
+
+
         gridLayout_9->addWidget(widget_15, 2, 3, 1, 1);
+
+        widget_12 = new QWidget(tab_3);
+        widget_12->setObjectName(QString::fromUtf8("widget_12"));
+        verticalLayout_8 = new QVBoxLayout(widget_12);
+        verticalLayout_8->setSpacing(6);
+        verticalLayout_8->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_8->setObjectName(QString::fromUtf8("verticalLayout_8"));
+        m14_0 = new QPushButton(widget_12);
+        m14_0->setObjectName(QString::fromUtf8("m14_0"));
+        m14_0->setMinimumSize(QSize(120, 40));
+        m14_0->setMaximumSize(QSize(120, 40));
+        m14_0->setFont(font2);
+        m14_0->setStyleSheet(QString::fromUtf8("QPushButton\n"
+"{\n"
+"	\n"
+"	background-color: rgb(108, 191, 230);\n"
+"    border-radius: 11px 11px ;\n"
+"}\n"
+"QPushButton::hover\n"
+"{\n"
+"    background-color: rgb(56, 135, 188);\n"
+"}\n"
+"QPushButton::pressed\n"
+"{\n"
+"    background-color: rgb(144, 48, 0)\n"
+"}\n"
+"QPushButton::checked \n"
+"{\n"
+"    \n"
+"	\n"
+"	background-color: rgb(204, 0, 20);\n"
+"}"));
+
+        verticalLayout_8->addWidget(m14_0);
+
+        m14_1 = new QPushButton(widget_12);
+        m14_1->setObjectName(QString::fromUtf8("m14_1"));
+        m14_1->setMinimumSize(QSize(120, 40));
+        m14_1->setMaximumSize(QSize(120, 40));
+        m14_1->setFont(font2);
+        m14_1->setStyleSheet(QString::fromUtf8("QPushButton\n"
+"{\n"
+"	\n"
+"	background-color: rgb(108, 191, 230);\n"
+"    border-radius: 11px 11px ;\n"
+"}\n"
+"QPushButton::hover\n"
+"{\n"
+"    background-color: rgb(56, 135, 188);\n"
+"}\n"
+"QPushButton::pressed\n"
+"{\n"
+"    background-color: rgb(144, 48, 0)\n"
+"}\n"
+"QPushButton::checked \n"
+"{\n"
+"    \n"
+"	\n"
+"	background-color: rgb(204, 0, 20);\n"
+"}"));
+
+        verticalLayout_8->addWidget(m14_1);
+
+
+        gridLayout_9->addWidget(widget_12, 2, 0, 1, 1);
 
         tabWidget->addTab(tab_3, QString());
         tab_2 = new QWidget();
@@ -1472,7 +1584,7 @@ public:
         groupBox_5 = new QGroupBox(widget_4);
         groupBox_5->setObjectName(QString::fromUtf8("groupBox_5"));
         gridLayout_8 = new QGridLayout(groupBox_5);
-        gridLayout_8->setSpacing(20);
+        gridLayout_8->setSpacing(10);
         gridLayout_8->setContentsMargins(11, 11, 11, 11);
         gridLayout_8->setObjectName(QString::fromUtf8("gridLayout_8"));
         label_57 = new QLabel(groupBox_5);
@@ -1566,41 +1678,41 @@ public:
 
         gridLayout_8->addWidget(label_83, 8, 6, 1, 1);
 
-        i2_10 = new QLabel(groupBox_5);
-        i2_10->setObjectName(QString::fromUtf8("i2_10"));
-        i2_10->setMinimumSize(QSize(40, 38));
-        i2_10->setMaximumSize(QSize(40, 38));
-        i2_10->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_10->setScaledContents(true);
+        i26 = new QLabel(groupBox_5);
+        i26->setObjectName(QString::fromUtf8("i26"));
+        i26->setMinimumSize(QSize(40, 38));
+        i26->setMaximumSize(QSize(40, 38));
+        i26->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i26->setScaledContents(true);
 
-        gridLayout_8->addWidget(i2_10, 3, 7, 1, 1);
+        gridLayout_8->addWidget(i26, 3, 7, 1, 1);
 
-        i0_6 = new QLabel(groupBox_5);
-        i0_6->setObjectName(QString::fromUtf8("i0_6"));
-        i0_6->setMinimumSize(QSize(40, 38));
-        i0_6->setMaximumSize(QSize(40, 38));
-        i0_6->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i0_6->setScaledContents(true);
+        i6 = new QLabel(groupBox_5);
+        i6->setObjectName(QString::fromUtf8("i6"));
+        i6->setMinimumSize(QSize(40, 38));
+        i6->setMaximumSize(QSize(40, 38));
+        i6->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i6->setScaledContents(true);
 
-        gridLayout_8->addWidget(i0_6, 7, 1, 1, 1);
+        gridLayout_8->addWidget(i6, 7, 1, 1, 1);
 
-        i2_7 = new QLabel(groupBox_5);
-        i2_7->setObjectName(QString::fromUtf8("i2_7"));
-        i2_7->setMinimumSize(QSize(40, 38));
-        i2_7->setMaximumSize(QSize(40, 38));
-        i2_7->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_7->setScaledContents(true);
+        i23 = new QLabel(groupBox_5);
+        i23->setObjectName(QString::fromUtf8("i23"));
+        i23->setMinimumSize(QSize(40, 38));
+        i23->setMaximumSize(QSize(40, 38));
+        i23->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i23->setScaledContents(true);
 
-        gridLayout_8->addWidget(i2_7, 8, 5, 1, 1);
+        gridLayout_8->addWidget(i23, 8, 5, 1, 1);
 
-        i1_4 = new QLabel(groupBox_5);
-        i1_4->setObjectName(QString::fromUtf8("i1_4"));
-        i1_4->setMinimumSize(QSize(40, 38));
-        i1_4->setMaximumSize(QSize(40, 38));
-        i1_4->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i1_4->setScaledContents(true);
+        i12 = new QLabel(groupBox_5);
+        i12->setObjectName(QString::fromUtf8("i12"));
+        i12->setMinimumSize(QSize(40, 38));
+        i12->setMaximumSize(QSize(40, 38));
+        i12->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i12->setScaledContents(true);
 
-        gridLayout_8->addWidget(i1_4, 5, 3, 1, 1);
+        gridLayout_8->addWidget(i12, 5, 3, 1, 1);
 
         label_72 = new QLabel(groupBox_5);
         label_72->setObjectName(QString::fromUtf8("label_72"));
@@ -1614,19 +1726,20 @@ public:
         i2_12->setObjectName(QString::fromUtf8("i2_12"));
         i2_12->setMinimumSize(QSize(40, 38));
         i2_12->setMaximumSize(QSize(40, 38));
+        i2_12->setStyleSheet(QString::fromUtf8("i28"));
         i2_12->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
         i2_12->setScaledContents(true);
 
         gridLayout_8->addWidget(i2_12, 5, 7, 1, 1);
 
-        i1_1 = new QLabel(groupBox_5);
-        i1_1->setObjectName(QString::fromUtf8("i1_1"));
-        i1_1->setMinimumSize(QSize(40, 38));
-        i1_1->setMaximumSize(QSize(40, 38));
-        i1_1->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i1_1->setScaledContents(true);
+        i9 = new QLabel(groupBox_5);
+        i9->setObjectName(QString::fromUtf8("i9"));
+        i9->setMinimumSize(QSize(40, 38));
+        i9->setMaximumSize(QSize(40, 38));
+        i9->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i9->setScaledContents(true);
 
-        gridLayout_8->addWidget(i1_1, 2, 3, 1, 1);
+        gridLayout_8->addWidget(i9, 2, 3, 1, 1);
 
         label_73 = new QLabel(groupBox_5);
         label_73->setObjectName(QString::fromUtf8("label_73"));
@@ -1644,14 +1757,14 @@ public:
 
         gridLayout_8->addWidget(label_82, 7, 6, 1, 1);
 
-        i2_2 = new QLabel(groupBox_5);
-        i2_2->setObjectName(QString::fromUtf8("i2_2"));
-        i2_2->setMinimumSize(QSize(40, 38));
-        i2_2->setMaximumSize(QSize(40, 38));
-        i2_2->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_2->setScaledContents(true);
+        i18 = new QLabel(groupBox_5);
+        i18->setObjectName(QString::fromUtf8("i18"));
+        i18->setMinimumSize(QSize(40, 38));
+        i18->setMaximumSize(QSize(40, 38));
+        i18->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i18->setScaledContents(true);
 
-        gridLayout_8->addWidget(i2_2, 3, 5, 1, 1);
+        gridLayout_8->addWidget(i18, 3, 5, 1, 1);
 
         label_51 = new QLabel(groupBox_5);
         label_51->setObjectName(QString::fromUtf8("label_51"));
@@ -1661,59 +1774,59 @@ public:
 
         gridLayout_8->addWidget(label_51, 8, 0, 1, 1);
 
-        i0_5 = new QLabel(groupBox_5);
-        i0_5->setObjectName(QString::fromUtf8("i0_5"));
-        i0_5->setMinimumSize(QSize(40, 38));
-        i0_5->setMaximumSize(QSize(40, 38));
-        i0_5->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i0_5->setScaledContents(true);
+        i5 = new QLabel(groupBox_5);
+        i5->setObjectName(QString::fromUtf8("i5"));
+        i5->setMinimumSize(QSize(40, 38));
+        i5->setMaximumSize(QSize(40, 38));
+        i5->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i5->setScaledContents(true);
 
-        gridLayout_8->addWidget(i0_5, 6, 1, 1, 1);
+        gridLayout_8->addWidget(i5, 6, 1, 1, 1);
 
-        i2_4 = new QLabel(groupBox_5);
-        i2_4->setObjectName(QString::fromUtf8("i2_4"));
-        i2_4->setMinimumSize(QSize(40, 38));
-        i2_4->setMaximumSize(QSize(40, 38));
-        i2_4->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_4->setScaledContents(true);
+        i20 = new QLabel(groupBox_5);
+        i20->setObjectName(QString::fromUtf8("i20"));
+        i20->setMinimumSize(QSize(40, 38));
+        i20->setMaximumSize(QSize(40, 38));
+        i20->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i20->setScaledContents(true);
 
-        gridLayout_8->addWidget(i2_4, 5, 5, 1, 1);
+        gridLayout_8->addWidget(i20, 5, 5, 1, 1);
 
-        i0_7 = new QLabel(groupBox_5);
-        i0_7->setObjectName(QString::fromUtf8("i0_7"));
-        i0_7->setMinimumSize(QSize(40, 38));
-        i0_7->setMaximumSize(QSize(40, 38));
-        i0_7->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i0_7->setScaledContents(true);
+        i7 = new QLabel(groupBox_5);
+        i7->setObjectName(QString::fromUtf8("i7"));
+        i7->setMinimumSize(QSize(40, 38));
+        i7->setMaximumSize(QSize(40, 38));
+        i7->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i7->setScaledContents(true);
 
-        gridLayout_8->addWidget(i0_7, 8, 1, 1, 1);
+        gridLayout_8->addWidget(i7, 8, 1, 1, 1);
 
-        i1_7 = new QLabel(groupBox_5);
-        i1_7->setObjectName(QString::fromUtf8("i1_7"));
-        i1_7->setMinimumSize(QSize(40, 38));
-        i1_7->setMaximumSize(QSize(40, 38));
-        i1_7->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i1_7->setScaledContents(true);
+        i15 = new QLabel(groupBox_5);
+        i15->setObjectName(QString::fromUtf8("i15"));
+        i15->setMinimumSize(QSize(40, 38));
+        i15->setMaximumSize(QSize(40, 38));
+        i15->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i15->setScaledContents(true);
 
-        gridLayout_8->addWidget(i1_7, 8, 3, 1, 1);
+        gridLayout_8->addWidget(i15, 8, 3, 1, 1);
 
-        i2_15 = new QLabel(groupBox_5);
-        i2_15->setObjectName(QString::fromUtf8("i2_15"));
-        i2_15->setMinimumSize(QSize(40, 38));
-        i2_15->setMaximumSize(QSize(40, 38));
-        i2_15->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_15->setScaledContents(true);
+        i31 = new QLabel(groupBox_5);
+        i31->setObjectName(QString::fromUtf8("i31"));
+        i31->setMinimumSize(QSize(40, 38));
+        i31->setMaximumSize(QSize(40, 38));
+        i31->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i31->setScaledContents(true);
 
-        gridLayout_8->addWidget(i2_15, 8, 7, 1, 1);
+        gridLayout_8->addWidget(i31, 8, 7, 1, 1);
 
-        i2_9 = new QLabel(groupBox_5);
-        i2_9->setObjectName(QString::fromUtf8("i2_9"));
-        i2_9->setMinimumSize(QSize(40, 38));
-        i2_9->setMaximumSize(QSize(40, 38));
-        i2_9->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_9->setScaledContents(true);
+        i25 = new QLabel(groupBox_5);
+        i25->setObjectName(QString::fromUtf8("i25"));
+        i25->setMinimumSize(QSize(40, 38));
+        i25->setMaximumSize(QSize(40, 38));
+        i25->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i25->setScaledContents(true);
 
-        gridLayout_8->addWidget(i2_9, 2, 7, 1, 1);
+        gridLayout_8->addWidget(i25, 2, 7, 1, 1);
 
         label_56 = new QLabel(groupBox_5);
         label_56->setObjectName(QString::fromUtf8("label_56"));
@@ -1723,23 +1836,23 @@ public:
 
         gridLayout_8->addWidget(label_56, 4, 2, 1, 1);
 
-        i2_11 = new QLabel(groupBox_5);
-        i2_11->setObjectName(QString::fromUtf8("i2_11"));
-        i2_11->setMinimumSize(QSize(40, 38));
-        i2_11->setMaximumSize(QSize(40, 38));
-        i2_11->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_11->setScaledContents(true);
+        i27 = new QLabel(groupBox_5);
+        i27->setObjectName(QString::fromUtf8("i27"));
+        i27->setMinimumSize(QSize(40, 38));
+        i27->setMaximumSize(QSize(40, 38));
+        i27->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i27->setScaledContents(true);
 
-        gridLayout_8->addWidget(i2_11, 4, 7, 1, 1);
+        gridLayout_8->addWidget(i27, 4, 7, 1, 1);
 
-        i0_3 = new QLabel(groupBox_5);
-        i0_3->setObjectName(QString::fromUtf8("i0_3"));
-        i0_3->setMinimumSize(QSize(40, 38));
-        i0_3->setMaximumSize(QSize(40, 38));
-        i0_3->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i0_3->setScaledContents(true);
+        i3 = new QLabel(groupBox_5);
+        i3->setObjectName(QString::fromUtf8("i3"));
+        i3->setMinimumSize(QSize(40, 38));
+        i3->setMaximumSize(QSize(40, 38));
+        i3->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i3->setScaledContents(true);
 
-        gridLayout_8->addWidget(i0_3, 4, 1, 1, 1);
+        gridLayout_8->addWidget(i3, 4, 1, 1, 1);
 
         label_66 = new QLabel(groupBox_5);
         label_66->setObjectName(QString::fromUtf8("label_66"));
@@ -1749,23 +1862,23 @@ public:
 
         gridLayout_8->addWidget(label_66, 6, 2, 1, 1);
 
-        i1_0 = new QLabel(groupBox_5);
-        i1_0->setObjectName(QString::fromUtf8("i1_0"));
-        i1_0->setMinimumSize(QSize(40, 38));
-        i1_0->setMaximumSize(QSize(40, 38));
-        i1_0->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i1_0->setScaledContents(true);
+        i8 = new QLabel(groupBox_5);
+        i8->setObjectName(QString::fromUtf8("i8"));
+        i8->setMinimumSize(QSize(40, 38));
+        i8->setMaximumSize(QSize(40, 38));
+        i8->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i8->setScaledContents(true);
 
-        gridLayout_8->addWidget(i1_0, 1, 3, 1, 1);
+        gridLayout_8->addWidget(i8, 1, 3, 1, 1);
 
-        i1_5 = new QLabel(groupBox_5);
-        i1_5->setObjectName(QString::fromUtf8("i1_5"));
-        i1_5->setMinimumSize(QSize(40, 38));
-        i1_5->setMaximumSize(QSize(40, 38));
-        i1_5->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i1_5->setScaledContents(true);
+        i13 = new QLabel(groupBox_5);
+        i13->setObjectName(QString::fromUtf8("i13"));
+        i13->setMinimumSize(QSize(40, 38));
+        i13->setMaximumSize(QSize(40, 38));
+        i13->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i13->setScaledContents(true);
 
-        gridLayout_8->addWidget(i1_5, 6, 3, 1, 1);
+        gridLayout_8->addWidget(i13, 6, 3, 1, 1);
 
         label_69 = new QLabel(groupBox_5);
         label_69->setObjectName(QString::fromUtf8("label_69"));
@@ -1775,23 +1888,23 @@ public:
 
         gridLayout_8->addWidget(label_69, 1, 4, 1, 1);
 
-        i1_3 = new QLabel(groupBox_5);
-        i1_3->setObjectName(QString::fromUtf8("i1_3"));
-        i1_3->setMinimumSize(QSize(40, 38));
-        i1_3->setMaximumSize(QSize(40, 38));
-        i1_3->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i1_3->setScaledContents(true);
+        i11 = new QLabel(groupBox_5);
+        i11->setObjectName(QString::fromUtf8("i11"));
+        i11->setMinimumSize(QSize(40, 38));
+        i11->setMaximumSize(QSize(40, 38));
+        i11->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i11->setScaledContents(true);
 
-        gridLayout_8->addWidget(i1_3, 4, 3, 1, 1);
+        gridLayout_8->addWidget(i11, 4, 3, 1, 1);
 
-        i0_0 = new QLabel(groupBox_5);
-        i0_0->setObjectName(QString::fromUtf8("i0_0"));
-        i0_0->setMinimumSize(QSize(40, 38));
-        i0_0->setMaximumSize(QSize(40, 38));
-        i0_0->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i0_0->setScaledContents(true);
+        i0 = new QLabel(groupBox_5);
+        i0->setObjectName(QString::fromUtf8("i0"));
+        i0->setMinimumSize(QSize(40, 38));
+        i0->setMaximumSize(QSize(40, 38));
+        i0->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i0->setScaledContents(true);
 
-        gridLayout_8->addWidget(i0_0, 1, 1, 1, 1);
+        gridLayout_8->addWidget(i0, 1, 1, 1, 1);
 
         label_47 = new QLabel(groupBox_5);
         label_47->setObjectName(QString::fromUtf8("label_47"));
@@ -1801,14 +1914,14 @@ public:
 
         gridLayout_8->addWidget(label_47, 4, 0, 1, 1);
 
-        i2_13 = new QLabel(groupBox_5);
-        i2_13->setObjectName(QString::fromUtf8("i2_13"));
-        i2_13->setMinimumSize(QSize(40, 38));
-        i2_13->setMaximumSize(QSize(40, 38));
-        i2_13->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_13->setScaledContents(true);
+        i29 = new QLabel(groupBox_5);
+        i29->setObjectName(QString::fromUtf8("i29"));
+        i29->setMinimumSize(QSize(40, 38));
+        i29->setMaximumSize(QSize(40, 38));
+        i29->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i29->setScaledContents(true);
 
-        gridLayout_8->addWidget(i2_13, 6, 7, 1, 1);
+        gridLayout_8->addWidget(i29, 6, 7, 1, 1);
 
         label_67 = new QLabel(groupBox_5);
         label_67->setObjectName(QString::fromUtf8("label_67"));
@@ -1818,23 +1931,23 @@ public:
 
         gridLayout_8->addWidget(label_67, 7, 2, 1, 1);
 
-        i0_2 = new QLabel(groupBox_5);
-        i0_2->setObjectName(QString::fromUtf8("i0_2"));
-        i0_2->setMinimumSize(QSize(40, 38));
-        i0_2->setMaximumSize(QSize(40, 38));
-        i0_2->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i0_2->setScaledContents(true);
+        i2 = new QLabel(groupBox_5);
+        i2->setObjectName(QString::fromUtf8("i2"));
+        i2->setMinimumSize(QSize(40, 38));
+        i2->setMaximumSize(QSize(40, 38));
+        i2->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i2->setScaledContents(true);
 
-        gridLayout_8->addWidget(i0_2, 3, 1, 1, 1);
+        gridLayout_8->addWidget(i2, 3, 1, 1, 1);
 
-        i1_6 = new QLabel(groupBox_5);
-        i1_6->setObjectName(QString::fromUtf8("i1_6"));
-        i1_6->setMinimumSize(QSize(40, 38));
-        i1_6->setMaximumSize(QSize(40, 38));
-        i1_6->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i1_6->setScaledContents(true);
+        i14 = new QLabel(groupBox_5);
+        i14->setObjectName(QString::fromUtf8("i14"));
+        i14->setMinimumSize(QSize(40, 38));
+        i14->setMaximumSize(QSize(40, 38));
+        i14->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i14->setScaledContents(true);
 
-        gridLayout_8->addWidget(i1_6, 7, 3, 1, 1);
+        gridLayout_8->addWidget(i14, 7, 3, 1, 1);
 
         label_68 = new QLabel(groupBox_5);
         label_68->setObjectName(QString::fromUtf8("label_68"));
@@ -1852,23 +1965,23 @@ public:
 
         gridLayout_8->addWidget(label_71, 4, 4, 1, 1);
 
-        i0_1 = new QLabel(groupBox_5);
-        i0_1->setObjectName(QString::fromUtf8("i0_1"));
-        i0_1->setMinimumSize(QSize(40, 38));
-        i0_1->setMaximumSize(QSize(40, 38));
-        i0_1->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i0_1->setScaledContents(true);
+        i1 = new QLabel(groupBox_5);
+        i1->setObjectName(QString::fromUtf8("i1"));
+        i1->setMinimumSize(QSize(40, 38));
+        i1->setMaximumSize(QSize(40, 38));
+        i1->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i1->setScaledContents(true);
 
-        gridLayout_8->addWidget(i0_1, 2, 1, 1, 1);
+        gridLayout_8->addWidget(i1, 2, 1, 1, 1);
 
-        i2_0 = new QLabel(groupBox_5);
-        i2_0->setObjectName(QString::fromUtf8("i2_0"));
-        i2_0->setMinimumSize(QSize(40, 38));
-        i2_0->setMaximumSize(QSize(40, 38));
-        i2_0->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_0->setScaledContents(true);
+        i16 = new QLabel(groupBox_5);
+        i16->setObjectName(QString::fromUtf8("i16"));
+        i16->setMinimumSize(QSize(40, 38));
+        i16->setMaximumSize(QSize(40, 38));
+        i16->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i16->setScaledContents(true);
 
-        gridLayout_8->addWidget(i2_0, 1, 5, 1, 1);
+        gridLayout_8->addWidget(i16, 1, 5, 1, 1);
 
         label_44 = new QLabel(groupBox_5);
         label_44->setObjectName(QString::fromUtf8("label_44"));
@@ -1902,32 +2015,32 @@ public:
 
         gridLayout_8->addWidget(label_70, 3, 4, 1, 1);
 
-        i2_1 = new QLabel(groupBox_5);
-        i2_1->setObjectName(QString::fromUtf8("i2_1"));
-        i2_1->setMinimumSize(QSize(40, 38));
-        i2_1->setMaximumSize(QSize(40, 38));
-        i2_1->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_1->setScaledContents(true);
+        i17 = new QLabel(groupBox_5);
+        i17->setObjectName(QString::fromUtf8("i17"));
+        i17->setMinimumSize(QSize(40, 38));
+        i17->setMaximumSize(QSize(40, 38));
+        i17->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i17->setScaledContents(true);
 
-        gridLayout_8->addWidget(i2_1, 2, 5, 1, 1);
+        gridLayout_8->addWidget(i17, 2, 5, 1, 1);
 
-        i2_8 = new QLabel(groupBox_5);
-        i2_8->setObjectName(QString::fromUtf8("i2_8"));
-        i2_8->setMinimumSize(QSize(40, 38));
-        i2_8->setMaximumSize(QSize(40, 38));
-        i2_8->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_8->setScaledContents(true);
+        i24 = new QLabel(groupBox_5);
+        i24->setObjectName(QString::fromUtf8("i24"));
+        i24->setMinimumSize(QSize(40, 38));
+        i24->setMaximumSize(QSize(40, 38));
+        i24->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i24->setScaledContents(true);
 
-        gridLayout_8->addWidget(i2_8, 1, 7, 1, 1);
+        gridLayout_8->addWidget(i24, 1, 7, 1, 1);
 
-        i2_14 = new QLabel(groupBox_5);
-        i2_14->setObjectName(QString::fromUtf8("i2_14"));
-        i2_14->setMinimumSize(QSize(40, 38));
-        i2_14->setMaximumSize(QSize(40, 38));
-        i2_14->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_14->setScaledContents(true);
+        i30 = new QLabel(groupBox_5);
+        i30->setObjectName(QString::fromUtf8("i30"));
+        i30->setMinimumSize(QSize(40, 38));
+        i30->setMaximumSize(QSize(40, 38));
+        i30->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i30->setScaledContents(true);
 
-        gridLayout_8->addWidget(i2_14, 7, 7, 1, 1);
+        gridLayout_8->addWidget(i30, 7, 7, 1, 1);
 
         label_74 = new QLabel(groupBox_5);
         label_74->setObjectName(QString::fromUtf8("label_74"));
@@ -1937,14 +2050,14 @@ public:
 
         gridLayout_8->addWidget(label_74, 7, 4, 1, 1);
 
-        i2_5 = new QLabel(groupBox_5);
-        i2_5->setObjectName(QString::fromUtf8("i2_5"));
-        i2_5->setMinimumSize(QSize(40, 38));
-        i2_5->setMaximumSize(QSize(40, 38));
-        i2_5->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_5->setScaledContents(true);
+        i21 = new QLabel(groupBox_5);
+        i21->setObjectName(QString::fromUtf8("i21"));
+        i21->setMinimumSize(QSize(40, 38));
+        i21->setMaximumSize(QSize(40, 38));
+        i21->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i21->setScaledContents(true);
 
-        gridLayout_8->addWidget(i2_5, 6, 5, 1, 1);
+        gridLayout_8->addWidget(i21, 6, 5, 1, 1);
 
         label_46 = new QLabel(groupBox_5);
         label_46->setObjectName(QString::fromUtf8("label_46"));
@@ -1961,14 +2074,14 @@ public:
 
         gridLayout_8->addWidget(label_45, 1, 0, 1, 1);
 
-        i1_2 = new QLabel(groupBox_5);
-        i1_2->setObjectName(QString::fromUtf8("i1_2"));
-        i1_2->setMinimumSize(QSize(40, 38));
-        i1_2->setMaximumSize(QSize(40, 38));
-        i1_2->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i1_2->setScaledContents(true);
+        i10 = new QLabel(groupBox_5);
+        i10->setObjectName(QString::fromUtf8("i10"));
+        i10->setMinimumSize(QSize(40, 38));
+        i10->setMaximumSize(QSize(40, 38));
+        i10->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i10->setScaledContents(true);
 
-        gridLayout_8->addWidget(i1_2, 3, 3, 1, 1);
+        gridLayout_8->addWidget(i10, 3, 3, 1, 1);
 
         label_80 = new QLabel(groupBox_5);
         label_80->setObjectName(QString::fromUtf8("label_80"));
@@ -1986,23 +2099,23 @@ public:
 
         gridLayout_8->addWidget(label_75, 8, 4, 1, 1);
 
-        i2_6 = new QLabel(groupBox_5);
-        i2_6->setObjectName(QString::fromUtf8("i2_6"));
-        i2_6->setMinimumSize(QSize(40, 38));
-        i2_6->setMaximumSize(QSize(40, 38));
-        i2_6->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_6->setScaledContents(true);
+        i22 = new QLabel(groupBox_5);
+        i22->setObjectName(QString::fromUtf8("i22"));
+        i22->setMinimumSize(QSize(40, 38));
+        i22->setMaximumSize(QSize(40, 38));
+        i22->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i22->setScaledContents(true);
 
-        gridLayout_8->addWidget(i2_6, 7, 5, 1, 1);
+        gridLayout_8->addWidget(i22, 7, 5, 1, 1);
 
-        i0_4 = new QLabel(groupBox_5);
-        i0_4->setObjectName(QString::fromUtf8("i0_4"));
-        i0_4->setMinimumSize(QSize(40, 38));
-        i0_4->setMaximumSize(QSize(40, 38));
-        i0_4->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i0_4->setScaledContents(true);
+        i4 = new QLabel(groupBox_5);
+        i4->setObjectName(QString::fromUtf8("i4"));
+        i4->setMinimumSize(QSize(40, 38));
+        i4->setMaximumSize(QSize(40, 38));
+        i4->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i4->setScaledContents(true);
 
-        gridLayout_8->addWidget(i0_4, 5, 1, 1, 1);
+        gridLayout_8->addWidget(i4, 5, 1, 1, 1);
 
         label_77 = new QLabel(groupBox_5);
         label_77->setObjectName(QString::fromUtf8("label_77"));
@@ -2012,14 +2125,14 @@ public:
 
         gridLayout_8->addWidget(label_77, 2, 6, 1, 1);
 
-        i2_3 = new QLabel(groupBox_5);
-        i2_3->setObjectName(QString::fromUtf8("i2_3"));
-        i2_3->setMinimumSize(QSize(40, 38));
-        i2_3->setMaximumSize(QSize(40, 38));
-        i2_3->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
-        i2_3->setScaledContents(true);
+        i19 = new QLabel(groupBox_5);
+        i19->setObjectName(QString::fromUtf8("i19"));
+        i19->setMinimumSize(QSize(40, 38));
+        i19->setMaximumSize(QSize(40, 38));
+        i19->setPixmap(QPixmap(QString::fromUtf8(":/png/res/png/led_off.png")));
+        i19->setScaledContents(true);
 
-        gridLayout_8->addWidget(i2_3, 4, 5, 1, 1);
+        gridLayout_8->addWidget(i19, 4, 5, 1, 1);
 
         label_60 = new QLabel(groupBox_5);
         label_60->setObjectName(QString::fromUtf8("label_60"));
@@ -2055,15 +2168,13 @@ public:
         groupBox_6 = new QGroupBox(widget_4);
         groupBox_6->setObjectName(QString::fromUtf8("groupBox_6"));
         gridLayout_10 = new QGridLayout(groupBox_6);
-        gridLayout_10->setSpacing(20);
+        gridLayout_10->setSpacing(10);
         gridLayout_10->setContentsMargins(11, 11, 11, 11);
         gridLayout_10->setObjectName(QString::fromUtf8("gridLayout_10"));
-        q1_0 = new QPushButton(groupBox_6);
-        q1_0->setObjectName(QString::fromUtf8("q1_0"));
-        q1_0->setMinimumSize(QSize(100, 40));
-        q1_0->setMaximumSize(QSize(100, 40));
-        q1_0->setFont(font2);
-        q1_0->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q2 = new QPushButton(groupBox_6);
+        q2->setObjectName(QString::fromUtf8("q2"));
+        q2->setFont(font2);
+        q2->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2083,16 +2194,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q1_0->setCheckable(true);
+        q2->setCheckable(true);
 
-        gridLayout_10->addWidget(q1_0, 0, 1, 1, 1);
+        gridLayout_10->addWidget(q2, 3, 0, 1, 1);
 
-        q1_7 = new QPushButton(groupBox_6);
-        q1_7->setObjectName(QString::fromUtf8("q1_7"));
-        q1_7->setMinimumSize(QSize(100, 40));
-        q1_7->setMaximumSize(QSize(100, 40));
-        q1_7->setFont(font2);
-        q1_7->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q23 = new QPushButton(groupBox_6);
+        q23->setObjectName(QString::fromUtf8("q23"));
+        q23->setMinimumSize(QSize(100, 40));
+        q23->setMaximumSize(QSize(100, 40));
+        q23->setFont(font2);
+        q23->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2112,16 +2223,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q1_7->setCheckable(true);
+        q23->setCheckable(true);
 
-        gridLayout_10->addWidget(q1_7, 7, 1, 1, 1);
+        gridLayout_10->addWidget(q23, 8, 2, 1, 1);
 
-        q0_2 = new QPushButton(groupBox_6);
-        q0_2->setObjectName(QString::fromUtf8("q0_2"));
-        q0_2->setMinimumSize(QSize(100, 40));
-        q0_2->setMaximumSize(QSize(100, 40));
-        q0_2->setFont(font2);
-        q0_2->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q11 = new QPushButton(groupBox_6);
+        q11->setObjectName(QString::fromUtf8("q11"));
+        q11->setMinimumSize(QSize(100, 40));
+        q11->setMaximumSize(QSize(100, 40));
+        q11->setFont(font2);
+        q11->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2141,16 +2252,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q0_2->setCheckable(true);
+        q11->setCheckable(true);
 
-        gridLayout_10->addWidget(q0_2, 2, 0, 1, 1);
+        gridLayout_10->addWidget(q11, 4, 1, 1, 1);
 
-        q0_6 = new QPushButton(groupBox_6);
-        q0_6->setObjectName(QString::fromUtf8("q0_6"));
-        q0_6->setMinimumSize(QSize(100, 40));
-        q0_6->setMaximumSize(QSize(100, 40));
-        q0_6->setFont(font2);
-        q0_6->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q7 = new QPushButton(groupBox_6);
+        q7->setObjectName(QString::fromUtf8("q7"));
+        q7->setMinimumSize(QSize(100, 40));
+        q7->setMaximumSize(QSize(100, 40));
+        q7->setFont(font2);
+        q7->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2170,16 +2281,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q0_6->setCheckable(true);
+        q7->setCheckable(true);
 
-        gridLayout_10->addWidget(q0_6, 6, 0, 1, 1);
+        gridLayout_10->addWidget(q7, 8, 0, 1, 1);
 
-        q0_5 = new QPushButton(groupBox_6);
-        q0_5->setObjectName(QString::fromUtf8("q0_5"));
-        q0_5->setMinimumSize(QSize(100, 40));
-        q0_5->setMaximumSize(QSize(100, 40));
-        q0_5->setFont(font2);
-        q0_5->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q27 = new QPushButton(groupBox_6);
+        q27->setObjectName(QString::fromUtf8("q27"));
+        q27->setMinimumSize(QSize(100, 40));
+        q27->setMaximumSize(QSize(100, 40));
+        q27->setFont(font2);
+        q27->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2199,16 +2310,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q0_5->setCheckable(true);
+        q27->setCheckable(true);
 
-        gridLayout_10->addWidget(q0_5, 5, 0, 1, 1);
+        gridLayout_10->addWidget(q27, 4, 3, 1, 1);
 
-        q1_1 = new QPushButton(groupBox_6);
-        q1_1->setObjectName(QString::fromUtf8("q1_1"));
-        q1_1->setMinimumSize(QSize(100, 40));
-        q1_1->setMaximumSize(QSize(100, 40));
-        q1_1->setFont(font2);
-        q1_1->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q19 = new QPushButton(groupBox_6);
+        q19->setObjectName(QString::fromUtf8("q19"));
+        q19->setMinimumSize(QSize(100, 40));
+        q19->setMaximumSize(QSize(100, 40));
+        q19->setFont(font2);
+        q19->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2228,16 +2339,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q1_1->setCheckable(true);
+        q19->setCheckable(true);
 
-        gridLayout_10->addWidget(q1_1, 1, 1, 1, 1);
+        gridLayout_10->addWidget(q19, 4, 2, 1, 1);
 
-        q0_1 = new QPushButton(groupBox_6);
-        q0_1->setObjectName(QString::fromUtf8("q0_1"));
-        q0_1->setMinimumSize(QSize(100, 40));
-        q0_1->setMaximumSize(QSize(100, 40));
-        q0_1->setFont(font2);
-        q0_1->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q22 = new QPushButton(groupBox_6);
+        q22->setObjectName(QString::fromUtf8("q22"));
+        q22->setMinimumSize(QSize(100, 40));
+        q22->setMaximumSize(QSize(100, 40));
+        q22->setFont(font2);
+        q22->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2257,16 +2368,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q0_1->setCheckable(true);
+        q22->setCheckable(true);
 
-        gridLayout_10->addWidget(q0_1, 1, 0, 1, 1);
+        gridLayout_10->addWidget(q22, 7, 2, 1, 1);
 
-        q2_0 = new QPushButton(groupBox_6);
-        q2_0->setObjectName(QString::fromUtf8("q2_0"));
-        q2_0->setMinimumSize(QSize(100, 40));
-        q2_0->setMaximumSize(QSize(100, 40));
-        q2_0->setFont(font2);
-        q2_0->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q8 = new QPushButton(groupBox_6);
+        q8->setObjectName(QString::fromUtf8("q8"));
+        q8->setMinimumSize(QSize(100, 40));
+        q8->setMaximumSize(QSize(100, 40));
+        q8->setFont(font2);
+        q8->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2286,16 +2397,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q2_0->setCheckable(true);
+        q8->setCheckable(true);
 
-        gridLayout_10->addWidget(q2_0, 0, 2, 1, 1);
+        gridLayout_10->addWidget(q8, 1, 1, 1, 1);
 
-        q2_1 = new QPushButton(groupBox_6);
-        q2_1->setObjectName(QString::fromUtf8("q2_1"));
-        q2_1->setMinimumSize(QSize(100, 40));
-        q2_1->setMaximumSize(QSize(100, 40));
-        q2_1->setFont(font2);
-        q2_1->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q18 = new QPushButton(groupBox_6);
+        q18->setObjectName(QString::fromUtf8("q18"));
+        q18->setMinimumSize(QSize(100, 40));
+        q18->setMaximumSize(QSize(100, 40));
+        q18->setFont(font2);
+        q18->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2315,16 +2426,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q2_1->setCheckable(true);
+        q18->setCheckable(true);
 
-        gridLayout_10->addWidget(q2_1, 1, 2, 1, 1);
+        gridLayout_10->addWidget(q18, 3, 2, 1, 1);
 
-        q2_5 = new QPushButton(groupBox_6);
-        q2_5->setObjectName(QString::fromUtf8("q2_5"));
-        q2_5->setMinimumSize(QSize(100, 40));
-        q2_5->setMaximumSize(QSize(100, 40));
-        q2_5->setFont(font2);
-        q2_5->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q12 = new QPushButton(groupBox_6);
+        q12->setObjectName(QString::fromUtf8("q12"));
+        q12->setMinimumSize(QSize(100, 40));
+        q12->setMaximumSize(QSize(100, 40));
+        q12->setFont(font2);
+        q12->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2344,16 +2455,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q2_5->setCheckable(true);
+        q12->setCheckable(true);
 
-        gridLayout_10->addWidget(q2_5, 5, 2, 1, 1);
+        gridLayout_10->addWidget(q12, 5, 1, 1, 1);
 
-        q0_0 = new QPushButton(groupBox_6);
-        q0_0->setObjectName(QString::fromUtf8("q0_0"));
-        q0_0->setMinimumSize(QSize(100, 40));
-        q0_0->setMaximumSize(QSize(100, 40));
-        q0_0->setFont(font2);
-        q0_0->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q17 = new QPushButton(groupBox_6);
+        q17->setObjectName(QString::fromUtf8("q17"));
+        q17->setMinimumSize(QSize(100, 40));
+        q17->setMaximumSize(QSize(100, 40));
+        q17->setFont(font2);
+        q17->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2373,16 +2484,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q0_0->setCheckable(true);
+        q17->setCheckable(true);
 
-        gridLayout_10->addWidget(q0_0, 0, 0, 1, 1);
+        gridLayout_10->addWidget(q17, 2, 2, 1, 1);
 
-        q2_2 = new QPushButton(groupBox_6);
-        q2_2->setObjectName(QString::fromUtf8("q2_2"));
-        q2_2->setMinimumSize(QSize(100, 40));
-        q2_2->setMaximumSize(QSize(100, 40));
-        q2_2->setFont(font2);
-        q2_2->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q31 = new QPushButton(groupBox_6);
+        q31->setObjectName(QString::fromUtf8("q31"));
+        q31->setMinimumSize(QSize(100, 40));
+        q31->setMaximumSize(QSize(100, 40));
+        q31->setFont(font2);
+        q31->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2402,16 +2513,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q2_2->setCheckable(true);
+        q31->setCheckable(true);
 
-        gridLayout_10->addWidget(q2_2, 2, 2, 1, 1);
+        gridLayout_10->addWidget(q31, 8, 3, 1, 1);
 
-        q1_6 = new QPushButton(groupBox_6);
-        q1_6->setObjectName(QString::fromUtf8("q1_6"));
-        q1_6->setMinimumSize(QSize(100, 40));
-        q1_6->setMaximumSize(QSize(100, 40));
-        q1_6->setFont(font2);
-        q1_6->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q6 = new QPushButton(groupBox_6);
+        q6->setObjectName(QString::fromUtf8("q6"));
+        q6->setMinimumSize(QSize(100, 40));
+        q6->setMaximumSize(QSize(100, 40));
+        q6->setFont(font2);
+        q6->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2431,16 +2542,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q1_6->setCheckable(true);
+        q6->setCheckable(true);
 
-        gridLayout_10->addWidget(q1_6, 6, 1, 1, 1);
+        gridLayout_10->addWidget(q6, 7, 0, 1, 1);
 
-        q2_7 = new QPushButton(groupBox_6);
-        q2_7->setObjectName(QString::fromUtf8("q2_7"));
-        q2_7->setMinimumSize(QSize(100, 40));
-        q2_7->setMaximumSize(QSize(100, 40));
-        q2_7->setFont(font2);
-        q2_7->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q24 = new QPushButton(groupBox_6);
+        q24->setObjectName(QString::fromUtf8("q24"));
+        q24->setMinimumSize(QSize(100, 40));
+        q24->setMaximumSize(QSize(100, 40));
+        q24->setFont(font2);
+        q24->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2460,16 +2571,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q2_7->setCheckable(true);
+        q24->setCheckable(true);
 
-        gridLayout_10->addWidget(q2_7, 7, 2, 1, 1);
+        gridLayout_10->addWidget(q24, 1, 3, 1, 1);
 
-        q2_6 = new QPushButton(groupBox_6);
-        q2_6->setObjectName(QString::fromUtf8("q2_6"));
-        q2_6->setMinimumSize(QSize(100, 40));
-        q2_6->setMaximumSize(QSize(100, 40));
-        q2_6->setFont(font2);
-        q2_6->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q20 = new QPushButton(groupBox_6);
+        q20->setObjectName(QString::fromUtf8("q20"));
+        q20->setMinimumSize(QSize(100, 40));
+        q20->setMaximumSize(QSize(100, 40));
+        q20->setFont(font2);
+        q20->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2489,16 +2600,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q2_6->setCheckable(true);
+        q20->setCheckable(true);
 
-        gridLayout_10->addWidget(q2_6, 6, 2, 1, 1);
+        gridLayout_10->addWidget(q20, 5, 2, 1, 1);
 
-        q0_3 = new QPushButton(groupBox_6);
-        q0_3->setObjectName(QString::fromUtf8("q0_3"));
-        q0_3->setMinimumSize(QSize(100, 40));
-        q0_3->setMaximumSize(QSize(100, 40));
-        q0_3->setFont(font2);
-        q0_3->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q25 = new QPushButton(groupBox_6);
+        q25->setObjectName(QString::fromUtf8("q25"));
+        q25->setMinimumSize(QSize(100, 40));
+        q25->setMaximumSize(QSize(100, 40));
+        q25->setFont(font2);
+        q25->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2518,16 +2629,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q0_3->setCheckable(true);
+        q25->setCheckable(true);
 
-        gridLayout_10->addWidget(q0_3, 3, 0, 1, 1);
+        gridLayout_10->addWidget(q25, 2, 3, 1, 1);
 
-        q1_4 = new QPushButton(groupBox_6);
-        q1_4->setObjectName(QString::fromUtf8("q1_4"));
-        q1_4->setMinimumSize(QSize(100, 40));
-        q1_4->setMaximumSize(QSize(100, 40));
-        q1_4->setFont(font2);
-        q1_4->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q29 = new QPushButton(groupBox_6);
+        q29->setObjectName(QString::fromUtf8("q29"));
+        q29->setMinimumSize(QSize(100, 40));
+        q29->setMaximumSize(QSize(100, 40));
+        q29->setFont(font2);
+        q29->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2547,16 +2658,14 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q1_4->setCheckable(true);
+        q29->setCheckable(true);
 
-        gridLayout_10->addWidget(q1_4, 4, 1, 1, 1);
+        gridLayout_10->addWidget(q29, 6, 3, 1, 1);
 
-        q0_4 = new QPushButton(groupBox_6);
-        q0_4->setObjectName(QString::fromUtf8("q0_4"));
-        q0_4->setMinimumSize(QSize(100, 40));
-        q0_4->setMaximumSize(QSize(100, 40));
-        q0_4->setFont(font2);
-        q0_4->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q3 = new QPushButton(groupBox_6);
+        q3->setObjectName(QString::fromUtf8("q3"));
+        q3->setFont(font2);
+        q3->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2576,16 +2685,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q0_4->setCheckable(true);
+        q3->setCheckable(true);
 
-        gridLayout_10->addWidget(q0_4, 4, 0, 1, 1);
+        gridLayout_10->addWidget(q3, 4, 0, 1, 1);
 
-        q1_2 = new QPushButton(groupBox_6);
-        q1_2->setObjectName(QString::fromUtf8("q1_2"));
-        q1_2->setMinimumSize(QSize(100, 40));
-        q1_2->setMaximumSize(QSize(100, 40));
-        q1_2->setFont(font2);
-        q1_2->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q26 = new QPushButton(groupBox_6);
+        q26->setObjectName(QString::fromUtf8("q26"));
+        q26->setMinimumSize(QSize(100, 40));
+        q26->setMaximumSize(QSize(100, 40));
+        q26->setFont(font2);
+        q26->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2605,16 +2714,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q1_2->setCheckable(true);
+        q26->setCheckable(true);
 
-        gridLayout_10->addWidget(q1_2, 2, 1, 1, 1);
+        gridLayout_10->addWidget(q26, 3, 3, 1, 1);
 
-        q1_5 = new QPushButton(groupBox_6);
-        q1_5->setObjectName(QString::fromUtf8("q1_5"));
-        q1_5->setMinimumSize(QSize(100, 40));
-        q1_5->setMaximumSize(QSize(100, 40));
-        q1_5->setFont(font2);
-        q1_5->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q13 = new QPushButton(groupBox_6);
+        q13->setObjectName(QString::fromUtf8("q13"));
+        q13->setMinimumSize(QSize(100, 40));
+        q13->setMaximumSize(QSize(100, 40));
+        q13->setFont(font2);
+        q13->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2634,16 +2743,14 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q1_5->setCheckable(true);
+        q13->setCheckable(true);
 
-        gridLayout_10->addWidget(q1_5, 5, 1, 1, 1);
+        gridLayout_10->addWidget(q13, 6, 1, 1, 1);
 
-        q2_3 = new QPushButton(groupBox_6);
-        q2_3->setObjectName(QString::fromUtf8("q2_3"));
-        q2_3->setMinimumSize(QSize(100, 40));
-        q2_3->setMaximumSize(QSize(100, 40));
-        q2_3->setFont(font2);
-        q2_3->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q1 = new QPushButton(groupBox_6);
+        q1->setObjectName(QString::fromUtf8("q1"));
+        q1->setFont(font2);
+        q1->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2663,16 +2770,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q2_3->setCheckable(true);
+        q1->setCheckable(true);
 
-        gridLayout_10->addWidget(q2_3, 3, 2, 1, 1);
+        gridLayout_10->addWidget(q1, 2, 0, 1, 1);
 
-        q1_3 = new QPushButton(groupBox_6);
-        q1_3->setObjectName(QString::fromUtf8("q1_3"));
-        q1_3->setMinimumSize(QSize(100, 40));
-        q1_3->setMaximumSize(QSize(100, 40));
-        q1_3->setFont(font2);
-        q1_3->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q21 = new QPushButton(groupBox_6);
+        q21->setObjectName(QString::fromUtf8("q21"));
+        q21->setMinimumSize(QSize(100, 40));
+        q21->setMaximumSize(QSize(100, 40));
+        q21->setFont(font2);
+        q21->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2692,16 +2799,14 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q1_3->setCheckable(true);
+        q21->setCheckable(true);
 
-        gridLayout_10->addWidget(q1_3, 3, 1, 1, 1);
+        gridLayout_10->addWidget(q21, 6, 2, 1, 1);
 
-        q2_4 = new QPushButton(groupBox_6);
-        q2_4->setObjectName(QString::fromUtf8("q2_4"));
-        q2_4->setMinimumSize(QSize(100, 40));
-        q2_4->setMaximumSize(QSize(100, 40));
-        q2_4->setFont(font2);
-        q2_4->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q4 = new QPushButton(groupBox_6);
+        q4->setObjectName(QString::fromUtf8("q4"));
+        q4->setFont(font2);
+        q4->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2721,16 +2826,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q2_4->setCheckable(true);
+        q4->setCheckable(true);
 
-        gridLayout_10->addWidget(q2_4, 4, 2, 1, 1);
+        gridLayout_10->addWidget(q4, 5, 0, 1, 1);
 
-        q0_7 = new QPushButton(groupBox_6);
-        q0_7->setObjectName(QString::fromUtf8("q0_7"));
-        q0_7->setMinimumSize(QSize(100, 40));
-        q0_7->setMaximumSize(QSize(100, 40));
-        q0_7->setFont(font2);
-        q0_7->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q30 = new QPushButton(groupBox_6);
+        q30->setObjectName(QString::fromUtf8("q30"));
+        q30->setMinimumSize(QSize(100, 40));
+        q30->setMaximumSize(QSize(100, 40));
+        q30->setFont(font2);
+        q30->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2750,16 +2855,14 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q0_7->setCheckable(true);
+        q30->setCheckable(true);
 
-        gridLayout_10->addWidget(q0_7, 7, 0, 1, 1);
+        gridLayout_10->addWidget(q30, 7, 3, 1, 1);
 
-        q2_8 = new QPushButton(groupBox_6);
-        q2_8->setObjectName(QString::fromUtf8("q2_8"));
-        q2_8->setMinimumSize(QSize(100, 40));
-        q2_8->setMaximumSize(QSize(100, 40));
-        q2_8->setFont(font2);
-        q2_8->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q0 = new QPushButton(groupBox_6);
+        q0->setObjectName(QString::fromUtf8("q0"));
+        q0->setFont(font2);
+        q0->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2779,16 +2882,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q2_8->setCheckable(true);
+        q0->setCheckable(true);
 
-        gridLayout_10->addWidget(q2_8, 0, 3, 1, 1);
+        gridLayout_10->addWidget(q0, 1, 0, 1, 1);
 
-        q2_9 = new QPushButton(groupBox_6);
-        q2_9->setObjectName(QString::fromUtf8("q2_9"));
-        q2_9->setMinimumSize(QSize(100, 40));
-        q2_9->setMaximumSize(QSize(100, 40));
-        q2_9->setFont(font2);
-        q2_9->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q5 = new QPushButton(groupBox_6);
+        q5->setObjectName(QString::fromUtf8("q5"));
+        q5->setMinimumSize(QSize(100, 40));
+        q5->setMaximumSize(QSize(100, 40));
+        q5->setFont(font2);
+        q5->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2808,16 +2911,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q2_9->setCheckable(true);
+        q5->setCheckable(true);
 
-        gridLayout_10->addWidget(q2_9, 1, 3, 1, 1);
+        gridLayout_10->addWidget(q5, 6, 0, 1, 1);
 
-        q2_10 = new QPushButton(groupBox_6);
-        q2_10->setObjectName(QString::fromUtf8("q2_10"));
-        q2_10->setMinimumSize(QSize(100, 40));
-        q2_10->setMaximumSize(QSize(100, 40));
-        q2_10->setFont(font2);
-        q2_10->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q14 = new QPushButton(groupBox_6);
+        q14->setObjectName(QString::fromUtf8("q14"));
+        q14->setMinimumSize(QSize(100, 40));
+        q14->setMaximumSize(QSize(100, 40));
+        q14->setFont(font2);
+        q14->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2837,16 +2940,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q2_10->setCheckable(true);
+        q14->setCheckable(true);
 
-        gridLayout_10->addWidget(q2_10, 2, 3, 1, 1);
+        gridLayout_10->addWidget(q14, 7, 1, 1, 1);
 
-        q2_11 = new QPushButton(groupBox_6);
-        q2_11->setObjectName(QString::fromUtf8("q2_11"));
-        q2_11->setMinimumSize(QSize(100, 40));
-        q2_11->setMaximumSize(QSize(100, 40));
-        q2_11->setFont(font2);
-        q2_11->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q28 = new QPushButton(groupBox_6);
+        q28->setObjectName(QString::fromUtf8("q28"));
+        q28->setMinimumSize(QSize(100, 40));
+        q28->setMaximumSize(QSize(100, 40));
+        q28->setFont(font2);
+        q28->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2866,16 +2969,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q2_11->setCheckable(true);
+        q28->setCheckable(true);
 
-        gridLayout_10->addWidget(q2_11, 3, 3, 1, 1);
+        gridLayout_10->addWidget(q28, 5, 3, 1, 1);
 
-        q2_12 = new QPushButton(groupBox_6);
-        q2_12->setObjectName(QString::fromUtf8("q2_12"));
-        q2_12->setMinimumSize(QSize(100, 40));
-        q2_12->setMaximumSize(QSize(100, 40));
-        q2_12->setFont(font2);
-        q2_12->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q15 = new QPushButton(groupBox_6);
+        q15->setObjectName(QString::fromUtf8("q15"));
+        q15->setMinimumSize(QSize(100, 40));
+        q15->setMaximumSize(QSize(100, 40));
+        q15->setFont(font2);
+        q15->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2895,16 +2998,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q2_12->setCheckable(true);
+        q15->setCheckable(true);
 
-        gridLayout_10->addWidget(q2_12, 4, 3, 1, 1);
+        gridLayout_10->addWidget(q15, 8, 1, 1, 1);
 
-        q2_13 = new QPushButton(groupBox_6);
-        q2_13->setObjectName(QString::fromUtf8("q2_13"));
-        q2_13->setMinimumSize(QSize(100, 40));
-        q2_13->setMaximumSize(QSize(100, 40));
-        q2_13->setFont(font2);
-        q2_13->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q16 = new QPushButton(groupBox_6);
+        q16->setObjectName(QString::fromUtf8("q16"));
+        q16->setMinimumSize(QSize(100, 40));
+        q16->setMaximumSize(QSize(100, 40));
+        q16->setFont(font2);
+        q16->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2924,16 +3027,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q2_13->setCheckable(true);
+        q16->setCheckable(true);
 
-        gridLayout_10->addWidget(q2_13, 5, 3, 1, 1);
+        gridLayout_10->addWidget(q16, 1, 2, 1, 1);
 
-        q2_14 = new QPushButton(groupBox_6);
-        q2_14->setObjectName(QString::fromUtf8("q2_14"));
-        q2_14->setMinimumSize(QSize(100, 40));
-        q2_14->setMaximumSize(QSize(100, 40));
-        q2_14->setFont(font2);
-        q2_14->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q9 = new QPushButton(groupBox_6);
+        q9->setObjectName(QString::fromUtf8("q9"));
+        q9->setMinimumSize(QSize(100, 40));
+        q9->setMaximumSize(QSize(100, 40));
+        q9->setFont(font2);
+        q9->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2953,16 +3056,16 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q2_14->setCheckable(true);
+        q9->setCheckable(true);
 
-        gridLayout_10->addWidget(q2_14, 6, 3, 1, 1);
+        gridLayout_10->addWidget(q9, 2, 1, 1, 1);
 
-        q2_15 = new QPushButton(groupBox_6);
-        q2_15->setObjectName(QString::fromUtf8("q2_15"));
-        q2_15->setMinimumSize(QSize(100, 40));
-        q2_15->setMaximumSize(QSize(100, 40));
-        q2_15->setFont(font2);
-        q2_15->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        q10 = new QPushButton(groupBox_6);
+        q10->setObjectName(QString::fromUtf8("q10"));
+        q10->setMinimumSize(QSize(100, 40));
+        q10->setMaximumSize(QSize(100, 40));
+        q10->setFont(font2);
+        q10->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"
 "	background-color: rgb(108, 191, 230);\n"
@@ -2982,9 +3085,37 @@ public:
 "	\n"
 "	background-color: rgb(204, 0, 20);\n"
 "}"));
-        q2_15->setCheckable(true);
+        q10->setCheckable(true);
 
-        gridLayout_10->addWidget(q2_15, 7, 3, 1, 1);
+        gridLayout_10->addWidget(q10, 3, 1, 1, 1);
+
+        label_64 = new QLabel(groupBox_6);
+        label_64->setObjectName(QString::fromUtf8("label_64"));
+        label_64->setFont(font6);
+        label_64->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+
+        gridLayout_10->addWidget(label_64, 0, 0, 1, 1);
+
+        label_65 = new QLabel(groupBox_6);
+        label_65->setObjectName(QString::fromUtf8("label_65"));
+        label_65->setFont(font6);
+        label_65->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+
+        gridLayout_10->addWidget(label_65, 0, 1, 1, 1);
+
+        label_84 = new QLabel(groupBox_6);
+        label_84->setObjectName(QString::fromUtf8("label_84"));
+        label_84->setFont(font6);
+        label_84->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+
+        gridLayout_10->addWidget(label_84, 0, 2, 1, 1);
+
+        label_85 = new QLabel(groupBox_6);
+        label_85->setObjectName(QString::fromUtf8("label_85"));
+        label_85->setFont(font6);
+        label_85->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+
+        gridLayout_10->addWidget(label_85, 0, 3, 1, 1);
 
 
         gridLayout_7->addWidget(groupBox_6, 0, 1, 1, 1);
@@ -3003,7 +3134,7 @@ public:
 
         retranslateUi(DebugWidget);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(DebugWidget);
@@ -3011,168 +3142,172 @@ public:
 
     void retranslateUi(QWidget *DebugWidget)
     {
-        DebugWidget->setWindowTitle(QCoreApplication::translate("DebugWidget", "DebugWidget", nullptr));
-        groupBox_2->setTitle(QCoreApplication::translate("DebugWidget", "\345\212\237\350\203\275", nullptr));
-        pushButton_xHome->setText(QCoreApplication::translate("DebugWidget", "X\350\275\264\345\233\236\345\216\237\347\202\271", nullptr));
-        pushButton_xRest->setText(QCoreApplication::translate("DebugWidget", "X\350\275\264\345\244\215\344\275\215", nullptr));
-        pushButton_yHome->setText(QCoreApplication::translate("DebugWidget", "Y\350\275\264\345\233\236\345\216\237\347\202\271", nullptr));
-        pushButton_yRest->setText(QCoreApplication::translate("DebugWidget", "Y\350\275\264\345\244\215\344\275\215", nullptr));
-        groupBox_3->setTitle(QCoreApplication::translate("DebugWidget", "\345\256\232\344\275\215", nullptr));
-        pushButton_xGoto->setText(QCoreApplication::translate("DebugWidget", "X\350\275\264\345\256\232\344\275\215", nullptr));
-        pushButton_yGoto->setText(QCoreApplication::translate("DebugWidget", "Y\350\275\264\345\256\232\344\275\215", nullptr));
-        label->setText(QCoreApplication::translate("DebugWidget", "X\350\275\264\344\275\215\347\275\256\357\274\232", nullptr));
-        label_5->setText(QCoreApplication::translate("DebugWidget", "MIN:111,MAX:222", nullptr));
-        label_3->setText(QCoreApplication::translate("DebugWidget", "MIN:111,MAX:222", nullptr));
-        labXaxisLocationOdd->setText(QCoreApplication::translate("DebugWidget", "\345\211\251\344\275\231\344\275\215\347\275\256\357\274\2320.0", nullptr));
-        label_2->setText(QCoreApplication::translate("DebugWidget", "Y\350\275\264\344\275\215\347\275\256\357\274\232", nullptr));
-        labYaxisLocationOdd->setText(QCoreApplication::translate("DebugWidget", "\345\211\251\344\275\231\344\275\215\347\275\256\357\274\2320.0", nullptr));
-        groupBox->setTitle(QCoreApplication::translate("DebugWidget", "\347\202\271\345\212\250", nullptr));
-        pushButton_yJog_up->setText(QCoreApplication::translate("DebugWidget", "Y\350\275\264\344\270\212\347\247\273", nullptr));
-        pushButton_xJog_l->setText(QCoreApplication::translate("DebugWidget", "X\350\275\264\345\217\263\347\247\273", nullptr));
-        pushButton_yJog_done->setText(QCoreApplication::translate("DebugWidget", "Y\350\275\264\344\270\213\347\247\273", nullptr));
-        pushButton_xJog_r->setText(QCoreApplication::translate("DebugWidget", "X\350\275\264\345\267\246\347\247\273", nullptr));
-        label_15->setText(QCoreApplication::translate("DebugWidget", "X\350\275\264\347\202\271\345\212\250\351\200\237\345\272\246\357\274\232", nullptr));
-        label_16->setText(QCoreApplication::translate("DebugWidget", "MIN:111,MAX:222", nullptr));
-        label_8->setText(QCoreApplication::translate("DebugWidget", "Y\350\275\264\347\202\271\345\212\250\351\200\237\345\272\246\357\274\232", nullptr));
-        label_17->setText(QCoreApplication::translate("DebugWidget", "MIN:111,MAX:222", nullptr));
-        groupBox_4->setTitle(QCoreApplication::translate("DebugWidget", "\347\212\266\346\200\201", nullptr));
-        label_yCurrentPos->setText(QCoreApplication::translate("DebugWidget", "0.0", nullptr));
-        label_7->setText(QCoreApplication::translate("DebugWidget", "X\350\275\264\344\275\215\347\275\256\357\274\232", nullptr));
-        label_yCurrentSpeed->setText(QCoreApplication::translate("DebugWidget", "0.0", nullptr));
-        label_xCurrentSpeed->setText(QCoreApplication::translate("DebugWidget", "0.0", nullptr));
-        label_xCurrentPos->setText(QCoreApplication::translate("DebugWidget", "0.0", nullptr));
-        label_12->setText(QCoreApplication::translate("DebugWidget", "Y\350\275\264\344\275\215\347\275\256\357\274\232", nullptr));
-        label_4->setText(QCoreApplication::translate("DebugWidget", "X\350\275\264\351\200\237\345\272\246\357\274\232", nullptr));
-        label_9->setText(QCoreApplication::translate("DebugWidget", "Y\350\275\264\351\200\237\345\272\246\357\274\232", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("DebugWidget", "\344\274\272\346\234\215\346\216\247\345\210\266", nullptr));
-        btnXaxisGoto_2->setText(QCoreApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\212", nullptr));
-        btnXaxisGoto_3->setText(QCoreApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\213", nullptr));
-        btnXaxisGoto_4->setText(QCoreApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\212", nullptr));
-        btnXaxisGoto_5->setText(QCoreApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\213", nullptr));
-        btnXaxisGoto_6->setText(QCoreApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\212", nullptr));
-        btnXaxisGoto_7->setText(QCoreApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\213", nullptr));
-        btnXaxisGoto_14->setText(QCoreApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\212", nullptr));
-        btnXaxisGoto_15->setText(QCoreApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\213", nullptr));
-        btnXaxisGoto_8->setText(QCoreApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\212", nullptr));
-        btnXaxisGoto_9->setText(QCoreApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\213", nullptr));
-        btnXaxisGoto_10->setText(QCoreApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\212", nullptr));
-        btnXaxisGoto_11->setText(QCoreApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\213", nullptr));
-        btnXaxisGoto_12->setText(QCoreApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\212", nullptr));
-        btnXaxisGoto_13->setText(QCoreApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\213", nullptr));
-        btnXaxisGoto_16->setText(QCoreApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\212", nullptr));
-        btnXaxisGoto_17->setText(QCoreApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\213", nullptr));
-        btnXaxisGoto_18->setText(QCoreApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\212", nullptr));
-        btnXaxisGoto_19->setText(QCoreApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\213", nullptr));
-        btnXaxisGoto_20->setText(QCoreApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\212", nullptr));
-        btnXaxisGoto_21->setText(QCoreApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\213", nullptr));
-        btnXaxisGoto_22->setText(QCoreApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\212", nullptr));
-        btnXaxisGoto_23->setText(QCoreApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\213", nullptr));
-        btnXaxisGoto_24->setText(QCoreApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\212", nullptr));
-        btnXaxisGoto_25->setText(QCoreApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\213", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_3), QCoreApplication::translate("DebugWidget", "\346\260\224\347\274\270\346\216\247\345\210\266", nullptr));
-        groupBox_5->setTitle(QCoreApplication::translate("DebugWidget", "\350\276\223\345\205\245", nullptr));
-        label_57->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_52->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_79->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_53->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_81->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_50->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_48->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_55->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_78->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_49->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_83->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i2_10->setText(QString());
-        i0_6->setText(QString());
-        i2_7->setText(QString());
-        i1_4->setText(QString());
-        label_72->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
+        DebugWidget->setWindowTitle(QApplication::translate("DebugWidget", "DebugWidget", nullptr));
+        groupBox_2->setTitle(QApplication::translate("DebugWidget", "\345\212\237\350\203\275", nullptr));
+        pushButton_xHome->setText(QApplication::translate("DebugWidget", "X\350\275\264\345\233\236\345\216\237\347\202\271", nullptr));
+        pushButton_xRest->setText(QApplication::translate("DebugWidget", "X\350\275\264\345\244\215\344\275\215", nullptr));
+        pushButton_yHome->setText(QApplication::translate("DebugWidget", "Y\350\275\264\345\233\236\345\216\237\347\202\271", nullptr));
+        pushButton_yRest->setText(QApplication::translate("DebugWidget", "Y\350\275\264\345\244\215\344\275\215", nullptr));
+        groupBox_3->setTitle(QApplication::translate("DebugWidget", "\345\256\232\344\275\215", nullptr));
+        pushButton_xGoto->setText(QApplication::translate("DebugWidget", "X\350\275\264\345\256\232\344\275\215", nullptr));
+        pushButton_yGoto->setText(QApplication::translate("DebugWidget", "Y\350\275\264\345\256\232\344\275\215", nullptr));
+        label->setText(QApplication::translate("DebugWidget", "X\350\275\264\344\275\215\347\275\256\357\274\232", nullptr));
+        label_5->setText(QApplication::translate("DebugWidget", "MIN:111,MAX:222", nullptr));
+        label_3->setText(QApplication::translate("DebugWidget", "MIN:111,MAX:222", nullptr));
+        labXaxisLocationOdd->setText(QApplication::translate("DebugWidget", "\345\211\251\344\275\231\344\275\215\347\275\256\357\274\2320.0", nullptr));
+        label_2->setText(QApplication::translate("DebugWidget", "Y\350\275\264\344\275\215\347\275\256\357\274\232", nullptr));
+        labYaxisLocationOdd->setText(QApplication::translate("DebugWidget", "\345\211\251\344\275\231\344\275\215\347\275\256\357\274\2320.0", nullptr));
+        groupBox->setTitle(QApplication::translate("DebugWidget", "\347\202\271\345\212\250", nullptr));
+        pushButton_yJog_up->setText(QApplication::translate("DebugWidget", "Y\350\275\264\344\270\212\347\247\273", nullptr));
+        pushButton_xJog_l->setText(QApplication::translate("DebugWidget", "X\350\275\264\345\217\263\347\247\273", nullptr));
+        pushButton_yJog_done->setText(QApplication::translate("DebugWidget", "Y\350\275\264\344\270\213\347\247\273", nullptr));
+        pushButton_xJog_r->setText(QApplication::translate("DebugWidget", "X\350\275\264\345\267\246\347\247\273", nullptr));
+        label_15->setText(QApplication::translate("DebugWidget", "X\350\275\264\347\202\271\345\212\250\351\200\237\345\272\246\357\274\232", nullptr));
+        label_16->setText(QApplication::translate("DebugWidget", "MIN:111,MAX:222", nullptr));
+        label_8->setText(QApplication::translate("DebugWidget", "Y\350\275\264\347\202\271\345\212\250\351\200\237\345\272\246\357\274\232", nullptr));
+        label_17->setText(QApplication::translate("DebugWidget", "MIN:111,MAX:222", nullptr));
+        groupBox_4->setTitle(QApplication::translate("DebugWidget", "\347\212\266\346\200\201", nullptr));
+        label_yCurrentPos->setText(QApplication::translate("DebugWidget", "0.0", nullptr));
+        label_7->setText(QApplication::translate("DebugWidget", "X\350\275\264\344\275\215\347\275\256\357\274\232", nullptr));
+        label_yCurrentSpeed->setText(QApplication::translate("DebugWidget", "0.0", nullptr));
+        label_xCurrentSpeed->setText(QApplication::translate("DebugWidget", "0.0", nullptr));
+        label_xCurrentPos->setText(QApplication::translate("DebugWidget", "0.0", nullptr));
+        label_12->setText(QApplication::translate("DebugWidget", "Y\350\275\264\344\275\215\347\275\256\357\274\232", nullptr));
+        label_4->setText(QApplication::translate("DebugWidget", "X\350\275\264\351\200\237\345\272\246\357\274\232", nullptr));
+        label_9->setText(QApplication::translate("DebugWidget", "Y\350\275\264\351\200\237\345\272\246\357\274\232", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("DebugWidget", "\344\274\272\346\234\215\346\216\247\345\210\266", nullptr));
+        m14_2->setText(QApplication::translate("DebugWidget", "2\345\217\267\345\220\270\345\230\264\344\270\212", nullptr));
+        m14_3->setText(QApplication::translate("DebugWidget", "2\345\217\267\345\220\270\345\230\264\344\270\213", nullptr));
+        m13_0->setText(QApplication::translate("DebugWidget", "1\345\217\267\344\270\213\346\250\241\346\260\224\347\274\270\344\274\270", nullptr));
+        m13_1->setText(QApplication::translate("DebugWidget", "1\345\217\267\344\270\213\346\250\241\346\260\224\347\274\270\347\274\251", nullptr));
+        m14_4->setText(QApplication::translate("DebugWidget", "1\345\217\267\347\234\237\347\251\272\351\230\200", nullptr));
+        m14_5->setText(QApplication::translate("DebugWidget", "2\345\217\267\347\234\237\347\251\272\351\230\200", nullptr));
+        m12_0->setText(QApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\212", nullptr));
+        m12_1->setText(QApplication::translate("DebugWidget", "1\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\213", nullptr));
+        m12_4->setText(QApplication::translate("DebugWidget", "3\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\212", nullptr));
+        m12_5->setText(QApplication::translate("DebugWidget", "3\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\213", nullptr));
+        m12_6->setText(QApplication::translate("DebugWidget", "4\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\212", nullptr));
+        m12_7->setText(QApplication::translate("DebugWidget", "4\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\213", nullptr));
+        m13_4->setText(QApplication::translate("DebugWidget", "2\345\217\267\344\270\213\346\250\241\346\260\224\347\274\270\344\274\270", nullptr));
+        m13_5->setText(QApplication::translate("DebugWidget", "3\345\217\267\344\270\213\346\250\241\346\260\224\347\274\270\347\274\251", nullptr));
+        m13_6->setText(QApplication::translate("DebugWidget", "2\345\217\267\344\270\213\346\250\241\346\260\224\347\274\270\344\274\270", nullptr));
+        m13_7->setText(QApplication::translate("DebugWidget", "4\345\217\267\344\270\213\346\250\241\346\260\224\347\274\270\347\274\251", nullptr));
+        m13_2->setText(QApplication::translate("DebugWidget", "2\345\217\267\344\270\213\346\250\241\346\260\224\347\274\270\344\274\270", nullptr));
+        m13_3->setText(QApplication::translate("DebugWidget", "2\345\217\267\344\270\213\346\250\241\346\260\224\347\274\270\347\274\251", nullptr));
+        m12_2->setText(QApplication::translate("DebugWidget", "2\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\212", nullptr));
+        m12_3->setText(QApplication::translate("DebugWidget", "2\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\213", nullptr));
+        m14_6->setText(QApplication::translate("DebugWidget", "1\345\217\267\345\220\271\346\260\224\351\230\200", nullptr));
+        m14_7->setText(QApplication::translate("DebugWidget", "2\345\217\267\345\220\271\346\260\224\351\230\200", nullptr));
+        m14_0->setText(QApplication::translate("DebugWidget", "1\345\217\267\345\220\270\345\230\264\344\270\212", nullptr));
+        m14_1->setText(QApplication::translate("DebugWidget", "1\345\217\267\345\220\270\345\230\264\344\270\213", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("DebugWidget", "\346\260\224\347\274\270\346\216\247\345\210\266", nullptr));
+        groupBox_5->setTitle(QApplication::translate("DebugWidget", "\350\276\223\345\205\245", nullptr));
+        label_57->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_52->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_79->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_53->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_81->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_50->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_48->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_55->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_78->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_49->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_83->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        i26->setText(QString());
+        i6->setText(QString());
+        i23->setText(QString());
+        i12->setText(QString());
+        label_72->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
         i2_12->setText(QString());
-        i1_1->setText(QString());
-        label_73->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_82->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i2_2->setText(QString());
-        label_51->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i0_5->setText(QString());
-        i2_4->setText(QString());
-        i0_7->setText(QString());
-        i1_7->setText(QString());
-        i2_15->setText(QString());
-        i2_9->setText(QString());
-        label_56->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i2_11->setText(QString());
-        i0_3->setText(QString());
-        label_66->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i1_0->setText(QString());
-        i1_5->setText(QString());
-        label_69->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i1_3->setText(QString());
-        i0_0->setText(QString());
-        label_47->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i2_13->setText(QString());
-        label_67->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i0_2->setText(QString());
-        i1_6->setText(QString());
-        label_68->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_71->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i0_1->setText(QString());
-        i2_0->setText(QString());
-        label_44->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_76->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_54->setText(QCoreApplication::translate("DebugWidget", "\345\230\273\345\230\273\345\230\273\345\230\273\345\230\273\345\230\273", nullptr));
-        label_70->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i2_1->setText(QString());
-        i2_8->setText(QString());
-        i2_14->setText(QString());
-        label_74->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i2_5->setText(QString());
-        label_46->setText(QCoreApplication::translate("DebugWidget", "Y\350\275\264\345\216\237\347\202\271\345\205\211\347\224\265:", nullptr));
-        label_45->setText(QCoreApplication::translate("DebugWidget", "X\350\275\264\345\216\237\347\202\271\345\205\211\347\224\265:", nullptr));
-        i1_2->setText(QString());
-        label_80->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        label_75->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i2_6->setText(QString());
-        i0_4->setText(QString());
-        label_77->setText(QCoreApplication::translate("DebugWidget", "I0.0", nullptr));
-        i2_3->setText(QString());
-        label_60->setText(QCoreApplication::translate("DebugWidget", "IB0", nullptr));
-        label_61->setText(QCoreApplication::translate("DebugWidget", "IB1", nullptr));
-        label_62->setText(QCoreApplication::translate("DebugWidget", "IB2", nullptr));
-        label_63->setText(QCoreApplication::translate("DebugWidget", "IB3", nullptr));
-        groupBox_6->setTitle(QCoreApplication::translate("DebugWidget", "\350\276\223\345\207\272", nullptr));
-        q1_0->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q1_7->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q0_2->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q0_6->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q0_5->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q1_1->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q0_1->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q2_0->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q2_1->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q2_5->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q0_0->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q2_2->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q1_6->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q2_7->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q2_6->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q0_3->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q1_4->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q0_4->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q1_2->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q1_5->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q2_3->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q1_3->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q2_4->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q0_7->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q2_8->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q2_9->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q2_10->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q2_11->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q2_12->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q2_13->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q2_14->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        q2_15->setText(QCoreApplication::translate("DebugWidget", "Q0.0", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("DebugWidget", "IO Map", nullptr));
+        i9->setText(QString());
+        label_73->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_82->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        i18->setText(QString());
+        label_51->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        i5->setText(QString());
+        i20->setText(QString());
+        i7->setText(QString());
+        i15->setText(QString());
+        i31->setText(QString());
+        i25->setText(QString());
+        label_56->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        i27->setText(QString());
+        i3->setText(QString());
+        label_66->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        i8->setText(QString());
+        i13->setText(QString());
+        label_69->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        i11->setText(QString());
+        i0->setText(QString());
+        label_47->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        i29->setText(QString());
+        label_67->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        i2->setText(QString());
+        i14->setText(QString());
+        label_68->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_71->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        i1->setText(QString());
+        i16->setText(QString());
+        label_44->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_76->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_54->setText(QApplication::translate("DebugWidget", "\345\230\273\345\230\273\345\230\273\345\230\273\345\230\273\345\230\273", nullptr));
+        label_70->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        i17->setText(QString());
+        i24->setText(QString());
+        i30->setText(QString());
+        label_74->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        i21->setText(QString());
+        label_46->setText(QApplication::translate("DebugWidget", "Y\350\275\264\345\216\237\347\202\271\345\205\211\347\224\265:", nullptr));
+        label_45->setText(QApplication::translate("DebugWidget", "X\350\275\264\345\216\237\347\202\271\345\205\211\347\224\265:", nullptr));
+        i10->setText(QString());
+        label_80->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        label_75->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        i22->setText(QString());
+        i4->setText(QString());
+        label_77->setText(QApplication::translate("DebugWidget", "I0.0", nullptr));
+        i19->setText(QString());
+        label_60->setText(QApplication::translate("DebugWidget", "IB0", nullptr));
+        label_61->setText(QApplication::translate("DebugWidget", "IB1", nullptr));
+        label_62->setText(QApplication::translate("DebugWidget", "IB2", nullptr));
+        label_63->setText(QApplication::translate("DebugWidget", "IB3", nullptr));
+        groupBox_6->setTitle(QApplication::translate("DebugWidget", "\350\276\223\345\207\272", nullptr));
+        q2->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q23->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q11->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q7->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q27->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q19->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q22->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q8->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q18->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q12->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q17->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q31->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q6->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q24->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q20->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q25->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q29->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q3->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q26->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q13->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q1->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q21->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q4->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q30->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q0->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q5->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q14->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q28->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q15->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q16->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q9->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        q10->setText(QApplication::translate("DebugWidget", "Q0.0", nullptr));
+        label_64->setText(QApplication::translate("DebugWidget", "QB0", nullptr));
+        label_65->setText(QApplication::translate("DebugWidget", "QB1", nullptr));
+        label_84->setText(QApplication::translate("DebugWidget", "QB2", nullptr));
+        label_85->setText(QApplication::translate("DebugWidget", "QB3", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("DebugWidget", "IO Map", nullptr));
     } // retranslateUi
 
 };

@@ -88,7 +88,7 @@ QTabBar:tab:hover {
       <string notr="true"/>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>2</number>
      </property>
      <property name="usesScrollButtons">
       <bool>true</bool>
@@ -869,37 +869,31 @@ QPushButton::checked
        <string>气缸控制</string>
       </attribute>
       <layout class="QGridLayout" name="gridLayout_9">
-       <item row="0" column="0">
-        <widget class="QWidget" name="widget_3" native="true">
-         <widget class="QPushButton" name="btnXaxisGoto_2">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>20</y>
-            <width>120</width>
-            <height>40</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>微软雅黑</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton
+       <item row="2" column="1">
+        <widget class="QWidget" name="widget_13" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <item>
+           <widget class="QPushButton" name="m14_2">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
 {
 	
 	background-color: rgb(108, 191, 230);
@@ -919,40 +913,34 @@ QPushButton::checked
 	
 	background-color: rgb(204, 0, 20);
 }</string>
-          </property>
-          <property name="text">
-           <string>1号压紧气缸上</string>
-          </property>
-         </widget>
-         <widget class="QPushButton" name="btnXaxisGoto_3">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>80</y>
-            <width>120</width>
-            <height>40</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>微软雅黑</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton
+            </property>
+            <property name="text">
+             <string>2号吸嘴上</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m14_3">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
 {
 	
 	background-color: rgb(108, 191, 230);
@@ -972,374 +960,40 @@ QPushButton::checked
 	
 	background-color: rgb(204, 0, 20);
 }</string>
-          </property>
-          <property name="text">
-           <string>1号压紧气缸下</string>
-          </property>
-         </widget>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QWidget" name="widget_5" native="true">
-         <widget class="QPushButton" name="btnXaxisGoto_4">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>20</y>
-            <width>120</width>
-            <height>40</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>微软雅黑</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-          </property>
-          <property name="text">
-           <string>1号压紧气缸上</string>
-          </property>
-         </widget>
-         <widget class="QPushButton" name="btnXaxisGoto_5">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>80</y>
-            <width>120</width>
-            <height>40</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>微软雅黑</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-          </property>
-          <property name="text">
-           <string>1号压紧气缸下</string>
-          </property>
-         </widget>
-        </widget>
-       </item>
-       <item row="0" column="2">
-        <widget class="QWidget" name="widget_6" native="true">
-         <widget class="QPushButton" name="btnXaxisGoto_6">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>20</y>
-            <width>120</width>
-            <height>40</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>微软雅黑</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-          </property>
-          <property name="text">
-           <string>1号压紧气缸上</string>
-          </property>
-         </widget>
-         <widget class="QPushButton" name="btnXaxisGoto_7">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>80</y>
-            <width>120</width>
-            <height>40</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>微软雅黑</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-          </property>
-          <property name="text">
-           <string>1号压紧气缸下</string>
-          </property>
-         </widget>
-        </widget>
-       </item>
-       <item row="0" column="3">
-        <widget class="QWidget" name="widget_10" native="true">
-         <widget class="QPushButton" name="btnXaxisGoto_14">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>20</y>
-            <width>120</width>
-            <height>40</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>微软雅黑</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-          </property>
-          <property name="text">
-           <string>1号压紧气缸上</string>
-          </property>
-         </widget>
-         <widget class="QPushButton" name="btnXaxisGoto_15">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>80</y>
-            <width>120</width>
-            <height>40</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>微软雅黑</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-          </property>
-          <property name="text">
-           <string>1号压紧气缸下</string>
-          </property>
-         </widget>
+            </property>
+            <property name="text">
+             <string>2号吸嘴下</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </item>
        <item row="1" column="0">
         <widget class="QWidget" name="widget_7" native="true">
-         <widget class="QPushButton" name="btnXaxisGoto_8">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>20</y>
-            <width>120</width>
-            <height>40</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>微软雅黑</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QPushButton" name="m13_0">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
 {
 	
 	background-color: rgb(108, 191, 230);
@@ -1359,40 +1013,34 @@ QPushButton::checked
 	
 	background-color: rgb(204, 0, 20);
 }</string>
-          </property>
-          <property name="text">
-           <string>1号压紧气缸上</string>
-          </property>
-         </widget>
-         <widget class="QPushButton" name="btnXaxisGoto_9">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>80</y>
-            <width>120</width>
-            <height>40</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>微软雅黑</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton
+            </property>
+            <property name="text">
+             <string>1号下模气缸伸</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m13_1">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
 {
 	
 	background-color: rgb(108, 191, 230);
@@ -1412,594 +1060,40 @@ QPushButton::checked
 	
 	background-color: rgb(204, 0, 20);
 }</string>
-          </property>
-          <property name="text">
-           <string>1号压紧气缸下</string>
-          </property>
-         </widget>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QWidget" name="widget_8" native="true">
-         <widget class="QPushButton" name="btnXaxisGoto_10">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>20</y>
-            <width>120</width>
-            <height>40</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>微软雅黑</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-          </property>
-          <property name="text">
-           <string>1号压紧气缸上</string>
-          </property>
-         </widget>
-         <widget class="QPushButton" name="btnXaxisGoto_11">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>80</y>
-            <width>120</width>
-            <height>40</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>微软雅黑</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-          </property>
-          <property name="text">
-           <string>1号压紧气缸下</string>
-          </property>
-         </widget>
-        </widget>
-       </item>
-       <item row="1" column="2">
-        <widget class="QWidget" name="widget_9" native="true">
-         <widget class="QPushButton" name="btnXaxisGoto_12">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>20</y>
-            <width>120</width>
-            <height>40</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>微软雅黑</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-          </property>
-          <property name="text">
-           <string>1号压紧气缸上</string>
-          </property>
-         </widget>
-         <widget class="QPushButton" name="btnXaxisGoto_13">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>80</y>
-            <width>120</width>
-            <height>40</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>微软雅黑</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-          </property>
-          <property name="text">
-           <string>1号压紧气缸下</string>
-          </property>
-         </widget>
-        </widget>
-       </item>
-       <item row="1" column="3">
-        <widget class="QWidget" name="widget_11" native="true">
-         <widget class="QPushButton" name="btnXaxisGoto_16">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>20</y>
-            <width>120</width>
-            <height>40</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>微软雅黑</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-          </property>
-          <property name="text">
-           <string>1号压紧气缸上</string>
-          </property>
-         </widget>
-         <widget class="QPushButton" name="btnXaxisGoto_17">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>80</y>
-            <width>120</width>
-            <height>40</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>微软雅黑</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-          </property>
-          <property name="text">
-           <string>1号压紧气缸下</string>
-          </property>
-         </widget>
-        </widget>
-       </item>
-       <item row="2" column="0">
-        <widget class="QWidget" name="widget_12" native="true">
-         <widget class="QPushButton" name="btnXaxisGoto_18">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>20</y>
-            <width>120</width>
-            <height>40</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>微软雅黑</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-          </property>
-          <property name="text">
-           <string>1号压紧气缸上</string>
-          </property>
-         </widget>
-         <widget class="QPushButton" name="btnXaxisGoto_19">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>80</y>
-            <width>120</width>
-            <height>40</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>微软雅黑</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-          </property>
-          <property name="text">
-           <string>1号压紧气缸下</string>
-          </property>
-         </widget>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="QWidget" name="widget_13" native="true">
-         <widget class="QPushButton" name="btnXaxisGoto_20">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>20</y>
-            <width>120</width>
-            <height>40</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>微软雅黑</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-          </property>
-          <property name="text">
-           <string>1号压紧气缸上</string>
-          </property>
-         </widget>
-         <widget class="QPushButton" name="btnXaxisGoto_21">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>80</y>
-            <width>120</width>
-            <height>40</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>微软雅黑</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-          </property>
-          <property name="text">
-           <string>1号压紧气缸下</string>
-          </property>
-         </widget>
+            </property>
+            <property name="text">
+             <string>1号下模气缸缩</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </item>
        <item row="2" column="2">
         <widget class="QWidget" name="widget_14" native="true">
-         <widget class="QPushButton" name="btnXaxisGoto_22">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>20</y>
-            <width>120</width>
-            <height>40</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>微软雅黑</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton
+         <layout class="QVBoxLayout" name="verticalLayout_11">
+          <item>
+           <widget class="QPushButton" name="m14_4">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
 {
 	
 	background-color: rgb(108, 191, 230);
@@ -2019,40 +1113,34 @@ QPushButton::checked
 	
 	background-color: rgb(204, 0, 20);
 }</string>
-          </property>
-          <property name="text">
-           <string>1号压紧气缸上</string>
-          </property>
-         </widget>
-         <widget class="QPushButton" name="btnXaxisGoto_23">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>80</y>
-            <width>120</width>
-            <height>40</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>微软雅黑</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton
+            </property>
+            <property name="text">
+             <string>1号真空阀</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m14_5">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
 {
 	
 	background-color: rgb(108, 191, 230);
@@ -2072,44 +1160,740 @@ QPushButton::checked
 	
 	background-color: rgb(204, 0, 20);
 }</string>
-          </property>
-          <property name="text">
-           <string>1号压紧气缸下</string>
-          </property>
-         </widget>
+            </property>
+            <property name="text">
+             <string>2号真空阀</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QWidget" name="widget_3" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QPushButton" name="m12_0">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+            </property>
+            <property name="text">
+             <string>1号压紧气缸上</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m12_1">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+            </property>
+            <property name="text">
+             <string>1号压紧气缸下</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QWidget" name="widget_6" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QPushButton" name="m12_4">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+            </property>
+            <property name="text">
+             <string>3号压紧气缸上</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m12_5">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+            </property>
+            <property name="text">
+             <string>3号压紧气缸下</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QWidget" name="widget_10" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QPushButton" name="m12_6">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+            </property>
+            <property name="text">
+             <string>4号压紧气缸上</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m12_7">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+            </property>
+            <property name="text">
+             <string>4号压紧气缸下</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QWidget" name="widget_9" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_10">
+          <item>
+           <widget class="QPushButton" name="m13_4">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+            </property>
+            <property name="text">
+             <string>2号下模气缸伸</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m13_5">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+            </property>
+            <property name="text">
+             <string>3号下模气缸缩</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QWidget" name="widget_11" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_12">
+          <item>
+           <widget class="QPushButton" name="m13_6">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+            </property>
+            <property name="text">
+             <string>2号下模气缸伸</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m13_7">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+            </property>
+            <property name="text">
+             <string>4号下模气缸缩</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QWidget" name="widget_8" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <item>
+           <widget class="QPushButton" name="m13_2">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+            </property>
+            <property name="text">
+             <string>2号下模气缸伸</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m13_3">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+            </property>
+            <property name="text">
+             <string>2号下模气缸缩</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QWidget" name="widget_5" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QPushButton" name="m12_2">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+            </property>
+            <property name="text">
+             <string>2号压紧气缸上</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m12_3">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+            </property>
+            <property name="text">
+             <string>2号压紧气缸下</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </item>
        <item row="2" column="3">
         <widget class="QWidget" name="widget_15" native="true">
-         <widget class="QPushButton" name="btnXaxisGoto_24">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>20</y>
-            <width>120</width>
-            <height>40</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>微软雅黑</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton
+         <layout class="QVBoxLayout" name="verticalLayout_13">
+          <item>
+           <widget class="QPushButton" name="m14_6">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
 {
 	
 	background-color: rgb(108, 191, 230);
@@ -2129,40 +1913,34 @@ QPushButton::checked
 	
 	background-color: rgb(204, 0, 20);
 }</string>
-          </property>
-          <property name="text">
-           <string>1号压紧气缸上</string>
-          </property>
-         </widget>
-         <widget class="QPushButton" name="btnXaxisGoto_25">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>80</y>
-            <width>120</width>
-            <height>40</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>120</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>微软雅黑</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton
+            </property>
+            <property name="text">
+             <string>1号吹气阀</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m14_7">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
 {
 	
 	background-color: rgb(108, 191, 230);
@@ -2182,11 +1960,113 @@ QPushButton::checked
 	
 	background-color: rgb(204, 0, 20);
 }</string>
-          </property>
-          <property name="text">
-           <string>1号压紧气缸下</string>
-          </property>
-         </widget>
+            </property>
+            <property name="text">
+             <string>2号吹气阀</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QWidget" name="widget_12" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_8">
+          <item>
+           <widget class="QPushButton" name="m14_0">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+            </property>
+            <property name="text">
+             <string>1号吸嘴上</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m14_1">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+            </property>
+            <property name="text">
+             <string>1号吸嘴下</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </item>
       </layout>
@@ -2206,7 +2086,7 @@ QPushButton::checked
             </property>
             <layout class="QGridLayout" name="gridLayout_8">
              <property name="spacing">
-              <number>20</number>
+              <number>10</number>
              </property>
              <item row="5" column="2">
               <widget class="QLabel" name="label_57">
@@ -2451,7 +2331,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="3" column="7">
-              <widget class="QLabel" name="i2_10">
+              <widget class="QLabel" name="i26">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -2476,7 +2356,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="7" column="1">
-              <widget class="QLabel" name="i0_6">
+              <widget class="QLabel" name="i6">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -2501,7 +2381,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="8" column="5">
-              <widget class="QLabel" name="i2_7">
+              <widget class="QLabel" name="i23">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -2526,7 +2406,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="5" column="3">
-              <widget class="QLabel" name="i1_4">
+              <widget class="QLabel" name="i12">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -2586,6 +2466,9 @@ QPushButton::checked
                  <height>38</height>
                 </size>
                </property>
+               <property name="styleSheet">
+                <string notr="true">i28</string>
+               </property>
                <property name="text">
                 <string/>
                </property>
@@ -2598,7 +2481,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="2" column="3">
-              <widget class="QLabel" name="i1_1">
+              <widget class="QLabel" name="i9">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -2667,7 +2550,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="3" column="5">
-              <widget class="QLabel" name="i2_2">
+              <widget class="QLabel" name="i18">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -2714,7 +2597,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="6" column="1">
-              <widget class="QLabel" name="i0_5">
+              <widget class="QLabel" name="i5">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -2739,7 +2622,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="5" column="5">
-              <widget class="QLabel" name="i2_4">
+              <widget class="QLabel" name="i20">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -2764,7 +2647,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="8" column="1">
-              <widget class="QLabel" name="i0_7">
+              <widget class="QLabel" name="i7">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -2789,7 +2672,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="8" column="3">
-              <widget class="QLabel" name="i1_7">
+              <widget class="QLabel" name="i15">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -2814,7 +2697,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="8" column="7">
-              <widget class="QLabel" name="i2_15">
+              <widget class="QLabel" name="i31">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -2839,7 +2722,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="2" column="7">
-              <widget class="QLabel" name="i2_9">
+              <widget class="QLabel" name="i25">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -2886,7 +2769,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="4" column="7">
-              <widget class="QLabel" name="i2_11">
+              <widget class="QLabel" name="i27">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -2911,7 +2794,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="4" column="1">
-              <widget class="QLabel" name="i0_3">
+              <widget class="QLabel" name="i3">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -2958,7 +2841,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="1" column="3">
-              <widget class="QLabel" name="i1_0">
+              <widget class="QLabel" name="i8">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -2983,7 +2866,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="6" column="3">
-              <widget class="QLabel" name="i1_5">
+              <widget class="QLabel" name="i13">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -3030,7 +2913,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="4" column="3">
-              <widget class="QLabel" name="i1_3">
+              <widget class="QLabel" name="i11">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -3055,7 +2938,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="1" column="1">
-              <widget class="QLabel" name="i0_0">
+              <widget class="QLabel" name="i0">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -3102,7 +2985,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="6" column="7">
-              <widget class="QLabel" name="i2_13">
+              <widget class="QLabel" name="i29">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -3149,7 +3032,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="3" column="1">
-              <widget class="QLabel" name="i0_2">
+              <widget class="QLabel" name="i2">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -3174,7 +3057,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="7" column="3">
-              <widget class="QLabel" name="i1_6">
+              <widget class="QLabel" name="i14">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -3243,7 +3126,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="2" column="1">
-              <widget class="QLabel" name="i0_1">
+              <widget class="QLabel" name="i1">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -3268,7 +3151,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="1" column="5">
-              <widget class="QLabel" name="i2_0">
+              <widget class="QLabel" name="i16">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -3381,7 +3264,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="2" column="5">
-              <widget class="QLabel" name="i2_1">
+              <widget class="QLabel" name="i17">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -3406,7 +3289,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="1" column="7">
-              <widget class="QLabel" name="i2_8">
+              <widget class="QLabel" name="i24">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -3431,7 +3314,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="7" column="7">
-              <widget class="QLabel" name="i2_14">
+              <widget class="QLabel" name="i30">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -3478,7 +3361,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="6" column="5">
-              <widget class="QLabel" name="i2_5">
+              <widget class="QLabel" name="i21">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -3541,7 +3424,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="3" column="3">
-              <widget class="QLabel" name="i1_2">
+              <widget class="QLabel" name="i10">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -3610,7 +3493,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="7" column="5">
-              <widget class="QLabel" name="i2_6">
+              <widget class="QLabel" name="i22">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -3635,7 +3518,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="5" column="1">
-              <widget class="QLabel" name="i0_4">
+              <widget class="QLabel" name="i4">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -3682,7 +3565,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="4" column="5">
-              <widget class="QLabel" name="i2_3">
+              <widget class="QLabel" name="i19">
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -3780,760 +3663,48 @@ QPushButton::checked
             </property>
             <layout class="QGridLayout" name="gridLayout_10">
              <property name="spacing">
-              <number>20</number>
+              <number>10</number>
              </property>
-             <item row="0" column="1">
-              <widget class="QPushButton" name="q1_0">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>微软雅黑</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-               </property>
-               <property name="text">
-                <string>Q0.0</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="7" column="1">
-              <widget class="QPushButton" name="q1_7">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>微软雅黑</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-               </property>
-               <property name="text">
-                <string>Q0.0</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="0">
-              <widget class="QPushButton" name="q0_2">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>微软雅黑</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-               </property>
-               <property name="text">
-                <string>Q0.0</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="6" column="0">
-              <widget class="QPushButton" name="q0_6">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>微软雅黑</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-               </property>
-               <property name="text">
-                <string>Q0.0</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="5" column="0">
-              <widget class="QPushButton" name="q0_5">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>微软雅黑</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-               </property>
-               <property name="text">
-                <string>Q0.0</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="1">
-              <widget class="QPushButton" name="q1_1">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>微软雅黑</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-               </property>
-               <property name="text">
-                <string>Q0.0</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="0">
-              <widget class="QPushButton" name="q0_1">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>微软雅黑</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-               </property>
-               <property name="text">
-                <string>Q0.0</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="2">
-              <widget class="QPushButton" name="q2_0">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>微软雅黑</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-               </property>
-               <property name="text">
-                <string>Q0.0</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="2">
-              <widget class="QPushButton" name="q2_1">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>微软雅黑</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-               </property>
-               <property name="text">
-                <string>Q0.0</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="5" column="2">
-              <widget class="QPushButton" name="q2_5">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>微软雅黑</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-               </property>
-               <property name="text">
-                <string>Q0.0</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="0">
-              <widget class="QPushButton" name="q0_0">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>微软雅黑</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-               </property>
-               <property name="text">
-                <string>Q0.0</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="2">
-              <widget class="QPushButton" name="q2_2">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>微软雅黑</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-               </property>
-               <property name="text">
-                <string>Q0.0</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="6" column="1">
-              <widget class="QPushButton" name="q1_6">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>微软雅黑</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-               </property>
-               <property name="text">
-                <string>Q0.0</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="7" column="2">
-              <widget class="QPushButton" name="q2_7">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>微软雅黑</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-               </property>
-               <property name="text">
-                <string>Q0.0</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="6" column="2">
-              <widget class="QPushButton" name="q2_6">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>微软雅黑</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-               </property>
-               <property name="text">
-                <string>Q0.0</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
              <item row="3" column="0">
-              <widget class="QPushButton" name="q0_3">
+              <widget class="QPushButton" name="q2">
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+               </property>
+               <property name="text">
+                <string>Q0.0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="2">
+              <widget class="QPushButton" name="q23">
                <property name="minimumSize">
                 <size>
                  <width>100</width>
@@ -4583,7 +3754,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="4" column="1">
-              <widget class="QPushButton" name="q1_4">
+              <widget class="QPushButton" name="q11">
                <property name="minimumSize">
                 <size>
                  <width>100</width>
@@ -4632,508 +3803,8 @@ QPushButton::checked
                </property>
               </widget>
              </item>
-             <item row="4" column="0">
-              <widget class="QPushButton" name="q0_4">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>微软雅黑</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-               </property>
-               <property name="text">
-                <string>Q0.0</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="1">
-              <widget class="QPushButton" name="q1_2">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>微软雅黑</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-               </property>
-               <property name="text">
-                <string>Q0.0</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="5" column="1">
-              <widget class="QPushButton" name="q1_5">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>微软雅黑</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-               </property>
-               <property name="text">
-                <string>Q0.0</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="2">
-              <widget class="QPushButton" name="q2_3">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>微软雅黑</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-               </property>
-               <property name="text">
-                <string>Q0.0</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="1">
-              <widget class="QPushButton" name="q1_3">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>微软雅黑</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-               </property>
-               <property name="text">
-                <string>Q0.0</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="2">
-              <widget class="QPushButton" name="q2_4">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>微软雅黑</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-               </property>
-               <property name="text">
-                <string>Q0.0</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="7" column="0">
-              <widget class="QPushButton" name="q0_7">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>微软雅黑</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-               </property>
-               <property name="text">
-                <string>Q0.0</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="3">
-              <widget class="QPushButton" name="q2_8">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>微软雅黑</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-               </property>
-               <property name="text">
-                <string>Q0.0</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="3">
-              <widget class="QPushButton" name="q2_9">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>微软雅黑</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-               </property>
-               <property name="text">
-                <string>Q0.0</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="3">
-              <widget class="QPushButton" name="q2_10">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>微软雅黑</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-               </property>
-               <property name="text">
-                <string>Q0.0</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="3">
-              <widget class="QPushButton" name="q2_11">
+             <item row="8" column="0">
+              <widget class="QPushButton" name="q7">
                <property name="minimumSize">
                 <size>
                  <width>100</width>
@@ -5183,7 +3854,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="4" column="3">
-              <widget class="QPushButton" name="q2_12">
+              <widget class="QPushButton" name="q27">
                <property name="minimumSize">
                 <size>
                  <width>100</width>
@@ -5232,8 +3903,508 @@ QPushButton::checked
                </property>
               </widget>
              </item>
-             <item row="5" column="3">
-              <widget class="QPushButton" name="q2_13">
+             <item row="4" column="2">
+              <widget class="QPushButton" name="q19">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+               </property>
+               <property name="text">
+                <string>Q0.0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="2">
+              <widget class="QPushButton" name="q22">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+               </property>
+               <property name="text">
+                <string>Q0.0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QPushButton" name="q8">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+               </property>
+               <property name="text">
+                <string>Q0.0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="2">
+              <widget class="QPushButton" name="q18">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+               </property>
+               <property name="text">
+                <string>Q0.0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QPushButton" name="q12">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+               </property>
+               <property name="text">
+                <string>Q0.0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="2">
+              <widget class="QPushButton" name="q17">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+               </property>
+               <property name="text">
+                <string>Q0.0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="3">
+              <widget class="QPushButton" name="q31">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+               </property>
+               <property name="text">
+                <string>Q0.0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="0">
+              <widget class="QPushButton" name="q6">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+               </property>
+               <property name="text">
+                <string>Q0.0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="3">
+              <widget class="QPushButton" name="q24">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+               </property>
+               <property name="text">
+                <string>Q0.0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="2">
+              <widget class="QPushButton" name="q20">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+               </property>
+               <property name="text">
+                <string>Q0.0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="3">
+              <widget class="QPushButton" name="q25">
                <property name="minimumSize">
                 <size>
                  <width>100</width>
@@ -5283,7 +4454,7 @@ QPushButton::checked
               </widget>
              </item>
              <item row="6" column="3">
-              <widget class="QPushButton" name="q2_14">
+              <widget class="QPushButton" name="q29">
                <property name="minimumSize">
                 <size>
                  <width>100</width>
@@ -5332,8 +4503,46 @@ QPushButton::checked
                </property>
               </widget>
              </item>
-             <item row="7" column="3">
-              <widget class="QPushButton" name="q2_15">
+             <item row="4" column="0">
+              <widget class="QPushButton" name="q3">
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+               </property>
+               <property name="text">
+                <string>Q0.0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="3">
+              <widget class="QPushButton" name="q26">
                <property name="minimumSize">
                 <size>
                  <width>100</width>
@@ -5379,6 +4588,684 @@ QPushButton::checked
                </property>
                <property name="checkable">
                 <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="1">
+              <widget class="QPushButton" name="q13">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+               </property>
+               <property name="text">
+                <string>Q0.0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QPushButton" name="q1">
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+               </property>
+               <property name="text">
+                <string>Q0.0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="2">
+              <widget class="QPushButton" name="q21">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+               </property>
+               <property name="text">
+                <string>Q0.0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QPushButton" name="q4">
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+               </property>
+               <property name="text">
+                <string>Q0.0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="3">
+              <widget class="QPushButton" name="q30">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+               </property>
+               <property name="text">
+                <string>Q0.0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QPushButton" name="q0">
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+               </property>
+               <property name="text">
+                <string>Q0.0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0">
+              <widget class="QPushButton" name="q5">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+               </property>
+               <property name="text">
+                <string>Q0.0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="1">
+              <widget class="QPushButton" name="q14">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+               </property>
+               <property name="text">
+                <string>Q0.0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="3">
+              <widget class="QPushButton" name="q28">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+               </property>
+               <property name="text">
+                <string>Q0.0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="1">
+              <widget class="QPushButton" name="q15">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+               </property>
+               <property name="text">
+                <string>Q0.0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QPushButton" name="q16">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+               </property>
+               <property name="text">
+                <string>Q0.0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QPushButton" name="q9">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+               </property>
+               <property name="text">
+                <string>Q0.0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QPushButton" name="q10">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+               </property>
+               <property name="text">
+                <string>Q0.0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_64">
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>QB0</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_65">
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>QB1</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label_84">
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>QB2</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QLabel" name="label_85">
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>QB3</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                </property>
               </widget>
              </item>

@@ -24,5 +24,7 @@ public slots:
 	void on_servoButtonPressed();
 	void on_servoButtonReleased();
 	void on_servoDspEditingFinished();
+	void on_cylinderButtonClicked();
+	void on_ioMapButtonClicked(bool checked);
 	void on_timeout();
 };

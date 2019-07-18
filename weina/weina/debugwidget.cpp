@@ -11,15 +11,18 @@ DebugWidget::DebugWidget(QWidget *parent)
 	setWindowFlags(Qt::CustomizeWindowHint | Qt::FramelessWindowHint);
 	hide();
 	QObject::connect(&timer, SIGNAL(timeout()), this, SLOT(on_timeout()));
-	QList<QPushButton*> btnList;
+	QList<QPushButton*> btnServoList;
+	QList<QPushButton*> btnCylinderList;
 	QList<QDoubleSpinBox*> dspboxList;
-	btnList =ui.tabWidget->widget(0)->findChildren<QPushButton*>();
+	QList<QPushButton*> btnIoMapList;
+	btnServoList =ui.tabWidget->widget(0)->findChildren<QPushButton*>();
 	dspboxList = ui.tabWidget->widget(0)->findChildren<QDoubleSpinBox*>();
-	
-	for (int i = 0; i < btnList.size(); i++)
+	btnCylinderList= ui.tabWidget->widget(1)->findChildren<QPushButton*>();
+	btnIoMapList = ui.tabWidget->widget(2)->findChildren<QPushButton*>();
+	for (int i = 0; i < btnServoList.size(); i++)
 	{
-		QString name = btnList[i]->objectName();
-		QPushButton* btn = qobject_cast<QPushButton*>(btnList[i]);
+		QString name = btnServoList[i]->objectName();
+		QPushButton* btn = qobject_cast<QPushButton*>(btnServoList[i]);
 		if (name=="pushButton_xJog_l"|| name == "pushButton_xJog_r" || name == "pushButton_yJog_up" || name == "pushButton_yJog_done")
 		{
 			QObject::connect(btn, SIGNAL(pressed()), this, SLOT(on_servoButtonPressed()));
@@ -36,6 +39,16 @@ DebugWidget::DebugWidget(QWidget *parent)
 		QString name = dspboxList[i]->objectName();
 		QObject::connect(dspboxList[i], SIGNAL(editingFinished()), this, SLOT(on_servoDspEditingFinished()));
 	}
+
+	for (int i = 0; i < btnCylinderList.size(); i++)
+	{
+		QObject::connect(btnCylinderList[i], SIGNAL(clicked()), this, SLOT(on_cylinderButtonClicked()));
+	}
+	for (int i = 0; i < btnIoMapList.size(); i++)
+	{
+		QObject::connect(btnIoMapList[i], SIGNAL(clicked(bool)), this, SLOT(on_ioMapButtonClicked(bool)));
+	}
+	timer.start(400);
 }
 
 DebugWidget::~DebugWidget()
@@ -53,6 +66,41 @@ void DebugWidget::refreshCylinderWidget()
 
 void DebugWidget::refreshIOmapWidget()
 {
+	auto plc = PLC::PlcStation::Instance();
+	for (int i = 0; i < plc->plcData.Q.size(); i++)
+	{
+		QString btnName = "q";
+		btnName.append(QString::number(i));
+		//qDebug() << btnName;
+		QPushButton* btnQ = ui.tabWidget->widget(2)->findChild<QPushButton*>(btnName);
+		if (btnQ)
+		{
+			//qDebug() << btnQ->objectName();
+			btnQ->setChecked(plc->plcData.Q[i]);
+		}	
+	}
+
+	for (int i = 0; i < plc->plcData.I.size(); i++)
+	{
+		QString labName = "i";
+		labName.append(QString::number(i));
+		//qDebug() << labName;
+		QLabel* labI = ui.tabWidget->widget(2)->findChild<QLabel*>(labName);
+		if (labI)
+		{
+			//qDebug() << labI->objectName();
+			if (plc->plcData.I[i])
+			{
+				labI->setPixmap(QPixmap(":/png/res/png/led_on.png"));
+			}
+			else
+			{
+				labI->setPixmap(QPixmap(":/png/res/png/led_off.png"));
+			}
+		}
+	}
+
+
 }
 
 void DebugWidget::showDialog()
@@ -205,6 +253,75 @@ void DebugWidget::on_servoDspEditingFinished()
 	qDebug() << text.data();
 }
 
+void DebugWidget::on_cylinderButtonClicked()
+{
+	auto plc = PLC::PlcStation::Instance();
+	QPushButton* btn = (QPushButton*)sender();
+	if (btn)
+	{
+		int byteNum = 0;
+		int bitNum = 0;
+		QString objname = btn->objectName();
+		QRegExp rx(tr("[^m_]"));
+		int pos(0);
+		QStringList strList;
+		while ((pos = rx.indexIn(objname, pos)) != -1)
+		{
+			strList.push_back(rx.capturedTexts().at(0));
+			pos += rx.matchedLength();
+		}
+		
+		QString byteStr="";
+		for (int i = 0; i < strList.size()-1; i++)
+		{
+			byteStr.append(strList[i]);
+		}
+		byteNum = byteStr.toInt();
+		bitNum = strList.last().toInt();
+		int a = plc->writeBool(AreaM, 0, byteNum, bitNum, true);
+		qDebug() << __FUNCTION__ <<__FILE__<<__LINE__<< objname << _tr(" ! PLC return:") << a;
+		array<char, 120> text;
+		plc->errorText(a, text.data(), text.size());
+		qDebug() << text.data();
+	}
+}
+
+void DebugWidget::on_ioMapButtonClicked(bool checked)
+{
+	auto plc = PLC::PlcStation::Instance();
+	QPushButton* btn = (QPushButton*)sender();
+	if (btn)
+	{
+		int byteNum = 0;
+		int bitNum = 0;
+		QString objname = btn->objectName();
+		QRegExp rx(tr("[^q]"));
+		int pos(0);
+		QStringList strList;
+		while ((pos = rx.indexIn(objname, pos)) != -1)
+		{
+			strList.push_back(rx.capturedTexts().at(0));
+			pos += rx.matchedLength();
+		}
+
+		QString addrStr = "";
+		int addrNum=800;
+		for (int i = 0; i < strList.size(); i++)
+		{
+			addrStr.append(strList[i]);
+		}
+		addrNum = addrStr.toInt();
+
+		byteNum = addrNum / 8;
+		bitNum = addrNum%8;
+		int a = plc->writeBool(AreaQ, 0, byteNum, bitNum, checked);
+		qDebug() << __FUNCTION__ << __FILE__ << __LINE__ << objname << _tr(" ! PLC return:") << a;
+		array<char, 120> text;
+		plc->errorText(a, text.data(), text.size());
+		qDebug() << text.data();
+	}
+}
+
 void DebugWidget::on_timeout()
 {
 	int index= ui.tabWidget->currentIndex();
@@ -215,7 +332,7 @@ void DebugWidget::on_timeout()
 		 
 	}
 	else if (index == 2) {
-
+		refreshIOmapWidget();
 	}
 }
 

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.13.0
+** Created by: Qt User Interface Compiler version 5.12.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -49,7 +49,9 @@ public:
     {
         if (MainWindowClass->objectName().isEmpty())
             MainWindowClass->setObjectName(QString::fromUtf8("MainWindowClass"));
-        MainWindowClass->resize(970, 638);
+        MainWindowClass->resize(1024, 768);
+        MainWindowClass->setMinimumSize(QSize(1024, 768));
+        MainWindowClass->setMaximumSize(QSize(1024, 768));
         MainWindowClass->setStyleSheet(QString::fromUtf8(""));
         centralWidget = new QWidget(MainWindowClass);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
@@ -165,10 +167,10 @@ public:
 
     void retranslateUi(QMainWindow *MainWindowClass)
     {
-        MainWindowClass->setWindowTitle(QCoreApplication::translate("MainWindowClass", "MainWindow", nullptr));
-        pushButton_home->setText(QCoreApplication::translate("MainWindowClass", "\344\270\273\347\225\214\351\235\242", nullptr));
-        pushButton_setup->setText(QCoreApplication::translate("MainWindowClass", "\350\256\276\347\275\256", nullptr));
-        pushButton_debug->setText(QCoreApplication::translate("MainWindowClass", "\350\260\203\350\257\225", nullptr));
+        MainWindowClass->setWindowTitle(QApplication::translate("MainWindowClass", "MainWindow", nullptr));
+        pushButton_home->setText(QApplication::translate("MainWindowClass", "\344\270\273\347\225\214\351\235\242", nullptr));
+        pushButton_setup->setText(QApplication::translate("MainWindowClass", "\350\256\276\347\275\256", nullptr));
+        pushButton_debug->setText(QApplication::translate("MainWindowClass", "\350\260\203\350\257\225", nullptr));
     } // retranslateUi
 
 };
