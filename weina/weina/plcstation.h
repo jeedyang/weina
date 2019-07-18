@@ -3,49 +3,65 @@
 #include <QObject>
 #include <QVariant>
 #include "plclib/ButterflyS7.h"
+#include <array>
+#include <bitset>
+#include <QThread>
+
+#define DEFINE_SINGLETON(cls) \
+ private:\
+ static std::auto_ptr<cls> m_pInstance;\
+ protected:\
+	cls();\
+ public:\
+  ~cls();\
+  static cls* Instance(){\
+  if(!m_pInstance.get()){\
+  m_pInstance = std::auto_ptr<cls>(new cls());\
+  }\
+  return m_pInstance.get();\
+ }
+
+#define IMPLEMENT_SINGLETON(cls) \
+std::auto_ptr<cls> cls::m_pInstance(NULL);
 
 #define NAMESPACE_START(a) namespace a{
 #define NAMESPACE_END }
-#define USING_NAMESPACE(b) using namespace b
 
+using namespace std;
 
 NAMESPACE_START(PLC)
 
-
+#define PLC_THREAD_ON 0x00FF
+#define PLC_THREAD_EIXT 0x0000
 
 typedef struct _PlcDataBuffer
 {
-	const int byteNumI=5;
-	const int byteNumQ=5;
-	const int byteNumM=5;
-	const int byteNumDB=40;
-	uchar* buffer_I;
-	uchar* buffer_Q;
-	uchar* buffer_M;
-	uchar* buffer_DB;
+	std::array<uchar, 5> buffer_I;
+	std::array<uchar, 5> buffer_Q;
+	std::array<uchar, 5> buffer_M;
+	std::array<uchar, 49> buffer_DB;
 
-	void mallocBuffer()
-	{
-		buffer_I = (uchar*)malloc(byteNumI);
-		buffer_Q = (uchar*)malloc(byteNumQ);
-		buffer_M = (uchar*)malloc(byteNumM);
-		buffer_DB = (uchar*)malloc(byteNumDB);
-	}
-	void freeBuffer()
-	{
-		free(buffer_I);
-		free(buffer_Q);
-		free(buffer_M);
-		free(buffer_DB);
-	}
 }PlcDataBuffer;
 
 typedef struct _PlcData
 {
-	bool I[4][8];
-	bool Q[4][8];
-	bool M[40];
-	struct LocationPam
+	bool I[128];
+	bool Q[128];
+	bool M[128];
+	struct _ServoPam
+	{
+		float runSpeed_X;			//X轴运行速度
+		float jogSpeed_X;			//X轴点动速度
+		float currentPos_X;			//X轴当前位置
+		float remainDistance_X;		//X轴剩余距离
+		float locationSet_X;		//X轴位置设置
+		float runSpeed_Y;			//Y轴运行速度
+		float jogSpeed_Y;			//Y轴点动速度
+		float currentPos_Y;			//Y轴当前位置
+		float remainDistance_Y;		//Y轴剩余距离
+		float locationSet_Y;		//Y轴位置设置
+	}ServoPam;
+	struct _PosPam
 	{
 		float nozzle_x;
 		float nozzle_y;
@@ -59,50 +75,82 @@ typedef struct _PlcData
 		float tray4_y;
 		float nozzle_space;
 		float tray_space;
-	};
-	struct Timers
+	}PosPam;
+	struct _Timers
 	{
 		int hot_time;
-	};
+	}Timers;
+
 }PlcData;
 
-class PlcStation : public QObject
+
+
+class PlcStation : public QThread
 {
 	Q_OBJECT
 
+	DEFINE_SINGLETON(PlcStation)
+
 public:
-	PlcStation(QObject *parent);
-	~PlcStation();
 	int connect();
 	int disconnect();
 	int writeBool(int area,int dbNum,int byteNum,int bitNum,bool value);
 	int writeFloat(int area, int dbNum, int byteNum, float value);
 	int readBlockAsByte(int area,int dbNum,int byteNum,int length,unsigned char* pucValue);	
-
-	int pollingStart();
-	int pollingStop();
+	int errorText(int errorCode,char* text,int textLen);
+	void pollingStart();
+	void pollingStop();
+	void waitThreadExit();
 	PlcData plcData;
 private:
-	static void threadPolling(PlcStation *plc);
+	void run();
+	int threadExitCode = 0;
 	PlcDataBuffer m_plcDataBuffer;
 	PlcHandle m_plcHandle;
 };
 
-static PlcStation* plcStation=nullptr;
-
-static void bytes2float(const uchar in[4], float& out);
-static void bytes2int(const uchar in[4], int& out);
-static void bytes2short(const uchar in[2], short& out);
-static void bytes2boolArry(const uchar in, int byteNum, const bool* out);
-static void bytesReversal(uchar* a, const int n);
-
-static PlcStation* getPlcInstance()
-{
-	if (plcStation == nullptr)
-	{
-		plcStation = new PlcStation(nullptr);
-	}
-	return plcStation;
-}
 
 NAMESPACE_END
+
+static void bytesReversal(uchar* a, int n)
+{
+	int i = 0;
+	unsigned char temp;
+	for (i = 0; i < n / 2; i++) {
+		temp = a[i];
+		a[i] = a[n - i - 1];
+		a[n - i - 1] = temp;
+	}
+}
+
+static void bytes2float(uchar in[4], float& out)
+{
+	bytesReversal(in,4);
+	memcpy(&out, in, 4);
+}
+
+static void bytes2int(uchar in[4], int& out)
+{
+	memcpy(&out, in, 4);
+}
+
+static void bytes2short(uchar in[2], short& out)
+{
+	memcpy(&out, in, 2);
+}
+
+static void bytes2boolArry(uchar* in, int byteNum, bool* out)
+{
+	for (int i = 0; i < byteNum; i++)
+	{
+		bitset<8> bits(in[i]);
+		for (int a = 0; a < 8; a++)
+		{
+			out[i * 8 + a] = bits[a];
+		}
+	}
+}
+
+
+
+

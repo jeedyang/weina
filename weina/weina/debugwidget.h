@@ -21,6 +21,8 @@ private:
 public slots:
 	void showDialog();
 	void on_servoButtonClicked(bool checked);
+	void on_servoButtonPressed();
+	void on_servoButtonReleased();
 	void on_servoDspEditingFinished();
-	void on_timout();
+	void on_timeout();
 };

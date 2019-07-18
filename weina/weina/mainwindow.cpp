@@ -8,12 +8,15 @@ MainWindow::MainWindow(QWidget *parent)
 	initForm();
 	QObject::connect(&m_btnGroup,SIGNAL(buttonToggled(QAbstractButton * , bool )),this,SLOT(on_btnGroupToggled(QAbstractButton*, bool)));
 
-	plc = PLC::getPlcInstance();
+	auto plc = PLC::PlcStation::Instance();
 	int a=plc->connect();
 	qDebug() << a;
 	if (a == 0)
 	{
-		//plc->pollingStart();
+		plc->writeBool(AreaQ,0,0,0,true);
+		plc->writeBool(AreaQ, 0, 0, 3, true);
+		plc->writeBool(AreaQ, 0, 0, 7, true);
+		plc->pollingStart();
 	}
 }
 
@@ -50,8 +53,6 @@ void MainWindow::initForm()
 	m_btnGroup.addButton(ui.pushButton_home,0);
 	m_btnGroup.addButton(ui.pushButton_setup, 1);
 	m_btnGroup.addButton(ui.pushButton_debug, 2);
-
-
 
 	//showWidget(ui.stackedWidget_main->widget(0), m_panel_widget);
 }
