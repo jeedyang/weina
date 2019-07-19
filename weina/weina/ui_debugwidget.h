@@ -1,13 +1,13 @@
 /********************************************************************************
-** Form generated from reading UI file 'debugwidgetOECYJv.ui'
+** Form generated from reading UI file 'debugwidgetdhbqXk.ui'
 **
 ** Created by: Qt User Interface Compiler version 5.13.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef DEBUGWIDGETOECYJV_H
-#define DEBUGWIDGETOECYJV_H
+#ifndef DEBUGWIDGETDHBQXK_H
+#define DEBUGWIDGETDHBQXK_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -35,12 +35,6 @@ public:
     QTabWidget *tabWidget;
     QWidget *tab;
     QGridLayout *gridLayout_2;
-    QGroupBox *groupBox_2;
-    QGridLayout *gridLayout_4;
-    QPushButton *pushButton_xHome;
-    QPushButton *pushButton_xRest;
-    QPushButton *pushButton_yHome;
-    QPushButton *pushButton_yRest;
     QGroupBox *groupBox_3;
     QGridLayout *gridLayout_5;
     QPushButton *pushButton_xGoto;
@@ -80,6 +74,12 @@ public:
     QLabel *label_12;
     QLabel *label_4;
     QLabel *label_9;
+    QGroupBox *groupBox_2;
+    QGridLayout *gridLayout_4;
+    QPushButton *pushButton_xHome;
+    QPushButton *pushButton_xRest;
+    QPushButton *pushButton_yHome;
+    QPushButton *pushButton_yRest;
     QWidget *tab_3;
     QGridLayout *gridLayout_9;
     QWidget *widget_13;
@@ -301,142 +301,14 @@ public:
         gridLayout_2->setSpacing(6);
         gridLayout_2->setContentsMargins(11, 11, 11, 11);
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
-        groupBox_2 = new QGroupBox(tab);
-        groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
+        groupBox_3 = new QGroupBox(tab);
+        groupBox_3->setObjectName(QString::fromUtf8("groupBox_3"));
         QFont font1;
         font1.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
         font1.setPointSize(11);
-        groupBox_2->setFont(font1);
-        gridLayout_4 = new QGridLayout(groupBox_2);
-        gridLayout_4->setSpacing(6);
-        gridLayout_4->setContentsMargins(11, 11, 11, 11);
-        gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
-        pushButton_xHome = new QPushButton(groupBox_2);
-        pushButton_xHome->setObjectName(QString::fromUtf8("pushButton_xHome"));
-        pushButton_xHome->setMinimumSize(QSize(120, 50));
-        pushButton_xHome->setMaximumSize(QSize(120, 50));
-        QFont font2;
-        font2.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
-        font2.setPointSize(10);
-        pushButton_xHome->setFont(font2);
-        pushButton_xHome->setStyleSheet(QString::fromUtf8("QPushButton\n"
-"{\n"
-"	\n"
-"	background-color: rgb(108, 191, 230);\n"
-"    border-radius: 11px 11px ;\n"
-"}\n"
-"QPushButton::hover\n"
-"{\n"
-"    background-color: rgb(56, 135, 188);\n"
-"}\n"
-"QPushButton::pressed\n"
-"{\n"
-"    background-color: rgb(144, 48, 0)\n"
-"}\n"
-"QPushButton::checked \n"
-"{\n"
-"    \n"
-"	\n"
-"	background-color: rgb(204, 0, 20);\n"
-"}"));
-
-        gridLayout_4->addWidget(pushButton_xHome, 0, 0, 1, 1);
-
-        pushButton_xRest = new QPushButton(groupBox_2);
-        pushButton_xRest->setObjectName(QString::fromUtf8("pushButton_xRest"));
-        pushButton_xRest->setMinimumSize(QSize(120, 50));
-        pushButton_xRest->setMaximumSize(QSize(120, 50));
-        pushButton_xRest->setFont(font2);
-        pushButton_xRest->setStyleSheet(QString::fromUtf8("QPushButton\n"
-"{\n"
-"	\n"
-"	background-color: rgb(108, 191, 230);\n"
-"    border-radius: 11px 11px ;\n"
-"}\n"
-"QPushButton::hover\n"
-"{\n"
-"    background-color: rgb(56, 135, 188);\n"
-"}\n"
-"QPushButton::pressed\n"
-"{\n"
-"    background-color: rgb(144, 48, 0)\n"
-"}\n"
-"QPushButton::checked \n"
-"{\n"
-"    \n"
-"	\n"
-"	background-color: rgb(204, 0, 20);\n"
-"}"));
-
-        gridLayout_4->addWidget(pushButton_xRest, 0, 1, 1, 1);
-
-        pushButton_yHome = new QPushButton(groupBox_2);
-        pushButton_yHome->setObjectName(QString::fromUtf8("pushButton_yHome"));
-        pushButton_yHome->setMinimumSize(QSize(120, 50));
-        pushButton_yHome->setMaximumSize(QSize(120, 50));
-        pushButton_yHome->setFont(font2);
-        pushButton_yHome->setStyleSheet(QString::fromUtf8("QPushButton\n"
-"{\n"
-"	\n"
-"	background-color: rgb(108, 191, 230);\n"
-"    border-radius: 11px 11px ;\n"
-"}\n"
-"QPushButton::hover\n"
-"{\n"
-"    background-color: rgb(56, 135, 188);\n"
-"}\n"
-"QPushButton::pressed\n"
-"{\n"
-"    background-color: rgb(144, 48, 0)\n"
-"}\n"
-"QPushButton::checked \n"
-"{\n"
-"    \n"
-"	\n"
-"	background-color: rgb(204, 0, 20);\n"
-"}"));
-
-        gridLayout_4->addWidget(pushButton_yHome, 1, 0, 1, 1);
-
-        pushButton_yRest = new QPushButton(groupBox_2);
-        pushButton_yRest->setObjectName(QString::fromUtf8("pushButton_yRest"));
-        pushButton_yRest->setMinimumSize(QSize(120, 50));
-        pushButton_yRest->setMaximumSize(QSize(120, 50));
-        pushButton_yRest->setFont(font2);
-        pushButton_yRest->setStyleSheet(QString::fromUtf8("QPushButton\n"
-"{\n"
-"	\n"
-"	background-color: rgb(108, 191, 230);\n"
-"    border-radius: 11px 11px ;\n"
-"}\n"
-"QPushButton::hover\n"
-"{\n"
-"    background-color: rgb(56, 135, 188);\n"
-"}\n"
-"QPushButton::pressed\n"
-"{\n"
-"    background-color: rgb(144, 48, 0)\n"
-"}\n"
-"QPushButton::checked \n"
-"{\n"
-"    \n"
-"	\n"
-"	background-color: rgb(204, 0, 20);\n"
-"}"));
-
-        gridLayout_4->addWidget(pushButton_yRest, 1, 1, 1, 1);
-
-
-        gridLayout_2->addWidget(groupBox_2, 0, 1, 1, 1);
-
-        groupBox_3 = new QGroupBox(tab);
-        groupBox_3->setObjectName(QString::fromUtf8("groupBox_3"));
-        QFont font3;
-        font3.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
-        font3.setPointSize(11);
-        font3.setBold(false);
-        font3.setWeight(50);
-        groupBox_3->setFont(font3);
+        font1.setBold(false);
+        font1.setWeight(50);
+        groupBox_3->setFont(font1);
         gridLayout_5 = new QGridLayout(groupBox_3);
         gridLayout_5->setSpacing(6);
         gridLayout_5->setContentsMargins(11, 11, 11, 11);
@@ -445,6 +317,9 @@ public:
         pushButton_xGoto->setObjectName(QString::fromUtf8("pushButton_xGoto"));
         pushButton_xGoto->setMinimumSize(QSize(120, 40));
         pushButton_xGoto->setMaximumSize(QSize(120, 40));
+        QFont font2;
+        font2.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
+        font2.setPointSize(10);
         pushButton_xGoto->setFont(font2);
         pushButton_xGoto->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
@@ -516,16 +391,16 @@ public:
         label_5 = new QLabel(groupBox_3);
         label_5->setObjectName(QString::fromUtf8("label_5"));
         label_5->setMaximumSize(QSize(16777215, 20));
-        QFont font4;
-        font4.setPointSize(8);
-        label_5->setFont(font4);
+        QFont font3;
+        font3.setPointSize(8);
+        label_5->setFont(font3);
 
         gridLayout_5->addWidget(label_5, 3, 1, 1, 1);
 
         label_3 = new QLabel(groupBox_3);
         label_3->setObjectName(QString::fromUtf8("label_3"));
         label_3->setMaximumSize(QSize(16777215, 20));
-        label_3->setFont(font4);
+        label_3->setFont(font3);
 
         gridLayout_5->addWidget(label_3, 1, 1, 1, 1);
 
@@ -550,7 +425,7 @@ public:
 
         groupBox = new QGroupBox(tab);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        groupBox->setFont(font3);
+        groupBox->setFont(font1);
         horizontalLayout = new QHBoxLayout(groupBox);
         horizontalLayout->setSpacing(6);
         horizontalLayout->setContentsMargins(11, 11, 11, 11);
@@ -687,9 +562,9 @@ public:
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         label_15 = new QLabel(widget);
         label_15->setObjectName(QString::fromUtf8("label_15"));
-        QFont font5;
-        font5.setPointSize(10);
-        label_15->setFont(font5);
+        QFont font4;
+        font4.setPointSize(10);
+        label_15->setFont(font4);
 
         verticalLayout->addWidget(label_15);
 
@@ -700,7 +575,7 @@ public:
 
         label_16 = new QLabel(widget);
         label_16->setObjectName(QString::fromUtf8("label_16"));
-        label_16->setFont(font4);
+        label_16->setFont(font3);
 
         verticalLayout->addWidget(label_16);
 
@@ -710,7 +585,7 @@ public:
 
         label_8 = new QLabel(widget);
         label_8->setObjectName(QString::fromUtf8("label_8"));
-        label_8->setFont(font5);
+        label_8->setFont(font4);
 
         verticalLayout->addWidget(label_8);
 
@@ -721,7 +596,7 @@ public:
 
         label_17 = new QLabel(widget);
         label_17->setObjectName(QString::fromUtf8("label_17"));
-        label_17->setFont(font4);
+        label_17->setFont(font3);
 
         verticalLayout->addWidget(label_17);
 
@@ -733,7 +608,10 @@ public:
 
         groupBox_4 = new QGroupBox(tab);
         groupBox_4->setObjectName(QString::fromUtf8("groupBox_4"));
-        groupBox_4->setFont(font1);
+        QFont font5;
+        font5.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
+        font5.setPointSize(11);
+        groupBox_4->setFont(font5);
         gridLayout_6 = new QGridLayout(groupBox_4);
         gridLayout_6->setSpacing(6);
         gridLayout_6->setContentsMargins(11, 11, 11, 11);
@@ -780,6 +658,128 @@ public:
 
 
         gridLayout_2->addWidget(groupBox_4, 1, 1, 1, 1);
+
+        groupBox_2 = new QGroupBox(tab);
+        groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
+        groupBox_2->setFont(font5);
+        gridLayout_4 = new QGridLayout(groupBox_2);
+        gridLayout_4->setSpacing(6);
+        gridLayout_4->setContentsMargins(11, 11, 11, 11);
+        gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
+        pushButton_xHome = new QPushButton(groupBox_2);
+        pushButton_xHome->setObjectName(QString::fromUtf8("pushButton_xHome"));
+        pushButton_xHome->setMinimumSize(QSize(120, 50));
+        pushButton_xHome->setMaximumSize(QSize(120, 50));
+        pushButton_xHome->setFont(font2);
+        pushButton_xHome->setStyleSheet(QString::fromUtf8("QPushButton\n"
+"{\n"
+"	\n"
+"	background-color: rgb(108, 191, 230);\n"
+"    border-radius: 11px 11px ;\n"
+"}\n"
+"QPushButton::hover\n"
+"{\n"
+"    background-color: rgb(56, 135, 188);\n"
+"}\n"
+"QPushButton::pressed\n"
+"{\n"
+"    background-color: rgb(144, 48, 0)\n"
+"}\n"
+"QPushButton::checked \n"
+"{\n"
+"    \n"
+"	\n"
+"	background-color: rgb(204, 0, 20);\n"
+"}"));
+
+        gridLayout_4->addWidget(pushButton_xHome, 0, 0, 1, 1);
+
+        pushButton_xRest = new QPushButton(groupBox_2);
+        pushButton_xRest->setObjectName(QString::fromUtf8("pushButton_xRest"));
+        pushButton_xRest->setMinimumSize(QSize(120, 50));
+        pushButton_xRest->setMaximumSize(QSize(120, 50));
+        pushButton_xRest->setFont(font2);
+        pushButton_xRest->setStyleSheet(QString::fromUtf8("QPushButton\n"
+"{\n"
+"	\n"
+"	background-color: rgb(108, 191, 230);\n"
+"    border-radius: 11px 11px ;\n"
+"}\n"
+"QPushButton::hover\n"
+"{\n"
+"    background-color: rgb(56, 135, 188);\n"
+"}\n"
+"QPushButton::pressed\n"
+"{\n"
+"    background-color: rgb(144, 48, 0)\n"
+"}\n"
+"QPushButton::checked \n"
+"{\n"
+"    \n"
+"	\n"
+"	background-color: rgb(204, 0, 20);\n"
+"}"));
+
+        gridLayout_4->addWidget(pushButton_xRest, 0, 1, 1, 1);
+
+        pushButton_yHome = new QPushButton(groupBox_2);
+        pushButton_yHome->setObjectName(QString::fromUtf8("pushButton_yHome"));
+        pushButton_yHome->setMinimumSize(QSize(120, 50));
+        pushButton_yHome->setMaximumSize(QSize(120, 50));
+        pushButton_yHome->setFont(font2);
+        pushButton_yHome->setStyleSheet(QString::fromUtf8("QPushButton\n"
+"{\n"
+"	\n"
+"	background-color: rgb(108, 191, 230);\n"
+"    border-radius: 11px 11px ;\n"
+"}\n"
+"QPushButton::hover\n"
+"{\n"
+"    background-color: rgb(56, 135, 188);\n"
+"}\n"
+"QPushButton::pressed\n"
+"{\n"
+"    background-color: rgb(144, 48, 0)\n"
+"}\n"
+"QPushButton::checked \n"
+"{\n"
+"    \n"
+"	\n"
+"	background-color: rgb(204, 0, 20);\n"
+"}"));
+
+        gridLayout_4->addWidget(pushButton_yHome, 1, 0, 1, 1);
+
+        pushButton_yRest = new QPushButton(groupBox_2);
+        pushButton_yRest->setObjectName(QString::fromUtf8("pushButton_yRest"));
+        pushButton_yRest->setMinimumSize(QSize(120, 50));
+        pushButton_yRest->setMaximumSize(QSize(120, 50));
+        pushButton_yRest->setFont(font2);
+        pushButton_yRest->setStyleSheet(QString::fromUtf8("QPushButton\n"
+"{\n"
+"	\n"
+"	background-color: rgb(108, 191, 230);\n"
+"    border-radius: 11px 11px ;\n"
+"}\n"
+"QPushButton::hover\n"
+"{\n"
+"    background-color: rgb(56, 135, 188);\n"
+"}\n"
+"QPushButton::pressed\n"
+"{\n"
+"    background-color: rgb(144, 48, 0)\n"
+"}\n"
+"QPushButton::checked \n"
+"{\n"
+"    \n"
+"	\n"
+"	background-color: rgb(204, 0, 20);\n"
+"}"));
+
+        gridLayout_4->addWidget(pushButton_yRest, 1, 1, 1, 1);
+
+
+        gridLayout_2->addWidget(groupBox_2, 0, 1, 1, 1);
 
         tabWidget->addTab(tab, QString());
         tab_3 = new QWidget();
@@ -2445,11 +2445,6 @@ public:
     void retranslateUi(QWidget *DebugWidget)
     {
         DebugWidget->setWindowTitle(QCoreApplication::translate("DebugWidget", "DebugWidget", nullptr));
-        groupBox_2->setTitle(QCoreApplication::translate("DebugWidget", "\345\212\237\350\203\275", nullptr));
-        pushButton_xHome->setText(QCoreApplication::translate("DebugWidget", "X\350\275\264\345\233\236\345\216\237\347\202\271", nullptr));
-        pushButton_xRest->setText(QCoreApplication::translate("DebugWidget", "X\350\275\264\345\244\215\344\275\215", nullptr));
-        pushButton_yHome->setText(QCoreApplication::translate("DebugWidget", "Y\350\275\264\345\233\236\345\216\237\347\202\271", nullptr));
-        pushButton_yRest->setText(QCoreApplication::translate("DebugWidget", "Y\350\275\264\345\244\215\344\275\215", nullptr));
         groupBox_3->setTitle(QCoreApplication::translate("DebugWidget", "\345\256\232\344\275\215", nullptr));
         pushButton_xGoto->setText(QCoreApplication::translate("DebugWidget", "X\350\275\264\345\256\232\344\275\215", nullptr));
         pushButton_yGoto->setText(QCoreApplication::translate("DebugWidget", "Y\350\275\264\345\256\232\344\275\215", nullptr));
@@ -2477,6 +2472,11 @@ public:
         label_12->setText(QCoreApplication::translate("DebugWidget", "Y\350\275\264\344\275\215\347\275\256\357\274\232", nullptr));
         label_4->setText(QCoreApplication::translate("DebugWidget", "X\350\275\264\351\200\237\345\272\246\357\274\232", nullptr));
         label_9->setText(QCoreApplication::translate("DebugWidget", "Y\350\275\264\351\200\237\345\272\246\357\274\232", nullptr));
+        groupBox_2->setTitle(QCoreApplication::translate("DebugWidget", "\345\212\237\350\203\275", nullptr));
+        pushButton_xHome->setText(QCoreApplication::translate("DebugWidget", "X\350\275\264\345\233\236\345\216\237\347\202\271", nullptr));
+        pushButton_xRest->setText(QCoreApplication::translate("DebugWidget", "X\350\275\264\345\244\215\344\275\215", nullptr));
+        pushButton_yHome->setText(QCoreApplication::translate("DebugWidget", "Y\350\275\264\345\233\236\345\216\237\347\202\271", nullptr));
+        pushButton_yRest->setText(QCoreApplication::translate("DebugWidget", "Y\350\275\264\345\244\215\344\275\215", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("DebugWidget", "\344\274\272\346\234\215\346\216\247\345\210\266", nullptr));
         m14_2->setText(QCoreApplication::translate("DebugWidget", "2\345\217\267\345\220\270\345\230\264\344\270\212", nullptr));
         m14_3->setText(QCoreApplication::translate("DebugWidget", "2\345\217\267\345\220\270\345\230\264\344\270\213", nullptr));
@@ -2620,4 +2620,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // DEBUGWIDGETOECYJV_H
+#endif // DEBUGWIDGETDHBQXK_H

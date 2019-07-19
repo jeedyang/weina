@@ -101,209 +101,6 @@ QTabBar:tab:hover {
        <string>伺服控制</string>
       </attribute>
       <layout class="QGridLayout" name="gridLayout_2">
-       <item row="0" column="1">
-        <widget class="QGroupBox" name="groupBox_2">
-         <property name="font">
-          <font>
-           <family>微软雅黑</family>
-           <pointsize>11</pointsize>
-          </font>
-         </property>
-         <property name="title">
-          <string>功能</string>
-         </property>
-         <layout class="QGridLayout" name="gridLayout_4">
-          <item row="0" column="0">
-           <widget class="QPushButton" name="pushButton_xHome">
-            <property name="minimumSize">
-             <size>
-              <width>120</width>
-              <height>50</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>120</width>
-              <height>50</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <family>微软雅黑</family>
-              <pointsize>10</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-            </property>
-            <property name="text">
-             <string>X轴回原点</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="1">
-           <widget class="QPushButton" name="pushButton_xRest">
-            <property name="minimumSize">
-             <size>
-              <width>120</width>
-              <height>50</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>120</width>
-              <height>50</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <family>微软雅黑</family>
-              <pointsize>10</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-            </property>
-            <property name="text">
-             <string>X轴复位</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0">
-           <widget class="QPushButton" name="pushButton_yHome">
-            <property name="minimumSize">
-             <size>
-              <width>120</width>
-              <height>50</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>120</width>
-              <height>50</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <family>微软雅黑</family>
-              <pointsize>10</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-            </property>
-            <property name="text">
-             <string>Y轴回原点</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="1">
-           <widget class="QPushButton" name="pushButton_yRest">
-            <property name="minimumSize">
-             <size>
-              <width>120</width>
-              <height>50</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>120</width>
-              <height>50</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <family>微软雅黑</family>
-              <pointsize>10</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton
-{
-	
-	background-color: rgb(108, 191, 230);
-    border-radius: 11px 11px ;
-}
-QPushButton::hover
-{
-    background-color: rgb(56, 135, 188);
-}
-QPushButton::pressed
-{
-    background-color: rgb(144, 48, 0)
-}
-QPushButton::checked 
-{
-    
-	
-	background-color: rgb(204, 0, 20);
-}</string>
-            </property>
-            <property name="text">
-             <string>Y轴复位</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
        <item row="1" column="0">
         <widget class="QGroupBox" name="groupBox_3">
          <property name="font">
@@ -856,6 +653,209 @@ QPushButton::checked
            <widget class="QLabel" name="label_9">
             <property name="text">
              <string>Y轴速度：</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>功能</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="0">
+           <widget class="QPushButton" name="pushButton_xHome">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+            </property>
+            <property name="text">
+             <string>X轴回原点</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="pushButton_xRest">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+            </property>
+            <property name="text">
+             <string>X轴复位</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="pushButton_yHome">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+            </property>
+            <property name="text">
+             <string>Y轴回原点</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="pushButton_yRest">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	
+	background-color: rgb(108, 191, 230);
+    border-radius: 11px 11px ;
+}
+QPushButton::hover
+{
+    background-color: rgb(56, 135, 188);
+}
+QPushButton::pressed
+{
+    background-color: rgb(144, 48, 0)
+}
+QPushButton::checked 
+{
+    
+	
+	background-color: rgb(204, 0, 20);
+}</string>
+            </property>
+            <property name="text">
+             <string>Y轴复位</string>
             </property>
            </widget>
           </item>
