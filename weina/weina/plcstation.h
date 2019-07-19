@@ -33,7 +33,23 @@ std::auto_ptr<cls> cls::m_pInstance(NULL);
 using namespace std;
 
 typedef  int plcMemoryAddr;
-typedef  std::array<uchar, 512> dbBuffer;
+typedef  std::array<uchar, 36> dbBuffer;
+
+typedef struct _PlcData
+{
+	std::array<bool, 40> I;
+	std::array<bool, 40> Q;
+	std::array<bool, 160> M;
+
+	QMap<plcMemoryAddr, QString> Define_float_DB;
+	QMap<plcMemoryAddr, QString> Define_int_DB;
+	QMap<plcMemoryAddr, QString> Define_short_DB;
+
+
+
+	QMap<int, dbBuffer> buffer_DB;
+
+}PlcData;
 
 NAMESPACE_START(PLC)
 
@@ -47,23 +63,6 @@ typedef struct _PlcDataBuffer
 	std::array<uchar, 20> M;
 
 }PlcDataBuffer;
-
-
-
-typedef struct _PlcData
-{
-	std::array<bool, 40> I;
-	std::array<bool, 40> Q;
-	std::array<bool, 160> M;
-
-	QMap<plcMemoryAddr,QString> Define_float_DB;
-	QMap<plcMemoryAddr, QString> Define_int_DB;
-	QMap<plcMemoryAddr, QString> Define_short_DB;
-
-	QMap<int, dbBuffer> buffer_DB;
-
-}PlcData;
-
 
 
 class PlcStation : public QThread
@@ -80,17 +79,27 @@ public:
 	int writeFloat(int area, int dbNum, int byteNum, float value);
 	int readBlockAsByte(int area,int dbNum,int byteNum,int length,unsigned char* pucValue);	
 	int errorText(int errorCode,char* text,int textLen);
+	//开始轮询
 	void pollingStart();
+	//停止轮询
 	void pollingStop();
+	//等待线程退出
 	void waitThreadExit();
+	//连接状态
 	bool isConnect();
+	//DB合成单个地址
 	int toEntireAddr(int dbNum,int startNum );
-	void toDBaddr(int in_EntireAddr, int &out_dbNum, int & out_startNum);
+	//单个地址转成DB号加起始地址
+	void toDbAddr(int in_EntireAddr, int &out_dbNum, int & out_startNum);
+	//获取db值
 	QVariant getValue(QString defineName);
 	QVariant getValue(plcMemoryAddr plcAddr);
+	//设置db值
 	int setValue(QString defineName, QVariant value);
 	int setValue(plcMemoryAddr plcAddr, QVariant value);
+	//通过地址获取定义名称
 	QString findDefineName(plcMemoryAddr plcAddr,QVariant::Type &valType, QString&defaultReturn);
+	//通过定义查地址
 	plcMemoryAddr findPlcAddr(QString defineName, QVariant::Type &valType, plcMemoryAddr& defaultReturn);
 	PlcData plcData;
 private:
@@ -104,45 +113,9 @@ private:
 
 NAMESPACE_END
 
-static void bytesReversal(uchar* a, int n)
-{
-	int i = 0;
-	unsigned char temp;
-	for (i = 0; i < n / 2; i++) {
-		temp = a[i];
-		a[i] = a[n - i - 1];
-		a[n - i - 1] = temp;
-	}
-}
-
-static void bytes2float(uchar in[4], float& out)
-{
-	bytesReversal(in,4);
-	memcpy(&out, in, 4);
-}
-
-static void bytes2int(uchar in[4], int& out)
-{
-	memcpy(&out, in, 4);
-}
-
-static void bytes2short(uchar in[2], short& out)
-{
-	memcpy(&out, in, 2);
-}
-
-static void bytes2boolArry(uchar* in, int byteNum, bool* out)
-{
-	for (int i = 0; i < byteNum; i++)
-	{
-		bitset<8> bits(in[i]);
-		for (int a = 0; a < 8; a++)
-		{
-			out[i * 8 + a] = bits[a];
-		}
-	}
-}
-
-
-
+static void bytesReversal(uchar* a, int n);
+static void bytes2float(uchar in[4], float& out);
+static void bytes2int(uchar in[4], int& out);
+static void bytes2short(uchar in[2], short& out);
+static void bytes2boolArry(uchar* in, int byteNum, bool* out);
 
