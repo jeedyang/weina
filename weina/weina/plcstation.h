@@ -7,6 +7,9 @@
 #include <bitset>
 #include <QThread>
 
+#define _tr(str) QString::fromLocal8Bit(str)
+#define qErrOut() qDebug()<<_tr("发生一个错误:在文件:\n")<<__FILE__<<_tr("\n函数:")<<__FUNCTION__<<_tr("\n行:")<<__LINE__<<"\n"
+
 #define DEFINE_SINGLETON(cls) \
  private:\
  static std::auto_ptr<cls> m_pInstance;\
@@ -29,6 +32,9 @@ std::auto_ptr<cls> cls::m_pInstance(NULL);
 
 using namespace std;
 
+typedef  int plcMemoryAddr;
+typedef  std::array<uchar, 512> dbBuffer;
+
 NAMESPACE_START(PLC)
 
 #define PLC_THREAD_ON 0x00FF
@@ -39,47 +45,22 @@ typedef struct _PlcDataBuffer
 	std::array<uchar, 5> I;
 	std::array<uchar, 5> Q;
 	std::array<uchar, 20> M;
-	std::array<uchar, 49> DB;
 
 }PlcDataBuffer;
+
+
 
 typedef struct _PlcData
 {
 	std::array<bool, 40> I;
 	std::array<bool, 40> Q;
 	std::array<bool, 160> M;
-	struct _ServoPam
-	{
-		float runSpeed_X;			//X轴运行速度
-		float jogSpeed_X;			//X轴点动速度
-		float currentPos_X;			//X轴当前位置
-		float remainDistance_X;		//X轴剩余距离
-		float locationSet_X;		//X轴位置设置
-		float runSpeed_Y;			//Y轴运行速度
-		float jogSpeed_Y;			//Y轴点动速度
-		float currentPos_Y;			//Y轴当前位置
-		float remainDistance_Y;		//Y轴剩余距离
-		float locationSet_Y;		//Y轴位置设置
-	}ServoPam;
-	struct _PosPam
-	{
-		float nozzle_x;
-		float nozzle_y;
-		float tray1_x;
-		float tray1_y;
-		float tray2_x;
-		float tray2_y;
-		float tray3_x;
-		float tray3_y;
-		float tray4_x;
-		float tray4_y;
-		float nozzle_space;
-		float tray_space;
-	}PosPam;
-	struct _Timers
-	{
-		int hot_time;
-	}Timers;
+
+	QMap<plcMemoryAddr,QString> Define_float_DB;
+	QMap<plcMemoryAddr, QString> Define_int_DB;
+	QMap<plcMemoryAddr, QString> Define_short_DB;
+
+	QMap<int, dbBuffer> buffer_DB;
 
 }PlcData;
 
@@ -95,6 +76,7 @@ public:
 	int connect();
 	int disconnect();
 	int writeBool(int area,int dbNum,int byteNum,int bitNum,bool value);
+	int writeInt(int area, int dbNum, int byteNum, int value);
 	int writeFloat(int area, int dbNum, int byteNum, float value);
 	int readBlockAsByte(int area,int dbNum,int byteNum,int length,unsigned char* pucValue);	
 	int errorText(int errorCode,char* text,int textLen);
@@ -102,6 +84,14 @@ public:
 	void pollingStop();
 	void waitThreadExit();
 	bool isConnect();
+	int toEntireAddr(int dbNum,int startNum );
+	void toDBaddr(int in_EntireAddr, int &out_dbNum, int & out_startNum);
+	QVariant getValue(QString defineName);
+	QVariant getValue(plcMemoryAddr plcAddr);
+	int setValue(QString defineName, QVariant value);
+	int setValue(plcMemoryAddr plcAddr, QVariant value);
+	QString findDefineName(plcMemoryAddr plcAddr,QVariant::Type &valType, QString&defaultReturn);
+	plcMemoryAddr findPlcAddr(QString defineName, QVariant::Type &valType, plcMemoryAddr& defaultReturn);
 	PlcData plcData;
 private:
 	bool isconnect=false;

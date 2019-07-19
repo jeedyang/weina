@@ -44,11 +44,87 @@ DebugWidget::DebugWidget(QWidget *parent)
 	{
 		QObject::connect(btnCylinderList[i], SIGNAL(clicked()), this, SLOT(on_cylinderButtonClicked()));
 	}
-	for (int i = 0; i < btnIoMapList.size(); i++)
+
+	QList<QLabel*> labList = ui.tabWidget->findChildren<QLabel*>();
+	for (int i = 0; i < labList.size(); i++)
 	{
-		QObject::connect(btnIoMapList[i], SIGNAL(clicked(bool)), this, SLOT(on_ioMapButtonClicked(bool)));
+		auto objName = labList[i]->objectName();
+		if (objName[0] == _tr("i"))
+		{
+			objName.remove(0,1);
+			m_labMap_I[objName.toInt()] = labList[i];
+		}
 	}
+
+	QList<QPushButton*> btnList = ui.tabWidget->findChildren<QPushButton*>();
+	for (int i = 0; i < btnList.size(); i++)
+	{
+		auto objName = btnList[i]->objectName();
+		if (objName[0] == _tr("q"))
+		{
+			objName.remove(0, 1);
+			m_btnMap_Q[objName.toInt()] = btnList[i];
+		}
+		else if(objName[0] == _tr("m"))
+		{
+			objName.remove(0, 1);
+			m_btnMap_M[objName.toInt()] = btnList[i];
+		}
+	}
+
+	QList<QAbstractSpinBox*> spinBoxList = ui.tabWidget->findChildren<QAbstractSpinBox*>();
+	for (int i = 0; i < spinBoxList.size(); i++)
+	{
+		auto objName = spinBoxList[i]->objectName();
+		if (objName[0] == _tr("db"))
+		{
+			objName.remove(0, 2);
+			m_spinBoxMap_DB[objName.toInt()] = spinBoxList[i];
+			QObject::connect(spinBoxList[i], SIGNAL(editingFinished()), this, SLOT(on_spinEditingFinished()));
+		}
+	}
+
+	QMap<int, QLabel*>::iterator it_I;
+	for (it_I = m_labMap_I.begin(); it_I != m_labMap_I.end();it_I++)
+	{
+		m_labMap_I[it_I.key()]->setMaximumSize(34, 32);
+		m_labMap_I[it_I.key()]->setMinimumSize(34, 32);
+		m_labMap_I[it_I.key()]->setScaledContents(true);
+	}
+
+	QMap<int, QPushButton*>::iterator it_Q;
+	for (it_Q = m_btnMap_Q.begin(); it_Q != m_btnMap_Q.end(); it_Q++)
+	{
+		m_btnMap_Q[it_Q.key()]->setMaximumSize(80, 32);
+		m_btnMap_Q[it_Q.key()]->setMinimumSize(80, 32);
+		QObject::connect(m_btnMap_Q[it_Q.key()], SIGNAL(clicked(bool)), this, SLOT(on_ioMapButtonClicked(bool)));
+	}
+
+	//QList<QLabel*> labList_I = ui.groupBox_I->findChildren<QLabel*>();
+	//for (int i = 0; i < labList_I.size(); i++)
+	//{
+	//	auto objName = labList_I[i]->objectName();
+	//	if (objName[0]==_tr("i"))
+	//	{
+	//		labList_I[i]->setMaximumSize(34, 32);
+	//		labList_I[i]->setMinimumSize(34, 32);
+	//		labList_I[i]->setScaledContents(true);
+	//	}		
+	//}
+
+	//QList<QPushButton*> btnList_Q = ui.groupBox_Q->findChildren<QPushButton*>();
+	//for (int i = 0; i < btnList_Q.size(); i++)
+	//{
+	//	auto objName = btnList_Q[i]->objectName();
+	//	if (objName[0] == _tr("q"))
+	//	{
+	//		btnList_Q[i]->setMaximumSize(80, 32);
+	//		btnList_Q[i]->setMinimumSize(80, 32);
+	//	}
+	//}
+
 	timer.start(400);
+	qCritical() << "666";
 }
 
 DebugWidget::~DebugWidget()
@@ -223,11 +299,27 @@ void DebugWidget::on_servoButtonReleased()
 	}
 }
 
-void DebugWidget::on_servoDspEditingFinished()
+void DebugWidget::on_spinEditingFinished()
 {
 	auto plc = PLC::PlcStation::Instance();
-	QDoubleSpinBox* dspBox = (QDoubleSpinBox*)sender();
-	QString objname = dspBox->objectName();
+	QAbstractSpinBox* senderBox = (QAbstractSpinBox*)sender();
+
+	if (senderBox->inherits("QDoubleSpinBox"))
+	{
+		auto spinBox = (QDoubleSpinBox*)senderBox;
+		auto key= m_spinBoxMap_DB.key(spinBox,-1);
+		if (key == -1)
+		{
+
+		}
+	}
+	else if(senderBox->inherits("QSpinBox"))
+	{
+		auto spinBox = (QSpinBox*)senderBox;
+	}
+
+
+	QString objname = senderBox->objectName();
 	int byteNum = 0;
 	if (objname == _tr("doubleSpinBox_xJog_speed")) {		// 
 		byteNum = 0;
@@ -246,10 +338,10 @@ void DebugWidget::on_servoDspEditingFinished()
 	}
 	else
 		return;
-	int a=plc->writeFloat(AreaDB,1, byteNum,dspBox->value());
-	qDebug() << objname << " EditingFinished ! PLC return:" << a;
+	//int a=plc->writeFloat(AreaDB,1, byteNum, senderBox->value());
+	//qDebug() << objname << " EditingFinished ! PLC return:" << a;
 	array<char, 120> text;
-	plc->errorText(a,text.data(),text.size());
+	//plc->errorText(a,text.data(),text.size());
 	qDebug() << text.data();
 }
 
@@ -324,6 +416,12 @@ void DebugWidget::on_ioMapButtonClicked(bool checked)
 
 void DebugWidget::on_timeout()
 {
+	auto plc = PLC::PlcStation::Instance();
+	qDebug() << plc->getValue(_tr("X轴运行速度"));
+	qDebug() << plc->getValue(_tr("X轴点动速度"));
+	qDebug() << plc->getValue(_tr("X轴当前位置"));
+	qDebug() << plc->getValue(_tr("X轴剩余距离"));
+	qDebug() << plc->getValue(_tr("X轴位置设置"));
 	int index= ui.tabWidget->currentIndex();
 	if (index==0){
 		
