@@ -14,6 +14,7 @@ public:
 	~DebugWidget();
 
 private:
+	void refreshSpinBox();
 	void refreshServoWidget();
 	void refreshMbuttonWidget();
 	void refreshIOmapWidget();

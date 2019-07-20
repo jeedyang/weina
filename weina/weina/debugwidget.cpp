@@ -94,12 +94,34 @@ DebugWidget::DebugWidget(QWidget *parent)
 			QObject::connect(m_btnMap_M[it_M.key()], SIGNAL(clicked(bool)), this, SLOT(on_mButtonClicked(bool)));
 		}
 	}
-	timer.start(400);
+	timer.start(10);
 	qCritical() << "666";
 }
 
 DebugWidget::~DebugWidget()
 {
+}
+
+void DebugWidget::refreshSpinBox()
+{
+	auto plc = PLC::PlcStation::Instance();
+	QMap<int, QAbstractSpinBox*>::iterator it;
+	for (it = m_spinBoxMap_DB.begin(); it != m_spinBoxMap_DB.end(); it++)
+	{
+		if (m_spinBoxMap_DB[it.key()]->inherits("QDoubleSpinBox"))
+		{
+			auto spinBox = (QDoubleSpinBox*)m_spinBoxMap_DB[it.key()];
+		}
+		else if (m_spinBoxMap_DB[it.key()]->inherits("QSpinBox"))
+		{
+			auto spinBox = (QSpinBox*)m_spinBoxMap_DB[it.key()];
+
+		}
+		QString objName = m_spinBoxMap_DB[it.key()]->objectName();
+		int addr = objName.remove(0, 2).toInt();
+		QVariant val= plc->getValue(addr);
+		//m_spinBoxMap_DB[it.key()]
+	}
 }
 
 void DebugWidget::refreshServoWidget()
@@ -124,6 +146,7 @@ void DebugWidget::refreshServoWidget()
 			qErrOut() << _tr("未知类型!")<<val;
 		}
 	}
+
 }
 
 void DebugWidget::refreshMbuttonWidget()
@@ -304,7 +327,7 @@ void DebugWidget::on_ioMapButtonClicked(bool checked)
 
 void DebugWidget::on_timeout()
 {
-	auto plc = PLC::PlcStation::Instance();
+	//auto plc = PLC::PlcStation::Instance();
 	//qDebug() << plc->setValue(_tr("X轴运行速度"),11.11);
 	//qDebug() << plc->setValue(_tr("X轴点动速度"),22.22);
 	//qDebug() << plc->setValue(_tr("X轴当前位置"),33.33);
@@ -321,16 +344,20 @@ void DebugWidget::on_timeout()
 	//qDebug() << plc->getValue(_tr("X轴剩余距离"));
 	//qDebug() << plc->getValue(_tr("X轴位置设置"));
 
-	int index= ui.tabWidget->currentIndex();
-	if (index==0){
-		refreshMbuttonWidget();
-		refreshServoWidget();
-	}
-	else if(index == 1){
-		refreshMbuttonWidget();
-	}
-	else if (index == 2) {
-		refreshIOmapWidget();
+	
+	if (!isHidden())
+	{
+		int index = ui.tabWidget->currentIndex();
+		if (index == 0) {
+			refreshMbuttonWidget();
+			refreshServoWidget();
+		}
+		else if (index == 1) {
+			refreshMbuttonWidget();
+		}
+		else if (index == 2) {
+			refreshIOmapWidget();
+		}
 	}
 }
 

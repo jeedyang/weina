@@ -3,20 +3,73 @@
 
 #include <iostream>
 #include "../../weina/plclib/ButterflyS7.h"
+#include "../../weina/snap7/snap7.h"
+#include <Windows.h>
 
+#pragma comment (lib,"snap7.lib")
 #pragma comment (lib,"ButterflyS7.lib")
 using namespace ButterflyS7;
 
+using namespace std;
+
+#define SNAP7
+
+void  func(void* usrPtr, int opCode, int opResult)
+{
+	cout <<"usrPtr: "<< (int)usrPtr <<"opCode: "<< opCode <<"opResult: "<< opResult << endl;
+}
+
 int main()
 {
-    std::cout << "Hello World!\n"; 
+
+
+
+	DWORD start, end;
+	string info;
+
+	pfn_CliCompletion pfunc=func;
+
+#ifdef SNAP7
+	TS7Client plc;
+	int a = plc.ConnectTo("192.168.2.1", 0, 1);
+	start = GetTickCount();
+	unsigned char databuf[100];
+	bool val = true;
+	char user = 'y';
+	plc.SetAsCallback(pfunc, &user);
+	
+	for (int i = 0; i < 10000; i++)
+	{
+		//plc.ReadArea(S7AreaDB, 1, 0, 100, S7WLByte, databuf);
+		val = !val;
+		plc.AsWriteArea(S7AreaPA,1,7,1,S7WLBit,&val);
+		cout <<(int)&user << endl;
+		Sleep(200);
+	}
+	
+	end = GetTickCount() - start;
+	info = "snap7";
+#else
 	PlcHandle h = CreatePlc();
-	unsigned char ipdr[4] = {192,168,2,1};
-	int a =ConnectPlc(h, ipdr,0,1);
-	std::cout << "ConnectPlc return:"<<a<< std::endl;
-	a = WriteBool(h,AreaQ,0,0,4,true);
-	std::cout << "ConnectPlc return:" << a << std::endl;
+	unsigned char ipdr[4] = { 192,168,2,1 };
+	int a = ConnectPlc(h, ipdr, 0, 1);
+	start = GetTickCount();
+	unsigned char databuf[100];
+	for (int i = 0; i < 10000; i++)
+	{
+		ReadBlockAsByte(h, AreaDB, 1, 0, 100, databuf);
+	}	
+	end = GetTickCount() - start;
+	info = "ButterflyS7";
+#endif
+
+
+	cout <<info<<"\nused time;"<< end << endl;
+
 }
+
+
+
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
 // 调试程序: F5 或调试 >“开始调试”菜单
