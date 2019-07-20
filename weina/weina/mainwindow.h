@@ -4,6 +4,7 @@
 #include <QButtonGroup>
 #include "ui_mainwindow.h"
 #include "debugwidget.h"
+#include "homewidget.h"
 #include "setupwidget.h"
 #include "classbase.h"
 #include <QLibrary>
@@ -25,8 +26,9 @@ private slots:
 private:
 	Ui::MainWindowClass ui;
 	QButtonGroup m_btnGroup;
-	//DebugWidget *m_debug_widget=new DebugWidget(ui.widget_main);
-	//SetupWidget *m_setup_widget=new SetupWidget(ui.widget_main);
+	HomeWidget* m_home_widget;
+	DebugWidget* m_debug_widget;
+	SetupWidget *m_setup_widget;
 	QVBoxLayout *m_hLayout=new QVBoxLayout();
 	CtrlPanelBase* m_panel_widget;
 };

@@ -94,8 +94,6 @@ DebugWidget::DebugWidget(QWidget *parent)
 			QObject::connect(m_btnMap_M[it_M.key()], SIGNAL(clicked(bool)), this, SLOT(on_mButtonClicked(bool)));
 		}
 	}
-	timer.start(10);
-	qCritical() << "666";
 }
 
 DebugWidget::~DebugWidget()
@@ -106,21 +104,22 @@ void DebugWidget::refreshSpinBox()
 {
 	auto plc = PLC::PlcStation::Instance();
 	QMap<int, QAbstractSpinBox*>::iterator it;
+
 	for (it = m_spinBoxMap_DB.begin(); it != m_spinBoxMap_DB.end(); it++)
 	{
+		QString objStr = m_spinBoxMap_DB[it.key()]->objectName();
+		plcMemoryAddr addr = objStr.remove(0, 2).toInt();
+		QVariant val = plc->getValue(addr);
 		if (m_spinBoxMap_DB[it.key()]->inherits("QDoubleSpinBox"))
 		{
 			auto spinBox = (QDoubleSpinBox*)m_spinBoxMap_DB[it.key()];
+			spinBox->setValue(val.toDouble());
 		}
 		else if (m_spinBoxMap_DB[it.key()]->inherits("QSpinBox"))
 		{
 			auto spinBox = (QSpinBox*)m_spinBoxMap_DB[it.key()];
-
+			spinBox->setValue(val.toInt());
 		}
-		QString objName = m_spinBoxMap_DB[it.key()]->objectName();
-		int addr = objName.remove(0, 2).toInt();
-		QVariant val= plc->getValue(addr);
-		//m_spinBoxMap_DB[it.key()]
 	}
 }
 
@@ -180,14 +179,20 @@ void DebugWidget::refreshIOmapWidget()
 			m_labMap_I[it_I.key()]->setPixmap(QPixmap(":/png/res/png/led_off.png"));
 		}
 	}
-
+	
 }
 
-void DebugWidget::showDialog()
+void DebugWidget::widgetShow()
 {
 	//this->setModal(true);
 	this->show();
-	timer.start(1000);
+	refreshSpinBox();
+	timer.start(100);
+}
+
+void DebugWidget::widgetHide()
+{
+	timer.stop();
 }
 
 void DebugWidget::on_mButtonClicked(bool checked)

@@ -18,6 +18,10 @@ MainWindow::MainWindow(QWidget *parent)
 		plc->writeBool(AreaQ, 0, 0, 7, true);
 		plc->pollingStart();
 	}
+	m_setup_widget = qobject_cast<SetupWidget*>(ui.stackedWidget_main->widget(1));
+	m_debug_widget = qobject_cast<DebugWidget*>(ui.stackedWidget_main->widget(2));
+	m_home_widget = qobject_cast<HomeWidget*>(ui.stackedWidget_main->widget(0));
+
 }
 
 void MainWindow::on_btnGroupToggled(QAbstractButton* button, bool checked)
@@ -36,12 +40,14 @@ void MainWindow::on_btnGroupToggled(QAbstractButton* button, bool checked)
 	{
 	case 0:
 		//showWidget(ui.widget_main, m_panel_widget);
+		m_debug_widget->widgetHide();
 		break;
 	case 1:
 		//showWidget(ui.widget_main, m_setup_widget);
+		m_debug_widget->widgetHide();
 		break;
 	case 2:
-		//showWidget(ui.widget_main, m_debug_widget);
+		m_debug_widget->widgetShow();
 		break;
 	default:
 		break;

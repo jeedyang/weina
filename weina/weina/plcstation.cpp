@@ -48,7 +48,7 @@ PlcStation::~PlcStation()
 int PlcStation::connect()
 {
 	uchar ipdr[4] = {192,168,2,1};
-	int a= ConnectPlc(m_plcHandle, ipdr, 0, 1);
+	int a= ConnectPlc(m_plcHandle, ipdr, 0, 0);
 	isconnect = true;
 	return a;
 }

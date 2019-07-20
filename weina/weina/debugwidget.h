@@ -27,7 +27,8 @@ private:
 	QMap<int, QLabel*> m_labMap_I;
 	QMap<int, QLabel*> m_labMap_DB;
 public slots:
-	void showDialog();
+	void widgetShow();
+	void widgetHide();
 	void on_mButtonClicked(bool checked);
 	void on_mButtonPressed();
 	void on_mButtonReleased();

@@ -33,7 +33,7 @@ std::auto_ptr<cls> cls::m_pInstance(NULL);
 using namespace std;
 
 typedef  int plcMemoryAddr;
-typedef  std::array<uchar, 36> dbBuffer;
+typedef  std::array<uchar, 40> dbBuffer;
 
 typedef struct _PlcData
 {
