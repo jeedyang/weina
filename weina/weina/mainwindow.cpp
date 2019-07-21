@@ -13,9 +13,6 @@ MainWindow::MainWindow(QWidget *parent)
 	qDebug() << a;
 	if (a == 0)
 	{
-		plc->writeBool(AreaQ,0,0,0,true);
-		plc->writeBool(AreaQ, 0, 0, 3, true);
-		plc->writeBool(AreaQ, 0, 0, 7, true);
 		plc->pollingStart();
 	}
 	m_setup_widget = qobject_cast<SetupWidget*>(ui.stackedWidget_main->widget(1));

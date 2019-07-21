@@ -69,13 +69,13 @@ QPushButton #pushButton_home
       <property name="minimumSize">
        <size>
         <width>0</width>
-        <height>100</height>
+        <height>80</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
         <width>16777215</width>
-        <height>100</height>
+        <height>80</height>
        </size>
       </property>
       <property name="styleSheet">
@@ -120,13 +120,13 @@ QPushButton #pushButton_home
         <widget class="QWidget" name="widget_menu" native="true">
          <property name="minimumSize">
           <size>
-           <width>120</width>
+           <width>100</width>
            <height>0</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>120</width>
+           <width>100</width>
            <height>16777215</height>
           </size>
          </property>

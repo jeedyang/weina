@@ -187,7 +187,7 @@ void DebugWidget::widgetShow()
 	//this->setModal(true);
 	this->show();
 	refreshSpinBox();
-	timer.start(100);
+	timer.start(200);
 }
 
 void DebugWidget::widgetHide()

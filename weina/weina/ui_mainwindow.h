@@ -1,13 +1,13 @@
 /********************************************************************************
-** Form generated from reading UI file 'mainwindowFcSfAc.ui'
+** Form generated from reading UI file 'mainwindowptxEEu.ui'
 **
 ** Created by: Qt User Interface Compiler version 5.12.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef MAINWINDOWFCSFAC_H
-#define MAINWINDOWFCSFAC_H
+#ifndef MAINWINDOWPTXEEU_H
+#define MAINWINDOWPTXEEU_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -79,8 +79,8 @@ public:
         verticalLayout->setContentsMargins(0, 0, 0, 0);
         widget_title = new QWidget(centralWidget);
         widget_title->setObjectName(QString::fromUtf8("widget_title"));
-        widget_title->setMinimumSize(QSize(0, 100));
-        widget_title->setMaximumSize(QSize(16777215, 100));
+        widget_title->setMinimumSize(QSize(0, 80));
+        widget_title->setMaximumSize(QSize(16777215, 80));
         widget_title->setStyleSheet(QString::fromUtf8(""));
 
         verticalLayout->addWidget(widget_title);
@@ -116,8 +116,8 @@ public:
 
         widget_menu = new QWidget(widget_frame);
         widget_menu->setObjectName(QString::fromUtf8("widget_menu"));
-        widget_menu->setMinimumSize(QSize(120, 0));
-        widget_menu->setMaximumSize(QSize(120, 16777215));
+        widget_menu->setMinimumSize(QSize(100, 0));
+        widget_menu->setMaximumSize(QSize(100, 16777215));
         widget_menu->setStyleSheet(QString::fromUtf8(""));
         verticalLayout_2 = new QVBoxLayout(widget_menu);
         verticalLayout_2->setSpacing(4);
@@ -181,4 +181,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // MAINWINDOWFCSFAC_H
+#endif // MAINWINDOWPTXEEU_H

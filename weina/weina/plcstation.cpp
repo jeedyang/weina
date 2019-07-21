@@ -27,10 +27,10 @@ PlcStation::PlcStation()
 	plcData.Define_float_DB[toEntireAddr(13, 32)] = _tr("Y轴剩余距离");
 	plcData.Define_float_DB[toEntireAddr(13, 36)] = _tr("Y轴位置设置");
 
-	//plcData.Define_int_DB[toEntireAddr(13, 0)] = _tr("X轴运行速度");
-	//plcData.Define_int_DB[toEntireAddr(13, 4)] = _tr("X轴点动速度");
-	//plcData.Define_int_DB[toEntireAddr(13, 8)] = _tr("X轴当前位置");
-	//plcData.Define_int_DB[toEntireAddr(13, 12)] = _tr("X轴剩余距离");
+	plcData.Define_int_DB[toEntireAddr(13, 40)] = _tr("X轴ErrorID");
+	plcData.Define_int_DB[toEntireAddr(13, 44)] = _tr("X轴ErrorInfo");
+	plcData.Define_int_DB[toEntireAddr(13, 48)] = _tr("Y轴ErrorID");
+	plcData.Define_int_DB[toEntireAddr(13, 52)] = _tr("Y轴ErrorInfo");
 	//plcData.Define_int_DB[toEntireAddr(13, 16)] = _tr("X轴位置设置");
 	//plcData.Define_int_DB[toEntireAddr(13, 20)] = _tr("Y轴运行速度");
 	//plcData.Define_int_DB[toEntireAddr(13, 24)] = _tr("Y轴点动速度");
@@ -48,6 +48,7 @@ PlcStation::~PlcStation()
 int PlcStation::connect()
 {
 	uchar ipdr[4] = {192,168,2,1};
+	//uchar ipdr[4] = { 127,0,0,1 };
 	int a= ConnectPlc(m_plcHandle, ipdr, 0, 0);
 	isconnect = true;
 	return a;
