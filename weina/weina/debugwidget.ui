@@ -388,8 +388,11 @@ QPushButton::checked
          <layout class="QGridLayout" name="gridLayout_5">
           <item row="5" column="1">
            <widget class="QDoubleSpinBox" name="db130036">
+            <property name="minimum">
+             <double>-1999.990000000000009</double>
+            </property>
             <property name="maximum">
-             <double>9999.989999999999782</double>
+             <double>1999.990000000000009</double>
             </property>
            </widget>
           </item>
@@ -504,8 +507,11 @@ QPushButton::checked
           </item>
           <item row="1" column="1">
            <widget class="QDoubleSpinBox" name="db130016">
+            <property name="minimum">
+             <double>-1999.990000000000009</double>
+            </property>
             <property name="maximum">
-             <double>9999.989999999999782</double>
+             <double>1999.990000000000009</double>
             </property>
            </widget>
           </item>

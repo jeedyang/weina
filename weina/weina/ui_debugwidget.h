@@ -1,13 +1,13 @@
 /********************************************************************************
-** Form generated from reading UI file 'debugwidgetXGwMUl.ui'
+** Form generated from reading UI file 'debugwidgetZjqtKf.ui'
 **
 ** Created by: Qt User Interface Compiler version 5.12.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef DEBUGWIDGETXGWMUL_H
-#define DEBUGWIDGETXGWMUL_H
+#ifndef DEBUGWIDGETZJQTKF_H
+#define DEBUGWIDGETZJQTKF_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -494,7 +494,8 @@ public:
         gridLayout_5->setObjectName(QString::fromUtf8("gridLayout_5"));
         db130036 = new QDoubleSpinBox(groupBox_3);
         db130036->setObjectName(QString::fromUtf8("db130036"));
-        db130036->setMaximum(9999.989999999999782);
+        db130036->setMinimum(-1999.990000000000009);
+        db130036->setMaximum(1999.990000000000009);
 
         gridLayout_5->addWidget(db130036, 5, 1, 1, 1);
 
@@ -556,7 +557,8 @@ public:
 
         db130016 = new QDoubleSpinBox(groupBox_3);
         db130016->setObjectName(QString::fromUtf8("db130016"));
-        db130016->setMaximum(9999.989999999999782);
+        db130016->setMinimum(-1999.990000000000009);
+        db130016->setMaximum(1999.990000000000009);
 
         gridLayout_5->addWidget(db130016, 1, 1, 1, 1);
 
@@ -2282,4 +2284,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // DEBUGWIDGETXGWMUL_H
+#endif // DEBUGWIDGETZJQTKF_H
