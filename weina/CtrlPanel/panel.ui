@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>177</width>
-    <height>101</height>
+    <width>156</width>
+    <height>75</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -25,7 +25,7 @@
 
 QLabel#labelRes,#labelResValue,#label_1
 {
-	font: 14pt &quot;微软雅黑&quot;;
+	font: 11pt &quot;微软雅黑&quot;;
 }
 
 QLabel#labelHotRes,#labelHotResValue,#label_2
@@ -44,7 +44,7 @@ QPushButton
 {
 	border-radius:4px;
 	margin:1px 1px 2px 1px;
-	font: 12pt &quot;微软雅黑&quot;;
+	font: 11pt &quot;微软雅黑&quot;;
 	background-color: rgb(85, 170, 255);
 }
 
@@ -109,48 +109,6 @@ QPushButton::pressed
         </property>
        </widget>
       </item>
-      <item row="0" column="1">
-       <widget class="QLabel" name="labelResValue">
-        <property name="text">
-         <string>TextLabel</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="0">
-       <widget class="QLabel" name="labelRes">
-        <property name="text">
-         <string>电阻:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="1">
-       <widget class="QLabel" name="labelHotVolValue">
-        <property name="text">
-         <string>TextLabel</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="2">
-       <widget class="QLabel" name="label_3">
-        <property name="text">
-         <string>V</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
-       <widget class="QLabel" name="labelHotVol">
-        <property name="text">
-         <string>加热电压:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="2">
-       <widget class="QLabel" name="label_2">
-        <property name="text">
-         <string>Ω</string>
-        </property>
-       </widget>
-      </item>
       <item row="1" column="0">
        <widget class="QLabel" name="labelHotRes">
         <property name="text">
@@ -162,6 +120,45 @@ QPushButton::pressed
        <widget class="QLabel" name="labelHotResValue">
         <property name="text">
          <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="labelResValue">
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Ω</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="labelRes">
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>电阻:</string>
         </property>
        </widget>
       </item>

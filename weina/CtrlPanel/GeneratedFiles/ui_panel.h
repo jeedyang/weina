@@ -26,21 +26,18 @@ public:
     QWidget *widget;
     QGridLayout *gridLayout;
     QLabel *label_1;
-    QLabel *labelResValue;
-    QLabel *labelRes;
-    QLabel *labelHotVolValue;
-    QLabel *label_3;
-    QLabel *labelHotVol;
-    QLabel *label_2;
     QLabel *labelHotRes;
     QLabel *labelHotResValue;
+    QLabel *labelResValue;
+    QLabel *label_2;
+    QLabel *labelRes;
     QPushButton *pushButton;
 
     void setupUi(QWidget *Panel)
     {
         if (Panel->objectName().isEmpty())
             Panel->setObjectName(QString::fromUtf8("Panel"));
-        Panel->resize(177, 101);
+        Panel->resize(156, 75);
         Panel->setStyleSheet(QString::fromUtf8("QWidget#Panel\n"
 "{\n"
 "	border-style:solid;\n"
@@ -52,7 +49,7 @@ public:
 "\n"
 "QLabel#labelRes,#labelResValue,#label_1\n"
 "{\n"
-"	font: 14pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"	font: 11pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "}\n"
 "\n"
 "QLabel#labelHotRes,#labelHotResValue,#label_2\n"
@@ -71,7 +68,7 @@ public:
 "{\n"
 "	border-radius:4px;\n"
 "	margin:1px 1px 2px 1px;\n"
-"	font: 12pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"	font: 11pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "	background-color: rgb(85, 170, 255);\n"
 "}\n"
 "\n"
@@ -111,36 +108,6 @@ public:
 
         gridLayout->addWidget(label_1, 0, 2, 1, 1);
 
-        labelResValue = new QLabel(widget);
-        labelResValue->setObjectName(QString::fromUtf8("labelResValue"));
-
-        gridLayout->addWidget(labelResValue, 0, 1, 1, 1);
-
-        labelRes = new QLabel(widget);
-        labelRes->setObjectName(QString::fromUtf8("labelRes"));
-
-        gridLayout->addWidget(labelRes, 0, 0, 1, 1);
-
-        labelHotVolValue = new QLabel(widget);
-        labelHotVolValue->setObjectName(QString::fromUtf8("labelHotVolValue"));
-
-        gridLayout->addWidget(labelHotVolValue, 2, 1, 1, 1);
-
-        label_3 = new QLabel(widget);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
-
-        gridLayout->addWidget(label_3, 2, 2, 1, 1);
-
-        labelHotVol = new QLabel(widget);
-        labelHotVol->setObjectName(QString::fromUtf8("labelHotVol"));
-
-        gridLayout->addWidget(labelHotVol, 2, 0, 1, 1);
-
-        label_2 = new QLabel(widget);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-
-        gridLayout->addWidget(label_2, 1, 2, 1, 1);
-
         labelHotRes = new QLabel(widget);
         labelHotRes->setObjectName(QString::fromUtf8("labelHotRes"));
 
@@ -150,6 +117,29 @@ public:
         labelHotResValue->setObjectName(QString::fromUtf8("labelHotResValue"));
 
         gridLayout->addWidget(labelHotResValue, 1, 1, 1, 1);
+
+        labelResValue = new QLabel(widget);
+        labelResValue->setObjectName(QString::fromUtf8("labelResValue"));
+        QFont font;
+        font.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
+        font.setPointSize(11);
+        font.setBold(false);
+        font.setItalic(false);
+        font.setWeight(50);
+        labelResValue->setFont(font);
+
+        gridLayout->addWidget(labelResValue, 0, 1, 1, 1);
+
+        label_2 = new QLabel(widget);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+
+        gridLayout->addWidget(label_2, 1, 2, 1, 1);
+
+        labelRes = new QLabel(widget);
+        labelRes->setObjectName(QString::fromUtf8("labelRes"));
+        labelRes->setFont(font);
+
+        gridLayout->addWidget(labelRes, 0, 0, 1, 1);
 
 
         verticalLayout->addWidget(widget);
@@ -170,14 +160,11 @@ public:
     {
         Panel->setWindowTitle(QApplication::translate("Panel", "Panel", nullptr));
         label_1->setText(QApplication::translate("Panel", "\316\251", nullptr));
-        labelResValue->setText(QApplication::translate("Panel", "TextLabel", nullptr));
-        labelRes->setText(QApplication::translate("Panel", "\347\224\265\351\230\273:", nullptr));
-        labelHotVolValue->setText(QApplication::translate("Panel", "TextLabel", nullptr));
-        label_3->setText(QApplication::translate("Panel", "V", nullptr));
-        labelHotVol->setText(QApplication::translate("Panel", "\345\212\240\347\203\255\347\224\265\345\216\213:", nullptr));
-        label_2->setText(QApplication::translate("Panel", "\316\251", nullptr));
         labelHotRes->setText(QApplication::translate("Panel", "\345\212\240\347\203\255\347\224\265\351\230\273:", nullptr));
         labelHotResValue->setText(QApplication::translate("Panel", "TextLabel", nullptr));
+        labelResValue->setText(QApplication::translate("Panel", "TextLabel", nullptr));
+        label_2->setText(QApplication::translate("Panel", "\316\251", nullptr));
+        labelRes->setText(QApplication::translate("Panel", "\347\224\265\351\230\273:", nullptr));
         pushButton->setText(QApplication::translate("Panel", "\345\212\240\347\203\255\345\205\263", nullptr));
     } // retranslateUi
 

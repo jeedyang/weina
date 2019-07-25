@@ -1,13 +1,13 @@
 /********************************************************************************
-** Form generated from reading UI file 'setupwidget.ui'
+** Form generated from reading UI file 'setupwidgetMlzQIZ.ui'
 **
 ** Created by: Qt User Interface Compiler version 5.12.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef UI_SETUPWIDGET_H
-#define UI_SETUPWIDGET_H
+#ifndef SETUPWIDGETMLZQIZ_H
+#define SETUPWIDGETMLZQIZ_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -129,4 +129,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // UI_SETUPWIDGET_H
+#endif // SETUPWIDGETMLZQIZ_H

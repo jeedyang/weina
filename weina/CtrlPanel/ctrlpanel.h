@@ -17,8 +17,6 @@ public:
 	void setHotRes(int* resArray);
 	void setHotButtonState(bool* stateArray);
 	void getHotButtonState(bool* stateArray);
-	void setHotVoltage(double* voltArray);
-	void setHotVolDipEnabled(bool en);
 	void setHotResDipEnabled(bool en);
 	void setResDipEnabled(bool en);
 	void setHotButtonEnabled(bool en);

@@ -6,28 +6,87 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>917</width>
-    <height>559</height>
+    <width>880</width>
+    <height>492</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>SetupWidget</string>
   </property>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>260</x>
-     <y>210</y>
-     <width>54</width>
-     <height>12</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>设置界面</string>
-   </property>
-  </widget>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {  
+    font-size:12px;
+    border-radius:2px;
+    color:rgba(51,51,51,1);
+    background:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(242,242,242,1), stop:1 rgba(255,255,255,1));
+    border:1px solid rgba(221,221,221,1);
+}
+QPushButton
+{
+	background-color: rgb(224, 239, 212);
+
+	border-color: rgb(124, 124, 124);
+}
+QPushButton::hover
+{
+    background-color:rgb(255, 227, 197);
+}
+QPushButton::pressed
+{
+    background-color:rgb(255, 110, 94);
+}
+QPushButton::checked 
+{
+	background-color: rgb(255, 110, 94);
+}</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="usesScrollButtons">
+      <bool>true</bool>
+     </property>
+     <property name="tabBarAutoHide">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>检测参数</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QTableWidget" name="tableWidget_testPam"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>定位参数</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_9"/>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>其他参数</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+     </widget>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

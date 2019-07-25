@@ -17,8 +17,6 @@ public:
 	void setHotRes(int res);
 	void setHotButtonState(bool state);
 	void getHotButtonState(bool& state);
-	void setHotVoltage(double volt);
-	void setHotVolDipEnabled(bool en);
 	void setHotResDipEnabled(bool en);
 	void setResDipEnabled(bool en);
 	void setHotButtonEnabled(bool en);

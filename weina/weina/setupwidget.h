@@ -2,6 +2,7 @@
 
 #include <QWidget>
 #include "ui_setupwidget.h"
+#include <QCheckBox>
 
 class SetupWidget : public QWidget
 {

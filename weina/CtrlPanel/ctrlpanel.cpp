@@ -45,22 +45,6 @@ void CtrlPanel::getHotButtonState(bool* stateArray)
 	}
 }
 
-void CtrlPanel::setHotVoltage(double* voltArray)
-{
-	for (int i = 0; i < 24; i++)
-	{
-		panelList[i]->setHotVoltage(voltArray[i]);
-	}
-}
-
-void CtrlPanel::setHotVolDipEnabled(bool en)
-{
-	for (int i = 0; i < 24; i++)
-	{
-		panelList[i]->setHotVolDipEnabled(en);
-	}
-}
-
 void CtrlPanel::setHotResDipEnabled(bool en)
 {
 	for (int i = 0; i < 24; i++)

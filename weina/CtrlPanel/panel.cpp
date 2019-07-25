@@ -33,16 +33,6 @@ void Panel::getHotButtonState(bool& state)
 	state = ui.pushButton->isChecked();
 }
 
-void Panel::setHotVoltage(double volt)
-{
-	ui.labelHotVolValue->setText(QString::number(volt));
-}
-
-void Panel::setHotVolDipEnabled(bool en)
-{
-	ui.labelHotVol->setEnabled(en);
-	ui.labelHotVolValue->setEnabled(en);
-}
 
 void Panel::setHotResDipEnabled(bool en)
 {
@@ -66,8 +56,6 @@ void Panel::initForm()
 	QObject::connect(ui.pushButton,SIGNAL(clicked(bool)),this,SLOT(onButtonClicked(bool)));
 	ui.labelResValue->setText(_tr("------"));
 	ui.labelHotResValue->setText(_tr("------"));
-	ui.labelHotVolValue->setText(_tr("------"));
-
 }
 
 void Panel::onButtonClicked(bool checked)
