@@ -12,7 +12,8 @@ public:
 	virtual ~CtrlPanelBase()
 	{
 	}
-
+	virtual void setID(int id)=0;
+	virtual int getID()=0;
 	virtual void setRes(int*  resArray)=0;
 	virtual void setHotRes(int* resArray)=0;
 	virtual void setHotButtonState(bool* stateArray)=0;

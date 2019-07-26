@@ -1,19 +1,19 @@
 /********************************************************************************
-** Form generated from reading UI file 'widgetxF1392.ui'
+** Form generated from reading UI file 'widgetnYvdgr.ui'
 **
-** Created by: Qt User Interface Compiler version 5.9.7
+** Created by: Qt User Interface Compiler version 5.12.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef WIDGETXF1392_H
-#define WIDGETXF1392_H
+#ifndef WIDGETNYVDGR_H
+#define WIDGETNYVDGR_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -24,30 +24,56 @@ class Ui_Form
 public:
     QVBoxLayout *verticalLayout;
     QWidget *widgetTitle;
+    QHBoxLayout *horizontalLayout;
+    QLabel *label;
+    QLabel *label_modID;
+    QSpacerItem *horizontalSpacer;
     QWidget *widget;
 
     void setupUi(QWidget *Form)
     {
         if (Form->objectName().isEmpty())
-            Form->setObjectName(QStringLiteral("Form"));
-        Form->resize(729, 472);
-        Form->setStyleSheet(QLatin1String("QWidget#widget,#widgetTitle\n"
+            Form->setObjectName(QString::fromUtf8("Form"));
+        Form->resize(630, 522);
+        Form->setStyleSheet(QString::fromUtf8("QWidget#widget,#widgetTitle\n"
 "{\n"
 "	border-style:solid;\n"
 "	border-radius:5px;\n"
 "	border-color:#00BB9E;\n"
 "	border-width:2px 2px 2px 2px;\n"
 "	background-color: rgb(246, 255, 221);\n"
+"}\n"
+"QLabel#label,#label_modID\n"
+"{\n"
+"	\n"
+"	\n"
+"	font: 14pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "}"));
         verticalLayout = new QVBoxLayout(Form);
-        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         widgetTitle = new QWidget(Form);
-        widgetTitle->setObjectName(QStringLiteral("widgetTitle"));
+        widgetTitle->setObjectName(QString::fromUtf8("widgetTitle"));
+        horizontalLayout = new QHBoxLayout(widgetTitle);
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        label = new QLabel(widgetTitle);
+        label->setObjectName(QString::fromUtf8("label"));
+
+        horizontalLayout->addWidget(label);
+
+        label_modID = new QLabel(widgetTitle);
+        label_modID->setObjectName(QString::fromUtf8("label_modID"));
+
+        horizontalLayout->addWidget(label_modID);
+
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer);
+
 
         verticalLayout->addWidget(widgetTitle);
 
         widget = new QWidget(Form);
-        widget->setObjectName(QStringLiteral("widget"));
+        widget->setObjectName(QString::fromUtf8("widget"));
 
         verticalLayout->addWidget(widget);
 
@@ -59,7 +85,9 @@ public:
 
     void retranslateUi(QWidget *Form)
     {
-        Form->setWindowTitle(QApplication::translate("Form", "Form", Q_NULLPTR));
+        Form->setWindowTitle(QApplication::translate("Form", "Form", nullptr));
+        label->setText(QApplication::translate("Form", "\346\250\241\345\235\227ID:", nullptr));
+        label_modID->setText(QApplication::translate("Form", "0", nullptr));
     } // retranslateUi
 
 };
@@ -70,4 +98,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // WIDGETXF1392_H
+#endif // WIDGETNYVDGR_H

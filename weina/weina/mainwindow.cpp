@@ -19,6 +19,9 @@ MainWindow::MainWindow(QWidget *parent)
 	m_debug_widget = qobject_cast<DebugWidget*>(ui.stackedWidget_main->widget(2));
 	m_home_widget = qobject_cast<HomeWidget*>(ui.stackedWidget_main->widget(0));
 
+
+
+
 }
 
 void MainWindow::on_btnGroupToggled(QAbstractButton* button, bool checked)

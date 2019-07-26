@@ -21,6 +21,17 @@ void CtrlPanel::setRes(int* resArray)
 	}
 }
 
+void CtrlPanel::setID(int id)
+{
+	m_ID = id;
+	ui.label_modID->setText(QString::number(id));
+}
+
+int CtrlPanel::getID()
+{
+	return m_ID;
+}
+
 void CtrlPanel::setHotRes(int* resArray)
 {
 	for (int i = 0; i < 24; i++)

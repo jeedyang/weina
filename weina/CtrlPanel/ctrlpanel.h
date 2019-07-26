@@ -14,6 +14,8 @@ public:
 	CtrlPanel(int ID , QWidget* parent = Q_NULLPTR);	
 	~CtrlPanel();
 	void setRes(int* resArray);
+	void setID(int id);
+	int getID();
 	void setHotRes(int* resArray);
 	void setHotButtonState(bool* stateArray);
 	void getHotButtonState(bool* stateArray);
@@ -28,6 +30,7 @@ private:
 	Ui::Form ui;
 	QList<Panel*> panelList;
 	QGridLayout panelLayout;
+	int m_ID=0;
 signals:
 	void hotButtonClicked(int, bool);
 };

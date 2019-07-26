@@ -1,13 +1,13 @@
 /********************************************************************************
-** Form generated from reading UI file 'panelGIohCi.ui'
+** Form generated from reading UI file 'panelIeubAv.ui'
 **
 ** Created by: Qt User Interface Compiler version 5.12.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef PANELGIOHCI_H
-#define PANELGIOHCI_H
+#ifndef PANELIEUBAV_H
+#define PANELIEUBAV_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -159,7 +159,7 @@ public:
     void retranslateUi(QWidget *Panel)
     {
         Panel->setWindowTitle(QApplication::translate("Panel", "Panel", nullptr));
-        label_1->setText(QApplication::translate("Panel", "K\316\251", nullptr));
+        label_1->setText(QApplication::translate("Panel", "\316\251", nullptr));
         labelHotRes->setText(QApplication::translate("Panel", "\345\212\240\347\203\255\347\224\265\351\230\273:", nullptr));
         labelHotResValue->setText(QApplication::translate("Panel", "TextLabel", nullptr));
         labelResValue->setText(QApplication::translate("Panel", "TextLabel", nullptr));
@@ -176,4 +176,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // PANELGIOHCI_H
+#endif // PANELIEUBAV_H

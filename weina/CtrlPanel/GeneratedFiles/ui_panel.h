@@ -37,7 +37,7 @@ public:
     {
         if (Panel->objectName().isEmpty())
             Panel->setObjectName(QString::fromUtf8("Panel"));
-        Panel->resize(156, 75);
+        Panel->resize(166, 82);
         Panel->setStyleSheet(QString::fromUtf8("QWidget#Panel\n"
 "{\n"
 "	border-style:solid;\n"
@@ -49,18 +49,18 @@ public:
 "\n"
 "QLabel#labelRes,#labelResValue,#label_1\n"
 "{\n"
-"	font: 11pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"	font: 10pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "}\n"
 "\n"
 "QLabel#labelHotRes,#labelHotResValue,#label_2\n"
 "{\n"
-"	font: 9pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"	font: 7pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "}\n"
 "\n"
 "QLabel#labelHotVol,#labelHotVolValue,#label_3\n"
 "{\n"
 "	\n"
-"	font: 9pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"	font: 8pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "}\n"
 "\n"
 "\n"
@@ -122,7 +122,7 @@ public:
         labelResValue->setObjectName(QString::fromUtf8("labelResValue"));
         QFont font;
         font.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
-        font.setPointSize(11);
+        font.setPointSize(10);
         font.setBold(false);
         font.setItalic(false);
         font.setWeight(50);
@@ -159,7 +159,7 @@ public:
     void retranslateUi(QWidget *Panel)
     {
         Panel->setWindowTitle(QApplication::translate("Panel", "Panel", nullptr));
-        label_1->setText(QApplication::translate("Panel", "\316\251", nullptr));
+        label_1->setText(QApplication::translate("Panel", "K\316\251", nullptr));
         labelHotRes->setText(QApplication::translate("Panel", "\345\212\240\347\203\255\347\224\265\351\230\273:", nullptr));
         labelHotResValue->setText(QApplication::translate("Panel", "TextLabel", nullptr));
         labelResValue->setText(QApplication::translate("Panel", "TextLabel", nullptr));

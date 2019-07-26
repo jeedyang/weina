@@ -9,6 +9,7 @@
 #include "classbase.h"
 #include <QLibrary>
 #include "plcstation.h"
+#include "restestmod.h"
 
 class MainWindow : public QMainWindow
 {
@@ -30,5 +31,5 @@ private:
 	DebugWidget* m_debug_widget;
 	SetupWidget *m_setup_widget;
 	QVBoxLayout *m_hLayout=new QVBoxLayout();
-	CtrlPanelBase* m_panel_widget;
+
 };

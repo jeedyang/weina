@@ -48,6 +48,9 @@
     <ClCompile Include="plcstation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="restestmod.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="mainwindow.h">
@@ -63,6 +66,9 @@
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="plcstation.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="restestmod.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

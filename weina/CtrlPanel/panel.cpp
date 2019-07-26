@@ -15,7 +15,8 @@ Panel::~Panel()
 
 void Panel::setRes(int res)
 {
-	ui.labelResValue->setText(QString::number(res));
+	float f = res / 1000.00;
+	ui.labelResValue->setText(QString("%1").arg(f));
 }
 
 void Panel::setHotRes(int res)

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>156</width>
-    <height>75</height>
+    <width>166</width>
+    <height>82</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -25,18 +25,18 @@
 
 QLabel#labelRes,#labelResValue,#label_1
 {
-	font: 11pt &quot;微软雅黑&quot;;
+	font: 10pt &quot;微软雅黑&quot;;
 }
 
 QLabel#labelHotRes,#labelHotResValue,#label_2
 {
-	font: 9pt &quot;微软雅黑&quot;;
+	font: 7pt &quot;微软雅黑&quot;;
 }
 
 QLabel#labelHotVol,#labelHotVolValue,#label_3
 {
 	
-	font: 9pt &quot;微软雅黑&quot;;
+	font: 8pt &quot;微软雅黑&quot;;
 }
 
 
@@ -105,7 +105,7 @@ QPushButton::pressed
       <item row="0" column="2">
        <widget class="QLabel" name="label_1">
         <property name="text">
-         <string>Ω</string>
+         <string>KΩ</string>
         </property>
        </widget>
       </item>
@@ -128,7 +128,7 @@ QPushButton::pressed
         <property name="font">
          <font>
           <family>微软雅黑</family>
-          <pointsize>11</pointsize>
+          <pointsize>10</pointsize>
           <weight>50</weight>
           <italic>false</italic>
           <bold>false</bold>
@@ -151,7 +151,7 @@ QPushButton::pressed
         <property name="font">
          <font>
           <family>微软雅黑</family>
-          <pointsize>11</pointsize>
+          <pointsize>10</pointsize>
           <weight>50</weight>
           <italic>false</italic>
           <bold>false</bold>
