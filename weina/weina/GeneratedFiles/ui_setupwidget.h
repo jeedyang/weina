@@ -14,6 +14,8 @@
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QTableWidget>
 #include <QtWidgets/QWidget>
@@ -32,12 +34,16 @@ public:
     QGridLayout *gridLayout_9;
     QWidget *tab_2;
     QHBoxLayout *horizontalLayout_2;
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout;
+    QPushButton *pushButton_save;
+    QSpacerItem *horizontalSpacer;
 
     void setupUi(QWidget *SetupWidget)
     {
         if (SetupWidget->objectName().isEmpty())
             SetupWidget->setObjectName(QString::fromUtf8("SetupWidget"));
-        SetupWidget->resize(880, 492);
+        SetupWidget->resize(982, 730);
         gridLayout = new QGridLayout(SetupWidget);
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
@@ -49,7 +55,7 @@ public:
         font.setPointSize(14);
         tabWidget->setFont(font);
         tabWidget->setStyleSheet(QString::fromUtf8("QPushButton {  \n"
-"    font-size:12px;\n"
+"    font-size:20px;\n"
 "    border-radius:2px;\n"
 "    color:rgba(51,51,51,1);\n"
 "    background:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(242,242,242,1), stop:1 rgba(255,255,255,1));\n"
@@ -104,10 +110,31 @@ public:
 
         gridLayout->addWidget(tabWidget, 0, 0, 1, 1);
 
+        widget = new QWidget(SetupWidget);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setMinimumSize(QSize(0, 50));
+        horizontalLayout = new QHBoxLayout(widget);
+        horizontalLayout->setSpacing(6);
+        horizontalLayout->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout->setContentsMargins(-1, 0, -1, 0);
+        pushButton_save = new QPushButton(widget);
+        pushButton_save->setObjectName(QString::fromUtf8("pushButton_save"));
+        pushButton_save->setMinimumSize(QSize(120, 50));
+
+        horizontalLayout->addWidget(pushButton_save);
+
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer);
+
+
+        gridLayout->addWidget(widget, 1, 0, 1, 1);
+
 
         retranslateUi(SetupWidget);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(SetupWidget);
@@ -119,6 +146,7 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("SetupWidget", "\346\243\200\346\265\213\345\217\202\346\225\260", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("SetupWidget", "\345\256\232\344\275\215\345\217\202\346\225\260", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("SetupWidget", "\345\205\266\344\273\226\345\217\202\346\225\260", nullptr));
+        pushButton_save->setText(QApplication::translate("SetupWidget", "\344\277\235\345\255\230", nullptr));
     } // retranslateUi
 
 };

@@ -26,7 +26,10 @@ ResTestmod::ResTestmod(QObject *parent)
 	connect(this, SIGNAL(readHotResDone()), this, SLOT(on_readHotResDone()));
 	connect(this, SIGNAL(readResDone()), this, SLOT(on_readResDone()));
 	connect(this, SIGNAL(getRealyStausDone()), this, SLOT(on_getRealyStausDone()));
-	QObject::connect(&timer, SIGNAL(timeout()), this, SLOT(on_timeout()));
+	connect(&timer, SIGNAL(timeout()), this, SLOT(on_timeout()));
+	connect(&m_testHotResTimer, SIGNAL(timeout()), this, SLOT(on_testHotResTimer_timeout()));
+	connect(&m_testResTimer, SIGNAL(timeout()), this, SLOT(on_testResTimer_timeout()));
+	connect(&m_min_maxTestTimer, SIGNAL(timeout()), this, SLOT(on_min_maxTestTimer_timeout()));
 }
 
 ResTestmod::~ResTestmod()
@@ -67,6 +70,7 @@ void ResTestmod::setHotRelay()
 {
 }
 
+
 void ResTestmod::readStart()
 {
 	threadRead_en = true;
@@ -90,13 +94,14 @@ void ResTestmod::hotMod(uchar* relayStatus)
 	}
 	temp.append(0x0a);
 	m_serialPort->write(temp);
+	m_ctrlPanel->setHotButtonState((bool*)relayStatus);
 }
 
-void ResTestmod::tsetResMod()
+void ResTestmod::testResMod()
 {
 	QByteArray temp;
 	temp.append(0x2b);
-	temp.append(0xff);
+	temp.append(0xbb);
 	for (int i = 0; i < 24; i++)
 	{
 		temp.append(0xff);
@@ -105,14 +110,14 @@ void ResTestmod::tsetResMod()
 	m_serialPort->write(temp);
 }
 
-void ResTestmod::tsetHotresMod()
+void ResTestmod::testHotresMod()
 {
 	QByteArray temp;
 	temp.append(0x2b);
-	temp.append(0xff);
+	temp.append(0xaa);
 	for (int i = 0; i < 24; i++)
 	{
-		temp.append(0xff);
+		temp.append(' ');
 	}
 	temp.append(0x0a);
 	m_serialPort->write(temp);
@@ -173,10 +178,22 @@ void ResTestmod::run()
 				emit(this->getRealyStausDone());
 			}
 		}
-		qDebug() << dataBuffer.size();
+
+		if (getMin_MaxRes)
+		{
+			for (int i = 0; i < 24; i++)
+			{
+				if (res[i] < minRes[i])
+					minRes[i] = res[i];
+				if (res[i] > maxRes[i])
+					maxRes[i] = res[i];
+			}
+		}
+
+		//qDebug() << dataBuffer.size();
 		for (int i = 0; i < 24; i++)
 		{
-			qDebug() << hotRes[i];
+			//qDebug() << hotRes[i];
 		}
 		
 	}
@@ -208,3 +225,72 @@ void ResTestmod::on_timeout()
 {
 	getRealyStaus();
 }
+
+void ResTestmod::testStart()
+{
+	getMin_MaxRes = false;
+	for (int i = 0; i < 24; i++)
+	{
+		minRes[i] = 999999999;
+		maxRes[i] = 0;
+	}
+
+	this->testHotresMod();//检测加热电阻
+	m_testHotResTimer.start(testHotresTime);
+	qDebug()<< _tr("检测开始") << id ;
+	qDebug() << _tr("检测加热电阻开始") << id;
+}
+
+void ResTestmod::on_testHotResTimer_timeout()
+{
+	
+	m_testHotResTimer.stop();
+	m_testResTimer.start(testTime);//检测电阻
+	m_min_maxTestTimer.start(min_maxTestTime);
+	for (int i = 0; i < 24; i++)
+	{
+		if (hotRes[i]<minHotRes|| hotRes[i]>maxHotRes)
+		{
+			m_setRelayStatus[i] = 0;
+		}
+		else
+		{
+			m_setRelayStatus[i] = 1;
+		}
+		
+	}
+	hotMod(m_setRelayStatus);
+	qDebug() << _tr("检测加热电阻结束") << id;
+	qDebug() << _tr("加热开始") << id;
+}
+
+void ResTestmod::on_min_maxTestTimer_timeout()
+{
+	qDebug() << _tr("获取最大最小值开始") << id;
+	m_min_maxTestTimer.stop();
+	getMin_MaxRes = true;//获取最大最小电阻
+}
+
+void ResTestmod::on_testResTimer_timeout()
+{
+	qDebug() << _tr("检测结束") << id;
+	m_testResTimer.stop();
+	getMin_MaxRes = false;
+	for (int i = 0; i < 24; i++)
+	{
+		for (int a = 0; a < 29; a++)
+		{
+			if (res[i]>=minResScope[a] & res[i]<=maxResScope[a])
+			{
+				result[i] = a;
+			}
+			else
+			{
+				result[i] = 29;
+			}
+		}
+	}
+	emit(this->testDone(id));
+	testResMod();
+}
+

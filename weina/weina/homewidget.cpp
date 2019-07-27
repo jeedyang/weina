@@ -6,10 +6,10 @@ HomeWidget::HomeWidget(QWidget *parent)
 	: QWidget(parent)
 {
 	ui.setupUi(this);
-	m_serialPortNameList.append(_tr("COM5"));
-	m_serialPortNameList.append(_tr("COM6"));
-	m_serialPortNameList.append(_tr("COM7"));
-	m_serialPortNameList.append(_tr("COM8"));
+	m_serialPortNameList.append(_tr("COM15"));
+	m_serialPortNameList.append(_tr("COM16"));
+	m_serialPortNameList.append(_tr("COM17"));
+	m_serialPortNameList.append(_tr("COM18"));
 	QLibrary lib("CtrlPanel.dll");
 	typedef CtrlPanelBase* (*pFunc)(int, QWidget*);
 	pFunc func = (pFunc)lib.resolve("createInstance");
@@ -21,14 +21,6 @@ HomeWidget::HomeWidget(QWidget *parent)
 		for (int i = 0; i < 4; i++)
 		{
 			m_panel_widget[i] = func(1, this);
-			//int resArry[24] = {};
-			//for (int i = 0; i < 24; i++)
-			//{
-			//	resArry[i] = i * 1000000;
-			//}
-			//m_panel_widget[i]->setRes(resArry);
-			//m_panel_widget[i]->setHotResDipEnabled(false);
-			//m_panel_widget[i]->showMaximized();
 
 			m_panel_widget[i]->setID(i);
 
@@ -38,6 +30,7 @@ HomeWidget::HomeWidget(QWidget *parent)
 
 			int a;
 			resModArry[i] = new ResTestmod(this);
+			resModArry[i]->id = i;
 			resModArry[i]->setCtrlPanelWidget(m_panel_widget[i]);
 			resModArry[i]->setPortName(m_serialPortNameList[i]);
 			a = resModArry[i]->connectMod();
@@ -60,6 +53,15 @@ HomeWidget::HomeWidget(QWidget *parent)
 	QObject::connect(&m_btnGroup, SIGNAL(buttonToggled(QAbstractButton*, bool)), this, SLOT(on_btnGroupToggled(QAbstractButton*, bool)));
 	ui.stackedWidget->setCurrentIndex(0);
 
+	mainCtrl.setModules(resModArry);
+
+	for (int i = 0; i < 4; i++)
+	{
+		QObject::connect(resModArry[i], SIGNAL(testDone(int)), &mainCtrl, SLOT(on_testDone(int)));
+
+	}
+
+	mainCtrl.testStart(0);
 }
 
 HomeWidget::~HomeWidget()

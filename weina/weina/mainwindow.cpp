@@ -44,6 +44,7 @@ void MainWindow::on_btnGroupToggled(QAbstractButton* button, bool checked)
 		break;
 	case 1:
 		//showWidget(ui.widget_main, m_setup_widget);
+		m_setup_widget->widgetShow();
 		m_debug_widget->widgetHide();
 		break;
 	case 2:

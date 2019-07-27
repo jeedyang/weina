@@ -1,6 +1,7 @@
 #pragma once
 #include <QWidget>
 #include <QObject>
+#include "mainctrl.h"
 
 class CtrlPanelBase: public QWidget
 {
@@ -23,3 +24,10 @@ public:
 	virtual void setHotButtonEnabled(bool en)=0;
 };
 
+typedef struct _TestParameters
+{
+
+
+}TestParameters;
+
+static MainCtrl mainCtrl;
