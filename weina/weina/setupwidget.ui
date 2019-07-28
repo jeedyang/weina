@@ -72,7 +72,11 @@ QPushButton::checked
       <attribute name="title">
        <string>定位参数</string>
       </attribute>
-      <layout class="QGridLayout" name="gridLayout_9"/>
+      <layout class="QGridLayout" name="gridLayout_9">
+       <item row="0" column="0">
+        <widget class="QTableWidget" name="tableWidget_locationPam"/>
+       </item>
+      </layout>
      </widget>
      <widget class="QWidget" name="tab_2">
       <attribute name="title">

@@ -32,6 +32,7 @@ public:
     QTableWidget *tableWidget_testPam;
     QWidget *tab_3;
     QGridLayout *gridLayout_9;
+    QTableWidget *tableWidget_locationPam;
     QWidget *tab_2;
     QHBoxLayout *horizontalLayout_2;
     QWidget *widget;
@@ -99,6 +100,11 @@ public:
         gridLayout_9->setSpacing(6);
         gridLayout_9->setContentsMargins(11, 11, 11, 11);
         gridLayout_9->setObjectName(QString::fromUtf8("gridLayout_9"));
+        tableWidget_locationPam = new QTableWidget(tab_3);
+        tableWidget_locationPam->setObjectName(QString::fromUtf8("tableWidget_locationPam"));
+
+        gridLayout_9->addWidget(tableWidget_locationPam, 0, 0, 1, 1);
+
         tabWidget->addTab(tab_3, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QString::fromUtf8("tab_2"));

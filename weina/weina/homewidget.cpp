@@ -53,15 +53,16 @@ HomeWidget::HomeWidget(QWidget *parent)
 	QObject::connect(&m_btnGroup, SIGNAL(buttonToggled(QAbstractButton*, bool)), this, SLOT(on_btnGroupToggled(QAbstractButton*, bool)));
 	ui.stackedWidget->setCurrentIndex(0);
 
-	mainCtrl.setModules(resModArry);
+	auto mainctrl = MainCtrl::Instance();
+	mainctrl->setModules(resModArry);
 
 	for (int i = 0; i < 4; i++)
 	{
-		QObject::connect(resModArry[i], SIGNAL(testDone(int)), &mainCtrl, SLOT(on_testDone(int)));
+		QObject::connect(resModArry[i], SIGNAL(testDone(int)), mainctrl, SLOT(on_testDone(int)));
 
 	}
-
-	mainCtrl.testStart(0);
+	/////
+	
 }
 
 HomeWidget::~HomeWidget()

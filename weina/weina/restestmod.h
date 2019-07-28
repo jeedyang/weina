@@ -21,7 +21,6 @@ public:
 	void setPortName(QString portName);
 	void setHotRelay();
 	void testStart();
-
 	void readStart();
 	void readStop();
 	void hotMod(uchar* relayStatus);
@@ -38,11 +37,13 @@ public:
 	int minHotRes=50;
 	int maxHotRes=150;
 
-	int testHotresTime=5000;
-	int testTime = 10000;
-	int min_maxTestTime = 5000;
-	array<int,29> minResScope;
-	array<int, 29> maxResScope;
+	TestParameters paramete;
+
+	//int testHotresTime=5000;
+	//int testTime = 10000;
+	//int min_maxTestTime = 5000;
+	//array<int,29> minResScope;
+	//array<int, 29> maxResScope;
 	int id=0;
 private:
 	void refreshHotResWidget();

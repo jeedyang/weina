@@ -22,11 +22,12 @@ private:
 	void initForm();
 	void showWidget(QWidget* parent,QWidget* children);
 private slots:
-	void on_btnGroupToggled(QAbstractButton* button, bool checked);
-
+	void on_btnGroupWidgetToggled(QAbstractButton* button, bool checked);
+	void on_btnGroupCtrlToggled(QAbstractButton* button, bool checked);
 private:
 	Ui::MainWindowClass ui;
-	QButtonGroup m_btnGroup;
+	QButtonGroup m_btnGroupWidget;
+	QButtonGroup m_btnGroupCtrl;
 	HomeWidget* m_home_widget;
 	DebugWidget* m_debug_widget;
 	SetupWidget *m_setup_widget;

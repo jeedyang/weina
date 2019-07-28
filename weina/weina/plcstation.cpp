@@ -16,6 +16,8 @@ PlcStation::PlcStation()
 {
 	m_plcHandle = CreatePlc();
 	plcData.buffer_DB[13] = *(new dbBuffer);
+	plcData.buffer_DB[14] = *(new dbBuffer);
+	plcData.buffer_DB[26] = *(new dbBuffer);
 	plcData.Define_float_DB[toEntireAddr(13, 0)] = _tr("X轴运行速度");
 	plcData.Define_float_DB[toEntireAddr(13, 4)] = _tr("X轴点动速度");
 	plcData.Define_float_DB[toEntireAddr(13, 8)] = _tr("X轴当前位置");
@@ -31,13 +33,30 @@ PlcStation::PlcStation()
 	plcData.Define_int_DB[toEntireAddr(13, 44)] = _tr("X轴ErrorInfo");
 	plcData.Define_int_DB[toEntireAddr(13, 48)] = _tr("Y轴ErrorID");
 	plcData.Define_int_DB[toEntireAddr(13, 52)] = _tr("Y轴ErrorInfo");
-	//plcData.Define_int_DB[toEntireAddr(13, 16)] = _tr("X轴位置设置");
-	//plcData.Define_int_DB[toEntireAddr(13, 20)] = _tr("Y轴运行速度");
-	//plcData.Define_int_DB[toEntireAddr(13, 24)] = _tr("Y轴点动速度");
-	//plcData.Define_int_DB[toEntireAddr(13, 28)] = _tr("Y轴当前位置");
-	//plcData.Define_int_DB[toEntireAddr(13, 32)] = _tr("Y轴剩余距离");
-	//plcData.Define_int_DB[toEntireAddr(13, 36)] = _tr("Y轴位置设置");
 
+	plcData.Define_float_DB[toEntireAddr(14, 0)] = _tr("1号吸嘴料槽1坐标X");
+	plcData.Define_float_DB[toEntireAddr(14, 4)] = _tr("1号吸嘴料槽1坐标Y");
+	plcData.Define_float_DB[toEntireAddr(14, 8)] = _tr("1号板第一行位置X");
+	plcData.Define_float_DB[toEntireAddr(14, 12)] = _tr("1号板第一行位置Y");
+	plcData.Define_float_DB[toEntireAddr(14, 16)] = _tr("2号板第一行位置X");
+	plcData.Define_float_DB[toEntireAddr(14, 20)] = _tr("2号板第一行位置Y");
+	plcData.Define_float_DB[toEntireAddr(14, 24)] = _tr("3号板第一行位置X");
+	plcData.Define_float_DB[toEntireAddr(14, 28)] = _tr("3号板第一行位置Y");
+	plcData.Define_float_DB[toEntireAddr(14, 32)] = _tr("4号板第一行位置X");
+	plcData.Define_float_DB[toEntireAddr(14, 36)] = _tr("4号板第一行位置Y");
+	plcData.Define_float_DB[toEntireAddr(14, 40)] = _tr("吸嘴气缸间距");
+	plcData.Define_float_DB[toEntireAddr(14, 44)] = _tr("料板纵间距");
+	plcData.Define_float_DB[toEntireAddr(14, 48)] = _tr("1号吸嘴料盒1位置X");
+	plcData.Define_float_DB[toEntireAddr(14, 52)] = _tr("1号吸嘴料盒1位置Y");
+
+	plcData.Define_int_DB[toEntireAddr(26, 0)] = _tr("启动_停止");
+	plcData.Define_int_DB[toEntireAddr(26, 4)] = _tr("暂停_继续");
+	plcData.Define_int_DB[toEntireAddr(26, 8)] = _tr("控制指令");
+	plcData.Define_int_DB[toEntireAddr(26, 12)] = _tr("1号板状态");
+	plcData.Define_int_DB[toEntireAddr(26, 16)] = _tr("2号板状态");
+	plcData.Define_int_DB[toEntireAddr(26, 20)] = _tr("3号板状态");
+	plcData.Define_int_DB[toEntireAddr(26, 24)] = _tr("4号板状态");
+	plcData.Define_int_DB[toEntireAddr(26, 28)] = _tr("动作进行状态");
 }
 
 PlcStation::~PlcStation()

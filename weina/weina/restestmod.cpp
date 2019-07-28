@@ -236,17 +236,18 @@ void ResTestmod::testStart()
 	}
 
 	this->testHotresMod();//检测加热电阻
-	m_testHotResTimer.start(testHotresTime);
+	m_testHotResTimer.start(paramete.testHotresTime);
 	qDebug()<< _tr("检测开始") << id ;
 	qDebug() << _tr("检测加热电阻开始") << id;
 }
+
 
 void ResTestmod::on_testHotResTimer_timeout()
 {
 	
 	m_testHotResTimer.stop();
-	m_testResTimer.start(testTime);//检测电阻
-	m_min_maxTestTimer.start(min_maxTestTime);
+	m_testResTimer.start(paramete.testTime);//检测电阻
+	m_min_maxTestTimer.start(paramete.min_maxTestTime);
 	for (int i = 0; i < 24; i++)
 	{
 		if (hotRes[i]<minHotRes|| hotRes[i]>maxHotRes)
@@ -280,7 +281,7 @@ void ResTestmod::on_testResTimer_timeout()
 	{
 		for (int a = 0; a < 29; a++)
 		{
-			if (res[i]>=minResScope[a] & res[i]<=maxResScope[a])
+			if (res[i]>= paramete.minResScope[a] & res[i]<= paramete.maxResScope[a])
 			{
 				result[i] = a;
 			}

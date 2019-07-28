@@ -2073,7 +2073,7 @@ public:
 
         retranslateUi(DebugWidget);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(DebugWidget);
@@ -2137,7 +2137,7 @@ public:
         m103->setText(QApplication::translate("DebugWidget", "4\345\217\267\345\216\213\347\264\247\346\260\224\347\274\270\344\270\213", nullptr));
         m108->setText(QApplication::translate("DebugWidget", "2\345\217\267\344\270\213\346\250\241\346\260\224\347\274\270\344\274\270", nullptr));
         m109->setText(QApplication::translate("DebugWidget", "3\345\217\267\344\270\213\346\250\241\346\260\224\347\274\270\347\274\251", nullptr));
-        m110->setText(QApplication::translate("DebugWidget", "2\345\217\267\344\270\213\346\250\241\346\260\224\347\274\270\344\274\270", nullptr));
+        m110->setText(QApplication::translate("DebugWidget", "4\345\217\267\344\270\213\346\250\241\346\260\224\347\274\270\344\274\270", nullptr));
         m111->setText(QApplication::translate("DebugWidget", "4\345\217\267\344\270\213\346\250\241\346\260\224\347\274\270\347\274\251", nullptr));
         m106->setText(QApplication::translate("DebugWidget", "2\345\217\267\344\270\213\346\250\241\346\260\224\347\274\270\344\274\270", nullptr));
         m107->setText(QApplication::translate("DebugWidget", "2\345\217\267\344\270\213\346\250\241\346\260\224\347\274\270\347\274\251", nullptr));
