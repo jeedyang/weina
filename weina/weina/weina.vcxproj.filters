@@ -114,4 +114,7 @@
   <ItemGroup>
     <Text Include="AddressMap.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
 </Project>

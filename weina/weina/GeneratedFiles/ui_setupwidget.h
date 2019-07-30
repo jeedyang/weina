@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'setupwidget.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.3
+** Created by: Qt User Interface Compiler version 5.13.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -29,6 +29,9 @@ public:
     QTabWidget *tabWidget;
     QWidget *tab;
     QGridLayout *gridLayout_2;
+    QTableWidget *tableWidget_classPam;
+    QWidget *tab_4;
+    QHBoxLayout *horizontalLayout_3;
     QTableWidget *tableWidget_testPam;
     QWidget *tab_3;
     QGridLayout *gridLayout_9;
@@ -88,12 +91,24 @@ public:
         gridLayout_2->setSpacing(6);
         gridLayout_2->setContentsMargins(11, 11, 11, 11);
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
-        tableWidget_testPam = new QTableWidget(tab);
-        tableWidget_testPam->setObjectName(QString::fromUtf8("tableWidget_testPam"));
+        tableWidget_classPam = new QTableWidget(tab);
+        tableWidget_classPam->setObjectName(QString::fromUtf8("tableWidget_classPam"));
 
-        gridLayout_2->addWidget(tableWidget_testPam, 0, 0, 1, 1);
+        gridLayout_2->addWidget(tableWidget_classPam, 0, 0, 1, 1);
 
         tabWidget->addTab(tab, QString());
+        tab_4 = new QWidget();
+        tab_4->setObjectName(QString::fromUtf8("tab_4"));
+        horizontalLayout_3 = new QHBoxLayout(tab_4);
+        horizontalLayout_3->setSpacing(6);
+        horizontalLayout_3->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
+        tableWidget_testPam = new QTableWidget(tab_4);
+        tableWidget_testPam->setObjectName(QString::fromUtf8("tableWidget_testPam"));
+
+        horizontalLayout_3->addWidget(tableWidget_testPam);
+
+        tabWidget->addTab(tab_4, QString());
         tab_3 = new QWidget();
         tab_3->setObjectName(QString::fromUtf8("tab_3"));
         gridLayout_9 = new QGridLayout(tab_3);
@@ -140,7 +155,7 @@ public:
 
         retranslateUi(SetupWidget);
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(3);
 
 
         QMetaObject::connectSlotsByName(SetupWidget);
@@ -148,11 +163,12 @@ public:
 
     void retranslateUi(QWidget *SetupWidget)
     {
-        SetupWidget->setWindowTitle(QApplication::translate("SetupWidget", "SetupWidget", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("SetupWidget", "\346\243\200\346\265\213\345\217\202\346\225\260", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("SetupWidget", "\345\256\232\344\275\215\345\217\202\346\225\260", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("SetupWidget", "\345\205\266\344\273\226\345\217\202\346\225\260", nullptr));
-        pushButton_save->setText(QApplication::translate("SetupWidget", "\344\277\235\345\255\230", nullptr));
+        SetupWidget->setWindowTitle(QCoreApplication::translate("SetupWidget", "SetupWidget", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("SetupWidget", "\345\210\206\346\241\243\345\217\202\346\225\260", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_4), QCoreApplication::translate("SetupWidget", "\346\243\200\346\265\213\345\217\202\346\225\260", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_3), QCoreApplication::translate("SetupWidget", "\345\256\232\344\275\215\345\217\202\346\225\260", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("SetupWidget", "\345\205\266\344\273\226\345\217\202\346\225\260", nullptr));
+        pushButton_save->setText(QCoreApplication::translate("SetupWidget", "\344\277\235\345\255\230", nullptr));
     } // retranslateUi
 
 };

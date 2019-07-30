@@ -50,7 +50,7 @@ QPushButton::checked
 }</string>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>3</number>
      </property>
      <property name="usesScrollButtons">
       <bool>true</bool>
@@ -60,10 +60,20 @@ QPushButton::checked
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
-       <string>检测参数</string>
+       <string>分档参数</string>
       </attribute>
       <layout class="QGridLayout" name="gridLayout_2">
        <item row="0" column="0">
+        <widget class="QTableWidget" name="tableWidget_classPam"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>检测参数</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
         <widget class="QTableWidget" name="tableWidget_testPam"/>
        </item>
       </layout>

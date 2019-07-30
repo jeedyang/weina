@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <classifyPam>
-	<class0 status="true" minResistance="1" maxResistance="2" />
+	<class0 status="true" minResistance="0" maxResistance="7" />
 	<class1 status="true" minResistance="1" maxResistance="2" />
-	<class2 status="true" minResistance="3" maxResistance="6" />
+	<class2 status="true" minResistance="23" maxResistance="6" />
 	<class3 status="true" minResistance="4" maxResistance="11" />
-	<class4 status="true" minResistance="8" maxResistance="7" />
-	<class5 status="false" minResistance="6" maxResistance="0" />
-	<class6 status="false" minResistance="7" maxResistance="0" />
-	<class7 status="false" minResistance="8" maxResistance="0" />
-	<class8 status="false" minResistance="9" maxResistance="0" />
+	<class4 status="true" minResistance="21" maxResistance="7" />
+	<class5 status="true" minResistance="10" maxResistance="0" />
+	<class6 status="true" minResistance="17" maxResistance="0" />
+	<class7 status="true" minResistance="55" maxResistance="0" />
+	<class8 status="false" minResistance="29" maxResistance="0" />
 	<class9 status="false" minResistance="10" maxResistance="0" />
 	<class10 status="false" minResistance="11" maxResistance="0" />
 	<class11 status="false" minResistance="12" maxResistance="0" />
@@ -29,5 +29,6 @@
 	<class26 status="true" minResistance="27" maxResistance="0" />
 	<class27 status="true" minResistance="28" maxResistance="0" />
 	<class28 status="true" minResistance="29" maxResistance="0" />
+	<testPams minHotRes="66" maxHotRes="666" testHotresTime="6666" testTime="666666" min_maxTestTime="6" />
 	<description>Simple node</description>
 </classifyPam>

@@ -167,7 +167,7 @@ void MainCtrl::on_logicTimeOut()
 		}
 
 	}
-	for (int i = 0; i < 4; i++)
+	for (int i = 3; i >= 0; i--)
 	{
 		if (boardStatusPlc[i] == waitClassify)
 		{

@@ -20,18 +20,23 @@ public:
 	SetupWidget(QWidget *parent = Q_NULLPTR);
 	~SetupWidget();
 	void widgetShow();
-	void refreshTestWidget();
+	void refreshClassWidget();
+	void refreshTestPamWidget();
 	void refreshLocationWidget();
 	QList<QCheckBox*> m_checkboxList;
 	QList<QSpinBox*> m_spinboxMinList;
 	QList<QSpinBox*> m_spinboxMaxList;
 	QList<QDoubleSpinBox*> m_dspinboxLicationPamList;
+	QList<QSpinBox*> m_spinboxtestPamList;
 private:
 	Ui::SetupWidget ui;
 	TestParameters m_parameters;
 	int locationPamCount = 14;
 	void loadPamsFromXml();
 	void setTestModsPam();
+	void setPams2xml();
+
+	char* m_xmlpath;
 private slots:
 	void on_pushButton_saveClicked(bool checked);
 };

@@ -30,6 +30,10 @@ ResTestmod::ResTestmod(QObject *parent)
 	connect(&m_testHotResTimer, SIGNAL(timeout()), this, SLOT(on_testHotResTimer_timeout()));
 	connect(&m_testResTimer, SIGNAL(timeout()), this, SLOT(on_testResTimer_timeout()));
 	connect(&m_min_maxTestTimer, SIGNAL(timeout()), this, SLOT(on_min_maxTestTimer_timeout()));
+	for (int i = 0; i < 24; i++)
+	{
+		m_relayStatus[i] = 0x00;
+	}
 }
 
 ResTestmod::~ResTestmod()
