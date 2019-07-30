@@ -6,10 +6,10 @@ HomeWidget::HomeWidget(QWidget *parent)
 	: QWidget(parent)
 {
 	ui.setupUi(this);
-	m_serialPortNameList.append(_tr("COM3"));
-	m_serialPortNameList.append(_tr("COM4"));
-	m_serialPortNameList.append(_tr("COM5"));
-	m_serialPortNameList.append(_tr("COM6"));
+	m_serialPortNameList.append(_tr("COM27"));
+	m_serialPortNameList.append(_tr("COM28"));
+	m_serialPortNameList.append(_tr("COM29"));
+	m_serialPortNameList.append(_tr("COM30"));
 	QLibrary lib("CtrlPanel.dll");
 	typedef CtrlPanelBase* (*pFunc)(int, QWidget*);
 	pFunc func = (pFunc)lib.resolve("createInstance");

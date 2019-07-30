@@ -124,7 +124,7 @@ QPushButton::checked
 }</string>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>2</number>
      </property>
      <property name="usesScrollButtons">
       <bool>true</bool>
@@ -1255,7 +1255,7 @@ QPushButton::checked
              <string notr="true"/>
             </property>
             <property name="text">
-             <string>2号下模气缸伸</string>
+             <string>3号下模气缸伸</string>
             </property>
            </widget>
           </item>
@@ -1881,7 +1881,7 @@ QPushButton::checked
                 <string notr="true"/>
                </property>
                <property name="text">
-                <string>2压紧电磁阀上</string>
+                <string>4压紧电磁阀上</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -1973,7 +1973,7 @@ QPushButton::checked
                 <string notr="true"/>
                </property>
                <property name="text">
-                <string>2压紧电磁阀下</string>
+                <string>4压紧电磁阀下</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -2011,7 +2011,7 @@ QPushButton::checked
                 <string notr="true"/>
                </property>
                <property name="text">
-                <string>2压紧电磁阀下</string>
+                <string>3压紧电磁阀下</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -2290,7 +2290,7 @@ QPushButton::checked
                 <string notr="true"/>
                </property>
                <property name="text">
-                <string>2压紧电磁阀上</string>
+                <string>3压紧电磁阀上</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>

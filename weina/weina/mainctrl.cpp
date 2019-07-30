@@ -101,18 +101,39 @@ void MainCtrl::on_testDone(int id)
 	if (id==0)
 	{
 		plc->setValue(_tr("1ºÅ°å×´Ì¬"), testend);
+		for (int i = 0; i < 24; i++)
+		{
+			plc->writeInt(AreaDB,21,i*4, m_testMods[id]->result[i]);
+		}
+		
+		//m_testMods[id]->result;
 	}
 	if (id == 1)
 	{
 		plc->setValue(_tr("2ºÅ°å×´Ì¬"), testend);
+		for (int i = 0; i < 24; i++)
+		{
+			plc->writeInt(AreaDB, 22, i * 4, m_testMods[id]->result[i]);
+		}
+
 	}
 	if (id == 2)
 	{
 		plc->setValue(_tr("3ºÅ°å×´Ì¬"), testend);
+		for (int i = 0; i < 24; i++)
+		{
+			plc->writeInt(AreaDB, 23, i * 4, m_testMods[id]->result[i]);
+		}
+
 	}
 	if (id == 3)
 	{
 		plc->setValue(_tr("4ºÅ°å×´Ì¬"), testend);
+		for (int i = 0; i < 24; i++)
+		{
+			plc->writeInt(AreaDB, 24, i * 4, m_testMods[id]->result[i]);
+		}
+
 	}
 	
 }
@@ -167,13 +188,19 @@ void MainCtrl::on_logicTimeOut()
 		}
 
 	}
-	for (int i = 3; i >= 0; i--)
+
+	for (int i = 0; i < 4; i++)
 	{
-		if (boardStatusPlc[i] == waitClassify)
+		if (boardStatusPlc[i] == waitClassify & m_classifyNum==i)
 		{
 			classifyStart(i);
 			qDebug() << _tr("%1ºÅ°å·ÖÁÏ¿ªÊ¼!").arg(i);
 			m_testStatus[i] = false;
+			m_classifyNum++;
+			if (m_classifyNum>=4)
+			{
+				m_classifyNum = 0;
+			}
 			return;
 		}
 	}

@@ -48,6 +48,7 @@ private:
 	QList<ResTestmod*> m_testMods;			//¼ì²âÄ£¿é¶ÔÏó
 	bool m_testStatus[4] = {false,false ,false ,false };
 	array <int, 4> boardStatus;
+	int m_classifyNum =0;
 private slots:
 	void on_logicTimeOut();
 	void on_testDone(int id);

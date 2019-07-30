@@ -137,6 +137,18 @@ int PlcStation::readBlockAsByte(int area, int dbNum, int byteNum, int length, un
 
 }
 
+int PlcStation::writeBlockAsByte(int area, int dbNum, int byteNum, int length, unsigned char* pucValue)
+{
+	if (this->isRunning() || threadExitCode == PLC_THREAD_ON)
+	{
+		waitThreadExit();
+		int a = ReadBlockAsByte(m_plcHandle, area, dbNum, byteNum, length, pucValue);
+		pollingStart();
+		return a;
+	}
+	return  WriteBlockAsByte(m_plcHandle, area, dbNum, byteNum, length, pucValue);
+}
+
 int PlcStation::errorText(int errorCode, char* text, int textLen)
 {
 	return ErrorText(errorCode,text,textLen);

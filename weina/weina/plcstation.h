@@ -78,6 +78,7 @@ public:
 	int writeInt(int area, int dbNum, int byteNum, int value);
 	int writeFloat(int area, int dbNum, int byteNum, float value);
 	int readBlockAsByte(int area,int dbNum,int byteNum,int length,unsigned char* pucValue);	
+	int writeBlockAsByte(int area, int dbNum, int byteNum, int length, unsigned char* pucValue);
 	int errorText(int errorCode,char* text,int textLen);
 	//¿ªÊ¼ÂÖÑ¯
 	void pollingStart();

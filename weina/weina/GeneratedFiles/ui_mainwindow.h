@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.13.0
+** Created by: Qt User Interface Compiler version 5.12.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -185,12 +185,12 @@ public:
 
     void retranslateUi(QMainWindow *MainWindowClass)
     {
-        MainWindowClass->setWindowTitle(QCoreApplication::translate("MainWindowClass", "MainWindow", nullptr));
-        pushButton_home->setText(QCoreApplication::translate("MainWindowClass", "\344\270\273\347\225\214\351\235\242", nullptr));
-        pushButton_setup->setText(QCoreApplication::translate("MainWindowClass", "\350\256\276\347\275\256", nullptr));
-        pushButton_debug->setText(QCoreApplication::translate("MainWindowClass", "\350\260\203\350\257\225", nullptr));
-        pushButton_pause->setText(QCoreApplication::translate("MainWindowClass", "\346\232\202\345\201\234", nullptr));
-        pushButton_start->setText(QCoreApplication::translate("MainWindowClass", "\345\220\257\345\212\250", nullptr));
+        MainWindowClass->setWindowTitle(QApplication::translate("MainWindowClass", "MainWindow", nullptr));
+        pushButton_home->setText(QApplication::translate("MainWindowClass", "\344\270\273\347\225\214\351\235\242", nullptr));
+        pushButton_setup->setText(QApplication::translate("MainWindowClass", "\350\256\276\347\275\256", nullptr));
+        pushButton_debug->setText(QApplication::translate("MainWindowClass", "\350\260\203\350\257\225", nullptr));
+        pushButton_pause->setText(QApplication::translate("MainWindowClass", "\346\232\202\345\201\234", nullptr));
+        pushButton_start->setText(QApplication::translate("MainWindowClass", "\345\220\257\345\212\250", nullptr));
     } // retranslateUi
 
 };

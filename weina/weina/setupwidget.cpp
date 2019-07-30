@@ -95,12 +95,11 @@ SetupWidget::SetupWidget(QWidget *parent)
 
 	//初始化检测参数设置列表
 	QStringList testPamName;
-	testPamName.append(_tr("最大加热电阻阻值"));
 	testPamName.append(_tr("最小加热电阻阻值"));
-	testPamName.append(_tr("判断最大/小值开始时间"));
+	testPamName.append(_tr("最大加热电阻阻值"));
 	testPamName.append(_tr("检测加热电阻时间"));
 	testPamName.append(_tr("加热时间"));
-	
+	testPamName.append(_tr("判断最大/小值开始时间"));
 	QStringList testPamHeader;
 	testPamHeader.append(_tr("参数"));
 	testPamHeader.append(_tr("值"));
