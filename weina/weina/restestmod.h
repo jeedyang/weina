@@ -36,7 +36,7 @@ public:
 	int result[24];
 	int minHotRes=50;
 	int maxHotRes=150;
-
+	float maxminOdds[24];
 	TestParameters paramete;
 
 	//int testHotresTime=5000;

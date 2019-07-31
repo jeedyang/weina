@@ -100,6 +100,7 @@ SetupWidget::SetupWidget(QWidget *parent)
 	testPamName.append(_tr("检测加热电阻时间"));
 	testPamName.append(_tr("加热时间"));
 	testPamName.append(_tr("判断最大/小值开始时间"));
+	testPamName.append(_tr("最大/小值比值MAX"));
 	QStringList testPamHeader;
 	testPamHeader.append(_tr("参数"));
 	testPamHeader.append(_tr("值"));
@@ -115,12 +116,25 @@ SetupWidget::SetupWidget(QWidget *parent)
 		QLabel* label = new QLabel();
 		label->setText(testPamName[i]);
 		ui.tableWidget_testPam->setCellWidget(i, 0, label);
-		QSpinBox* spinbox = new QSpinBox();
-		spinbox->setMaximum(999999999);
-		spinbox->setObjectName(_tr("spinboxTestPam_%1").arg(QString::number(i)));
-		ui.tableWidget_testPam->setCellWidget(i, 1, spinbox);
+		if (testPamName[i]== _tr("最大/小值比值MAX"))
+		{
+			QDoubleSpinBox* dspinBox = new QDoubleSpinBox();
+			dspinBox->setMinimum(-9999.999);
+			dspinBox->setMaximum(9999.999);
+			dspinBox->setObjectName(_tr("dspinboxTestPam_%1").arg(QString::number(i)));
+			ui.tableWidget_testPam->setCellWidget(i, 1, dspinBox);
+			m_dspinboxMax_minOdds = dspinBox;
+		}
+		else
+		{
+			QSpinBox* spinbox = new QSpinBox();
+			spinbox->setMaximum(999999999);
+			spinbox->setObjectName(_tr("spinboxTestPam_%1").arg(QString::number(i)));
+			ui.tableWidget_testPam->setCellWidget(i, 1, spinbox);
+			m_spinboxtestPamList.append(spinbox);
+		}
 
-		m_spinboxtestPamList.append(spinbox);
+		
 	}
 
 	
@@ -168,6 +182,7 @@ void SetupWidget::refreshTestPamWidget()
 	m_spinboxtestPamList[2]->setValue(m_parameters.testHotresTime);
 	m_spinboxtestPamList[3]->setValue(m_parameters.testTime);
 	m_spinboxtestPamList[4]->setValue(m_parameters.min_maxTestTime);
+	m_dspinboxMax_minOdds->setValue(m_parameters.max_minOdds);
 }
 
 void SetupWidget::refreshLocationWidget()
@@ -244,11 +259,13 @@ void SetupWidget::loadPamsFromXml()
 		xml_attribute testHotresTime = testPam.attribute("testHotresTime");
 		xml_attribute testTime = testPam.attribute("testTime");
 		xml_attribute min_maxTestTime = testPam.attribute("min_maxTestTime");
+		xml_attribute max_minOdds= testPam.attribute("max_minOdds");
 		m_parameters.minHotRes = QString( minHotRes.value()).toInt();
 		m_parameters.maxHotRes = QString(maxHotRes.value()).toInt();
 		m_parameters.testHotresTime = QString(testHotresTime.value()).toInt();
 		m_parameters.testTime = QString(testTime.value()).toInt();
 		m_parameters.min_maxTestTime = QString(min_maxTestTime.value()).toInt();
+		m_parameters.max_minOdds = QString(max_minOdds.value()).toFloat();
 	}
 }
 
@@ -299,12 +316,13 @@ void SetupWidget::setPams2xml()
 	xml_attribute testHotresTime = testPams.attribute("testHotresTime");
 	xml_attribute testTime = testPams.attribute("testTime");
 	xml_attribute min_maxTestTime = testPams.attribute("min_maxTestTime");
+	xml_attribute max_minOdds = testPams.attribute("max_minOdds");
 	minHotRes.set_value(m_spinboxtestPamList[0]->value());
 	maxHotRes.set_value(m_spinboxtestPamList[1]->value());
 	testHotresTime.set_value(m_spinboxtestPamList[2]->value());
 	testTime.set_value(m_spinboxtestPamList[3]->value());
 	min_maxTestTime.set_value(m_spinboxtestPamList[4]->value());
-
+	max_minOdds.set_value(m_dspinboxMax_minOdds->value());
 	doc.save_file(xmlPath);
 }
 

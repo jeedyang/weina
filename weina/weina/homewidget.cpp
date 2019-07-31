@@ -6,8 +6,8 @@ HomeWidget::HomeWidget(QWidget *parent)
 	: QWidget(parent)
 {
 	ui.setupUi(this);
-	m_serialPortNameList.append(_tr("COM8"));
-	m_serialPortNameList.append(_tr("COM28"));
+	m_serialPortNameList.append(_tr("COM7"));
+	m_serialPortNameList.append(_tr("COM9"));
 	m_serialPortNameList.append(_tr("COM29"));
 	m_serialPortNameList.append(_tr("COM30"));
 	QLibrary lib("CtrlPanel.dll");

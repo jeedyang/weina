@@ -186,7 +186,7 @@ void ResTestmod::run()
 			}
 		}
 
-		if (getMin_MaxRes)
+		if (getMin_MaxRes)//获取最大最小电阻,在到时间之后
 		{
 			for (int i = 0; i < 24; i++)
 			{
@@ -284,20 +284,42 @@ void ResTestmod::on_testResTimer_timeout()
 	qDebug() << _tr("模块:%1  :").arg(id) << _tr("检测结束----------------------------------");
 	m_testResTimer.stop();
 	getMin_MaxRes = false;
+	//先全部设置不合格
+	for (int i = 0; i < 24; i++)
+	{
+		result[i] = 0;
+	}
 	for (int i = 0; i < 24; i++)
 	{
 		for (int a = 0; a < 29; a++)
 		{
-			if (res[i]>= paramete.minResScope[a] & res[i]<= paramete.maxResScope[a])
+			if (paramete.enabled[a]) //参数启用则进行判断
 			{
-				result[i] = a;
-			}
-			else
-			{
-				result[i] = 29;
+				if (res[i] >= paramete.minResScope[a] & res[i] <= paramete.maxResScope[a])
+				{
+					result[i] = a + 1; //分档结果为索引+1,0档为不合格.
+				}
 			}
 		}
 	}
+	//判断最大最小值比值
+	for (int i = 0; i < 24; i++)
+	{
+		maxminOdds[i] = maxRes[i] / minRes[i];
+		if (maxminOdds[i] >paramete.max_minOdds)
+		{
+			result[i] = 0;
+		}
+	}
+	//如果加热继电器没开,直接不合格
+	for (int i = 0; i < 24; i++)
+	{
+		if (m_relayStatus[i]==0x00)
+		{
+			result[i] = 0;
+		}
+	}
+
 	emit(this->testDone(id));
 	testResMod();
 }

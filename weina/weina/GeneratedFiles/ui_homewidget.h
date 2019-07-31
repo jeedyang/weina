@@ -1,13 +1,13 @@
 /********************************************************************************
-** Form generated from reading UI file 'homewidgetnlbLqX.ui'
+** Form generated from reading UI file 'homewidget.ui'
 **
-** Created by: Qt User Interface Compiler version 5.13.0
+** Created by: Qt User Interface Compiler version 5.12.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef HOMEWIDGETNLBLQX_H
-#define HOMEWIDGETNLBLQX_H
+#ifndef UI_HOMEWIDGET_H
+#define UI_HOMEWIDGET_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -150,12 +150,12 @@ public:
 
     void retranslateUi(QWidget *HomeWidget)
     {
-        HomeWidget->setWindowTitle(QCoreApplication::translate("HomeWidget", "HomeWidget", nullptr));
-        pushButton_save->setText(QCoreApplication::translate("HomeWidget", "PushButton", nullptr));
-        pushButton_mod0->setText(QCoreApplication::translate("HomeWidget", "\346\250\241\345\235\2271", nullptr));
-        pushButton_mod1->setText(QCoreApplication::translate("HomeWidget", "\346\250\241\345\235\2272", nullptr));
-        pushButton_mod2->setText(QCoreApplication::translate("HomeWidget", "\346\250\241\345\235\2273", nullptr));
-        pushButton_mod3->setText(QCoreApplication::translate("HomeWidget", "\346\250\241\345\235\2274", nullptr));
+        HomeWidget->setWindowTitle(QApplication::translate("HomeWidget", "HomeWidget", nullptr));
+        pushButton_save->setText(QApplication::translate("HomeWidget", "PushButton", nullptr));
+        pushButton_mod0->setText(QApplication::translate("HomeWidget", "\346\250\241\345\235\2271", nullptr));
+        pushButton_mod1->setText(QApplication::translate("HomeWidget", "\346\250\241\345\235\2272", nullptr));
+        pushButton_mod2->setText(QApplication::translate("HomeWidget", "\346\250\241\345\235\2273", nullptr));
+        pushButton_mod3->setText(QApplication::translate("HomeWidget", "\346\250\241\345\235\2274", nullptr));
     } // retranslateUi
 
 };
@@ -166,4 +166,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // HOMEWIDGETNLBLQX_H
+#endif // UI_HOMEWIDGET_H

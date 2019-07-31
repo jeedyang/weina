@@ -29,6 +29,6 @@
 	<class26 status="true" minResistance="27" maxResistance="0" />
 	<class27 status="true" minResistance="28" maxResistance="0" />
 	<class28 status="true" minResistance="29" maxResistance="0" />
-	<testPams minHotRes="50" maxHotRes="150" testHotresTime="5000" testTime="60000" min_maxTestTime="3000" />
+	<testPams minHotRes="50" maxHotRes="150" testHotresTime="5000" testTime="60000" min_maxTestTime="3000" max_minOdds="2.5"/>
 	<description>Simple node</description>
 </classifyPam>

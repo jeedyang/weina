@@ -28,6 +28,7 @@ public:
 	QList<QSpinBox*> m_spinboxMaxList;
 	QList<QDoubleSpinBox*> m_dspinboxLicationPamList;
 	QList<QSpinBox*> m_spinboxtestPamList;
+	QDoubleSpinBox* m_dspinboxMax_minOdds;
 private:
 	Ui::SetupWidget ui;
 	TestParameters m_parameters;
