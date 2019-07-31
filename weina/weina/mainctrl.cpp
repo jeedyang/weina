@@ -93,7 +93,7 @@ void MainCtrl::on_testDone(int id)
 	qDebug() << _tr("检测结束,板号:") << id;
 	for (int i = 0; i < 24; i++)
 	{
-		//qDebug() << _tr("检测结果 # %1:").arg(i) << m_testMods[id]->result[i]<<_tr("最小值 :")<< m_testMods[id]->minRes[i] << _tr("最大值 :") << m_testMods[id]->maxRes[i];
+		qDebug() << _tr("%1号板 分档结果 :").arg(i) << m_testMods[id]->result[i]<<_tr("最小电阻值 :")<< m_testMods[id]->minRes[i] << _tr("最大电阻值 :") << m_testMods[id]->maxRes[i];
 
 	}
 	auto plc = PLC::PlcStation::Instance();

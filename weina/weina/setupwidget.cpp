@@ -202,14 +202,15 @@ void SetupWidget::loadPamsFromXml()
 	else
 	{
 		xml_node classes = doc.first_child();
-		for (xml_node classPam = classes.first_child(); classPam; classPam = classPam.next_sibling())
-		{
-			for (xml_attribute attr = classPam.first_attribute(); attr; attr = attr.next_attribute())
-			{
-				qDebug() << " " << attr.name() << "=" << attr.value();
-			}
+		//打印xml信息
+		//for (xml_node classPam = classes.first_child(); classPam; classPam = classPam.next_sibling())
+		//{
+		//	for (xml_attribute attr = classPam.first_attribute(); attr; attr = attr.next_attribute())
+		//	{
+		//		qDebug() << " " << attr.name() << "=" << attr.value();
+		//	}
 
-		}
+		//}
 		qDebug() << _tr("xml文件加载成功!");
 		for (int i = 0; i < 29; i++)
 		{

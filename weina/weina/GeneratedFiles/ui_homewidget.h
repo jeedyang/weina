@@ -1,22 +1,23 @@
 /********************************************************************************
-** Form generated from reading UI file 'homewidget.ui'
+** Form generated from reading UI file 'homewidgetnlbLqX.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.3
+** Created by: Qt User Interface Compiler version 5.13.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef UI_HOMEWIDGET_H
-#define UI_HOMEWIDGET_H
+#ifndef HOMEWIDGETNLBLQX_H
+#define HOMEWIDGETNLBLQX_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
-#include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QStackedWidget>
+#include <QtWidgets/QTextBrowser>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -32,7 +33,10 @@ public:
     QWidget *page_1;
     QWidget *page_2;
     QWidget *page_3;
-    QLabel *label;
+    QWidget *widget;
+    QVBoxLayout *verticalLayout;
+    QTextBrowser *textBrowser;
+    QPushButton *pushButton_save;
     QWidget *widget_modbtn;
     QHBoxLayout *horizontalLayout;
     QPushButton *pushButton_mod0;
@@ -75,10 +79,24 @@ public:
 
         horizontalLayout_2->addWidget(stackedWidget);
 
-        label = new QLabel(widget_ctrl);
-        label->setObjectName(QString::fromUtf8("label"));
+        widget = new QWidget(widget_ctrl);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        verticalLayout = new QVBoxLayout(widget);
+        verticalLayout->setSpacing(6);
+        verticalLayout->setContentsMargins(11, 11, 11, 11);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        textBrowser = new QTextBrowser(widget);
+        textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
 
-        horizontalLayout_2->addWidget(label);
+        verticalLayout->addWidget(textBrowser);
+
+        pushButton_save = new QPushButton(widget);
+        pushButton_save->setObjectName(QString::fromUtf8("pushButton_save"));
+
+        verticalLayout->addWidget(pushButton_save);
+
+
+        horizontalLayout_2->addWidget(widget);
 
 
         gridLayout->addWidget(widget_ctrl, 1, 0, 1, 1);
@@ -132,12 +150,12 @@ public:
 
     void retranslateUi(QWidget *HomeWidget)
     {
-        HomeWidget->setWindowTitle(QApplication::translate("HomeWidget", "HomeWidget", nullptr));
-        label->setText(QApplication::translate("HomeWidget", "TextLabel", nullptr));
-        pushButton_mod0->setText(QApplication::translate("HomeWidget", "\346\250\241\345\235\2271", nullptr));
-        pushButton_mod1->setText(QApplication::translate("HomeWidget", "\346\250\241\345\235\2272", nullptr));
-        pushButton_mod2->setText(QApplication::translate("HomeWidget", "\346\250\241\345\235\2273", nullptr));
-        pushButton_mod3->setText(QApplication::translate("HomeWidget", "\346\250\241\345\235\2274", nullptr));
+        HomeWidget->setWindowTitle(QCoreApplication::translate("HomeWidget", "HomeWidget", nullptr));
+        pushButton_save->setText(QCoreApplication::translate("HomeWidget", "PushButton", nullptr));
+        pushButton_mod0->setText(QCoreApplication::translate("HomeWidget", "\346\250\241\345\235\2271", nullptr));
+        pushButton_mod1->setText(QCoreApplication::translate("HomeWidget", "\346\250\241\345\235\2272", nullptr));
+        pushButton_mod2->setText(QCoreApplication::translate("HomeWidget", "\346\250\241\345\235\2273", nullptr));
+        pushButton_mod3->setText(QCoreApplication::translate("HomeWidget", "\346\250\241\345\235\2274", nullptr));
     } // retranslateUi
 
 };
@@ -148,4 +166,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // UI_HOMEWIDGET_H
+#endif // HOMEWIDGETNLBLQX_H

@@ -15,7 +15,7 @@ ResTestmod::ResTestmod(QObject *parent)
 	for each (const QSerialPortInfo & info in QSerialPortInfo::availablePorts())
 	{
 		m_serialPortNameList << info.portName();
-		qDebug() << "serialPortName:" << info.portName();
+		qDebug() << _tr("发现:")  << info.portName();
 	}
 	m_serialPort->setBaudRate(QSerialPort::Baud115200, QSerialPort::AllDirections);//设置波特率和读写方向
 	m_serialPort->setDataBits(QSerialPort::Data8);      //数据位为8位
@@ -47,9 +47,12 @@ int ResTestmod::connectMod()
 	m_serialPort->setPortName(m_serialPortName);
 	if (!m_serialPort->open(QIODevice::ReadWrite))
 	{
-		qDebug() << m_serialPortName << "打开失败!";
+		qDebug() << _tr("检测模块:")<<id<<_tr("串口:")<<m_serialPortName << _tr("打开失败!");
 		return -1;
 	}
+	hotMod(m_relayStatus);
+	msleep(5);
+	testResMod();
 	timer.start(5000);
 	return 0;
 }
@@ -241,8 +244,8 @@ void ResTestmod::testStart()
 
 	this->testHotresMod();//检测加热电阻
 	m_testHotResTimer.start(paramete.testHotresTime);
-	qDebug()<< _tr("检测开始") << id ;
-	qDebug() << _tr("检测加热电阻开始") << id;
+	qDebug()<< _tr("模块:%1  :").arg(id)<< _tr("检测开始.............................") ;
+	qDebug() << _tr("模块:%1  :").arg(id) << _tr("检测加热电阻开始") ;
 }
 
 
@@ -265,20 +268,20 @@ void ResTestmod::on_testHotResTimer_timeout()
 		
 	}
 	hotMod(m_setRelayStatus);
-	qDebug() << _tr("检测加热电阻结束") << id;
-	qDebug() << _tr("加热开始") << id;
+	qDebug() << _tr("模块:%1  :").arg(id) << _tr("检测加热电阻结束") ;
+	qDebug() << _tr("模块:%1  :").arg(id) << _tr("加热开始");
 }
 
 void ResTestmod::on_min_maxTestTimer_timeout()
 {
-	qDebug() << _tr("获取最大最小值开始") << id;
+	qDebug() << _tr("模块:%1  :").arg(id) << _tr("获取最大最小值开始");
 	m_min_maxTestTimer.stop();
 	getMin_MaxRes = true;//获取最大最小电阻
 }
 
 void ResTestmod::on_testResTimer_timeout()
 {
-	qDebug() << _tr("检测结束") << id;
+	qDebug() << _tr("模块:%1  :").arg(id) << _tr("检测结束----------------------------------");
 	m_testResTimer.stop();
 	getMin_MaxRes = false;
 	for (int i = 0; i < 24; i++)

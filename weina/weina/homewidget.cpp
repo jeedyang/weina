@@ -6,7 +6,7 @@ HomeWidget::HomeWidget(QWidget *parent)
 	: QWidget(parent)
 {
 	ui.setupUi(this);
-	m_serialPortNameList.append(_tr("COM27"));
+	m_serialPortNameList.append(_tr("COM8"));
 	m_serialPortNameList.append(_tr("COM28"));
 	m_serialPortNameList.append(_tr("COM29"));
 	m_serialPortNameList.append(_tr("COM30"));
