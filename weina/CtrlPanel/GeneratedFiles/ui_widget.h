@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'widget.ui'
 **
-** Created by: Qt User Interface Compiler version 5.13.0
+** Created by: Qt User Interface Compiler version 5.12.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -85,9 +85,9 @@ public:
 
     void retranslateUi(QWidget *Form)
     {
-        Form->setWindowTitle(QCoreApplication::translate("Form", "Form", nullptr));
-        label->setText(QCoreApplication::translate("Form", "\346\250\241\345\235\227ID:", nullptr));
-        label_modID->setText(QCoreApplication::translate("Form", "0", nullptr));
+        Form->setWindowTitle(QApplication::translate("Form", "Form", nullptr));
+        label->setText(QApplication::translate("Form", "\346\250\241\345\235\227ID:", nullptr));
+        label_modID->setText(QApplication::translate("Form", "0", nullptr));
     } // retranslateUi
 
 };

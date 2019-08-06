@@ -13,10 +13,11 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QStackedWidget>
-#include <QtWidgets/QTextBrowser>
+#include <QtWidgets/QTableWidget>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -35,8 +36,9 @@ public:
     QWidget *page_3;
     QWidget *widget;
     QVBoxLayout *verticalLayout;
-    QTextBrowser *textBrowser;
-    QPushButton *pushButton_save;
+    QTableWidget *tableWidget;
+    QPushButton *pushButton_clearTable;
+    QPushButton *pushButton_saveToExcel;
     QWidget *widget_modbtn;
     QHBoxLayout *horizontalLayout;
     QPushButton *pushButton_mod0;
@@ -85,15 +87,20 @@ public:
         verticalLayout->setSpacing(6);
         verticalLayout->setContentsMargins(11, 11, 11, 11);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        textBrowser = new QTextBrowser(widget);
-        textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
+        tableWidget = new QTableWidget(widget);
+        tableWidget->setObjectName(QString::fromUtf8("tableWidget"));
 
-        verticalLayout->addWidget(textBrowser);
+        verticalLayout->addWidget(tableWidget);
 
-        pushButton_save = new QPushButton(widget);
-        pushButton_save->setObjectName(QString::fromUtf8("pushButton_save"));
+        pushButton_clearTable = new QPushButton(widget);
+        pushButton_clearTable->setObjectName(QString::fromUtf8("pushButton_clearTable"));
 
-        verticalLayout->addWidget(pushButton_save);
+        verticalLayout->addWidget(pushButton_clearTable);
+
+        pushButton_saveToExcel = new QPushButton(widget);
+        pushButton_saveToExcel->setObjectName(QString::fromUtf8("pushButton_saveToExcel"));
+
+        verticalLayout->addWidget(pushButton_saveToExcel);
 
 
         horizontalLayout_2->addWidget(widget);
@@ -151,7 +158,8 @@ public:
     void retranslateUi(QWidget *HomeWidget)
     {
         HomeWidget->setWindowTitle(QApplication::translate("HomeWidget", "HomeWidget", nullptr));
-        pushButton_save->setText(QApplication::translate("HomeWidget", "PushButton", nullptr));
+        pushButton_clearTable->setText(QApplication::translate("HomeWidget", "\346\270\205\351\231\244\350\241\250\346\240\274", nullptr));
+        pushButton_saveToExcel->setText(QApplication::translate("HomeWidget", "\344\277\235\345\255\230\350\207\263Excel", nullptr));
         pushButton_mod0->setText(QApplication::translate("HomeWidget", "\346\250\241\345\235\2271", nullptr));
         pushButton_mod1->setText(QApplication::translate("HomeWidget", "\346\250\241\345\235\2272", nullptr));
         pushButton_mod2->setText(QApplication::translate("HomeWidget", "\346\250\241\345\235\2273", nullptr));

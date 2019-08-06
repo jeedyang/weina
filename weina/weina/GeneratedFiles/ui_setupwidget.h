@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'setupwidget.ui'
 **
-** Created by: Qt User Interface Compiler version 5.13.0
+** Created by: Qt User Interface Compiler version 5.12.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -38,6 +38,7 @@ public:
     QTableWidget *tableWidget_locationPam;
     QWidget *tab_2;
     QHBoxLayout *horizontalLayout_2;
+    QTableWidget *tableWidget_otherPam;
     QWidget *widget;
     QHBoxLayout *horizontalLayout;
     QPushButton *pushButton_save;
@@ -127,6 +128,11 @@ public:
         horizontalLayout_2->setSpacing(6);
         horizontalLayout_2->setContentsMargins(11, 11, 11, 11);
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
+        tableWidget_otherPam = new QTableWidget(tab_2);
+        tableWidget_otherPam->setObjectName(QString::fromUtf8("tableWidget_otherPam"));
+
+        horizontalLayout_2->addWidget(tableWidget_otherPam);
+
         tabWidget->addTab(tab_2, QString());
 
         gridLayout->addWidget(tabWidget, 0, 0, 1, 1);
@@ -155,7 +161,7 @@ public:
 
         retranslateUi(SetupWidget);
 
-        tabWidget->setCurrentIndex(3);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(SetupWidget);
@@ -163,12 +169,12 @@ public:
 
     void retranslateUi(QWidget *SetupWidget)
     {
-        SetupWidget->setWindowTitle(QCoreApplication::translate("SetupWidget", "SetupWidget", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("SetupWidget", "\345\210\206\346\241\243\345\217\202\346\225\260", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_4), QCoreApplication::translate("SetupWidget", "\346\243\200\346\265\213\345\217\202\346\225\260", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_3), QCoreApplication::translate("SetupWidget", "\345\256\232\344\275\215\345\217\202\346\225\260", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("SetupWidget", "\345\205\266\344\273\226\345\217\202\346\225\260", nullptr));
-        pushButton_save->setText(QCoreApplication::translate("SetupWidget", "\344\277\235\345\255\230", nullptr));
+        SetupWidget->setWindowTitle(QApplication::translate("SetupWidget", "SetupWidget", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("SetupWidget", "\345\210\206\346\241\243\345\217\202\346\225\260", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("SetupWidget", "\346\243\200\346\265\213\345\217\202\346\225\260", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("SetupWidget", "\345\256\232\344\275\215\345\217\202\346\225\260", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("SetupWidget", "\345\205\266\344\273\226\345\217\202\346\225\260", nullptr));
+        pushButton_save->setText(QApplication::translate("SetupWidget", "\344\277\235\345\255\230", nullptr));
     } // retranslateUi
 
 };

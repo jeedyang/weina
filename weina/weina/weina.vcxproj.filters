@@ -57,6 +57,9 @@
     <ClCompile Include="mainctrl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="report.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="mainwindow.h">
@@ -78,6 +81,9 @@
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="mainctrl.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="report.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

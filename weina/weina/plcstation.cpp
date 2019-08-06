@@ -18,6 +18,7 @@ PlcStation::PlcStation()
 	plcData.buffer_DB[13] = *(new dbBuffer);
 	plcData.buffer_DB[14] = *(new dbBuffer);
 	plcData.buffer_DB[26] = *(new dbBuffer);
+	plcData.buffer_DB[33] = *(new dbBuffer);
 	plcData.Define_float_DB[toEntireAddr(13, 0)] = _tr("X轴运行速度");
 	plcData.Define_float_DB[toEntireAddr(13, 4)] = _tr("X轴点动速度");
 	plcData.Define_float_DB[toEntireAddr(13, 8)] = _tr("X轴当前位置");
@@ -57,6 +58,8 @@ PlcStation::PlcStation()
 	plcData.Define_int_DB[toEntireAddr(26, 20)] = _tr("3号板状态");
 	plcData.Define_int_DB[toEntireAddr(26, 24)] = _tr("4号板状态");
 	plcData.Define_int_DB[toEntireAddr(26, 28)] = _tr("动作进行状态");
+
+	plcData.Define_int_DB[toEntireAddr(33, 0)] = _tr("正反检测吹气延迟");
 }
 
 PlcStation::~PlcStation()

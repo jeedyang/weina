@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.13.0
+** Created by: Qt User Interface Compiler version 5.12.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,8 +10,10 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
@@ -30,6 +32,11 @@ public:
     QWidget *centralWidget;
     QVBoxLayout *verticalLayout;
     QWidget *widget_title;
+    QHBoxLayout *horizontalLayout_2;
+    QLabel *label_2;
+    QLabel *label;
+    QSpacerItem *horizontalSpacer;
+    QPushButton *pushButton_close;
     QWidget *widget_frame;
     QHBoxLayout *horizontalLayout;
     QStackedWidget *stackedWidget_main;
@@ -43,6 +50,7 @@ public:
     QPushButton *pushButton_home;
     QPushButton *pushButton_setup;
     QPushButton *pushButton_debug;
+    QPushButton *pushButton_min;
     QSpacerItem *verticalSpacer;
     QPushButton *pushButton_pause;
     QPushButton *pushButton_start;
@@ -84,6 +92,36 @@ public:
         widget_title->setMinimumSize(QSize(0, 80));
         widget_title->setMaximumSize(QSize(16777215, 80));
         widget_title->setStyleSheet(QString::fromUtf8(""));
+        horizontalLayout_2 = new QHBoxLayout(widget_title);
+        horizontalLayout_2->setSpacing(6);
+        horizontalLayout_2->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
+        horizontalLayout_2->setContentsMargins(0, 0, 3, 0);
+        label_2 = new QLabel(widget_title);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setStyleSheet(QString::fromUtf8("font: 10pt \"\346\245\267\344\275\223\";"));
+
+        horizontalLayout_2->addWidget(label_2);
+
+        label = new QLabel(widget_title);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setStyleSheet(QString::fromUtf8("font: 24pt \"\346\245\267\344\275\223\";"));
+
+        horizontalLayout_2->addWidget(label);
+
+        horizontalSpacer = new QSpacerItem(917, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_2->addItem(horizontalSpacer);
+
+        pushButton_close = new QPushButton(widget_title);
+        pushButton_close->setObjectName(QString::fromUtf8("pushButton_close"));
+        pushButton_close->setMinimumSize(QSize(94, 80));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/png/res/png/close.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_close->setIcon(icon);
+
+        horizontalLayout_2->addWidget(pushButton_close);
+
 
         verticalLayout->addWidget(widget_title);
 
@@ -130,7 +168,11 @@ public:
         pushButton_home->setObjectName(QString::fromUtf8("pushButton_home"));
         pushButton_home->setMinimumSize(QSize(0, 60));
         pushButton_home->setStyleSheet(QString::fromUtf8(""));
+        QIcon icon1;
+        icon1.addFile(QString::fromUtf8(":/png/res/png/516585.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_home->setIcon(icon1);
         pushButton_home->setCheckable(true);
+        pushButton_home->setChecked(true);
 
         verticalLayout_2->addWidget(pushButton_home);
 
@@ -138,6 +180,9 @@ public:
         pushButton_setup->setObjectName(QString::fromUtf8("pushButton_setup"));
         pushButton_setup->setMinimumSize(QSize(0, 60));
         pushButton_setup->setStyleSheet(QString::fromUtf8(""));
+        QIcon icon2;
+        icon2.addFile(QString::fromUtf8(":/png/res/png/522191.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_setup->setIcon(icon2);
         pushButton_setup->setCheckable(true);
 
         verticalLayout_2->addWidget(pushButton_setup);
@@ -146,9 +191,23 @@ public:
         pushButton_debug->setObjectName(QString::fromUtf8("pushButton_debug"));
         pushButton_debug->setMinimumSize(QSize(0, 60));
         pushButton_debug->setStyleSheet(QString::fromUtf8(""));
+        QIcon icon3;
+        icon3.addFile(QString::fromUtf8(":/png/res/png/debug.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_debug->setIcon(icon3);
         pushButton_debug->setCheckable(true);
 
         verticalLayout_2->addWidget(pushButton_debug);
+
+        pushButton_min = new QPushButton(widget_menu);
+        pushButton_min->setObjectName(QString::fromUtf8("pushButton_min"));
+        pushButton_min->setMinimumSize(QSize(0, 60));
+        pushButton_min->setStyleSheet(QString::fromUtf8(""));
+        QIcon icon4;
+        icon4.addFile(QString::fromUtf8(":/png/res/png/516591.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_min->setIcon(icon4);
+        pushButton_min->setCheckable(false);
+
+        verticalLayout_2->addWidget(pushButton_min);
 
         verticalSpacer = new QSpacerItem(20, 297, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
@@ -158,6 +217,10 @@ public:
         pushButton_pause->setObjectName(QString::fromUtf8("pushButton_pause"));
         pushButton_pause->setMinimumSize(QSize(0, 60));
         pushButton_pause->setStyleSheet(QString::fromUtf8(""));
+        QIcon icon5;
+        icon5.addFile(QString::fromUtf8(":/png/res/png/pause.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon5.addFile(QString::fromUtf8(":/png/res/png/restart.png"), QSize(), QIcon::Normal, QIcon::On);
+        pushButton_pause->setIcon(icon5);
         pushButton_pause->setCheckable(true);
 
         verticalLayout_2->addWidget(pushButton_pause);
@@ -166,6 +229,10 @@ public:
         pushButton_start->setObjectName(QString::fromUtf8("pushButton_start"));
         pushButton_start->setMinimumSize(QSize(0, 60));
         pushButton_start->setStyleSheet(QString::fromUtf8(""));
+        QIcon icon6;
+        icon6.addFile(QString::fromUtf8(":/png/res/png/start.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon6.addFile(QString::fromUtf8(":/png/res/png/stop.png"), QSize(), QIcon::Normal, QIcon::On);
+        pushButton_start->setIcon(icon6);
         pushButton_start->setCheckable(true);
 
         verticalLayout_2->addWidget(pushButton_start);
@@ -185,12 +252,16 @@ public:
 
     void retranslateUi(QMainWindow *MainWindowClass)
     {
-        MainWindowClass->setWindowTitle(QCoreApplication::translate("MainWindowClass", "MainWindow", nullptr));
-        pushButton_home->setText(QCoreApplication::translate("MainWindowClass", "\344\270\273\347\225\214\351\235\242", nullptr));
-        pushButton_setup->setText(QCoreApplication::translate("MainWindowClass", "\350\256\276\347\275\256", nullptr));
-        pushButton_debug->setText(QCoreApplication::translate("MainWindowClass", "\350\260\203\350\257\225", nullptr));
-        pushButton_pause->setText(QCoreApplication::translate("MainWindowClass", "\346\232\202\345\201\234", nullptr));
-        pushButton_start->setText(QCoreApplication::translate("MainWindowClass", "\345\220\257\345\212\250", nullptr));
+        MainWindowClass->setWindowTitle(QApplication::translate("MainWindowClass", "MainWindow", nullptr));
+        label_2->setText(QApplication::translate("MainWindowClass", "\345\220\210\350\202\245\347\221\236\346\234\227\350\207\252\345\212\250\345\214\226\350\256\276\345\244\207\346\234\211\351\231\220\345\205\254\345\217\270", nullptr));
+        label->setText(QApplication::translate("MainWindowClass", "\344\274\240\346\204\237\345\231\250\350\207\252\345\212\250\347\255\233\351\200\211\346\234\272", nullptr));
+        pushButton_close->setText(QApplication::translate("MainWindowClass", "\351\200\200\345\207\272", nullptr));
+        pushButton_home->setText(QApplication::translate("MainWindowClass", "\344\270\273\347\225\214\351\235\242", nullptr));
+        pushButton_setup->setText(QApplication::translate("MainWindowClass", "\350\256\276\347\275\256", nullptr));
+        pushButton_debug->setText(QApplication::translate("MainWindowClass", "\350\260\203\350\257\225", nullptr));
+        pushButton_min->setText(QApplication::translate("MainWindowClass", "\346\234\200\345\260\217\345\214\226", nullptr));
+        pushButton_pause->setText(QApplication::translate("MainWindowClass", "\346\232\202\345\201\234", nullptr));
+        pushButton_start->setText(QApplication::translate("MainWindowClass", "\345\220\257\345\212\250", nullptr));
     } // retranslateUi
 
 };

@@ -136,9 +136,31 @@ SetupWidget::SetupWidget(QWidget *parent)
 
 		
 	}
+	//初始化其他参数设置列表
+	QStringList otherPamName;
+	otherPamName.append(_tr("正反检测吹气延迟"));
+	QStringList otherPamHeader;
+	otherPamHeader.append(_tr("参数"));
+	otherPamHeader.append(_tr("值"));
+	ui.tableWidget_otherPam->setEditTriggers(QAbstractItemView::NoEditTriggers);
+	ui.tableWidget_otherPam->setSelectionBehavior(QAbstractItemView::SelectionBehavior::SelectItems);
+	ui.tableWidget_otherPam->setColumnCount(2);
+	ui.tableWidget_otherPam->setHorizontalHeaderLabels(otherPamHeader);
+	ui.tableWidget_otherPam->setRowCount(otherPamName.size());
+	ui.tableWidget_otherPam->setColumnWidth(0, 200);
+	ui.tableWidget_otherPam->setColumnWidth(1, 200);
+	for (int i = 0; i < otherPamName.size(); i++)
+	{
+		QLabel* label = new QLabel();
+		label->setText(otherPamName[i]);
+		ui.tableWidget_otherPam->setCellWidget(i, 0, label);
 
-	
-
+		QSpinBox* spinbox = new QSpinBox();
+		spinbox->setMaximum(999999999);
+		spinbox->setObjectName(_tr("db%1").arg(QString::number(330000 + i * 4)));
+		ui.tableWidget_otherPam->setCellWidget(i, 1, spinbox);
+		m_spinboxOtherPamList.append(spinbox);
+	}
 
 	widgetShow();
 	
@@ -161,6 +183,7 @@ void SetupWidget::widgetShow()
 	refreshClassWidget();
 	refreshLocationWidget();
 	refreshTestPamWidget();
+	refreshOtherPamWidget();
 	//mainctrl->testStart(0);
 }
 
@@ -194,6 +217,18 @@ void SetupWidget::refreshLocationWidget()
 		objName.remove(0,2);
 		QVariant val= plc->getValue(objName.toInt());
 		m_dspinboxLicationPamList[i]->setValue(val.toDouble());
+	}
+}
+
+void SetupWidget::refreshOtherPamWidget()
+{
+	auto plc = PLC::PlcStation::Instance();
+	for (int i = 0; i < m_spinboxOtherPamList.size(); i++)
+	{
+		QString objName = m_spinboxOtherPamList[i]->objectName();
+		objName.remove(0, 2);
+		QVariant val = plc->getValue(objName.toInt());
+		m_spinboxOtherPamList[i]->setValue(val.toInt());
 	}
 }
 
@@ -377,6 +412,17 @@ void SetupWidget::on_pushButton_saveClicked(bool checked)
 			QString objName = m_dspinboxLicationPamList[i]->objectName();
 			objName.remove(0, 2);
 			plc->setValue(objName.toInt(), m_dspinboxLicationPamList[i]->value());
+		}
+	}
+
+	if (pageID == 3)
+	{
+		auto plc = PLC::PlcStation::Instance();
+		for (int i = 0; i < m_spinboxOtherPamList.size(); i++)
+		{
+			QString objName = m_spinboxOtherPamList[i]->objectName();
+			objName.remove(0, 2);
+			plc->setValue(objName.toInt(), m_spinboxOtherPamList[i]->value());
 		}
 	}
 }

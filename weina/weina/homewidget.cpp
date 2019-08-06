@@ -1,15 +1,16 @@
 #include "homewidget.h"
 #include <QDebug>
 #include <QLibrary>
+#include "report.h"
 
 HomeWidget::HomeWidget(QWidget *parent)
 	: QWidget(parent)
 {
 	ui.setupUi(this);
-	m_serialPortNameList.append(_tr("COM7"));
-	m_serialPortNameList.append(_tr("COM9"));
-	m_serialPortNameList.append(_tr("COM29"));
-	m_serialPortNameList.append(_tr("COM30"));
+	m_serialPortNameList.append(_tr("COM13"));
+	m_serialPortNameList.append(_tr("COM14"));
+	m_serialPortNameList.append(_tr("COM15"));
+	m_serialPortNameList.append(_tr("COM16"));
 	QLibrary lib("CtrlPanel.dll");
 	typedef CtrlPanelBase* (*pFunc)(int, QWidget*);
 	pFunc func = (pFunc)lib.resolve("createInstance");
@@ -61,8 +62,57 @@ HomeWidget::HomeWidget(QWidget *parent)
 		QObject::connect(resModArry[i], SIGNAL(testDone(int)), mainctrl, SLOT(on_testDone(int)));
 
 	}
-	/////
-	
+	//初始化统计表格
+	QStringList classHeader;
+	classHeader.append(_tr("板号"));
+	classHeader.append(_tr("不合格数量"));
+	classHeader.append(_tr("1档数量"));
+	classHeader.append(_tr("2档数量"));
+	classHeader.append(_tr("3档数量"));
+	classHeader.append(_tr("4档数量"));
+	classHeader.append(_tr("5档数量"));
+	classHeader.append(_tr("6档数量"));
+	classHeader.append(_tr("7档数量"));
+	classHeader.append(_tr("8档数量"));
+	classHeader.append(_tr("9档数量"));
+	classHeader.append(_tr("10档数量"));
+	classHeader.append(_tr("11档数量"));
+	classHeader.append(_tr("12档数量"));
+	classHeader.append(_tr("13档数量"));
+	classHeader.append(_tr("14档数量"));
+	classHeader.append(_tr("15档数量"));
+	classHeader.append(_tr("16档数量"));
+	classHeader.append(_tr("17档数量"));
+	classHeader.append(_tr("18档数量"));
+	classHeader.append(_tr("19档数量"));
+	classHeader.append(_tr("20档数量"));
+	classHeader.append(_tr("21档数量"));
+	classHeader.append(_tr("22档数量"));
+	classHeader.append(_tr("23档数量"));
+	classHeader.append(_tr("24档数量"));
+	classHeader.append(_tr("25档数量"));
+	classHeader.append(_tr("26档数量"));
+	classHeader.append(_tr("27档数量"));
+	classHeader.append(_tr("28档数量"));
+	classHeader.append(_tr("29档数量"));
+	ui.tableWidget->setEditTriggers(QAbstractItemView::NoEditTriggers);
+	ui.tableWidget->setSelectionBehavior(QAbstractItemView::SelectionBehavior::SelectItems);
+	ui.tableWidget->setColumnCount(classHeader.size());
+	ui.tableWidget->setHorizontalHeaderLabels(classHeader);
+	//for (int i = 0; i < classHeader.size(); i++)
+	//{
+	//	ui.tableWidget->setColumnWidth(0, 50);
+	//}
+	//ui.tableWidget->insertRow(0);
+	//ui.tableWidget->setItem(0, 0, new QTableWidgetItem(_tr("0")));
+	//ui.tableWidget->insertRow(0);
+	//ui.tableWidget->setItem(0, 1, new QTableWidgetItem(_tr("1")));
+	//ui.tableWidget->insertRow(0);
+	//ui.tableWidget->setItem(0, 2, new QTableWidgetItem(_tr("2")));
+	auto report = Report::Instance();
+	report->setTabWidget(ui.tableWidget);
+	QObject::connect(ui.pushButton_clearTable, SIGNAL(pressed()), report, SLOT(clearTabWidget()));
+
 }
 
 HomeWidget::~HomeWidget()

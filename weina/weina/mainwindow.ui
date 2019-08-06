@@ -81,6 +81,70 @@ QPushButton #pushButton_home
       <property name="styleSheet">
        <string notr="true"/>
       </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>3</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">font: 10pt &quot;楷体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>合肥瑞朗自动化设备有限公司</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">font: 24pt &quot;楷体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>传感器自动筛选机</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>917</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_close">
+         <property name="minimumSize">
+          <size>
+           <width>94</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>退出</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resource.qrc">
+           <normaloff>:/png/res/png/close.png</normaloff>:/png/res/png/close.png</iconset>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </item>
     <item>
@@ -163,7 +227,14 @@ QPushButton #pushButton_home
             <property name="text">
              <string>主界面</string>
             </property>
+            <property name="icon">
+             <iconset resource="resource.qrc">
+              <normaloff>:/png/res/png/516585.png</normaloff>:/png/res/png/516585.png</iconset>
+            </property>
             <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="checked">
              <bool>true</bool>
             </property>
            </widget>
@@ -181,6 +252,10 @@ QPushButton #pushButton_home
             </property>
             <property name="text">
              <string>设置</string>
+            </property>
+            <property name="icon">
+             <iconset resource="resource.qrc">
+              <normaloff>:/png/res/png/522191.png</normaloff>:/png/res/png/522191.png</iconset>
             </property>
             <property name="checkable">
              <bool>true</bool>
@@ -201,8 +276,35 @@ QPushButton #pushButton_home
             <property name="text">
              <string>调试</string>
             </property>
+            <property name="icon">
+             <iconset resource="resource.qrc">
+              <normaloff>:/png/res/png/debug.png</normaloff>:/png/res/png/debug.png</iconset>
+            </property>
             <property name="checkable">
              <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_min">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>最小化</string>
+            </property>
+            <property name="icon">
+             <iconset resource="resource.qrc">
+              <normaloff>:/png/res/png/516591.png</normaloff>:/png/res/png/516591.png</iconset>
+            </property>
+            <property name="checkable">
+             <bool>false</bool>
             </property>
            </widget>
           </item>
@@ -233,6 +335,11 @@ QPushButton #pushButton_home
             <property name="text">
              <string>暂停</string>
             </property>
+            <property name="icon">
+             <iconset resource="resource.qrc">
+              <normaloff>:/png/res/png/pause.png</normaloff>
+              <normalon>:/png/res/png/restart.png</normalon>:/png/res/png/pause.png</iconset>
+            </property>
             <property name="checkable">
              <bool>true</bool>
             </property>
@@ -251,6 +358,11 @@ QPushButton #pushButton_home
             </property>
             <property name="text">
              <string>启动</string>
+            </property>
+            <property name="icon">
+             <iconset resource="resource.qrc">
+              <normaloff>:/png/res/png/start.png</normaloff>
+              <normalon>:/png/res/png/stop.png</normalon>:/png/res/png/start.png</iconset>
             </property>
             <property name="checkable">
              <bool>true</bool>

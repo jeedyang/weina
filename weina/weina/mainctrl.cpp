@@ -1,6 +1,7 @@
 #include "mainctrl.h"
 #include <QDebug>
 #include <array>
+#include <report.h>
 
 IMPLEMENT_SINGLETON(MainCtrl)
 
@@ -96,8 +97,26 @@ void MainCtrl::on_testDone(int id)
 		qDebug() << _tr("%1号传感器 分档结果 :").arg(i) << m_testMods[id]->result[i]<<_tr("最小电阻值 :")<< m_testMods[id]->minRes[i] << _tr("最大电阻值 :") << m_testMods[id]->maxRes[i]<<_tr("比值 :")<<m_testMods[id]->maxminOdds[i];
 
 	}
+	//添加分档结果到统计列表
+	QList<int> resultNumList;
+	for (int i = 0; i < 30; i++)
+	{
+		int num=0;
+		for (int a = 0; a < 24; a++)
+		{
+			if (m_testMods[id]->result[a]==i)
+			{
+				num++;
+			}
+		}		
+		resultNumList.append(num);
+	}
+	auto report = Report::Instance();
+	report->appendResult2Widget(id, resultNumList);
+	//设置plc状态为待排板
 	auto plc = PLC::PlcStation::Instance();
 	boardStatus[id] = waitClassify;
+	//向plc写结果
 	if (id==0)
 	{
 		plc->setValue(_tr("1号板状态"), testend);

@@ -1726,7 +1726,7 @@ QPushButton::checked
                 <string notr="true"/>
                </property>
                <property name="text">
-                <string>Q0.0</string>
+                <string>Q1.4</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -1900,7 +1900,7 @@ QPushButton::checked
                 <string notr="true"/>
                </property>
                <property name="text">
-                <string>Q0.0</string>
+                <string>Q1.6</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -1992,7 +1992,7 @@ QPushButton::checked
                 <string notr="true"/>
                </property>
                <property name="text">
-                <string>Q0.0</string>
+                <string>Q1.1</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -2141,7 +2141,7 @@ QPushButton::checked
                 <string notr="true"/>
                </property>
                <property name="text">
-                <string>Q0.0</string>
+                <string>Q1.3</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -2252,7 +2252,7 @@ QPushButton::checked
                 <string notr="true"/>
                </property>
                <property name="text">
-                <string>Q0.0</string>
+                <string>Q1.5</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -2271,7 +2271,7 @@ QPushButton::checked
                 <string notr="true"/>
                </property>
                <property name="text">
-                <string>Q0.0</string>
+                <string>Q1.2</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -2347,7 +2347,7 @@ QPushButton::checked
                 <string notr="true"/>
                </property>
                <property name="text">
-                <string>Q0.0</string>
+                <string>Q1.7</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -2480,7 +2480,7 @@ QPushButton::checked
                 <string notr="true"/>
                </property>
                <property name="text">
-                <string>Q0.0</string>
+                <string>Q4.6</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -2499,10 +2499,26 @@ QPushButton::checked
                 <string notr="true"/>
                </property>
                <property name="text">
-                <string>Q0.0</string>
+                <string>Q4.7</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="4">
+              <widget class="QLabel" name="label_95">
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>QB4</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                </property>
               </widget>
              </item>

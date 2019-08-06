@@ -23,11 +23,13 @@ public:
 	void refreshClassWidget();
 	void refreshTestPamWidget();
 	void refreshLocationWidget();
+	void refreshOtherPamWidget();
 	QList<QCheckBox*> m_checkboxList;
 	QList<QSpinBox*> m_spinboxMinList;
 	QList<QSpinBox*> m_spinboxMaxList;
 	QList<QDoubleSpinBox*> m_dspinboxLicationPamList;
 	QList<QSpinBox*> m_spinboxtestPamList;
+	QList<QSpinBox*> m_spinboxOtherPamList;
 	QDoubleSpinBox* m_dspinboxMax_minOdds;
 private:
 	Ui::SetupWidget ui;

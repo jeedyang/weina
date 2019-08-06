@@ -62,12 +62,19 @@
        <widget class="QWidget" name="widget" native="true">
         <layout class="QVBoxLayout" name="verticalLayout">
          <item>
-          <widget class="QTextBrowser" name="textBrowser"/>
+          <widget class="QTableWidget" name="tableWidget"/>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton_save">
+          <widget class="QPushButton" name="pushButton_clearTable">
            <property name="text">
-            <string>PushButton</string>
+            <string>清除表格</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_saveToExcel">
+           <property name="text">
+            <string>保存至Excel</string>
            </property>
           </widget>
          </item>

@@ -22,7 +22,7 @@ private:
 	void initForm();
 	void showWidget(QWidget* parent,QWidget* children);
 private slots:
-	void on_btnGroupWidgetToggled(QAbstractButton* button, bool checked);
+	void on_btnGroupWidgetClicked(QAbstractButton* button);
 	void on_btnGroupCtrlToggled(QAbstractButton* button, bool checked);
 private:
 	Ui::MainWindowClass ui;
