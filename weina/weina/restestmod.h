@@ -34,8 +34,6 @@ public:
 	int minRes[24];
 	int maxRes[24];
 	int result[24];
-	int minHotRes=50;
-	int maxHotRes=150;
 	float maxminOdds[24];
 	TestParameters paramete;
 
@@ -49,7 +47,7 @@ private:
 	void refreshHotResWidget();
 	void refreshResWidget();
 	void run();
-	uchar m_setRelayStatus[24];
+	//uchar m_setRelayStatus[24];
 	uchar m_relayStatus[24];
 	bool threadRead_en=false;
 	QString m_serialPortName;

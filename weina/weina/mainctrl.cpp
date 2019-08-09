@@ -94,7 +94,7 @@ void MainCtrl::on_testDone(int id)
 	qDebug() << _tr("检测结束,板号:") << id;
 	for (int i = 0; i < 24; i++)
 	{
-		qDebug() << _tr("%1号传感器 分档结果 :").arg(i) << m_testMods[id]->result[i]<<_tr("最小电阻值 :")<< m_testMods[id]->minRes[i] << _tr("最大电阻值 :") << m_testMods[id]->maxRes[i]<<_tr("比值 :")<<m_testMods[id]->maxminOdds[i];
+		qDebug() << _tr("%1号传感器 分档结果 :").arg(i) << m_testMods[id]->result[i]<<_tr("最小电阻值 :")<< m_testMods[id]->minRes[i] << _tr("最大电阻值 :") << m_testMods[id]->maxRes[i]<<_tr("比值 :%2f").arg(QString::number(m_testMods[id]->maxminOdds[i]));
 
 	}
 	//添加分档结果到统计列表

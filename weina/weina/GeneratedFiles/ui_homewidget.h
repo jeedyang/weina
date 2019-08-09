@@ -160,10 +160,10 @@ public:
         HomeWidget->setWindowTitle(QApplication::translate("HomeWidget", "HomeWidget", nullptr));
         pushButton_clearTable->setText(QApplication::translate("HomeWidget", "\346\270\205\351\231\244\350\241\250\346\240\274", nullptr));
         pushButton_saveToExcel->setText(QApplication::translate("HomeWidget", "\344\277\235\345\255\230\350\207\263Excel", nullptr));
-        pushButton_mod0->setText(QApplication::translate("HomeWidget", "\346\250\241\345\235\2271", nullptr));
-        pushButton_mod1->setText(QApplication::translate("HomeWidget", "\346\250\241\345\235\2272", nullptr));
-        pushButton_mod2->setText(QApplication::translate("HomeWidget", "\346\250\241\345\235\2273", nullptr));
-        pushButton_mod3->setText(QApplication::translate("HomeWidget", "\346\250\241\345\235\2274", nullptr));
+        pushButton_mod0->setText(QApplication::translate("HomeWidget", "\346\250\241\345\235\2270", nullptr));
+        pushButton_mod1->setText(QApplication::translate("HomeWidget", "\346\250\241\345\235\2271", nullptr));
+        pushButton_mod2->setText(QApplication::translate("HomeWidget", "\346\250\241\345\235\2272", nullptr));
+        pushButton_mod3->setText(QApplication::translate("HomeWidget", "\346\250\241\345\235\2273", nullptr));
     } // retranslateUi
 
 };

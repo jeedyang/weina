@@ -90,7 +90,7 @@
       <item>
        <widget class="QPushButton" name="pushButton_mod0">
         <property name="text">
-         <string>模块1</string>
+         <string>模块0</string>
         </property>
         <property name="checkable">
          <bool>true</bool>
@@ -103,7 +103,7 @@
       <item>
        <widget class="QPushButton" name="pushButton_mod1">
         <property name="text">
-         <string>模块2</string>
+         <string>模块1</string>
         </property>
         <property name="checkable">
          <bool>true</bool>
@@ -113,7 +113,7 @@
       <item>
        <widget class="QPushButton" name="pushButton_mod2">
         <property name="text">
-         <string>模块3</string>
+         <string>模块2</string>
         </property>
         <property name="checkable">
          <bool>true</bool>
@@ -123,7 +123,7 @@
       <item>
        <widget class="QPushButton" name="pushButton_mod3">
         <property name="text">
-         <string>模块4</string>
+         <string>模块3</string>
         </property>
         <property name="checkable">
          <bool>true</bool>

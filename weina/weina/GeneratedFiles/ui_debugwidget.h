@@ -1,13 +1,13 @@
 /********************************************************************************
-** Form generated from reading UI file 'debugwidgetQmYcSo.ui'
+** Form generated from reading UI file 'debugwidget.ui'
 **
 ** Created by: Qt User Interface Compiler version 5.12.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef DEBUGWIDGETQMYCSO_H
-#define DEBUGWIDGETQMYCSO_H
+#ifndef UI_DEBUGWIDGET_H
+#define UI_DEBUGWIDGET_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -2293,4 +2293,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // DEBUGWIDGETQMYCSO_H
+#endif // UI_DEBUGWIDGET_H

@@ -257,17 +257,17 @@ void ResTestmod::on_testHotResTimer_timeout()
 	m_min_maxTestTimer.start(paramete.min_maxTestTime);
 	for (int i = 0; i < 24; i++)
 	{
-		if (hotRes[i]<minHotRes|| hotRes[i]>maxHotRes)
+		if (hotRes[i]<paramete.minHotRes|| hotRes[i]>paramete.maxHotRes)
 		{
-			m_setRelayStatus[i] = 0;
+			m_relayStatus[i] = 0;
 		}
 		else
 		{
-			m_setRelayStatus[i] = 1;
+			m_relayStatus[i] = 1;
 		}
 		
 	}
-	hotMod(m_setRelayStatus);
+	hotMod(m_relayStatus);
 	qDebug() << _tr("模块:%1  :").arg(id) << _tr("检测加热电阻结束") ;
 	qDebug() << _tr("模块:%1  :").arg(id) << _tr("加热开始");
 }
@@ -319,7 +319,13 @@ void ResTestmod::on_testResTimer_timeout()
 			result[i] = 0;
 		}
 	}
+	//检测结束,关闭所有继电器
+	for (int i = 0; i < 24; i++)
+	{
+		m_relayStatus[i] = 0x00;
 
+	}
+	hotMod(m_relayStatus);
 	emit(this->testDone(id));
 	testResMod();
 }
