@@ -10,6 +10,7 @@
 #define UI_SETUPWIDGET_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
@@ -57,7 +58,10 @@ public:
         tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
         QFont font;
         font.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
-        font.setPointSize(14);
+        font.setPointSize(11);
+        font.setBold(false);
+        font.setItalic(false);
+        font.setWeight(50);
         tabWidget->setFont(font);
         tabWidget->setStyleSheet(QString::fromUtf8("QPushButton {  \n"
 "    font-size:20px;\n"
@@ -83,6 +87,14 @@ public:
 "QPushButton::checked \n"
 "{\n"
 "	background-color: rgb(255, 110, 94);\n"
+"}\n"
+"QTabWidget\n"
+"{  \n"
+"	font: 11pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"}\n"
+"QTableWidget\n"
+"{  \n"
+"	font: 11pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "}"));
         tabWidget->setUsesScrollButtons(true);
         tabWidget->setTabBarAutoHide(true);
@@ -94,6 +106,7 @@ public:
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
         tableWidget_classPam = new QTableWidget(tab);
         tableWidget_classPam->setObjectName(QString::fromUtf8("tableWidget_classPam"));
+        tableWidget_classPam->setStyleSheet(QString::fromUtf8("font: 10pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
 
         gridLayout_2->addWidget(tableWidget_classPam, 0, 0, 1, 1);
 
@@ -106,6 +119,7 @@ public:
         horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
         tableWidget_testPam = new QTableWidget(tab_4);
         tableWidget_testPam->setObjectName(QString::fromUtf8("tableWidget_testPam"));
+        tableWidget_testPam->setStyleSheet(QString::fromUtf8("font: 10pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
 
         horizontalLayout_3->addWidget(tableWidget_testPam);
 
@@ -118,6 +132,7 @@ public:
         gridLayout_9->setObjectName(QString::fromUtf8("gridLayout_9"));
         tableWidget_locationPam = new QTableWidget(tab_3);
         tableWidget_locationPam->setObjectName(QString::fromUtf8("tableWidget_locationPam"));
+        tableWidget_locationPam->setStyleSheet(QString::fromUtf8("font: 10pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
 
         gridLayout_9->addWidget(tableWidget_locationPam, 0, 0, 1, 1);
 
@@ -130,6 +145,7 @@ public:
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         tableWidget_otherPam = new QTableWidget(tab_2);
         tableWidget_otherPam->setObjectName(QString::fromUtf8("tableWidget_otherPam"));
+        tableWidget_otherPam->setStyleSheet(QString::fromUtf8("font: 10pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
 
         horizontalLayout_2->addWidget(tableWidget_otherPam);
 
@@ -148,6 +164,13 @@ public:
         pushButton_save = new QPushButton(widget);
         pushButton_save->setObjectName(QString::fromUtf8("pushButton_save"));
         pushButton_save->setMinimumSize(QSize(120, 50));
+        pushButton_save->setStyleSheet(QString::fromUtf8("QPushButton\n"
+"{  \n"
+"	font: 9pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"}"));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/png/res/png/516566.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_save->setIcon(icon);
 
         horizontalLayout->addWidget(pushButton_save);
 

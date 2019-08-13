@@ -19,7 +19,10 @@
      <property name="font">
       <font>
        <family>微软雅黑</family>
-       <pointsize>14</pointsize>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
@@ -47,6 +50,14 @@ QPushButton::pressed
 QPushButton::checked 
 {
 	background-color: rgb(255, 110, 94);
+}
+QTabWidget
+{  
+	font: 11pt &quot;微软雅黑&quot;;
+}
+QTableWidget
+{  
+	font: 11pt &quot;微软雅黑&quot;;
 }</string>
      </property>
      <property name="currentIndex">
@@ -64,7 +75,11 @@ QPushButton::checked
       </attribute>
       <layout class="QGridLayout" name="gridLayout_2">
        <item row="0" column="0">
-        <widget class="QTableWidget" name="tableWidget_classPam"/>
+        <widget class="QTableWidget" name="tableWidget_classPam">
+         <property name="styleSheet">
+          <string notr="true">font: 10pt &quot;微软雅黑&quot;;</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -74,7 +89,11 @@ QPushButton::checked
       </attribute>
       <layout class="QHBoxLayout" name="horizontalLayout_3">
        <item>
-        <widget class="QTableWidget" name="tableWidget_testPam"/>
+        <widget class="QTableWidget" name="tableWidget_testPam">
+         <property name="styleSheet">
+          <string notr="true">font: 10pt &quot;微软雅黑&quot;;</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -84,7 +103,11 @@ QPushButton::checked
       </attribute>
       <layout class="QGridLayout" name="gridLayout_9">
        <item row="0" column="0">
-        <widget class="QTableWidget" name="tableWidget_locationPam"/>
+        <widget class="QTableWidget" name="tableWidget_locationPam">
+         <property name="styleSheet">
+          <string notr="true">font: 10pt &quot;微软雅黑&quot;;</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -94,7 +117,11 @@ QPushButton::checked
       </attribute>
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
-        <widget class="QTableWidget" name="tableWidget_otherPam"/>
+        <widget class="QTableWidget" name="tableWidget_otherPam">
+         <property name="styleSheet">
+          <string notr="true">font: 10pt &quot;微软雅黑&quot;;</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -123,8 +150,18 @@ QPushButton::checked
           <height>50</height>
          </size>
         </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{  
+	font: 9pt &quot;微软雅黑&quot;;
+}</string>
+        </property>
         <property name="text">
          <string>保存</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/png/res/png/516566.png</normaloff>:/png/res/png/516566.png</iconset>
         </property>
        </widget>
       </item>

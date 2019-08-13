@@ -131,16 +131,38 @@ QPushButton #pushButton_home
         <widget class="QPushButton" name="pushButton_close">
          <property name="minimumSize">
           <size>
-           <width>94</width>
-           <height>80</height>
+           <width>75</width>
+           <height>75</height>
           </size>
          </property>
-         <property name="text">
-          <string>退出</string>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{  
+	
+	border-image: url(:/png/res/png/exit.png);
+}
+
+QPushButton::hover
+{
+    border-image: url(:/png/res/png/exit.png);
+}
+QPushButton::pressed
+{
+    border-image: url(:/png/res/png/exit.png);
+}
+QPushButton::checked 
+{
+	border-image: url(:/png/res/png/exit.png);
+}</string>
          </property>
-         <property name="icon">
-          <iconset resource="resource.qrc">
-           <normaloff>:/png/res/png/close.png</normaloff>:/png/res/png/close.png</iconset>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
          </property>
         </widget>
        </item>
@@ -173,11 +195,15 @@ QPushButton #pushButton_home
          <property name="styleSheet">
           <string notr="true"/>
          </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
          <widget class="HomeWidget" name="main_widget"/>
          <widget class="SetupWidget" name="setup_widget"/>
          <widget class="DebugWidget" name="debug_widget"/>
-         <widget class="QWidget" name="page_3"/>
-         <widget class="QWidget" name="page_4"/>
+         <widget class="LogWidget" name="log_widget"/>
+         <widget class="ReportWidget" name="report_widget"/>
+         <widget class="UserWidget" name="user_widget"/>
         </widget>
        </item>
        <item>
@@ -195,7 +221,11 @@ QPushButton #pushButton_home
           </size>
          </property>
          <property name="styleSheet">
-          <string notr="true"/>
+          <string notr="true">QPushButton
+{  
+	
+	font: 9pt &quot;微软雅黑&quot;;
+}</string>
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_2">
           <property name="spacing">
@@ -279,6 +309,75 @@ QPushButton #pushButton_home
             <property name="icon">
              <iconset resource="resource.qrc">
               <normaloff>:/png/res/png/debug.png</normaloff>:/png/res/png/debug.png</iconset>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_log">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>日志</string>
+            </property>
+            <property name="icon">
+             <iconset resource="resource.qrc">
+              <normaloff>:/png/res/png/516587.png</normaloff>:/png/res/png/516587.png</iconset>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_report">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>报表</string>
+            </property>
+            <property name="icon">
+             <iconset resource="resource.qrc">
+              <normaloff>:/png/res/png/report.png</normaloff>:/png/res/png/report.png</iconset>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_user">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>用户</string>
+            </property>
+            <property name="icon">
+             <iconset resource="resource.qrc">
+              <normaloff>:/png/res/png/user.png</normaloff>:/png/res/png/user.png</iconset>
             </property>
             <property name="checkable">
              <bool>true</bool>
@@ -395,7 +494,25 @@ QPushButton #pushButton_home
   <customwidget>
    <class>HomeWidget</class>
    <extends>QWidget</extends>
-   <header location="global">homewidget.h</header>
+   <header>homewidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>LogWidget</class>
+   <extends>QWidget</extends>
+   <header>logwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ReportWidget</class>
+   <extends>QWidget</extends>
+   <header>reportwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>UserWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">userwidget.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

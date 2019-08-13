@@ -60,6 +60,21 @@
     <ClCompile Include="report.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="logwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="logclass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="reportwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="loginwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="userwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="mainwindow.h">
@@ -86,6 +101,21 @@
     <QtMoc Include="report.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="logwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="logclass.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="reportwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="loginwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="userwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="mainwindow.ui">
@@ -98,6 +128,18 @@
       <Filter>Form Files</Filter>
     </QtUic>
     <QtUic Include="homewidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="logwidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="reportwidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="loginwidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="userwidget.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>
@@ -116,11 +158,20 @@
     <ClInclude Include="pugixml\pugixml.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="alltype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="AddressMap.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
   </ItemGroup>
 </Project>

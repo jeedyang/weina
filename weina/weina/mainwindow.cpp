@@ -3,7 +3,7 @@
 #include <QMessageBox>
 #include "plcstation.h"
 #include "mainctrl.h"
-#include <Windows.h>
+#include "logclass.h"
 
 #define START 1
 #define PAUSE 1
@@ -12,11 +12,15 @@
 
 #define _wtr(str) QString(str).toStdWString().c_str()
 
-MainWindow::MainWindow(QWidget *parent)
+
+
+
+MainWindow::MainWindow( QWidget *parent)
 	: QMainWindow(parent)
+
 {
 	ui.setupUi(this);
-
+	this->setWindowTitle(_tr("传感器自动筛选系统"));
 	//system("E:/Work/weina/V2/电气清单.xls");
 	//ShellExecute(NULL, _wtr("open"), _wtr("E:/Work/weina/V2/电气清单.xls"), NULL, NULL, SW_SHOWNORMAL);
 
@@ -30,10 +34,17 @@ MainWindow::MainWindow(QWidget *parent)
 	{
 		plc->pollingStart();
 	}
+	else
+	{
+		logClass::add_Data_to_log(_tr("PLC链接失败。"));
+		QMessageBox::warning(this, _tr("错误"), _tr("PLC连接失败！"));
+	}
+	m_home_widget = qobject_cast<HomeWidget*>(ui.stackedWidget_main->widget(0));
 	m_setup_widget = qobject_cast<SetupWidget*>(ui.stackedWidget_main->widget(1));
 	m_debug_widget = qobject_cast<DebugWidget*>(ui.stackedWidget_main->widget(2));
-	m_home_widget = qobject_cast<HomeWidget*>(ui.stackedWidget_main->widget(0));
-
+	m_log_widget = qobject_cast<LogWidget*>(ui.stackedWidget_main->widget(3));
+	m_report_widget = qobject_cast<ReportWidget*>(ui.stackedWidget_main->widget(4));
+	m_user_widget = qobject_cast<UserWidget*>(ui.stackedWidget_main->widget(5));
 }
 
 void MainWindow::on_btnGroupWidgetClicked(QAbstractButton* button)
@@ -79,16 +90,35 @@ void MainWindow::on_btnGroupWidgetClicked(QAbstractButton* button)
 		//showWidget(ui.widget_main, m_panel_widget);
 		ui.stackedWidget_main->setCurrentIndex(id);
 		m_debug_widget->widgetHide();
+		logClass::add_Data_to_log(_tr("进入主界面。"));
 		break;
 	case 1:
 		//showWidget(ui.widget_main, m_setup_widget);
 		ui.stackedWidget_main->setCurrentIndex(id);
 		m_setup_widget->widgetShow();
 		m_debug_widget->widgetHide();
+		logClass::add_Data_to_log(_tr("进入设置界面。"));
 		break;
 	case 2:
 		ui.stackedWidget_main->setCurrentIndex(id);
 		m_debug_widget->widgetShow();
+		logClass::add_Data_to_log(_tr("进入调试界面。"));
+		break;
+	case 3:
+		ui.stackedWidget_main->setCurrentIndex(id);
+		m_debug_widget->widgetHide();
+		logClass::add_Data_to_log(_tr("进入日志界面。"));
+		break;
+	case 4:
+		ui.stackedWidget_main->setCurrentIndex(id);
+		m_debug_widget->widgetHide();
+		logClass::add_Data_to_log(_tr("进入报表界面。"));
+		break;
+	case 5:
+		ui.stackedWidget_main->setCurrentIndex(id);
+		m_debug_widget->widgetHide();
+		m_user_widget->showWidget();
+		logClass::add_Data_to_log(_tr("进入用户管理界面。"));
 		break;
 	default:
 		break;
@@ -96,13 +126,27 @@ void MainWindow::on_btnGroupWidgetClicked(QAbstractButton* button)
 
 }
 
+void MainWindow::setUsetInfo(UserInfo info)
+{
+	m_userInfo = info;
+	m_user_widget->setUserInfo(m_userInfo);
+	if (m_userInfo.type==UserType::general)
+	{
+		ui.pushButton_debug->setEnabled(false);
+	}
+}
+
 void MainWindow::initForm()
 {
 	m_btnGroupWidget.addButton(ui.pushButton_home,0);
 	m_btnGroupWidget.addButton(ui.pushButton_setup, 1);
 	m_btnGroupWidget.addButton(ui.pushButton_debug, 2);
-	m_btnGroupWidget.addButton(ui.pushButton_min,3);
-	m_btnGroupWidget.addButton(ui.pushButton_close,4);
+	m_btnGroupWidget.addButton(ui.pushButton_log, 3);
+	m_btnGroupWidget.addButton(ui.pushButton_report, 4);
+	m_btnGroupWidget.addButton(ui.pushButton_user, 5);
+
+	m_btnGroupWidget.addButton(ui.pushButton_min,8);
+	m_btnGroupWidget.addButton(ui.pushButton_close,9);
 	m_btnGroupCtrl.setExclusive(false);
 	m_btnGroupCtrl.addButton(ui.pushButton_start,0);
 	m_btnGroupCtrl.addButton(ui.pushButton_pause, 1);
@@ -141,12 +185,28 @@ void MainWindow::on_btnGroupCtrlToggled(QAbstractButton* button, bool checked)
 			plc->setValue(_tr("启动_停止"), START);
 			mainctrl->start();
 			button->setText(_tr("停止"));
+			logClass::add_Data_to_log(_tr("设备启动。"));
+			if (m_userInfo.type == UserType::admin|| m_userInfo.type == UserType::general)
+			{
+				ui.pushButton_debug->setEnabled(false);
+				ui.pushButton_setup->setEnabled(false);
+			}
 		}
 		else
 		{
 			plc->setValue(_tr("启动_停止"), STOP);
 			mainctrl->stop();
 			button->setText(_tr("启动"));
+			logClass::add_Data_to_log(_tr("设备停止。"));
+			if (m_userInfo.type == UserType::admin)
+			{
+				ui.pushButton_debug->setEnabled(true);
+				ui.pushButton_setup->setEnabled(true);
+			}
+			else if (m_userInfo.type == UserType::general)
+			{
+				ui.pushButton_setup->setEnabled(true);
+			}
 		}
 	}
 	if (button->objectName() == _tr("pushButton_pause"))
@@ -155,12 +215,13 @@ void MainWindow::on_btnGroupCtrlToggled(QAbstractButton* button, bool checked)
 		{
 			plc->setValue(_tr("暂停_继续"), PAUSE);
 			button->setText(_tr("继续"));
+			logClass::add_Data_to_log(_tr("设备暂停。"));
 		}
 		else
 		{
 			plc->setValue(_tr("暂停_继续"), CONTINUS);
 			button->setText(_tr("暂停"));
-
+			logClass::add_Data_to_log(_tr("设备继续。"));
 		}
 	}
 }

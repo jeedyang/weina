@@ -58,6 +58,7 @@ PlcStation::PlcStation()
 	plcData.Define_int_DB[toEntireAddr(26, 20)] = _tr("3号板状态");
 	plcData.Define_int_DB[toEntireAddr(26, 24)] = _tr("4号板状态");
 	plcData.Define_int_DB[toEntireAddr(26, 28)] = _tr("动作进行状态");
+	plcData.Define_int_DB[toEntireAddr(26, 32)] = _tr("报警信息");
 
 	plcData.Define_int_DB[toEntireAddr(33, 0)] = _tr("正反检测吹气延迟");
 }

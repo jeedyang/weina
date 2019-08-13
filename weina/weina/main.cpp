@@ -1,11 +1,17 @@
-#include "mainwindow.h"
+
 #include <QtWidgets/QApplication>
+#include <QStyleFactory>
+#include "loginwidget.h"
+
 
 int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
-	MainWindow w;
+	QApplication::setStyle(QStyleFactory::create("Fusion"));
+	LoginWidget login_widget;
+	
+	login_widget.show();
 	//w.show();
-	w.showFullScreen();
+	//w.showFullScreen();
 	return a.exec();
 }

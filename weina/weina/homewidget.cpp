@@ -3,6 +3,7 @@
 #include <QLibrary>
 #include "report.h"
 
+
 HomeWidget::HomeWidget(QWidget *parent)
 	: QWidget(parent)
 {
@@ -99,6 +100,7 @@ HomeWidget::HomeWidget(QWidget *parent)
 	ui.tableWidget->setSelectionBehavior(QAbstractItemView::SelectionBehavior::SelectItems);
 	ui.tableWidget->setColumnCount(classHeader.size());
 	ui.tableWidget->setHorizontalHeaderLabels(classHeader);
+	///
 	//for (int i = 0; i < classHeader.size(); i++)
 	//{
 	//	ui.tableWidget->setColumnWidth(0, 50);
@@ -106,13 +108,14 @@ HomeWidget::HomeWidget(QWidget *parent)
 	//ui.tableWidget->insertRow(0);
 	//ui.tableWidget->setItem(0, 0, new QTableWidgetItem(_tr("0")));
 	//ui.tableWidget->insertRow(0);
-	//ui.tableWidget->setItem(0, 1, new QTableWidgetItem(_tr("1")));
+	//ui.tableWidget->setItem(0, 0, new QTableWidgetItem(_tr("1")));
 	//ui.tableWidget->insertRow(0);
-	//ui.tableWidget->setItem(0, 2, new QTableWidgetItem(_tr("2")));
+	//ui.tableWidget->setItem(0, 0, new QTableWidgetItem(_tr("2")));
+	///
 	auto report = Report::Instance();
 	report->setTabWidget(ui.tableWidget);
 	QObject::connect(ui.pushButton_clearTable, SIGNAL(pressed()), report, SLOT(clearTabWidget()));
-
+	QObject::connect(ui.pushButton_saveToExcel, SIGNAL(pressed()), report, SLOT(save2excel()));
 }
 
 HomeWidget::~HomeWidget()

@@ -14,7 +14,7 @@ SetupWidget::SetupWidget(QWidget *parent)
 	//初始化电阻检测模块参数列表
 	ui.tableWidget_classPam->setEditTriggers(QAbstractItemView::NoEditTriggers);
 	ui.tableWidget_classPam->setSelectionBehavior(QAbstractItemView::SelectionBehavior::SelectItems);
-	ui.tableWidget_classPam->setColumnCount(3);
+	ui.tableWidget_classPam->setColumnCount(4);
 	ui.tableWidget_classPam->setRowCount(29);
 	ui.tableWidget_classPam->setColumnWidth(1, 200);
 	ui.tableWidget_classPam->setColumnWidth(2, 200);
@@ -22,6 +22,8 @@ SetupWidget::SetupWidget(QWidget *parent)
 	testHeader.append(_tr("启用"));
 	testHeader.append(_tr("最小值"));
 	testHeader.append(_tr("最大值"));
+	testHeader.append(_tr("单位"));
+
 	ui.tableWidget_classPam->setHorizontalHeaderLabels(testHeader);
 
 	for (int i = 0; i < 29; i++)
@@ -48,6 +50,12 @@ SetupWidget::SetupWidget(QWidget *parent)
 		ui.tableWidget_classPam->setCellWidget(i, 2, spinbox);
 		this->m_spinboxMaxList.append(spinbox);
 	}
+	for (int i = 0; i < 29; i++)
+	{
+		QLabel* label = new QLabel();
+		label->setText(_tr("千欧"));
+		ui.tableWidget_classPam->setCellWidget(i, 3, label);
+	}
 	//初始化定位参数设置列表
 	QStringList locationPamName;
 	locationPamName.append(_tr("1号吸嘴料槽1坐标X"));
@@ -68,9 +76,10 @@ SetupWidget::SetupWidget(QWidget *parent)
 	QStringList locationHeader;
 	locationHeader.append(_tr("参数"));
 	locationHeader.append(_tr("值"));
+	locationHeader.append(_tr("单位"));
 	ui.tableWidget_locationPam->setEditTriggers(QAbstractItemView::NoEditTriggers);
 	ui.tableWidget_locationPam->setSelectionBehavior(QAbstractItemView::SelectionBehavior::SelectItems);
-	ui.tableWidget_locationPam->setColumnCount(2);
+	ui.tableWidget_locationPam->setColumnCount(3);
 	ui.tableWidget_locationPam->setHorizontalHeaderLabels(locationHeader);
 	ui.tableWidget_locationPam->setRowCount(locationPamCount);
 	ui.tableWidget_locationPam->setColumnWidth(0, 200);
@@ -91,6 +100,12 @@ SetupWidget::SetupWidget(QWidget *parent)
 		ui.tableWidget_locationPam->setCellWidget(i, 1, dspinBox);
 		m_dspinboxLicationPamList.append(dspinBox);
 	}
+	for (int i = 0; i < locationPamCount; i++)
+	{
+		QLabel* label = new QLabel();
+		label->setText(_tr("mm"));
+		ui.tableWidget_locationPam->setCellWidget(i, 2, label);
+	}
 	QObject::connect(ui.pushButton_save, SIGNAL(clicked(bool)),this, SLOT(on_pushButton_saveClicked(bool)));
 
 	//初始化检测参数设置列表
@@ -104,9 +119,10 @@ SetupWidget::SetupWidget(QWidget *parent)
 	QStringList testPamHeader;
 	testPamHeader.append(_tr("参数"));
 	testPamHeader.append(_tr("值"));
+	testPamHeader.append(_tr("单位"));
 	ui.tableWidget_testPam->setEditTriggers(QAbstractItemView::NoEditTriggers);
 	ui.tableWidget_testPam->setSelectionBehavior(QAbstractItemView::SelectionBehavior::SelectItems);
-	ui.tableWidget_testPam->setColumnCount(2);
+	ui.tableWidget_testPam->setColumnCount(3);
 	ui.tableWidget_testPam->setHorizontalHeaderLabels(testPamHeader);
 	ui.tableWidget_testPam->setRowCount(testPamName.size());
 	ui.tableWidget_testPam->setColumnWidth(0, 200);
@@ -119,7 +135,7 @@ SetupWidget::SetupWidget(QWidget *parent)
 		if (testPamName[i]== _tr("最大/小值比值MAX"))
 		{
 			QDoubleSpinBox* dspinBox = new QDoubleSpinBox();
-			dspinBox->setMinimum(-9999.999);
+			dspinBox->setMinimum(0.000);
 			dspinBox->setMaximum(9999.999);
 			dspinBox->setObjectName(_tr("dspinboxTestPam_%1").arg(QString::number(i)));
 			ui.tableWidget_testPam->setCellWidget(i, 1, dspinBox);
@@ -136,6 +152,25 @@ SetupWidget::SetupWidget(QWidget *parent)
 
 		
 	}
+	QLabel* label0 = new QLabel();
+	label0->setText(_tr("欧姆"));
+	QLabel* label1 = new QLabel();
+	label1->setText(_tr("欧姆"));
+	QLabel* label2 = new QLabel();
+	label2->setText(_tr("秒"));
+	QLabel* label3 = new QLabel();
+	label3->setText(_tr("秒"));
+	QLabel* label4 = new QLabel();
+	label4->setText(_tr("秒"));
+	QLabel* label5 = new QLabel();
+	label5->setText(_tr("比值"));
+	ui.tableWidget_testPam->setCellWidget(0, 2, label0);
+	ui.tableWidget_testPam->setCellWidget(1, 2, label1);
+	ui.tableWidget_testPam->setCellWidget(2, 2, label2);
+	ui.tableWidget_testPam->setCellWidget(3, 2, label3);
+	ui.tableWidget_testPam->setCellWidget(4, 2, label4);
+	ui.tableWidget_testPam->setCellWidget(5, 2, label5);
+
 	//初始化其他参数设置列表
 	QStringList otherPamName;
 	otherPamName.append(_tr("正反检测吹气延迟"));
@@ -192,8 +227,9 @@ void SetupWidget::refreshClassWidget()
 	for (int i = 0; i < 29; i++)
 	{
 		m_checkboxList[i]->setChecked(m_parameters.enabled[i]);
-		m_spinboxMinList[i]->setValue(m_parameters.minResScope[i]);
-		m_spinboxMaxList[i]->setValue(m_parameters.maxResScope[i]);
+		//保存的是欧模,显示的是千欧
+		m_spinboxMinList[i]->setValue(m_parameters.minResScope[i]/1000);
+		m_spinboxMaxList[i]->setValue(m_parameters.maxResScope[i]/1000);
 	}
 
 }
@@ -262,6 +298,7 @@ void SetupWidget::loadPamsFromXml()
 
 		//}
 		qDebug() << _tr("xml文件加载成功!");
+		//读取分档参数
 		for (int i = 0; i < 29; i++)
 		{
 			QString str = _tr("class");
@@ -286,7 +323,7 @@ void SetupWidget::loadPamsFromXml()
 			m_parameters.maxResScope[i] = QString(maxResistancePam.value()).toInt();
 			//qDebug() << statusPam.value()<< minResistancePam.value()<< maxResistancePam.value();
 		}
-
+		///
 		xml_node root = doc.first_child();
 		xml_node testPam = root.child("testPams");
 		xml_attribute minHotRes = testPam.attribute("minHotRes");
@@ -340,8 +377,9 @@ void SetupWidget::setPams2xml()
 		xml_attribute minResistance = classify.attribute("minResistance");
 		xml_attribute maxResistance = classify.attribute("maxResistance");
 		status.set_value(m_checkboxList[i]->isChecked());
-		minResistance.set_value(m_spinboxMinList[i]->value());
-		maxResistance.set_value(m_spinboxMaxList[i]->value());
+		//设置的是千欧,要设置为欧姆 *1000
+		minResistance.set_value(m_spinboxMinList[i]->value()*1000);
+		maxResistance.set_value(m_spinboxMaxList[i]->value()*1000);
 		i++;
 	}
 

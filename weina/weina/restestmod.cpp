@@ -2,6 +2,7 @@
 #include <QDebug>
 #include <QMutex>
 #include <QSerialPortInfo>
+#include "logclass.h"
 
 //#define _tr(str) QString::fromLocal8Bit(str);
 
@@ -48,6 +49,7 @@ int ResTestmod::connectMod()
 	if (!m_serialPort->open(QIODevice::ReadWrite))
 	{
 		qDebug() << _tr("检测模块:")<<id<<_tr("串口:")<<m_serialPortName << _tr("打开失败!");
+		logClass::add_Data_to_log(_tr("检测模块:") .append(id) .append( _tr("串口:")) .append(m_serialPortName ).append( _tr("打开失败!")));
 		return -1;
 	}
 	hotMod(m_relayStatus);
@@ -243,7 +245,7 @@ void ResTestmod::testStart()
 	}
 
 	this->testHotresMod();//检测加热电阻
-	m_testHotResTimer.start(paramete.testHotresTime);
+	m_testHotResTimer.start(paramete.testHotresTime*1000);
 	qDebug()<< _tr("模块:%1  :").arg(id)<< _tr("检测开始.............................") ;
 	qDebug() << _tr("模块:%1  :").arg(id) << _tr("检测加热电阻开始") ;
 }
@@ -253,8 +255,8 @@ void ResTestmod::on_testHotResTimer_timeout()
 {
 	
 	m_testHotResTimer.stop();
-	m_testResTimer.start(paramete.testTime);//检测电阻
-	m_min_maxTestTimer.start(paramete.min_maxTestTime);
+	m_testResTimer.start(paramete.testTime*1000);//检测电阻
+	m_min_maxTestTimer.start(paramete.min_maxTestTime*1000);
 	for (int i = 0; i < 24; i++)
 	{
 		if (hotRes[i]<paramete.minHotRes|| hotRes[i]>paramete.maxHotRes)

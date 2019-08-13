@@ -32,7 +32,7 @@ public:
 	QTableWidget* getTabWidget();
 	void appendResult2Widget(int id, QList<int> numList);
 public slots:
-	int save2excel();
+	void save2excel();
 	void clearTabWidget();
 private:
 	QTableWidget* m_tableWidget=nullptr;
