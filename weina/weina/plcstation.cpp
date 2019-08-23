@@ -4,8 +4,8 @@
 #include <mutex>
 #include <QMutex>
 #include <QDebug>
-
-
+#include <QMessageBox>
+#include "logclass.h"
 
 using namespace PLC;
 using namespace ButterflyS7;
@@ -198,35 +198,59 @@ void PlcStation::run()
 	PlcDataBuffer buffer;
 	while (threadExitCode == PLC_THREAD_ON)
 	{
-		int a;
-		if (threadExitCode == PLC_THREAD_ON)
-			a = ReadBlockAsByte(m_plcHandle,AreaI, 0, 0, buffer.I.size(), buffer.I.data());
-		if (threadExitCode == PLC_THREAD_ON)
-			a = ReadBlockAsByte(m_plcHandle, AreaQ, 0, 0, buffer.Q.size(), buffer.Q.data());
-		if (threadExitCode == PLC_THREAD_ON)
-			a =	ReadBlockAsByte(m_plcHandle, AreaM, 0, 0, buffer.M.size(), buffer.M.data());
-		mu.lock();
-		if (threadExitCode == PLC_THREAD_ON)
+		
+		try
 		{
-			auto dbnumList= plcData.buffer_DB.keys();
-			for (int i = 0; i < dbnumList.size(); i++)
+			int a;
+			if (threadExitCode == PLC_THREAD_ON)
+				a = ReadBlockAsByte(m_plcHandle, AreaI, 0, 0, buffer.I.size(), buffer.I.data());
+			if (a)
+				throw a;
+			if (threadExitCode == PLC_THREAD_ON)
+				a = ReadBlockAsByte(m_plcHandle, AreaQ, 0, 0, buffer.Q.size(), buffer.Q.data());
+			if (a)
+				throw a;
+			if (threadExitCode == PLC_THREAD_ON)
+				a = ReadBlockAsByte(m_plcHandle, AreaM, 0, 0, buffer.M.size(), buffer.M.data());
+			if (a)
+				throw a;
+			mu.lock();
+			if (threadExitCode == PLC_THREAD_ON)
 			{
-				a = ReadBlockAsByte(m_plcHandle, AreaDB, dbnumList[i], 0, plcData.buffer_DB[dbnumList[i]].size(), plcData.buffer_DB[dbnumList[i]].data());
-				if (a)
+				auto dbnumList = plcData.buffer_DB.keys();
+				for (int i = 0; i < dbnumList.size(); i++)
 				{
-					array<char, 120> text;
-					errorText(a, text.data(), text.size());
-					qDebug() << text.data();
+					a = ReadBlockAsByte(m_plcHandle, AreaDB, dbnumList[i], 0, plcData.buffer_DB[dbnumList[i]].size(), plcData.buffer_DB[dbnumList[i]].data());
+					if (a)
+						throw a;
+					if (a)
+					{
+						array<char, 120> text;
+						errorText(a, text.data(), text.size());
+						qDebug() << text.data();
+					}
 				}
+
 			}
 			
+			if (threadExitCode == PLC_THREAD_ON)
+			{
+				bytes2boolArry(buffer.I.data(), buffer.I.size(), plcData.I.data());
+				bytes2boolArry(buffer.Q.data(), buffer.Q.size(), plcData.Q.data());
+				bytes2boolArry(buffer.M.data(), buffer.M.size(), plcData.M.data());
+			}
 		}
-			
-		if (threadExitCode == PLC_THREAD_ON)
+		//catch (const std::exception&)
+		//{
+
+		//}
+		catch (const int e)
 		{
-			bytes2boolArry(buffer.I.data(), buffer.I.size(), plcData.I.data());
-			bytes2boolArry(buffer.Q.data(), buffer.Q.size(), plcData.Q.data());
-			bytes2boolArry(buffer.M.data(), buffer.M.size(), plcData.M.data());
+			array<char, 120> text;
+			errorText(e, text.data(), text.size());
+			QMessageBox::warning(NULL,_tr("错误!"),_tr("PLC通讯线程异常!代码:").append(e).append(_tr("解释:").append(text.data())));
+			logClass::add_Data_to_log(_tr("PLC通讯线程异常!代码:").append(e).append(_tr("解释:").append(text.data())));
+			mu.unlock();
 		}
 
 		mu.unlock();

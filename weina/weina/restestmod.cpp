@@ -165,14 +165,14 @@ void ResTestmod::run()
 			
 			if (dataBuffer[0] =='+' & dataBuffer.size()==98)
 			{
-				if (mu.tryLock());
+				mu.lock();
 				memcpy(res, dataBuffer.data() + 1, 96);
 				mu.unlock();
 				emit(this->readResDone());
 			}
 			if (dataBuffer[0] == '!' & dataBuffer.size() == 194)
 			{
-				if (mu.tryLock());
+				mu.lock();
 				memcpy(res, dataBuffer.data() + 1, 96);
 				memcpy(hotRes, dataBuffer.data() + 1 + 96, 96);
 				mu.unlock();
@@ -181,7 +181,7 @@ void ResTestmod::run()
 			}
 			if (dataBuffer[0] == '-' & dataBuffer.size() == 26)
 			{
-				if (mu.tryLock());
+				mu.lock();
 				memcpy(m_relayStatus, dataBuffer.data() + 1, 24);
 				mu.unlock();
 				emit(this->getRealyStausDone());
