@@ -154,37 +154,35 @@ void ResTestmod::run()
 {
 	QMutex mu;
 	QByteArray dataBuffer;
+	msleep(100);
 	while (threadRead_en)
 	{
-
+		msleep(5);
+		mu.lock();
 		if (m_serialPort->waitForReadyRead(800))
 		{
 			msleep(50);
-			
 			dataBuffer = m_serialPort->readAll();
 			
-			if (dataBuffer[0] =='+' & dataBuffer.size()==98)
+			if (dataBuffer[dataBuffer.size()] == '\n')
 			{
-				mu.lock();
-				memcpy(res, dataBuffer.data() + 1, 96);
-				mu.unlock();
-				emit(this->readResDone());
-			}
-			if (dataBuffer[0] == '!' & dataBuffer.size() == 194)
-			{
-				mu.lock();
-				memcpy(res, dataBuffer.data() + 1, 96);
-				memcpy(hotRes, dataBuffer.data() + 1 + 96, 96);
-				mu.unlock();
-				emit(this->readHotResDone());
-				emit(this->readResDone());
-			}
-			if (dataBuffer[0] == '-' & dataBuffer.size() == 26)
-			{
-				mu.lock();
-				memcpy(m_relayStatus, dataBuffer.data() + 1, 24);
-				mu.unlock();
-				emit(this->getRealyStausDone());
+				if (dataBuffer[0] == '+' & dataBuffer.size() == 98)
+				{
+					memcpy(res, dataBuffer.data() + 1, 96);
+					emit(this->readResDone());
+				}
+				if (dataBuffer[0] == '!' & dataBuffer.size() == 194)
+				{
+					memcpy(res, dataBuffer.data() + 1, 96);
+					memcpy(hotRes, dataBuffer.data() + 1 + 96, 96);
+					emit(this->readHotResDone());
+					emit(this->readResDone());
+				}
+				if (dataBuffer[0] == '-' & dataBuffer.size() == 26 )
+				{
+					memcpy(m_relayStatus, dataBuffer.data() + 1, 24);
+					emit(this->getRealyStausDone());
+				}
 			}
 		}
 
@@ -198,13 +196,13 @@ void ResTestmod::run()
 					maxRes[i] = res[i];
 			}
 		}
-
-		//qDebug() << dataBuffer.size();
-		for (int i = 0; i < 24; i++)
-		{
-			//qDebug() << hotRes[i];
-		}
 		
+		//qDebug() << dataBuffer.size();
+		//for (int i = 0; i < 24; i++)
+		//{
+		//	//qDebug() << hotRes[i];
+		//}
+		mu.unlock();
 	}
 }
 

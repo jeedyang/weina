@@ -173,6 +173,7 @@ void PlcStation::waitThreadExit()
 {
 	pollingStop();
 	this->wait();
+	msleep(5);
 }
 
 bool PlcStation::isConnect()
@@ -196,9 +197,11 @@ void PlcStation::run()
 	//sleep(3);
 	QMutex mu;
 	PlcDataBuffer buffer;
+	msleep(100);
 	while (threadExitCode == PLC_THREAD_ON)
 	{
-		
+		msleep(10);
+		mu.lock();
 		try
 		{
 			int a;
@@ -213,8 +216,7 @@ void PlcStation::run()
 			if (threadExitCode == PLC_THREAD_ON)
 				a = ReadBlockAsByte(m_plcHandle, AreaM, 0, 0, buffer.M.size(), buffer.M.data());
 			if (a)
-				throw a;
-			mu.lock();
+				throw a;			
 			if (threadExitCode == PLC_THREAD_ON)
 			{
 				auto dbnumList = plcData.buffer_DB.keys();
@@ -250,9 +252,7 @@ void PlcStation::run()
 			errorText(e, text.data(), text.size());
 			QMessageBox::warning(NULL,_tr("错误!"),_tr("PLC通讯线程异常!代码:").append(e).append(_tr("解释:").append(text.data())));
 			logClass::add_Data_to_log(_tr("PLC通讯线程异常!代码:").append(e).append(_tr("解释:").append(text.data())));
-			mu.unlock();
 		}
-
 		mu.unlock();
 		//cout << "thread runing! PLC return:" << a << endl;
 	}
