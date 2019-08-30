@@ -33,7 +33,7 @@ typedef struct _TestParameters
 	int testHotresTime = 5000;
 	int testTime = 10000;
 	int min_maxTestTime = 5000;
-	float max_minOdds = 2.0;
+	double max_minOdds = 2.0;
 	array<bool, 29> enabled;
 	array<int, 29> minResScope;
 	array<int, 29> maxResScope;

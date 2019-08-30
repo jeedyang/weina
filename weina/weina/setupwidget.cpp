@@ -337,7 +337,7 @@ void SetupWidget::loadPamsFromXml()
 		m_parameters.testHotresTime = QString(testHotresTime.value()).toInt();
 		m_parameters.testTime = QString(testTime.value()).toInt();
 		m_parameters.min_maxTestTime = QString(min_maxTestTime.value()).toInt();
-		m_parameters.max_minOdds = QString(max_minOdds.value()).toFloat();
+		m_parameters.max_minOdds = QString(max_minOdds.value()).toDouble();
 	}
 }
 

@@ -158,34 +158,41 @@ void ResTestmod::run()
 	while (threadRead_en)
 	{
 		msleep(5);
-		mu.lock();
+		
 		if (m_serialPort->waitForReadyRead(800))
 		{
 			msleep(50);
+			mu.lock();
 			dataBuffer = m_serialPort->readAll();
-			
+			mu.unlock();
 			if (dataBuffer[dataBuffer.size()] == '\n')
 			{
 				if (dataBuffer[0] == '+' & dataBuffer.size() == 98)
 				{
+					mu.lock();
 					memcpy(res, dataBuffer.data() + 1, 96);
+					mu.unlock();
 					emit(this->readResDone());
 				}
 				if (dataBuffer[0] == '!' & dataBuffer.size() == 194)
 				{
+					mu.lock();
 					memcpy(res, dataBuffer.data() + 1, 96);
 					memcpy(hotRes, dataBuffer.data() + 1 + 96, 96);
+					mu.unlock();
 					emit(this->readHotResDone());
 					emit(this->readResDone());
 				}
 				if (dataBuffer[0] == '-' & dataBuffer.size() == 26 )
 				{
+					mu.lock();
 					memcpy(m_relayStatus, dataBuffer.data() + 1, 24);
+					mu.unlock();
 					emit(this->getRealyStausDone());
 				}
 			}
 		}
-
+		mu.lock();
 		if (getMin_MaxRes)//获取最大最小电阻,在到时间之后
 		{
 			for (int i = 0; i < 24; i++)
@@ -284,11 +291,13 @@ void ResTestmod::on_testResTimer_timeout()
 	qDebug() << _tr("模块:%1  :").arg(id) << _tr("检测结束----------------------------------");
 	m_testResTimer.stop();
 	getMin_MaxRes = false;
+	qDebug() << _tr("模块:%1  :").arg(id) << _tr("step1 done...");
 	//先全部设置不合格
 	for (int i = 0; i < 24; i++)
 	{
 		result[i] = 0;
 	}
+	qDebug() << _tr("模块:%1  :").arg(id) << _tr("step2 done...");
 	for (int i = 0; i < 24; i++)
 	{
 		for (int a = 0; a < 29; a++)
@@ -302,15 +311,19 @@ void ResTestmod::on_testResTimer_timeout()
 			}
 		}
 	}
+	qDebug() << _tr("模块:%1  :").arg(id) << _tr("step3 done...");
 	//判断最大最小值比值
 	for (int i = 0; i < 24; i++)
 	{
-		maxminOdds[i] = maxRes[i] / minRes[i];
+		qDebug() <<_tr("t1:")<<i;
+		maxminOdds[i] = 1.0000 * maxRes[i] / minRes[i];
+		qDebug() << _tr("t2:") << i;
 		if (maxminOdds[i] >paramete.max_minOdds)
 		{
 			result[i] = 0;
 		}
 	}
+	qDebug() << _tr("模块:%1  :").arg(id) << _tr("step4 done...");
 	//如果加热继电器没开,直接不合格
 	for (int i = 0; i < 24; i++)
 	{
@@ -319,14 +332,18 @@ void ResTestmod::on_testResTimer_timeout()
 			result[i] = 0;
 		}
 	}
+	qDebug() << _tr("模块:%1  :").arg(id) << _tr("step5 done...");
 	//检测结束,关闭所有继电器
 	for (int i = 0; i < 24; i++)
 	{
 		m_relayStatus[i] = 0x00;
 
 	}
+	qDebug() << _tr("模块:%1  :").arg(id) << _tr("step6 done...");
 	hotMod(m_relayStatus);
+	qDebug() << _tr("模块:%1  :").arg(id) << _tr("step7 done...");
 	emit(this->testDone(id));
 	testResMod();
+	qDebug() << _tr("模块:%1  :").arg(id) << _tr("stepDone...");
 }
 

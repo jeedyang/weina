@@ -34,7 +34,7 @@ public:
 	int minRes[24];
 	int maxRes[24];
 	int result[24];
-	float maxminOdds[24];
+	double maxminOdds[24];
 	TestParameters paramete;
 
 	//int testHotresTime=5000;
