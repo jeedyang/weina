@@ -7,6 +7,7 @@
 #include <QTimer>
 #include "classbase.h"
 #include <array>
+#include "Analyze.h"
 
 class ResTestmod : public QThread
 {
@@ -37,6 +38,7 @@ public:
 	double maxminOdds[24];
 	TestParameters paramete;
 
+	//
 	//int testHotresTime=5000;
 	//int testTime = 10000;
 	//int min_maxTestTime = 5000;
@@ -60,7 +62,13 @@ private:
 	QTimer m_min_maxTestTimer;
 	/////////
 	bool getMin_MaxRes = false;
-
+	//±£´æ½á¹û
+	std::array<double, 24> m_min;
+	std::array<double, 24> m_max;
+	std::array<double, 24> m_odds;
+	std::array<double, 24> m_lastRes;
+	std::array<HeaterResult, 24> m_heater;
+	std::array<int, 24> m_classes;
 private slots:
 	void on_readHotResDone();
 	void on_readResDone();

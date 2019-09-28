@@ -21,14 +21,14 @@
 	<class18 status="false" minResistance="19000" maxResistance="0" />
 	<class19 status="false" minResistance="0" maxResistance="6000" />
 	<class20 status="false" minResistance="0" maxResistance="0" />
-	<class21 status="false" minResistance="0" maxResistance="4000" />
+	<class21 status="false" minResistance="0" maxResistance="1000" />
 	<class22 status="false" minResistance="23000" maxResistance="20000" />
 	<class23 status="false" minResistance="24000" maxResistance="0" />
-	<class24 status="false" minResistance="25" maxResistance="0" />
-	<class25 status="true" minResistance="26" maxResistance="0" />
-	<class26 status="true" minResistance="27" maxResistance="0" />
-	<class27 status="true" minResistance="28" maxResistance="0" />
-	<class28 status="true" minResistance="29" maxResistance="0" />
+	<class24 status="false" minResistance="0" maxResistance="0" />
+	<class25 status="true" minResistance="11000" maxResistance="111000" />
+	<class26 status="true" minResistance="22000" maxResistance="222000" />
+	<class27 status="true" minResistance="22000" maxResistance="333000" />
+	<class28 status="true" minResistance="3000" maxResistance="11000" />
 	<testPams minHotRes="50" maxHotRes="150" testHotresTime="5000" testTime="60000" min_maxTestTime="3000" max_minOdds="2.5" />
 	<description>Simple node</description>
 </classifyPam>

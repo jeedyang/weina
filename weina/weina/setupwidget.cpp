@@ -371,7 +371,7 @@ void SetupWidget::setPams2xml()
 	int i = 0;
 	for ( xml_node classify= classifyPams.first_child(); classify;classify= classify.next_sibling())
 	{
-		if (i > 23)
+		if (i > 28)
 			break;
 		xml_attribute status = classify.attribute("status");
 		xml_attribute minResistance = classify.attribute("minResistance");

@@ -75,6 +75,12 @@
     <ClCompile Include="userwidget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Analyze.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="analyzeform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="mainwindow.h">
@@ -116,6 +122,12 @@
     <QtMoc Include="userwidget.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="Analyze.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="analyzeform.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="mainwindow.ui">
@@ -140,6 +152,9 @@
       <Filter>Form Files</Filter>
     </QtUic>
     <QtUic Include="userwidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="analyzeform.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>

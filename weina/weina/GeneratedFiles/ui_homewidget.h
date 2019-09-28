@@ -1,16 +1,17 @@
 /********************************************************************************
-** Form generated from reading UI file 'homewidget.ui'
+** Form generated from reading UI file 'homewidgetZidUBp.ui'
 **
 ** Created by: Qt User Interface Compiler version 5.12.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef UI_HOMEWIDGET_H
-#define UI_HOMEWIDGET_H
+#ifndef HOMEWIDGETZIDUBP_H
+#define HOMEWIDGETZIDUBP_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QCheckBox>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
@@ -45,6 +46,9 @@ public:
     QPushButton *pushButton_mod1;
     QPushButton *pushButton_mod2;
     QPushButton *pushButton_mod3;
+    QSpacerItem *horizontalSpacer_2;
+    QCheckBox *checkBox_hotRes;
+    QPushButton *pushButton_analyze;
     QSpacerItem *horizontalSpacer;
 
     void setupUi(QWidget *HomeWidget)
@@ -139,6 +143,20 @@ public:
 
         horizontalLayout->addWidget(pushButton_mod3);
 
+        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer_2);
+
+        checkBox_hotRes = new QCheckBox(widget_modbtn);
+        checkBox_hotRes->setObjectName(QString::fromUtf8("checkBox_hotRes"));
+
+        horizontalLayout->addWidget(checkBox_hotRes);
+
+        pushButton_analyze = new QPushButton(widget_modbtn);
+        pushButton_analyze->setObjectName(QString::fromUtf8("pushButton_analyze"));
+
+        horizontalLayout->addWidget(pushButton_analyze);
+
         horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         horizontalLayout->addItem(horizontalSpacer);
@@ -164,6 +182,8 @@ public:
         pushButton_mod1->setText(QApplication::translate("HomeWidget", "\346\250\241\345\235\2271", nullptr));
         pushButton_mod2->setText(QApplication::translate("HomeWidget", "\346\250\241\345\235\2272", nullptr));
         pushButton_mod3->setText(QApplication::translate("HomeWidget", "\346\250\241\345\235\2273", nullptr));
+        checkBox_hotRes->setText(QApplication::translate("HomeWidget", "\347\233\221\346\216\247\345\212\240\347\203\255\344\270\235\347\224\265\351\230\273", nullptr));
+        pushButton_analyze->setText(QApplication::translate("HomeWidget", "\345\210\206\346\236\220", nullptr));
     } // retranslateUi
 
 };
@@ -174,4 +194,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // UI_HOMEWIDGET_H
+#endif // HOMEWIDGETZIDUBP_H

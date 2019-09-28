@@ -7,6 +7,8 @@
 #include "restestmod.h"
 #include "mainctrl.h"
 
+class QCheckBox;
+
 class HomeWidget : public QWidget
 {
 	Q_OBJECT
@@ -14,7 +16,7 @@ class HomeWidget : public QWidget
 public:
 	HomeWidget(QWidget *parent = Q_NULLPTR);
 	~HomeWidget();
-
+	QCheckBox *checkBox_hotRes;
 private:
 	Ui::HomeWidget ui;
 	QGridLayout* m_panelLaylot[4];
@@ -22,7 +24,10 @@ private:
 	ResTestmod* resModArry[4];
 	QStringList m_serialPortNameList;
 	QButtonGroup m_btnGroup;
+	 
 	//MainCtrl mainCtrl;
 private slots:
 	void on_btnGroupToggled(QAbstractButton* button, bool checked);
+	void on_checkBox_resTestClicked(bool);
+	void on_pushButton_analyzeClicked();
 };

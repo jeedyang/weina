@@ -229,13 +229,13 @@ QPushButton::checked
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_2">
           <property name="spacing">
-           <number>4</number>
+           <number>2</number>
           </property>
           <property name="leftMargin">
            <number>3</number>
           </property>
           <property name="topMargin">
-           <number>30</number>
+           <number>10</number>
           </property>
           <property name="rightMargin">
            <number>3</number>
@@ -419,6 +419,30 @@ QPushButton::checked
              </size>
             </property>
            </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_classes">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>分料</string>
+            </property>
+            <property name="icon">
+             <iconset resource="resource.qrc">
+              <normaloff>:/png/res/png/516595.png</normaloff>
+              <normalon>:/png/res/png/stop.png</normalon>:/png/res/png/516595.png</iconset>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
           </item>
           <item>
            <widget class="QPushButton" name="pushButton_pause">

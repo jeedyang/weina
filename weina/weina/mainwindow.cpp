@@ -150,6 +150,7 @@ void MainWindow::initForm()
 	m_btnGroupCtrl.setExclusive(false);
 	m_btnGroupCtrl.addButton(ui.pushButton_start,0);
 	m_btnGroupCtrl.addButton(ui.pushButton_pause, 1);
+	m_btnGroupCtrl.addButton(ui.pushButton_classes, 2);
 	//showWidget(ui.stackedWidget_main->widget(0), m_panel_widget);
 }
 
@@ -186,6 +187,9 @@ void MainWindow::on_btnGroupCtrlToggled(QAbstractButton* button, bool checked)
 			mainctrl->start();
 			button->setText(_tr("停止"));
 			logClass::add_Data_to_log(_tr("设备启动。"));
+
+			m_home_widget->checkBox_hotRes->setEnabled(false);
+			m_home_widget->checkBox_hotRes->setChecked(false);
 			if (m_userInfo.type == UserType::admin|| m_userInfo.type == UserType::general)
 			{
 				ui.pushButton_debug->setEnabled(false);
@@ -195,6 +199,7 @@ void MainWindow::on_btnGroupCtrlToggled(QAbstractButton* button, bool checked)
 		else
 		{
 			plc->setValue(_tr("启动_停止"), STOP);
+			m_home_widget->checkBox_hotRes->setEnabled(true);
 			mainctrl->stop();
 			button->setText(_tr("启动"));
 			logClass::add_Data_to_log(_tr("设备停止。"));
@@ -222,6 +227,18 @@ void MainWindow::on_btnGroupCtrlToggled(QAbstractButton* button, bool checked)
 			plc->setValue(_tr("暂停_继续"), CONTINUS);
 			button->setText(_tr("暂停"));
 			logClass::add_Data_to_log(_tr("设备继续。"));
+		}
+	}
+
+	if (button->objectName() == _tr("pushButton_classes"))
+	{
+		if (button->isChecked())
+		{
+			ui.pushButton_start->setEnabled(false);
+		}
+		else
+		{
+			ui.pushButton_start->setEnabled(true);
 		}
 	}
 }

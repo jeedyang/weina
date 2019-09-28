@@ -2,12 +2,13 @@
 #include <QDebug>
 #include <QLibrary>
 #include "report.h"
-
+#include "Analyze.h"
 
 HomeWidget::HomeWidget(QWidget *parent)
 	: QWidget(parent)
 {
 	ui.setupUi(this);
+	checkBox_hotRes = ui.checkBox_hotRes;
 	m_serialPortNameList.append(_tr("COM13"));
 	m_serialPortNameList.append(_tr("COM14"));
 	m_serialPortNameList.append(_tr("COM15"));
@@ -40,6 +41,10 @@ HomeWidget::HomeWidget(QWidget *parent)
 			{
 				resModArry[i]->readStart();
 				//resModArry[i]->getRealyStaus();
+			}
+			else
+			{
+				QMessageBox::warning(this,_tr("´íÎó"),_tr("¼ì²âÄ£¿é%1Á´½ÓÊ§°Ü,Çë¼ì²é´®¿ÚÁ´½ÓÊÇ·ñÕý³£!").arg(i));
 			}
 			QObject::connect(m_panel_widget[i], SIGNAL(hotButtonClicked(int, bool)), resModArry[i], SLOT(on_HotButtonCilcked(int, bool)));
 
@@ -116,6 +121,8 @@ HomeWidget::HomeWidget(QWidget *parent)
 	report->setTabWidget(ui.tableWidget);
 	QObject::connect(ui.pushButton_clearTable, SIGNAL(pressed()), report, SLOT(clearTabWidget()));
 	QObject::connect(ui.pushButton_saveToExcel, SIGNAL(pressed()), report, SLOT(save2excel()));
+	QObject::connect(ui.checkBox_hotRes, SIGNAL(clicked(bool)), this, SLOT(on_checkBox_resTestClicked(bool)));
+	QObject::connect(ui.pushButton_analyze, SIGNAL(clicked()), this, SLOT(on_pushButton_analyzeClicked()));
 }
 
 HomeWidget::~HomeWidget()
@@ -146,4 +153,29 @@ void HomeWidget::on_btnGroupToggled(QAbstractButton* button, bool checked)
 	default:
 		break;
 	}
+}
+
+void HomeWidget::on_checkBox_resTestClicked(bool clicked)
+{
+	if (clicked)
+	{
+		for (int i = 0; i < 4; i++)
+		{
+			resModArry[i]->testHotresMod();
+		}
+	}
+	else
+	{
+		for (int i = 0; i < 4; i++)
+		{
+			resModArry[i]->testResMod();
+		}
+	}
+}
+
+void HomeWidget::on_pushButton_analyzeClicked()
+{
+	auto an=Analyze::Instance();
+	int id = ui.stackedWidget->currentIndex();
+	an->showAnalyzeForm(id);
 }

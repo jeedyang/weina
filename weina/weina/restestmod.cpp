@@ -4,6 +4,8 @@
 #include <QSerialPortInfo>
 #include "logclass.h"
 
+#include <array>
+
 //#define _tr(str) QString::fromLocal8Bit(str);
 
 ResTestmod::ResTestmod(QObject *parent)
@@ -165,7 +167,8 @@ void ResTestmod::run()
 			mu.lock();
 			dataBuffer = m_serialPort->readAll();
 			mu.unlock();
-			if (dataBuffer[dataBuffer.size()] == '\n')
+			//if (dataBuffer[dataBuffer.size()] == '\n')
+			if (1)
 			{
 				if (dataBuffer[0] == '+' & dataBuffer.size() == 98)
 				{
@@ -255,15 +258,28 @@ void ResTestmod::testStart()
 	qDebug() << _tr("模块:%1  :").arg(id) << _tr("检测加热电阻开始") ;
 }
 
-
 void ResTestmod::on_testHotResTimer_timeout()
 {
 	
 	m_testHotResTimer.stop();
 	m_testResTimer.start(paramete.testTime*1000);//检测电阻
 	m_min_maxTestTimer.start(paramete.min_maxTestTime*1000);
+	std::array<HeaterResult,24> heaterResult;
+	m_heater = heaterResult;
 	for (int i = 0; i < 24; i++)
 	{
+		if (hotRes[i] < paramete.minHotRes)
+		{
+			heaterResult[i]=HeaterResult::Short;
+		}
+		else if(hotRes[i] > paramete.maxHotRes)
+		{
+			heaterResult[i] = HeaterResult::Open;
+		}
+		else
+		{
+			heaterResult[i] = HeaterResult::Normal;
+		}
 		if (hotRes[i]<paramete.minHotRes|| hotRes[i]>paramete.maxHotRes)
 		{
 			m_relayStatus[i] = 0;
@@ -274,6 +290,8 @@ void ResTestmod::on_testHotResTimer_timeout()
 		}
 		
 	}
+	auto analyze = Analyze::Instance();
+	analyze->setHotResResult(id,heaterResult);
 	hotMod(m_relayStatus);
 	qDebug() << _tr("模块:%1  :").arg(id) << _tr("检测加热电阻结束") ;
 	qDebug() << _tr("模块:%1  :").arg(id) << _tr("加热开始");
@@ -315,6 +333,8 @@ void ResTestmod::on_testResTimer_timeout()
 	//判断最大最小值比值
 	for (int i = 0; i < 24; i++)
 	{
+
+
 		qDebug() <<_tr("t1:")<<i;
 		maxminOdds[i] = 1.0000 * maxRes[i] / minRes[i];
 		qDebug() << _tr("t2:") << i;
@@ -322,6 +342,7 @@ void ResTestmod::on_testResTimer_timeout()
 		{
 			result[i] = 0;
 		}
+
 	}
 	qDebug() << _tr("模块:%1  :").arg(id) << _tr("step4 done...");
 	//如果加热继电器没开,直接不合格
@@ -333,12 +354,34 @@ void ResTestmod::on_testResTimer_timeout()
 		}
 	}
 	qDebug() << _tr("模块:%1  :").arg(id) << _tr("step5 done...");
+	std::array<int, 24> lastres;
 	//检测结束,关闭所有继电器
 	for (int i = 0; i < 24; i++)
 	{
 		m_relayStatus[i] = 0x00;
-
+		lastres[i] = res[i];
 	}
+	
+	std::array<int,24> testResult;
+	
+	for (int i = 0; i < 24; i++)
+	{
+		testResult[i]=result[i];
+	}
+
+	for (int i = 0; i < 24; i++)
+	{
+		//展示给用户的数据
+		m_min[i] = 1.0000 * minRes[i] / 1000;
+		m_max[i] = 1.0000 * maxRes[i] / 1000;
+		m_odds[i] = maxminOdds[i];
+		m_lastRes[i] = 1.0000 * lastres[i] / 1000;
+		m_classes = testResult;
+	}
+	auto analyze = Analyze::Instance();
+	analyze->setTestResult(id, testResult);
+
+
 	qDebug() << _tr("模块:%1  :").arg(id) << _tr("step6 done...");
 	hotMod(m_relayStatus);
 	qDebug() << _tr("模块:%1  :").arg(id) << _tr("step7 done...");
