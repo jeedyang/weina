@@ -1,13 +1,13 @@
 /********************************************************************************
-** Form generated from reading UI file 'analyzeformayIuqA.ui'
+** Form generated from reading UI file 'analyzeform.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.4
+** Created by: Qt User Interface Compiler version 5.12.5
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef ANALYZEFORMAYIUQA_H
-#define ANALYZEFORMAYIUQA_H
+#ifndef UI_ANALYZEFORM_H
+#define UI_ANALYZEFORM_H
 
 #include <QtCore/QVariant>
 #include <QtGui/QIcon>
@@ -148,4 +148,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // ANALYZEFORMAYIUQA_H
+#endif // UI_ANALYZEFORM_H

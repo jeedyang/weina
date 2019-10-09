@@ -100,7 +100,7 @@ QPushButton #pushButton_home
           <string notr="true">font: 10pt &quot;楷体&quot;;</string>
          </property>
          <property name="text">
-          <string>合肥瑞朗自动化设备有限公司</string>
+          <string>合肥微纳传感技术有限公司</string>
          </property>
         </widget>
        </item>

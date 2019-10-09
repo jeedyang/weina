@@ -1,13 +1,13 @@
 /********************************************************************************
-** Form generated from reading UI file 'homewidgetZidUBp.ui'
+** Form generated from reading UI file 'homewidget.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.4
+** Created by: Qt User Interface Compiler version 5.12.5
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef HOMEWIDGETZIDUBP_H
-#define HOMEWIDGETZIDUBP_H
+#ifndef UI_HOMEWIDGET_H
+#define UI_HOMEWIDGET_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -194,4 +194,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // HOMEWIDGETZIDUBP_H
+#endif // UI_HOMEWIDGET_H

@@ -5,6 +5,8 @@
 #include "analyzeform.h"
 #include <array>
 
+
+
 #define DEFINE_SINGLETON(cls) \
  private:\
  static std::auto_ptr<cls> m_pInstance;\
@@ -21,6 +23,7 @@
 
 #define IMPLEMENT_SINGLETON(cls) \
 std::auto_ptr<cls> cls::m_pInstance(NULL);
+
 
 
 

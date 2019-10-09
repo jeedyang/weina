@@ -5,6 +5,7 @@
 #include "mainctrl.h"
 #include "logclass.h"
 
+
 #define START 1
 #define PAUSE 1
 #define STOP 0
@@ -32,6 +33,7 @@ MainWindow::MainWindow( QWidget *parent)
 	qDebug() << a;
 	if (a == 0)
 	{
+		plc->setValue(_tr("启动_停止"), STOP);
 		plc->pollingStart();
 	}
 	else
@@ -45,6 +47,10 @@ MainWindow::MainWindow( QWidget *parent)
 	m_log_widget = qobject_cast<LogWidget*>(ui.stackedWidget_main->widget(3));
 	m_report_widget = qobject_cast<ReportWidget*>(ui.stackedWidget_main->widget(4));
 	m_user_widget = qobject_cast<UserWidget*>(ui.stackedWidget_main->widget(5));
+	m_classselect_dialog = new ClassSelectDialog(this);
+
+	auto mainctrl = MainCtrl::Instance();
+	connect(mainctrl,SIGNAL(systemStoped()),this,SLOT(on_systemStoped()));
 }
 
 void MainWindow::on_btnGroupWidgetClicked(QAbstractButton* button)
@@ -175,6 +181,11 @@ void MainWindow::showWidget(QWidget* parent, QWidget* children)
 	//ui.widget_main->setLayout(m_hLayout);
 }
 
+void MainWindow::showClassesDialog()
+{
+	m_classselect_dialog->show();
+}
+
 void MainWindow::on_btnGroupCtrlToggled(QAbstractButton* button, bool checked)
 {
 	auto mainctrl = MainCtrl::Instance();
@@ -187,7 +198,7 @@ void MainWindow::on_btnGroupCtrlToggled(QAbstractButton* button, bool checked)
 			mainctrl->start();
 			button->setText(_tr("停止"));
 			logClass::add_Data_to_log(_tr("设备启动。"));
-
+			ui.pushButton_classes->setEnabled(false);
 			m_home_widget->checkBox_hotRes->setEnabled(false);
 			m_home_widget->checkBox_hotRes->setChecked(false);
 			if (m_userInfo.type == UserType::admin|| m_userInfo.type == UserType::general)
@@ -198,10 +209,12 @@ void MainWindow::on_btnGroupCtrlToggled(QAbstractButton* button, bool checked)
 		}
 		else
 		{
-			plc->setValue(_tr("启动_停止"), STOP);
-			m_home_widget->checkBox_hotRes->setEnabled(true);
+			button->setChecked(true);
+			button->setText(_tr("等待运行结束"));
+			//plc->setValue(_tr("启动_停止"), STOP);
+			//m_home_widget->checkBox_hotRes->setEnabled(true);
 			mainctrl->stop();
-			button->setText(_tr("启动"));
+			//button->setText(_tr("启动"));
 			logClass::add_Data_to_log(_tr("设备停止。"));
 			if (m_userInfo.type == UserType::admin)
 			{
@@ -235,10 +248,22 @@ void MainWindow::on_btnGroupCtrlToggled(QAbstractButton* button, bool checked)
 		if (button->isChecked())
 		{
 			ui.pushButton_start->setEnabled(false);
+			showClassesDialog();
 		}
 		else
 		{
 			ui.pushButton_start->setEnabled(true);
+			plc->writeBool(AreaM, 1, 20, 6, false);
 		}
 	}
+}
+
+void MainWindow::on_systemStoped()
+{
+	ui.pushButton_start->setChecked(false);
+	ui.pushButton_start->setText(_tr("启动"));
+	ui.pushButton_start->setIcon(QIcon(":/png/res/png/start.png"));
+	ui.pushButton_classes->setEnabled(true);
+	auto plc = PLC::PlcStation::Instance();
+	plc->setValue(_tr("启动_停止"), STOP);
 }

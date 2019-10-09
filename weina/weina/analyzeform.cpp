@@ -103,7 +103,7 @@ void AnalyzeForm::setTestResult(std::array<int,24> result)
 		}
 		if (m_resultHistory[i]>=3)//如果连续三次不合格
 		{
-			emit(this->continuousNG(i));
+			on_continuousNG(i);
 		}
 	}
 
@@ -342,7 +342,7 @@ void AnalyzeForm::on_mouse_hovered(bool status, int index)
 void AnalyzeForm::on_continuousNG(int stationIndex)
 {
 	auto plc = PLC::PlcStation::Instance();
-	plc->writeBool(AreaM, 1, 14, 4, true);
+	plc->writeBool(AreaM, 1, 22, 0, true);
 	QMessageBox msgbox;
 	msgbox.setText(_tr("板号:%1 工位:%2,连续3次不合格!您可以在档位分布图表中查看详情.").arg(m_id).arg(stationIndex));
 	//msgbox.setInformativeText(QString::fromLocal8Bit("退出后未保存的数据将被销毁。"));

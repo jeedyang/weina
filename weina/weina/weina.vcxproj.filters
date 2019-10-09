@@ -81,6 +81,9 @@
     <ClCompile Include="analyzeform.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="classselectdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="mainwindow.h">
@@ -128,6 +131,9 @@
     <QtMoc Include="analyzeform.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="classselectdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="mainwindow.ui">
@@ -155,6 +161,9 @@
       <Filter>Form Files</Filter>
     </QtUic>
     <QtUic Include="analyzeform.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="classselectdialog.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>

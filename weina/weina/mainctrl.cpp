@@ -45,7 +45,8 @@ void MainCtrl::start()
 
 void MainCtrl::stop()
 {
-	m_logicTimer.stop();
+	//m_logicTimer.stop();
+	m_waitStop = true;
 }
 
 void MainCtrl::classifyStart(int num)
@@ -157,7 +158,6 @@ void MainCtrl::on_testDone(int id)
 	
 }
 
-
 void MainCtrl::on_logicTimeOut()
 {
 	auto plc = PLC::PlcStation::Instance();
@@ -173,6 +173,19 @@ void MainCtrl::on_logicTimeOut()
 	int boardStatus_3 = plc->getValue(_tr("3ºÅ°å×´Ì¬")).toInt();
 	int boardStatus_4 = plc->getValue(_tr("4ºÅ°å×´Ì¬")).toInt();
 	array<int, 4> boardStatusPlc = { boardStatus_1, boardStatus_2, boardStatus_3, boardStatus_4 };
+	if (boardStatusPlc[0]==testing)
+		m_canStop = true;
+
+	if (m_canStop)
+	{
+		if (m_waitStop & boardStatusPlc[0] == waitArrange & boardStatusPlc[1] == waitArrange & boardStatusPlc[2] == waitArrange & boardStatusPlc[3] == waitArrange)
+		{
+			m_logicTimer.stop();
+			m_waitStop = false;
+			m_canStop = false;
+			emit(this->systemStoped());
+		}
+	}
 
 	if (boardStatusPlc[0] == notRelay || boardStatusPlc[1] == notRelay || boardStatusPlc[2] == notRelay || boardStatusPlc[3] == notRelay)
 	{
@@ -201,9 +214,13 @@ void MainCtrl::on_logicTimeOut()
 	{
 		if (boardStatusPlc[i] == waitArrange)
 		{
+			if (!m_waitStop)
+			{
 				arrangeStart(i);
 				qDebug() << _tr("%1ºÅ°åÅÅ°å¿ªÊ¼!").arg(i);
 				return;
+			}
+			
 		}
 
 	}
@@ -223,5 +240,6 @@ void MainCtrl::on_logicTimeOut()
 			return;
 		}
 	}
+
 
 }

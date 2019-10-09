@@ -47,7 +47,7 @@ private:
 	QList<QBarSet*> m_barSetList_test;
 	int m_heaterStatusList[24][3];
 	int m_testClassesList[24][30];
-	int m_resultHistory[24];//连续不合格记录PLC的M14.4为ON报警
+	int m_resultHistory[24];//连续不合格记录PLC的M22.0为ON报警
 	int m_id=0;
 	QLabel *m_valueLabel;
 signals:

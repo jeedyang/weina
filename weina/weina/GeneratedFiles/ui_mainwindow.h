@@ -1,13 +1,13 @@
 /********************************************************************************
-** Form generated from reading UI file 'mainwindowyVgVQs.ui'
+** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.4
+** Created by: Qt User Interface Compiler version 5.12.5
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef MAINWINDOWYVGVQS_H
-#define MAINWINDOWYVGVQS_H
+#ifndef UI_MAINWINDOW_H
+#define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
 #include <QtGui/QIcon>
@@ -332,7 +332,7 @@ public:
     void retranslateUi(QMainWindow *MainWindowClass)
     {
         MainWindowClass->setWindowTitle(QApplication::translate("MainWindowClass", "MainWindow", nullptr));
-        label_2->setText(QApplication::translate("MainWindowClass", "\345\220\210\350\202\245\347\221\236\346\234\227\350\207\252\345\212\250\345\214\226\350\256\276\345\244\207\346\234\211\351\231\220\345\205\254\345\217\270", nullptr));
+        label_2->setText(QApplication::translate("MainWindowClass", "\345\220\210\350\202\245\345\276\256\347\272\263\344\274\240\346\204\237\346\212\200\346\234\257\346\234\211\351\231\220\345\205\254\345\217\270", nullptr));
         label->setText(QApplication::translate("MainWindowClass", "\344\274\240\346\204\237\345\231\250\350\207\252\345\212\250\347\255\233\351\200\211\346\234\272", nullptr));
         pushButton_close->setText(QString());
         pushButton_home->setText(QApplication::translate("MainWindowClass", "\344\270\273\347\225\214\351\235\242", nullptr));
@@ -355,4 +355,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // MAINWINDOWYVGVQS_H
+#endif // UI_MAINWINDOW_H

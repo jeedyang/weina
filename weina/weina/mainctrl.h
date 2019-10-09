@@ -49,7 +49,12 @@ private:
 	bool m_testStatus[4] = {false,false ,false ,false };
 	array <int, 4> boardStatus;
 	int m_classifyNum =0;
+	bool m_waitStop = false;
+	bool m_canStop = false;
 private slots:
 	void on_logicTimeOut();
 	void on_testDone(int id);
+signals:
+	void systemStoped();
+
 };
