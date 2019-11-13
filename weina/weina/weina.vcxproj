@@ -120,6 +120,12 @@
     <ClCompile Include="analyzeform.cpp" />
     <ClCompile Include="classselectdialog.cpp" />
     <ClCompile Include="debugwidget.cpp" />
+    <ClCompile Include="GeneratedFiles\qrc_resource.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="homewidget.cpp" />
     <ClCompile Include="logclass.cpp" />
     <ClCompile Include="loginwidget.cpp" />
@@ -208,6 +214,16 @@
       <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtSerialPort;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtXml;$(MSBuildProjectDirectory)\include;$(QTDIR)\include\QtCharts;D:\source\qt\qt-material-widgets\components</IncludePath>
       <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtSerialPort;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtXml;$(MSBuildProjectDirectory)\include;$(MSBuildProjectDirectory)\plclib\Win64;$(QTDIR)\include\QtCharts;D:\source\qt\qt-material-widgets\components</IncludePath>
     </QtMoc>
+    <ClInclude Include="GeneratedFiles\ui_analyzeform.h" />
+    <ClInclude Include="GeneratedFiles\ui_classselectdialog.h" />
+    <ClInclude Include="GeneratedFiles\ui_debugwidget.h" />
+    <ClInclude Include="GeneratedFiles\ui_homewidget.h" />
+    <ClInclude Include="GeneratedFiles\ui_loginwidget.h" />
+    <ClInclude Include="GeneratedFiles\ui_logwidget.h" />
+    <ClInclude Include="GeneratedFiles\ui_mainwindow.h" />
+    <ClInclude Include="GeneratedFiles\ui_reportwidget.h" />
+    <ClInclude Include="GeneratedFiles\ui_setupwidget.h" />
+    <ClInclude Include="GeneratedFiles\ui_userwidget.h" />
     <ClInclude Include="pugixml\pugiconfig.hpp" />
     <ClInclude Include="pugixml\pugixml.hpp" />
     <QtMoc Include="restestmod.h">

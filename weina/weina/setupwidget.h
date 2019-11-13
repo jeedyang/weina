@@ -7,6 +7,8 @@
 #include <QDoubleSpinBox>
 #include <QLabel>
 #include <QList>
+#include <array>
+#include <QButtonGroup>
 #include "pugixml/pugixml.hpp"
 #include "mainctrl.h"
 #include "classbase.h"
@@ -24,6 +26,7 @@ public:
 	void refreshTestPamWidget();
 	void refreshLocationWidget();
 	void refreshOtherPamWidget();
+	void refreshSkipWidget();
 	QList<QCheckBox*> m_checkboxList;
 	QList<QSpinBox*> m_spinboxMinList;
 	QList<QSpinBox*> m_spinboxMaxList;
@@ -38,8 +41,12 @@ private:
 	void loadPamsFromXml();
 	void setTestModsPam();
 	void setPams2xml();
-
+	void initSkipWidget();
+	///
 	char* m_xmlpath;
+	std::array<QButtonGroup*,4> btn_groups;
+
 private slots:
 	void on_pushButton_saveClicked(bool checked);
+	void skipButtonClicked(int index);
 };

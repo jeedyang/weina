@@ -1,6 +1,7 @@
 #include "setupwidget.h"
 #include <QDebug>
 #include <QDir>
+#include <QGridLayout>
 
 #define _tr(str) QString::fromLocal8Bit(str)
 
@@ -9,6 +10,7 @@ SetupWidget::SetupWidget(QWidget *parent)
 	: QWidget(parent)
 {
 	ui.setupUi(this);
+	initSkipWidget();
 	setWindowFlags(Qt::CustomizeWindowHint | Qt::FramelessWindowHint);
 	hide();
 	//初始化电阻检测模块参数列表
@@ -219,6 +221,7 @@ void SetupWidget::widgetShow()
 	refreshLocationWidget();
 	refreshTestPamWidget();
 	refreshOtherPamWidget();
+	refreshSkipWidget();
 	//mainctrl->testStart(0);
 }
 
@@ -266,6 +269,58 @@ void SetupWidget::refreshOtherPamWidget()
 		QVariant val = plc->getValue(objName.toInt());
 		m_spinboxOtherPamList[i]->setValue(val.toInt());
 	}
+}
+
+void SetupWidget::refreshSkipWidget()
+{
+	auto plc = PLC::PlcStation::Instance();
+	unsigned char buffer[12];
+	plc->readBlockAsByte(AreaDB,40,0,12,buffer);
+	unsigned char board0[3];
+	unsigned char board1[3];
+	unsigned char board2[3];
+	unsigned char board3[3];
+	memcpy(board0, buffer,3);
+	memcpy(board1, buffer+3, 3);
+	memcpy(board2, buffer+6, 3);
+	memcpy(board3, buffer+9, 3);
+	for (int i = 0; i < 3; i++)
+	{
+		bool result;
+		for (int j = 0; j < 8; j++)
+		{
+			result = board0[i] & (0x01 << j);
+			btn_groups[0]->button(i * 8 + j)->setChecked(result);
+		}
+	}
+	for (int i = 0; i < 3; i++)
+	{
+		bool result;
+		for (int j = 0; j < 8; j++)
+		{
+			result = board1[i] & (0x01 << j);
+			btn_groups[1]->button(i * 8 + j)->setChecked(result);
+		}
+	}
+	for (int i = 0; i < 3; i++)
+	{
+		bool result;
+		for (int j = 0; j < 8; j++)
+		{
+			result = board2[i] & (0x01 << j);
+			btn_groups[2]->button(i * 8 + j)->setChecked(result);
+		}
+	}
+	for (int i = 0; i < 3; i++)
+	{
+		bool result;
+		for (int j = 0; j < 8; j++)
+		{
+			result = board3[i] & (0x01 << j);
+			btn_groups[3]->button(i * 8 + j)->setChecked(result);
+		}
+	}
+
 }
 
 void SetupWidget::loadPamsFromXml()
@@ -397,6 +452,39 @@ void SetupWidget::setPams2xml()
 	min_maxTestTime.set_value(m_spinboxtestPamList[4]->value());
 	max_minOdds.set_value(m_dspinboxMax_minOdds->value());
 	doc.save_file(xmlPath);
+}
+
+void SetupWidget::initSkipWidget()
+{
+	for (int j = 0; j < 4; j++)
+	{
+		btn_groups[j] = new QButtonGroup;
+		btn_groups[j]->setExclusive(false);
+		btn_groups[j]->setObjectName(QString("btn_group%1").number(j));
+		QWidget* widget = new QWidget(ui.tabWidget_skip);
+		QGridLayout* layout = new QGridLayout(widget);
+		for (int i = 0; i < 24; i++)
+		{
+			QPushButton* button = new QPushButton(widget);
+			button->setText(QString("#%1").number(i));
+			button->setCheckable(true);
+			btn_groups[j]->addButton(button,i);
+			layout->addWidget(button, i / 4, i % 4);
+		}
+		ui.tabWidget_skip->widget(j)->setLayout(layout);
+		connect(btn_groups[j], SIGNAL(buttonClicked(int)), this, SLOT(skipButtonClicked(int)));
+	}
+}
+
+void SetupWidget::skipButtonClicked(int index)
+{
+	QObject* sender = QObject::sender();
+	QButtonGroup* group = qobject_cast<QButtonGroup*>(sender);
+	auto plc = PLC::PlcStation::Instance();
+	QAbstractButton* button = group->button(index);
+	int board_num = sender->objectName().right(1).toInt();
+	int a=board_num * 24 +index;
+	plc->writeBool(AreaDB, 40, a / 8, a % 8, button->isChecked());
 }
 
 void SetupWidget::on_pushButton_saveClicked(bool checked)

@@ -40,6 +40,13 @@ public:
     QWidget *tab_2;
     QHBoxLayout *horizontalLayout_2;
     QTableWidget *tableWidget_otherPam;
+    QWidget *tab_5;
+    QHBoxLayout *horizontalLayout_4;
+    QTabWidget *tabWidget_skip;
+    QWidget *tab_6;
+    QWidget *tab_7;
+    QWidget *tab_8;
+    QWidget *tab_9;
     QWidget *widget;
     QHBoxLayout *horizontalLayout;
     QPushButton *pushButton_save;
@@ -150,6 +157,31 @@ public:
         horizontalLayout_2->addWidget(tableWidget_otherPam);
 
         tabWidget->addTab(tab_2, QString());
+        tab_5 = new QWidget();
+        tab_5->setObjectName(QString::fromUtf8("tab_5"));
+        horizontalLayout_4 = new QHBoxLayout(tab_5);
+        horizontalLayout_4->setSpacing(6);
+        horizontalLayout_4->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
+        tabWidget_skip = new QTabWidget(tab_5);
+        tabWidget_skip->setObjectName(QString::fromUtf8("tabWidget_skip"));
+        tabWidget_skip->setTabPosition(QTabWidget::West);
+        tab_6 = new QWidget();
+        tab_6->setObjectName(QString::fromUtf8("tab_6"));
+        tabWidget_skip->addTab(tab_6, QString());
+        tab_7 = new QWidget();
+        tab_7->setObjectName(QString::fromUtf8("tab_7"));
+        tabWidget_skip->addTab(tab_7, QString());
+        tab_8 = new QWidget();
+        tab_8->setObjectName(QString::fromUtf8("tab_8"));
+        tabWidget_skip->addTab(tab_8, QString());
+        tab_9 = new QWidget();
+        tab_9->setObjectName(QString::fromUtf8("tab_9"));
+        tabWidget_skip->addTab(tab_9, QString());
+
+        horizontalLayout_4->addWidget(tabWidget_skip);
+
+        tabWidget->addTab(tab_5, QString());
 
         gridLayout->addWidget(tabWidget, 0, 0, 1, 1);
 
@@ -185,6 +217,7 @@ public:
         retranslateUi(SetupWidget);
 
         tabWidget->setCurrentIndex(0);
+        tabWidget_skip->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(SetupWidget);
@@ -197,6 +230,11 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("SetupWidget", "\346\243\200\346\265\213\345\217\202\346\225\260", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("SetupWidget", "\345\256\232\344\275\215\345\217\202\346\225\260", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("SetupWidget", "\345\205\266\344\273\226\345\217\202\346\225\260", nullptr));
+        tabWidget_skip->setTabText(tabWidget_skip->indexOf(tab_6), QApplication::translate("SetupWidget", "1\345\217\267\346\235\277", nullptr));
+        tabWidget_skip->setTabText(tabWidget_skip->indexOf(tab_7), QApplication::translate("SetupWidget", "2\345\217\267\346\235\277", nullptr));
+        tabWidget_skip->setTabText(tabWidget_skip->indexOf(tab_8), QApplication::translate("SetupWidget", "3\345\217\267\346\235\277", nullptr));
+        tabWidget_skip->setTabText(tabWidget_skip->indexOf(tab_9), QApplication::translate("SetupWidget", "4\345\217\267\346\235\277", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("SetupWidget", "\345\267\245\344\275\215\345\274\203\347\224\250", nullptr));
         pushButton_save->setText(QApplication::translate("SetupWidget", "\344\277\235\345\255\230", nullptr));
     } // retranslateUi
 
